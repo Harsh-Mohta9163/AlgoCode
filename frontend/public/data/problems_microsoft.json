@@ -1,0 +1,1606 @@
+[
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/earliest-common-slot/1?page=1&company=Microsoft&sortBy=latest",
+      "scraped_at": "2025-06-11T12:08:54.596161",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Earliest Common Slot",
+      "difficulty": "Medium",
+      "accuracy": "34.84%",
+      "submissions": "624+",
+      "avg_time": "Not available"
+    },
+    "content": {
+      "problem": "You are given two lists of availability time slots, slots1 and slots2, for two people. Each slot is represented as [start, end], and it is gurranted that within each list, no two slots overlap (i.e., for any two intervals, either start1>end2 or start2>end1). Given a metting duration d, return the earliest common time slot of length of least d. If no such slot exits, return an empty array.\nExamples:\nInput: slots1 = [[10,50], [60,120], [140,210]], slots2 = [[0,15], [60,70]], d = 8\nOutput: [60,68]\nExplanation: The only overlap is [60,70] (10 minutes), which is enough for an 8-minute meeting, so answer is [60,68]\nInput: slots1 = [[10,50], [60,120], [140,210]], slots2 = [[0,15], [60,70]], d = 12\nOutput: []\nExplanation: The only overlap is [60, 70] (10 minutes), but 12 minutes are needed, so no valid slot exists.\nConstraints:\n1 ≤ slots1.size(), slots2.size()  ≤ 105\n-109 ≤ slots1[i], slots2[i] ≤ 109\n1 ≤ d ≤ 106"
+    },
+    "complexity": {
+      "time_complexity": "O(max(n log(n), m log(m)))",
+      "space_complexity": "O(1)"
+    },
+    "tags": {
+      "company_tags": [
+        "Amazon",
+        "Microsoft",
+        "PayPal",
+        "Google",
+        "Uber"
+      ],
+      "topic_tags": [
+        "Sorting",
+        "two-pointer-algorithm",
+        "Arrays",
+        "Data Structures",
+        "Algorithms"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/interval-list-intersections/1?page=1&company=Microsoft&sortBy=latest",
+      "scraped_at": "2025-06-11T12:09:05.030884",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Interval List Intersections",
+      "difficulty": "Medium",
+      "accuracy": "44.47%",
+      "submissions": "517+",
+      "avg_time": "Not available"
+    },
+    "content": {
+      "problem": "Given two 2-D arrays which represent intervals. Each 2-D array represents a list of intervals. Each list of intervals is disjoint and sorted in increasing order. Find the intersection or set of ranges that are common to both the lists.\nNote: Disjoint means no element is common in a list\nExamples:\nInput: a[][] = [[0, 4], [5, 10], [13, 20], [24, 25]], b[][] = [[1, 5], [8, 12], [15, 24], [25, 26]]\nOutput: [[1, 4], [5, 5], [8, 10], [15, 20], [24, 24], [25, 25]]\nExplanation: [1, 4] lies completely within the range [0, 4] and [1, 5]. Hence, [1, 4] is the desired intersection. Similarly, [24, 24] lies completely within two intervals [24, 25] and [15, 24]\nInput: a[][] = [[0, 2], [5, 10], [12, 22], [24, 25]], b[][] = [[1, 4], [9, 12], [15, 24], [25, 26]]\nOutput: [[1, 2], [9, 10], [12, 12], [15, 22], [24, 24], [25, 25]]\nExplanation: [1, 2] lies completely within the range [0, 2] and [1, 4]. Hence, [1, 2] is the desired intersection. Similarly, [12, 12] lies completely within two intervals [12, 22] and [9, 12]\nConstraints\n1 ≤ a.size(), b.size() ≤ 105\n-109 ≤ a[i], b[i] ≤ 109"
+    },
+    "complexity": {
+      "time_complexity": "O(n + m)",
+      "space_complexity": "O(1)"
+    },
+    "tags": {
+      "company_tags": [
+        "Bloomberg",
+        "Amazon",
+        "Microsoft",
+        "Google",
+        "Uber"
+      ],
+      "topic_tags": [
+        "two-pointer-algorithm",
+        "Arrays",
+        "Data Structures",
+        "Algorithms"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/minimum-spanning-tree-kruskals-algorithm/1?page=1&company=Microsoft&sortBy=latest",
+      "scraped_at": "2025-06-11T12:09:15.432534",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Minimum Spanning Tree - Kruskal's Algorithm",
+      "difficulty": "Medium",
+      "accuracy": "62.8%",
+      "submissions": "4K+",
+      "avg_time": "Not available"
+    },
+    "content": {
+      "problem": "Given a weighted, undirected, and connected graph with V vertices and E edges, the task is to find the sum of the weights of the edges in the Minimum Spanning Tree (MST) of the graph using Kruskal's Algorithm. The graph is represented as an edge list edges[][], where edges[i] = [u, v, w] denotes an undirected edge between u and v with weight w.\nInput: V = 3, E = 3, edges[][] = [[0, 1, 5], [1, 2, 3], [0, 2, 1]]\nOutput: 4\nExplanation:\nThe Spanning Tree resulting in a weight of 4 is shown above.\nInput: V = 2, E = 1, edges = [[0, 1, 5]]\nOutput: 5\nExplanation: Only one Spanning Tree is possible which has a weight of 5.\nConstraints:\n2 ≤ V ≤ 1000\nV-1 ≤ E ≤ (V*(V-1))/2\n1 ≤ w ≤ 1000\nThe graph is connected and doesn't contain self-loops & multiple edges."
+    },
+    "complexity": {
+      "time_complexity": "O(E * log(E))",
+      "space_complexity": "O(V + E)"
+    },
+    "tags": {
+      "company_tags": [
+        "Cisco",
+        "Amazon",
+        "Microsoft",
+        "Samsung",
+        "Flipkart"
+      ],
+      "topic_tags": [
+        "Greedy",
+        "Disjoint Set",
+        "Graph",
+        "Data Structures",
+        "Algorithms"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/total-hamming-distance/1?page=1&company=Microsoft&sortBy=latest",
+      "scraped_at": "2025-06-11T12:09:25.791431",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Total Hamming Distance",
+      "difficulty": "Medium",
+      "accuracy": "56.04%",
+      "submissions": "637+",
+      "avg_time": "Not available"
+    },
+    "content": {
+      "problem": "Given an integer array arr[], return the sum of Hamming distances between all the pairs of the integers in arr.\nNote: The answer is guaranteed to fit within a 32-bit integer.\nExamples:\nInput: arr[] = [1, 14]\nOutput: 4\nExplanation: Binary representations of 1 is 0001, 14 is 1110. The answer will be:\nHammingDistance(1, 14) = 4.\nInput: arr[] = [4, 14, 4, 14]\nOutput: 8\nExplanation: Binary representations of 4 is 0100, 14 is 1110. The answer will be:\nHammingDistance(4, 14) + HammingDistance(4, 4) + HammingDistance(4, 14) + HammingDistance(14, 4) + HammingDistance(14, 14) + HammingDistance(4, 14) = 2 + 0 + 2 + 2 + 0 + 2 = 8.\nConstraints:\n2 ≤ arr.size() ≤ 104\n1 ≤ arr[i] ≤ 109"
+    },
+    "complexity": {
+      "time_complexity": "O(n)",
+      "space_complexity": "O(1)"
+    },
+    "tags": {
+      "company_tags": [
+        "Microsoft"
+      ],
+      "topic_tags": [
+        "Bit Magic",
+        "Data Structures",
+        "Algorithms",
+        "Arrays"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/median-of-2-sorted-arrays-of-same-size/1?page=1&company=Microsoft&sortBy=latest",
+      "scraped_at": "2025-06-11T12:09:36.006497",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Median of 2 Sorted Arrays of Same Size",
+      "difficulty": "Hard",
+      "accuracy": "53.15%",
+      "submissions": "3K+",
+      "avg_time": "35m"
+    },
+    "content": {
+      "problem": "Given two sorted arrays a[] and b[] of equal size, find and return the median of the combined array after merging them into a single sorted array.\nExamples:\nInput: a[] = [-5, 3, 6, 12, 15], b[] = [-12, -10, -6, -3, 4]\nOutput: 0\nExplanation: The merged array is [-12, -10, -6, -5, -3, 3, 4, 6, 12, 15]. So the median of the merged array is (-3 + 3) / 2 = 0.\nInput: a[] = [2, 3, 5, 7], b[] = [10, 12, 14, 16]\nOutput: 8.5\nExplanation: The merged array is [2, 3, 5, 7, 10, 12, 14, 16]. So the median of the merged array is (7 + 10) / 2 = 8.5.\nInput: a[] = [-5], b[] = [-6]\nOutput: -5.5\nExplanation: The merged array is [-6, -5]. So the median of the merged array is (-6 + -5) / 2 = -5.5.\nConstraints:\n1 ≤ a.size(), b.size() ≤ 106\n-106 ≤ a[i], b[i] ≤ 106"
+    },
+    "complexity": {
+      "time_complexity": "O(log n)",
+      "space_complexity": "O(1)"
+    },
+    "tags": {
+      "company_tags": [
+        "Amazon",
+        "Microsoft",
+        "Samsung",
+        "Google"
+      ],
+      "topic_tags": [
+        "Binary Search",
+        "Arrays"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/merge-k-sorted-arrays--151335/1?page=1&company=Microsoft&sortBy=latest",
+      "scraped_at": "2025-06-11T12:09:46.368594",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Merge k Sorted Arrays",
+      "difficulty": "Medium",
+      "accuracy": "82.8%",
+      "submissions": "377+",
+      "avg_time": "Not available"
+    },
+    "content": {
+      "problem": "Given k sorted arrays arranged in the form of a matrix arr[] of size k * k. The task is to merge them into one sorted array. Return the merged sorted array.\nExamples :\nInput: k = 3, arr[][] = [[1, 2, 3}, [4, 5, 6], [7, 8, 9]]\nOutput: [1, 2, 3, 4, 5, 6, 7, 8, 9]\nExplanation: arr[][] has 3 sorted arrays of size 3, arr[][] = [[1, 2, 3],[4, 5, 6],[7, 8, 9]]. The merged list will be [1, 2, 3, 4, 5, 6, 7, 8, 9].\nInput: k = 4, arr[][]= [[1, 2, 3, 4], [2, 2, 3, 4], [5, 5, 6, 6], [7, 8, 9, 9]]\nOutput: [1, 2, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 8, 9, 9]\nExplanation: arr[][] has 4 sorted arrays of size 4, arr[][] = [[1, 2, 2, 2], [3, 3, 4, 4], [5, 5, 6, 6], [7, 8, 9, 9 ]]. The merged list will be [1, 2, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 8, 9, 9].\nConstraints:\n1 <= k <= 100"
+    },
+    "complexity": {
+      "time_complexity": "O(k^2*log(k))",
+      "space_complexity": "O(k^2)"
+    },
+    "tags": {
+      "company_tags": [
+        "VMWare",
+        "Flipkart",
+        "Amazon",
+        "Microsoft",
+        "Citrix"
+      ],
+      "topic_tags": [
+        "Arrays",
+        "Sorting",
+        "Heap",
+        "Data Structures",
+        "Algorithms"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/count-possible-triangles-1587115620--094125/1?page=1&company=Microsoft&sortBy=latest",
+      "scraped_at": "2025-06-11T12:10:17.743181",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Count the number of possible triangles",
+      "difficulty": "Medium",
+      "accuracy": "57.41%",
+      "submissions": "216+",
+      "avg_time": "Not available"
+    },
+    "content": {
+      "problem": "Given an unsorted integer array arr[]. Find the number of triangles that can be formed with three different array elements as lengths of three sides of triangles.\nA triangle with three given sides is only possible if sum of any two sides is always greater than the third side.\nExample 1:\nInput: arr[] = [3, 5, 4]\nOutput: 1\nExplanation: A triangle is possible with all the elements 5, 3 and 4 (5+3>4, 5+4>3, 3+4>5)\nInput: arr[] = [6, 4, 9, 7, 8]\nOutput: 10\nExplanation: There are 10 triangles possible with the given elements like (6,4,9), (6,7,8),...\nConstraints:\n3 <= arr.size() <= 103\n1 <= arr[i] <= 103"
+    },
+    "complexity": {
+      "time_complexity": "O(n^2)",
+      "space_complexity": "O(1)"
+    },
+    "tags": {
+      "company_tags": [
+        "Amazon",
+        "Microsoft"
+      ],
+      "topic_tags": [
+        "Arrays",
+        "Sorting",
+        "Data Structures",
+        "Algorithms"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/queue-using-two-stacks--115418/1?page=1&company=Microsoft&sortBy=latest",
+      "scraped_at": "2025-06-11T12:10:28.397184",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Queue using two Stacks",
+      "difficulty": "Easy",
+      "accuracy": "68.68%",
+      "submissions": "670+",
+      "avg_time": "Not available"
+    },
+    "content": {
+      "problem": "Implement a Queue using 2 stacks s1 and s2.\nA Query q is of 2 Types\n(i) 1 x (a query of this type means  pushing 'x' into the queue)\n(ii) 2   (a query of this type means to pop an element from the queue and print the popped element)\nNote: If there is no element return -1 as the answer while popping.\nExamples:\nInput: queries = [[1, 2],[1, 3],[2],[1, 4],[2]]\nOutput: 2 3\nExplanation:\n1 2 the queue will be {2}\n1 3 the queue will be {2 3}\n2   poped element will be 2 the queue will be {3}\n1 4 the queue will be {3 4}\n2   poped element will be 3.\nInput: queries = [[1, 2],[2],[2],[1, 4]]\nOutput: 2 -1\nExplanation:\n1 2 the queue will be {2}\n2   poped element will be 2 and\nthen the queue will be empty\n2   the queue is empty and hence -1\n1 4 the queue will be {4}.\nConstraints:\n1 <=queries.size() <= 100\n1 <= x <= 100"
+    },
+    "complexity": {
+      "time_complexity": "O(n)",
+      "space_complexity": "O(n)"
+    },
+    "tags": {
+      "company_tags": [
+        "Flipkart",
+        "Morgan Stanley",
+        "Accolite",
+        "Amazon",
+        "Microsoft",
+        "D-E-Shaw",
+        "Hike",
+        "MakeMyTrip",
+        "Oracle",
+        "Walmart",
+        "Goldman Sachs",
+        "MAQ Software",
+        "Adobe",
+        "InfoEdge",
+        "InMobi"
+      ],
+      "topic_tags": [
+        "Stack",
+        "Queue",
+        "STL",
+        "Data Structures"
+      ]
+    },
+    "interview_experiences": [
+      {
+        "title": "Maq Software Interview Experience Set 10 On Campus",
+        "url": "https://www.geeksforgeeks.org/maq-software-interview-experience-set-10-on-campus/",
+        "content_summary": "1. Written Round : 1) 30 Aptitude questions(30 min). 2) 2-Coding questions(30 min). 2-a) Write an algorithm for dutch national flag problem 2-b) Write an algorithm for n-queens problem Total 40 people were selected for second round. 2.Technical Round 1 (around 1Hr 15min):- 1) What is web technology. 2) Write some Basic syntax of HTML. 3) Given 2 tables of employee containing employee_id,employee_name and department containing employee_id(foreign key), dept_id find the name of the employee who worked in maximum no. of departments. 4) Discussion about projects which I had written in resume. 5) What is inheritance, overloading and over-riding. 6) Difference between Encapsulation and abstraction. 7) What is indexing in databases. 8) What are clustered and non-clustered indexes. 9) Real life application of Data Structures. 10) Which Data structure used in printer. 11) Which Data structure used for maintaining Dictionary.(Trie) 12) What is the searching and space complexity of your Trie for maintaining Dictionary. 13) 2 simple puzzle. 14) Add 2 numbers a and b without using ?+? operator. 15) find nth Fibonacci number. (Gave O(logn) solution) 3.Technical Round 2 (around 1 Hr):- 1) How many square in (8*8) chess board. 2) Give general formula for square in (n*n) board and prove it. 3) Write code for Sudoku Game Problem and discuss time complexity of the code which was written by me. Discuss many thing about that code he said to optimise the code then i optimise some portion of code then we move on to the next question. 4) puzzle:- 2 jar one contain 4 red and other one 4 blue randomly select any jar maximize the probability of selecting red ball by rearranging the balls. Puzzel#6 http://www.crazyforcode.com/probability-puzzles-interview/ 5) Write code for calculating factorial of big number (Array). 6) Puzzel:-Given a pastry. someone eat it from one side how you divide it into 2 equal parts. 7) Egg droping Puzzel. I give solution of 2 egg 100 floor puzzle but then said to give the generalized formula for it then i solve it using DP. 4. HR+Technical Round(around 1 Hr) :- Q1-Tell me about yourself? Q2-Family background? Q3-Discussion about projects which I had written in resume. Q4-Write code for making Queue using 2 stack. Discuss about time complexity and space complexity and he said optimise the code. Q5-Write code for Water Jug problem (check condition are we able to make any given number in any of the jug or not). Q6-Puzzel:-Given a rectangle and a circle and a point lie on circle and center lie line y=x and 1 point of rectangle lie on origin. circle put into rectangle find the radius of circle. A total of 3 students were offered the job(I was one of them). 2 students were offered the intern. Thank you so much geeksforgeeks team.\nRelated Practice Problems\nThe Nth Fibonnaci\nQueue using two Stacks\nTwo water Jug problem\nAll Practice Problems for MAQ Software !\n\nComment\nMore info\nCampus Training Program\nNext Article\nMAQ Software Interview Experience | Set 10 (On-Campus)"
+      },
+      {
+        "title": "Walmart Lab Interview Experience Set 8 Off Campus 3 Years Experience",
+        "url": "https://www.geeksforgeeks.org/walmart-lab-interview-experience-set-8-off-campus-3-years-experience/",
+        "content_summary": "Round 1 (Coding round): 1) Range [L, R] is given. Need to find what is the maximum repeating digit in prime numbers between L and R (both inclusive). If more number of digits is repeated max times, return whichever digit is maximum Eg: [2, 13] - maximum repeating digit is 1 among {2, 3, 5, 7, 11, 13} [2, 9] - answer 7 2) Given a number \"S\", find out how many number of ways a, b, c, d (all > 1) can exist such that a+b+c+d = S; Round 2: 1) OOPS Concepts 2) Reverse alternate nodes in linked list Eg: 1->2->3->4->5 ahould become 2->1->4->3->5 3) Iterative post order traversal of binary tree 4) Queue implementation using stacks Round 3 (Java): 1) Arraylist, Linkedlist - when to use what 2) Hashmap, Hashtable, concurrent hash map 3) Hashcode, Equals, Hashmap implementation 4) Serializable interface 5) AbstractClass Vs Interface 6) Multi threading, Difference between extends thread, implements runnable 7) Callable interface, Executor framework 8) Collections sorting, comparable interface 9) Best thing I have done so far what I proud of Round 4: 1) Given NxN matrix, (X,Y) position. Find how many ways You can reach from (X,Y) to (N,N). You are allowed to traverse in 2 directions - Right, Down 2) Find loop in linked list. Find starting node of loop 3) Binary tree zigzag traversal 4) Given list of stock prices. You are allowed to buy and sell only once. a) Find the maximum gain you can get b) Find the maximum loss you can get 5) Binary tree is height balanced or not. (Every node in tree should be height balanced) 6) Implement String trim algorithm 7) Write a multi-threaded program - launch 10 threads and exit from main thread after all those threads completed Round 5 (Manager): 1) Given a number in form of array, maximize the number w.r.t allowed number of swaps (can swap only adjacent elements) - maximize(int[] data, int numSwaps) Eg: 1265 is number - if 1 swap allowed - maximum number we can get out of it is 2165 1265 is number - if 3 swaps allowed - maximum number we can get out of it is 6215 2) Questions on my projects 3) So many behavioural questions Round 6 (HR): Why do you want to change? What You are expecting? and some other HR questions.\nAll Practice Problems for Walmart !\nRelated Practice Problems\nCount all possible paths from top left to bottom right\nCheck for Balanced Tree\nStock buy and sell\nLargest number in K swaps\nDetect Loop in linked list\nQueue using two Stacks\nFind the highest occurring digit in prime numbers in a range\nFind the highest occurring digit in prime numbers in a range\n\nComment\nMore info\nCampus Training Program\nNext Article\nWalmart Lab Interview Experience | Set 8 (Off-Campus 3 Years Experience)"
+      },
+      {
+        "title": "Makemytrip Interview Experience Set 9 Off Campus For Sr Android Developer",
+        "url": "https://www.geeksforgeeks.org/makemytrip-interview-experience-set-9-off-campus-for-sr-android-developer/",
+        "content_summary": "First round (Written) : 1. 4 Android questions: a) What's Recyclerview? Describe all components of Recyclerview with all callbacks and the benefits of Recyclerview. b) Difference between thread, async task and service (in tabular format). c) Callbacks invoked during addition of a fragment to back stack and while popping back from back stack. d) Scenario in which only onDestroy is called for an activity without onPause() and onStop() 2. Describe a scenario in which deadlock occurs and a solution to overcome it. 3. Given an array, find the maximum difference between two array elements A[m] and A[n], such that n>m. 4. The relation between group of friends is transitive. So if student A is friends with student B, and B is friends with C, A becomes friends with C. They form a circle of friends. Given a matrix N*N and N students, each matrix entry indicating 'Y' or 'N' if they're friends or if they're not friends. We need to determine the number of circles. Eg - 6 students, A,B,C,D,E,F. A is friends with B, B with C. D is friends with E. F is friends with none. Output : 3 circles. F2F Round 1: Starting with Java basics : 1. Uses of final, string pool concept, serialization, synchronization (how it can be done) 2. How can you implement thread pool executor. 3. Is it possible to declare final variable in abstract class. 4. What is externalization. Android : Lots of basic questions: You need to provide more area for checking/unchecking checkbox than the default area of checkbox. How would you do it. How would you implement zoom in zoom out functionality in Android. How do you implement GCM push notifications. What things would you do in each lifecycle method of activity? What is IllegalStateException in Android? Any scenario when you encounter it and how to solve it? Advantages and disadvantages of using fragment. How would you implement swipe animation in Android. How do you detect whether keyboard is open in an Android app. And some more. But I don't exactly remember. DS: Implement queue using 2 stacks. After this, the interviewer seemed satisfied with my responses. F2F Round 2 : Android design questions: 1. You have a textview(3 lines) and a button below it. On clicking the button textview whole content should show. (Content is very large but due to 3 lines initially its not shown completely). You need to add animation while showing the full text of textview. How would you design this. 2. Some question related to showing images (for adult and child, like in flight booking system, we have 2 buttons for adding and removing adults/child). When there is 1 adult and 1 child, it should show as AC where A and C are icons for adult and child. On adding 1 more adult, it should show as AAC instead of ACA. How would you design such a system. Got stuck in this round, and was rejected.\nAll Practice Problems for MakeMyTrip !\nRelated Practice Problems\nMaximum Difference\n\nComment\nMore info\nCampus Training Program\nNext Article\nMakeMyTrip Interview Experience | Set 9 (Off-Campus for Sr. Android developer))"
+      },
+      {
+        "title": "Adobe Interview Experience Set 48 Campus",
+        "url": "https://www.geeksforgeeks.org/adobe-interview-experience-set-48-campus/",
+        "content_summary": "Coding Round:\nA variation of Knapsack\nEasy string manipulation problem\nA brute-force based string matching problem\nTechnical Round 1:\nFinding the length of a Linked-List with a cycle.\nDifference between a stack and a heap with respect to Virtual Memory\nGiven a cube in 3D space with integer dimensions, print all the lattice points on the surface of the cube.\nTechnical Round 2:\nPrint Pyramid of 1's with given height.\nAllocate 2D arrays in C with both dimensions accepted as input.\nCan C programs without main() function exist? (Object Files, Shared and Static Libraries, and how to create them using GCC)\nWhat is a graph traversal?\nPrint all nodes with shortest distance k from a given root node in a graph.\nHow does Breadth-first Search work?\nTechnical Round 3:\nCreate a queue from a 2 stacks\nPrint Fibonacci sequence in order using only recursion and no extra space.\nCreate a function to match a simple regex.\nHR Round:\nWhy want to join Adobe?\nWhat is the team preference?\nWhat are your shortcomings?\nGiven a table of data, where each row determines a metric, convert it to a single column of data where the new data item indicates the metric with reasonable accuracy (Principal Component Analysis)\nHaving a research background, why want to join a software company?\nDetails about college events\nIf you don't like the team you are assigned to, how will you tackle this?\n\nComment\nMore info\nCampus Training Program\nNext Article\nAdobe Interview Experience | Set 48 (On-Campus)"
+      }
+    ]
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/bits-counting/1?page=1&company=Microsoft&sortBy=latest",
+      "scraped_at": "2025-06-11T12:10:46.190891",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Bits Counting",
+      "difficulty": "Medium",
+      "accuracy": "77.98%",
+      "submissions": "1K+",
+      "avg_time": "Not available"
+    },
+    "content": {
+      "problem": "Given an integer n, return an array ans of size n + 1, where each element i (0 ≤ i ≤ n) represents the count of 1s in the binary form of i.\nExamples :\nInput: n = 2\nOutput: [0, 1, 1]\nExplanation:\n0 --> 0\n1 --> 1\n2 --> 10\nInput: n = 5\nOutput: [0, 1, 1, 2, 1, 2]\nExplanation:\n0 --> 0\n1 --> 1\n2 --> 10\n3 --> 11\n4 --> 100\n5 --> 101\nConstraints:\n0 ≤ n ≤ 105"
+    },
+    "complexity": {
+      "time_complexity": "O(n)",
+      "space_complexity": "O(n)"
+    },
+    "tags": {
+      "company_tags": [
+        "Bloomberg",
+        "Facebook",
+        "Adobe",
+        "Google",
+        "Amazon",
+        "Microsoft",
+        "Apple",
+        "Yahoo",
+        "Nvidia",
+        "Uber"
+      ],
+      "topic_tags": [
+        "Bit Magic",
+        "Dynamic Programming",
+        "Arrays"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/root-to-leaf-paths-sum/1?page=1&company=Microsoft&sortBy=latest",
+      "scraped_at": "2025-06-11T12:10:56.634918",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Root to leaf paths sum",
+      "difficulty": "Medium",
+      "accuracy": "58.4%",
+      "submissions": "49K+",
+      "avg_time": "Not available"
+    },
+    "content": {
+      "problem": "Given a binary tree, where every node value is a number. Find the sum of all the numbers that are formed from root to leaf paths. The formation of the numbers would be like 10*parent + current (see the examples for more clarification).\nExamples:\nInput:\nOutput: 13997\nExplanation : There are 4 leaves, resulting in leaf path of 632, 6357, 6354, 654 sums to 13997.\nInput:\nOutput: 2630\nExplanation: There are 3 leaves, resulting in leaf path of 1240, 1260, 130 sums to 2630.\nInput:\n1\n/\n2\nOutput: 12\nExplanation: There is 1 leaf, resulting in leaf path of 12.\nConstraints:\n1 ≤ number of nodes ≤ 31\n1 ≤ node->data ≤ 100"
+    },
+    "complexity": {
+      "time_complexity": "O(n)",
+      "space_complexity": "O(h)"
+    },
+    "tags": {
+      "company_tags": [
+        "Amazon",
+        "Microsoft",
+        "OYO Rooms",
+        "Google"
+      ],
+      "topic_tags": [
+        "Tree",
+        "Data Structures"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/minimum-depth-of-a-binary-tree/1?page=1&company=Microsoft&sortBy=latest",
+      "scraped_at": "2025-06-11T12:11:06.801794",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Minimum Depth of a Binary Tree",
+      "difficulty": "Easy",
+      "accuracy": "42.09%",
+      "submissions": "77K+",
+      "avg_time": "Not available"
+    },
+    "content": {
+      "problem": "Given a binary tree, find its minimum depth.\nExamples:\nInput: root = [1, 3, 2, 4]\nOutput: 2\nExplanation: Minimum depth is between nodes 1 and 2 since minimum depth is defined as the number of nodes along the shortest path from the root node down to the nearest leaf node.\nInput: root = [10, 20, 30, N, 40, N, 60, N, N, 2]\nOutput: 3\nExplanation: Minimum depth is between nodes 10,20 and 40.\nExpected Time Complexity: O(n)\nExpected Auxiliary Space: O(height of the tree)\nConstraints:\n1 ≤ number of nodes ≤ 105"
+    },
+    "complexity": {
+      "time_complexity": "Not specified",
+      "space_complexity": "Not specified"
+    },
+    "tags": {
+      "company_tags": [
+        "Amazon",
+        "Microsoft",
+        "Facebook"
+      ],
+      "topic_tags": [
+        "Tree",
+        "Data Structures"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/level-order-traversal-line-by-line/1?page=1&company=Microsoft&sortBy=latest",
+      "scraped_at": "2025-06-11T12:11:17.055649",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Level Order Line by Line",
+      "difficulty": "Easy",
+      "accuracy": "53.78%",
+      "submissions": "83K+",
+      "avg_time": "20m"
+    },
+    "content": {
+      "problem": "Given a Binary Tree, your task is to find its level order traversal.\nNote: The driver code prints the levels '$' separated.\nExamples:\nInput: root = [1, 4, N, 4, 2]\n1\n/\n4\n/   \\\n4    2\nOutput:1 $ 4 $ 4 2 $\nExplanation: At first level 1 present then at second level 4 present then at third level 4 2 present.\nInput: root = [10, 20, 30, 40, 60]\n10\n/    \\\n20      30\n/     \\\n40     60\nOutput: 10 $ 20 30 $ 40 60 $\nExplanation: At first level 10 present then at second level 20 30 present then at third level 40 60 present.\nInput: root = [10. 20, 30, 40, 70]\n10\n/    \\\n20      30\n/     \\\n40     70\nOutput: 10 $ 20 30 $ 40 70 $\nExplanation: At first level 10 present then at second level 20 30 present then at third level 40 70 present.\nConstraints:\n1 <= number of nodes <= 1000\n0 <= node->data <= 100"
+    },
+    "complexity": {
+      "time_complexity": "O(n)",
+      "space_complexity": "O(n)"
+    },
+    "tags": {
+      "company_tags": [
+        "Morgan Stanley",
+        "Amazon",
+        "Microsoft",
+        "Snapdeal",
+        "Hike"
+      ],
+      "topic_tags": [
+        "Tree",
+        "Data Structures"
+      ]
+    },
+    "interview_experiences": [
+      {
+        "title": "Hike Interview Experience Set 5",
+        "url": "https://www.geeksforgeeks.org/hike-interview-experience-set-5/",
+        "content_summary": "Round I 1.Implement expiry cache system : every page in cache have id and expiry time (TTL of few seconds). After page expires it behaves as free space and can be used for new pages/replacement. Had a long discussion on everything. Round II very boring round 1. Nodes at given distance in binary tree 2.Check Mirror in N-ary tree 3. Largest Sum Contiguous Subarray Round III very boring round 1.Level order traversal Line by Line 2. ZigZag traversal of tree 3. Search in a Rotated Array 4.Value equal to index value finally something new.. 5. given a sorted array say A : (-4,-2,0,1,4,6,8,10). There is a function f(x) = a*x^2 + b*x + c , apply this function on A where x is any ith element from array A and a,b,c belongs to set of real numbers. Will f(A) will be sorted, if not then sort it in O(n). It is very easy if you still remember concepts of quadratic equation from maths. I did not remember so he helped me. Logic is that any quadratic equation is represented by parabola on graph and graph has minimum value at dy/dx = 0,i.e, 2*a*x + b = 0. Both sides of this point graph keeps increasing/decreasing to the infinity depending upon value of a. Calculate value of x = -b/(2*a). find it in sorted array or find its ceiling in log n. starting from this point to both ends, perform merge sort. Round IV 1. implement LRU cache 2. Implement following. There are three type of request : i) www.someurl.com/conn_id=?&timeout=? -: for this conn_id you will wait for timeout sec and after that return reponse, in meantime you can get some more requests of any one of three types ii) www.someurl.com/stat/ -: return all id waiting to timeout along with their remaining timeout interval ii) www.someurl.com/kill/conn_id=? -: end wait timeout of this conn_id and return response for this conn_id I gave a solution with heap. He asked how to handle case when a request is waiting for timout and new request came in meantime. How to do server side scalability in this case. 3. He asked about current work and technologies I am working upon. I said Java, Spring MVC for backend and html,css, javascript for front end and suddenly he asked what is difference between Java and javascript. Could not figure out at that time. Javascript is also an object oriented language an can be used at server side like node js. Still there are lot of differences.\n  Related Practice Problems\nTwo Mirror Trees\nLevel order traversal Line by Line\nNodes at given distance in binary tree\nLRU Cache\nSearch in a Rotated Array\nLevel order traversal in spiral form\nKadane's Algorithm\nAll Practice Problems for Hike !\n\nComment\nMore info\nCampus Training Program\nNext Article\nHike Interview Experience | Set 5"
+      }
+    ]
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/reverse-an-array/1?page=1&company=Microsoft&sortBy=latest",
+      "scraped_at": "2025-06-11T12:11:29.180627",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Reverse an Array",
+      "difficulty": "Easy",
+      "accuracy": "55.32%",
+      "submissions": "189K+",
+      "avg_time": "5m"
+    },
+    "content": {
+      "problem": "You are given an array of integers arr[]. Your task is to reverse the given array.\nNote: Modify the array in place.\nExamples:\nInput: arr = [1, 4, 3, 2, 6, 5]\nOutput: [5, 6, 2, 3, 4, 1]\nExplanation: The elements of the array are 1 4 3 2 6 5. After reversing the array, the first element goes to the last position, the second element goes to the second last position and so on. Hence, the answer is 5 6 2 3 4 1.\nInput: arr = [4, 5, 2]\nOutput: [2, 5, 4]\nExplanation: The elements of the array are 4 5 2. The reversed array will be 2 5 4.\nInput: arr = [1]\nOutput: [1]\nExplanation: The array has only single element, hence the reversed array is same as the original.\nConstraints:\n1<=arr.size()<=105\n0<=arr[i]<=105"
+    },
+    "complexity": {
+      "time_complexity": "O(n)",
+      "space_complexity": "O(1)"
+    },
+    "tags": {
+      "company_tags": [
+        "Bloomberg",
+        "Facebook",
+        "TCS",
+        "Adobe",
+        "Google",
+        "Infosys",
+        "Capgemini",
+        "Morgan Stanley",
+        "Amazon",
+        "Microsoft",
+        "Apple",
+        "Yahoo",
+        "PayPal",
+        "Uber"
+      ],
+      "topic_tags": [
+        "Arrays",
+        "Data Structures"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/buy-stock-2/1?page=1&company=Microsoft&sortBy=latest",
+      "scraped_at": "2025-06-11T12:11:39.452923",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Stock Buy and Sell – Max one Transaction Allowed",
+      "difficulty": "Easy",
+      "accuracy": "49.33%",
+      "submissions": "92K+",
+      "avg_time": "10m"
+    },
+    "content": {
+      "problem": "Given an array prices[] of length n, representing the prices of the stocks on different days. The task is to find the maximum profit possible by buying and selling the stocks on different days when at most one transaction is allowed. Here one transaction means 1 buy + 1 Sell. If it is not possible to make a profit then return 0.\nNote: Stock must be bought before being sold.\nExamples:\nInput: prices[] = [7, 10, 1, 3, 6, 9, 2]\nOutput: 8\nExplanation: You can buy the stock on day 2 at price = 1 and sell it on day 5 at price = 9. Hence, the profit is 8.\nInput: prices[] = [7, 6, 4, 3, 1]\nOutput: 0\nExplanation: Here the prices are in decreasing order, hence if we buy any day then we cannot sell it at a greater price. Hence, the answer is 0.\nInput: prices[] = [1, 3, 6, 9, 11]\nOutput: 10\nExplanation: Since the array is sorted in increasing order, we can make maximum profit by buying at price[0] and selling at price[n-1].\nConstraint:\n1 <= prices.size()<= 105\n0 <= prices[i] <=104"
+    },
+    "complexity": {
+      "time_complexity": "O(n)",
+      "space_complexity": "O(1)"
+    },
+    "tags": {
+      "company_tags": [
+        "Bloomberg",
+        "Facebook",
+        "Intel",
+        "Infosys",
+        "Zoho",
+        "Morgan Stanley",
+        "Amazon",
+        "Microsoft",
+        "Samsung",
+        "Yahoo",
+        "PayPal",
+        "Nvidia",
+        "Oracle",
+        "Visa",
+        "Walmart",
+        "Goldman Sachs",
+        "TCS",
+        "Adobe",
+        "Google",
+        "IBM",
+        "Accenture",
+        "Apple",
+        "Uber"
+      ],
+      "topic_tags": [
+        "Greedy",
+        "Arrays"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/flattening-a-linked-list--170645/1?page=1&company=Microsoft&sortBy=latest",
+      "scraped_at": "2025-06-11T12:11:49.902065",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Flattening a Linked List",
+      "difficulty": "Medium",
+      "accuracy": "50.24%",
+      "submissions": "22K+",
+      "avg_time": "Not available"
+    },
+    "content": {
+      "problem": "Given a Linked List of size N, where every node represents a sub-linked-list and contains two pointers:\n(i) a next pointer to the next node,\n(ii) a bottom pointer to a linked list where this node is head.\nEach of the sub-linked-list is in sorted order.\nFlatten the Link List such that all the nodes appear in a single level while maintaining the sorted order.\nNote: The flattened list will be printed using the bottom pointer instead of next pointer.\nExample 1:\nInput:\n5 -> 10 -> 19 -> 28\n| | | |\n7 20 22 35\n| | |\n8 50 40\n| |\n30 45\nOutput:  5-> 7-> 8- > 10 -> 19-> 20->\n22-> 28-> 30-> 35-> 40-> 45-> 50.\nExplanation:\nThe resultant linked lists has every\nnode in a single level.\n(Note: | represents the bottom pointer.)\nExample 2:\nInput:\n5 -> 10 -> 19 -> 28\n| |\n7 22\n| |\n8 50\n|\n30\nOutput: 5->7->8->10->19->22->28->30->50\nExplanation:\nThe resultant linked lists has every\nnode in a single level.\n(Note: | represents the bottom pointer.)\nYour Task:\nYou do not need to read input or print anything. Complete the function flatten() that takes the head of the linked list as input parameter and returns the head of flattened link list.\nExpected Time Complexity: O(N*M)\nExpected Auxiliary Space: O(1)\nConstraints:\n0 <= N <= 50\n1 <= Mi <= 20\n1 <= Element of linked list <= 103"
+    },
+    "complexity": {
+      "time_complexity": "Not specified",
+      "space_complexity": "Not specified"
+    },
+    "tags": {
+      "company_tags": [
+        "Paytm",
+        "Flipkart",
+        "Amazon",
+        "Microsoft",
+        "Snapdeal",
+        "24*7 Innovation Labs",
+        "Payu",
+        "Visa",
+        "Goldman Sachs",
+        "Qualcomm",
+        "Drishti-Soft"
+      ],
+      "topic_tags": [
+        "Linked List",
+        "Data Structures"
+      ]
+    },
+    "interview_experiences": [
+      {
+        "title": "Paytm Interview Experience Set 8 Hiring Drive For Backend Engineer",
+        "url": "https://www.geeksforgeeks.org/paytm-interview-experience-set-8-hiring-drive-for-backend-engineer/",
+        "content_summary": "Paytm Hiring Drive for Backend Engineer. The selection process was completed on the same day.\nRound 1 ( Written ): It was a technical written round with 20 questions out of which 2 were coding questions. Rest 18 was objective type mainly C, SQL, and Algo.\nWrite code to create a mirror image of a tree.\nGiven an array of arrival and departure times of guests, find a minimum no of rooms required to accommodate guests at any point of time.\nRound 2 :\nWAP to search a number in a row-wise - column-wise sorted matrix.\nFlatten a linked list.\nDiscussions around Binary Search and Ternary Search.\nDiscussed objective questions of a written round.\nRound 3 :\nHow will you store a series of mobile nos in memory efficiently (less space). e.g mobile nos like 999900001,999900003,999900005,999910006,999910007 ... are there. DS should be designed such that retrieval is not inefficient.\nStream of Access logs is given to you with user id, page id, and date. Design Data structure to find n recent unique visitors and pages they visited.\nThe current company projects discussions.\nI thank GFG a lot for helping me in my preparation, finally, I was selected\nAll Practice Problems for Paytm !\nRelated Practice Problems\nMirror Tree\nSearch in a matrix\n\nComment\nMore info\nCampus Training Program\nNext Article\nPaytm Interview Experience | Set 8 (Hiring Drive for Backend Engineer)"
+      }
+    ]
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/remove-duplicate-element-from-sorted-linked-list/1?page=1&company=Microsoft&sortBy=latest",
+      "scraped_at": "2025-06-11T12:12:07.529017",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Remove Duplicates from a Sorted Linked List",
+      "difficulty": "Easy",
+      "accuracy": "49.37%",
+      "submissions": "313K+",
+      "avg_time": "20m"
+    },
+    "content": {
+      "problem": "Given a singly linked list. The task is to remove duplicates (nodes with duplicate values) from the given list (if it exists).\nNote: Try not to use extra space. The nodes are arranged in a sorted way.\nExamples:\nInput:\nLinkedList: 2->2->4->5\nOutput: 2 -> 4 -> 5\nExplanation: In the given linked list 2 -> 2 -> 4 -> 5, only 2 occurs more than 1 time. So we need to remove it once.\nInput:\nLinkedList: 2->2->2->2->2\nOutput: 2\nExplanation: In the given linked list 2 -> 2 -> 2 -> 2, 2 is the only element and is repeated 5 times. So we need to remove any four 2.\nExpected Time Complexity : O(n)\nExpected Space Complexity: O(1)\nConstraints:\n1 <= Number of nodes, data of nodes <= 105"
+    },
+    "complexity": {
+      "time_complexity": "Not specified",
+      "space_complexity": "Not specified"
+    },
+    "tags": {
+      "company_tags": [
+        "Microsoft",
+        "OYO Rooms",
+        "Oracle",
+        "Visa",
+        "Adobe",
+        "Myntra"
+      ],
+      "topic_tags": [
+        "Linked List",
+        "Data Structures"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/flatten-binary-tree-to-linked-list/1?page=1&company=Microsoft&sortBy=latest",
+      "scraped_at": "2025-06-11T12:12:17.928671",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Flatten binary tree to linked list",
+      "difficulty": "Medium",
+      "accuracy": "75.82%",
+      "submissions": "43K+",
+      "avg_time": "Not available"
+    },
+    "content": {
+      "problem": "Given the root of a binary tree, flatten the tree into a \"Linked list\":\nThe \"linked list\" should use the same Node class where the right child pointer points to the next node in the list and the left child pointer is always null.\nThe \"linked list\" should be in the same order as a pre-order traversal of the binary tree.\nExamples:\nInput:\n1\n/ \\\n2 5\n/ \\ \\\n3 4 6\nOutput : 1 2 3 4 5 6\nExplanation: After flattening, the tree looks like this -\n1\n\\\n2\n\\\n3\n\\\n4\n\\\n5\n\\\n6\nHere, left of each node points to NULL and right contains the next node in preorder.The inorder traversal of this flattened tree is 1 2 3 4 5 6.\nInput :\n1\n/ \\\n3 4\n/\n2\n\\\n5\nOutput :\n1 3 4 2 5\nExplanation : After flattening, the tree looks like this -\n1\n\\\n3\n\\\n4\n\\\n2\n\\\n5\nHere, left of each node points to NULL and right contains the next node in preorder.The inorder traversal of this flattened tree is 1 3 4 2 5.\nExpected Time Complexity: O(n)\nExpected Space Complexity: O(1)\nConstraints :\n1<= number of nodes in binary tree <= 105\n1<= data of nodes <= 105"
+    },
+    "complexity": {
+      "time_complexity": "Not specified",
+      "space_complexity": "Not specified"
+    },
+    "tags": {
+      "company_tags": [
+        "Microsoft"
+      ],
+      "topic_tags": [
+        "Linked List",
+        "Tree",
+        "Data Structures"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/add-two-numbers-represented-by-linked-lists/1?page=1&company=Microsoft&sortBy=latest",
+      "scraped_at": "2025-06-11T12:12:28.710618",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Add Number Linked Lists",
+      "difficulty": "Medium",
+      "accuracy": "34.52%",
+      "submissions": "338K+",
+      "avg_time": "30m"
+    },
+    "content": {
+      "problem": "Given the head of two singly linked lists num1 and num2 representing two non-negative integers. The task is to return the head of the linked list representing the sum of these two numbers.\nFor example, num1 represented by the linked list : 1 -> 9 -> 0, similarly num2 represented by the linked list: 2 -> 5. Sum of these two numbers is represented by 2 -> 1 -> 5.\nNote: There can be leading zeros in the input lists, but there should not be any leading zeros in the output list.\nExamples:\nInput: num1 = 4 - > 5, num2 = 3 -> 4 -> 5\nOutput: 3 -> 9 -> 0\nExplanation: Given numbers are 45 and 345. There sum is 390.\nInput: num1 = 0 -> 0 -> 6 -> 3, num2 = 0 -> 7\nOutput: 7 -> 0\nExplanation: Given numbers are 63 and 7. There sum is 70.\nConstraints:\n1 <= size of both linked lists <= 106\n0 <= elements of both linked lists <= 9"
+    },
+    "complexity": {
+      "time_complexity": "O(n + m)",
+      "space_complexity": "O(max(n, m))"
+    },
+    "tags": {
+      "company_tags": [
+        "Flipkart",
+        "Morgan Stanley",
+        "Accolite",
+        "Amazon",
+        "Microsoft",
+        "Snapdeal",
+        "MakeMyTrip",
+        "Qualcomm"
+      ],
+      "topic_tags": [
+        "Linked List",
+        "Data Structures"
+      ]
+    },
+    "interview_experiences": [
+      {
+        "title": "Accolite Interview Experience Set 7 On Campus",
+        "url": "https://www.geeksforgeeks.org/accolite-interview-experience-set-7-on-campus/",
+        "content_summary": "Accolite visited our campus for full time Software development. First round: MCQ round consists of 30 questions 30 minutes. Questions on C aptitude, four to five general aptitude, two puzzle based aptitude questions. Around 120 wrote test, 10 were selected for next round. Second round: It took around 1 and half hour two people were there. All rounds were purely technical. Questions are, Tell me about yourself. Implementation of queue using two stacks and some modification on that. Finding pair in a given array such that sum is equal to given value. Then he modified for negative numbers. Check if a given tree is binary search tree or not with full code. Child sum problem on binary tree told to write code also. One puzzle related to coin and two rooms. Third round: Only one question in this round. I have to design a dictionary of words such that if any word is entered then it should give meaning for all anagrams for that word. We discussed for one hour. First I told about using try data structure to make dictionary and generate all anagrams of that word then searching each words. But he is not satisfied. Then I came up with some modification in structure of try data structure still not satisfied. Then I come up with multilevel hashing Technique. He somewhat satisfied. Fourth round: It was final round and only two people were selected for this. Puzzle: There will be 17 buckets and some 2197(don’t remember exact number) apples. You have to put these apples in buckets such that if I ask any number of apples then just give any number of buckets such that apples in those buckets should equal to that value. Hint, arranged as bits arranged in binary representation of numbers. Finding loop in a linked list. He first asked you already know this question I told yes sir. Then he asked will it work if by changing fast pointer and slow pointer with difference of 3, 4, 5 nodes. Addition of two linked lists with full code. Numbers are in reverse order and all border conditions should be considered like, lengths are not equal. First he told to write for positive numbers I wrote using recursion. Then he told to write negative numbers. We both were told to wait outside. After few minutes they told only I am selected. Thanks geeksforgeeks.\nRelated Practice Problems\nSum of two numbers represented as arrays\nAdd two numbers represented by linked lists\nCheck for BST\nCombination Sum - Part 2\nAll Practice Problems for Accolite !\n\nComment\nMore info\nCampus Training Program\nNext Article\nAccolite Interview Experience | Set 7 (On-Campus)"
+      }
+    ]
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/minimum-element-in-a-sorted-and-rotated-array3611/1?page=1&company=Microsoft&sortBy=latest",
+      "scraped_at": "2025-06-11T12:13:03.463126",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Sorted and Rotated Minimum",
+      "difficulty": "Easy",
+      "accuracy": "40.57%",
+      "submissions": "152K+",
+      "avg_time": "Not available"
+    },
+    "content": {
+      "problem": "A sorted array of distinct elements arr[] is rotated at some unknown point, the task is to find the minimum element in it.\nExamples:\nInput: arr[] = [5, 6, 1, 2, 3, 4]\nOutput: 1\nExplanation: 1 is the minimum element in the array.\nInput: arr[] = [3, 1, 2]\nOutput: 1\nExplanation: Here 1 is the minimum element.\nInput: arr[] = [4, 2, 3]\nOutput: 2\nExplanation: Here 2 is the minimum element.\nConstraints:\n1 ≤ arr.size() ≤ 106\n1 ≤ arr[i] ≤ 109"
+    },
+    "complexity": {
+      "time_complexity": "O(log n)",
+      "space_complexity": "O(1)"
+    },
+    "tags": {
+      "company_tags": [
+        "Morgan Stanley",
+        "Amazon",
+        "Microsoft",
+        "Samsung",
+        "Snapdeal",
+        "Adobe",
+        "Times Internet"
+      ],
+      "topic_tags": [
+        "Searching",
+        "Algorithms"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/pairwise-swap-elements-of-a-linked-list-by-swapping-data/1?page=1&company=Microsoft&sortBy=latest",
+      "scraped_at": "2025-06-11T12:13:14.828376",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Pairwise swap elements of a linked list",
+      "difficulty": "Easy",
+      "accuracy": "52.06%",
+      "submissions": "129K+",
+      "avg_time": "20m"
+    },
+    "content": {
+      "problem": "Given a singly linked list. The task is to swap elements in the linked list pairwise. For example, if the input list is 1 2 3 4, the resulting list after swaps will be 2 1 4 3.\nNote: You need to swap the nodes, not only the data. If only data is swapped then the driver code will print -1.\nExamples:\nInput: LinkedList: 1->2->2->4->5->6->7->8\nOutput: 2->1->4->2->6->5->8->7\nExplanation: After swapping each pair considering (1,2), (2, 4), (5, 6).. so on as pairs, we get 2, 1, 4, 2, 6, 5, 8, 7 as a new linked list.\nInput: LinkedList: 1->3->4->7->9->10->1\nOutput: 3->1->7->4->10->9->1\nExplanation: After swapping each pair considering (1,3), (4, 7), (9, 10).. so on as pairs, we get 3, 1, 7, 4, 10, 9, 1 as a new linked list.\nConstraints:\n1 ≤ size of linked list ≤ 106\n1 ≤ elements of linked list ≤ 106"
+    },
+    "complexity": {
+      "time_complexity": "O(n)",
+      "space_complexity": "O(1)"
+    },
+    "tags": {
+      "company_tags": [
+        "Moonfrog Labs",
+        "Amazon",
+        "Microsoft",
+        "Intuit"
+      ],
+      "topic_tags": [
+        "Linked List",
+        "Data Structures"
+      ]
+    },
+    "interview_experiences": [
+      {
+        "title": "Intuit Interview Experience Set 12",
+        "url": "https://www.geeksforgeeks.org/intuit-interview-experience-set-12/",
+        "content_summary": "Technical Round-1 \n1. Maximum Subarray Sum problem: Different approaches and code \nArticle Link: https://www.geeksforgeeks.org/largest-sum-contiguous-subarray/\nPractice Link: https://www.geeksforgeeks.org/problems/kadanes-algorithm-1587115620/1\n2. Given a 2-D char array, with random alphabets, find the word “INTUIT”, s/t “N” lies in the neighborhood of I, T lies in the neighborhood of N, and so on. Neighborhood meaning any of the eight squares around the middle square. Approach and code using recursion. \n3. Linked List: Pairwise reverse the linked List, eg : 1->2->3->4->NULL to 2->1->4->3->NULL. Code with proper syntax. Dry Run \nArticle Link: https://www.geeksforgeeks.org/pairwise-swap-elements-of-a-given-linked-list/\nPractice Link: https://www.geeksforgeeks.org/problems/pairwise-swap-elements-of-a-linked-list-by-swapping-data/1\nExample Output-based Question. \nint d;\nchar * p1 = malloc(100);\nprintf(“%s %d %s”, p1, d, p2, p3, p4);\n\nAnd so on… \n\n\nTechnical Round-2 \n1. Introduce yourself. \n2. General discussions on the languages: C, C++, Java \n3. Questions related to Pointers: Output based questions – \n4. Memory Leak and a program where this occurs. \n5. General OS concepts \n6. Given 2 processes P1, and P2. And P1 allocates a pointer ptr1 with an address FH1231, discuss if P2 can access this. \n\nTechnical Round-3 \n1. Given 2 strings A and B, determine if B is a rotation of A. Code and logic.\nArticle Link: https://www.geeksforgeeks.org/a-program-to-check-if-strings-are-rotations-of-each-other/\nPractice Link: https://www.geeksforgeeks.org/problems/check-if-strings-are-rotations-of-each-other-or-not-1587115620/1\n2. Given n consecutive numbers starting from 1, determine the one missing number. Different approaches. \nArticle Link: https://www.geeksforgeeks.org/find-the-missing-number/\nPractice Link: https://www.geeksforgeeks.org/problems/missing-number-in-array1416/1\n3. OOPS concepts eg: Comparison of objects, Everything about Inheritance, Static and Dynamic Binding. \n\n\n\n \n\n\n \n\n \n\n\nAll Practice Problems for Intuit ! \n\n\n Related Practice ProblemsMaximum Sub ArrayPairwise swap elements of a linked list by swapping dataMissing number in array\n\n \nComment\nMore info\nCampus Training Program\nNext Article\nIntuit Interview Experience | Set 12"
+      }
+    ]
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/earliest-common-slot/1?page=1&company=Microsoft&sortBy=latest",
+      "scraped_at": "2025-06-11T12:13:28.671144",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Earliest Common Slot",
+      "difficulty": "Medium",
+      "accuracy": "34.84%",
+      "submissions": "624+",
+      "avg_time": "Not available"
+    },
+    "content": {
+      "problem": "You are given two lists of availability time slots, slots1 and slots2, for two people. Each slot is represented as [start, end], and it is gurranted that within each list, no two slots overlap (i.e., for any two intervals, either start1>end2 or start2>end1). Given a metting duration d, return the earliest common time slot of length of least d. If no such slot exits, return an empty array.\nExamples:\nInput: slots1 = [[10,50], [60,120], [140,210]], slots2 = [[0,15], [60,70]], d = 8\nOutput: [60,68]\nExplanation: The only overlap is [60,70] (10 minutes), which is enough for an 8-minute meeting, so answer is [60,68]\nInput: slots1 = [[10,50], [60,120], [140,210]], slots2 = [[0,15], [60,70]], d = 12\nOutput: []\nExplanation: The only overlap is [60, 70] (10 minutes), but 12 minutes are needed, so no valid slot exists.\nConstraints:\n1 ≤ slots1.size(), slots2.size()  ≤ 105\n-109 ≤ slots1[i], slots2[i] ≤ 109\n1 ≤ d ≤ 106"
+    },
+    "complexity": {
+      "time_complexity": "O(max(n log(n), m log(m)))",
+      "space_complexity": "O(1)"
+    },
+    "tags": {
+      "company_tags": [
+        "Amazon",
+        "Microsoft",
+        "PayPal",
+        "Google",
+        "Uber"
+      ],
+      "topic_tags": [
+        "Sorting",
+        "two-pointer-algorithm",
+        "Arrays",
+        "Data Structures",
+        "Algorithms"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/interval-list-intersections/1?page=1&company=Microsoft&sortBy=latest",
+      "scraped_at": "2025-06-11T12:13:39.870481",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Interval List Intersections",
+      "difficulty": "Medium",
+      "accuracy": "44.47%",
+      "submissions": "517+",
+      "avg_time": "Not available"
+    },
+    "content": {
+      "problem": "Given two 2-D arrays which represent intervals. Each 2-D array represents a list of intervals. Each list of intervals is disjoint and sorted in increasing order. Find the intersection or set of ranges that are common to both the lists.\nNote: Disjoint means no element is common in a list\nExamples:\nInput: a[][] = [[0, 4], [5, 10], [13, 20], [24, 25]], b[][] = [[1, 5], [8, 12], [15, 24], [25, 26]]\nOutput: [[1, 4], [5, 5], [8, 10], [15, 20], [24, 24], [25, 25]]\nExplanation: [1, 4] lies completely within the range [0, 4] and [1, 5]. Hence, [1, 4] is the desired intersection. Similarly, [24, 24] lies completely within two intervals [24, 25] and [15, 24]\nInput: a[][] = [[0, 2], [5, 10], [12, 22], [24, 25]], b[][] = [[1, 4], [9, 12], [15, 24], [25, 26]]\nOutput: [[1, 2], [9, 10], [12, 12], [15, 22], [24, 24], [25, 25]]\nExplanation: [1, 2] lies completely within the range [0, 2] and [1, 4]. Hence, [1, 2] is the desired intersection. Similarly, [12, 12] lies completely within two intervals [12, 22] and [9, 12]\nConstraints\n1 ≤ a.size(), b.size() ≤ 105\n-109 ≤ a[i], b[i] ≤ 109"
+    },
+    "complexity": {
+      "time_complexity": "O(n + m)",
+      "space_complexity": "O(1)"
+    },
+    "tags": {
+      "company_tags": [
+        "Bloomberg",
+        "Amazon",
+        "Microsoft",
+        "Google",
+        "Uber"
+      ],
+      "topic_tags": [
+        "two-pointer-algorithm",
+        "Arrays",
+        "Data Structures",
+        "Algorithms"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/minimum-spanning-tree-kruskals-algorithm/1?page=1&company=Microsoft&sortBy=latest",
+      "scraped_at": "2025-06-11T12:13:50.931755",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Minimum Spanning Tree - Kruskal's Algorithm",
+      "difficulty": "Medium",
+      "accuracy": "62.8%",
+      "submissions": "4K+",
+      "avg_time": "Not available"
+    },
+    "content": {
+      "problem": "Given a weighted, undirected, and connected graph with V vertices and E edges, the task is to find the sum of the weights of the edges in the Minimum Spanning Tree (MST) of the graph using Kruskal's Algorithm. The graph is represented as an edge list edges[][], where edges[i] = [u, v, w] denotes an undirected edge between u and v with weight w.\nInput: V = 3, E = 3, edges[][] = [[0, 1, 5], [1, 2, 3], [0, 2, 1]]\nOutput: 4\nExplanation:\nThe Spanning Tree resulting in a weight of 4 is shown above.\nInput: V = 2, E = 1, edges = [[0, 1, 5]]\nOutput: 5\nExplanation: Only one Spanning Tree is possible which has a weight of 5.\nConstraints:\n2 ≤ V ≤ 1000\nV-1 ≤ E ≤ (V*(V-1))/2\n1 ≤ w ≤ 1000\nThe graph is connected and doesn't contain self-loops & multiple edges."
+    },
+    "complexity": {
+      "time_complexity": "O(E * log(E))",
+      "space_complexity": "O(V + E)"
+    },
+    "tags": {
+      "company_tags": [
+        "Cisco",
+        "Amazon",
+        "Microsoft",
+        "Samsung",
+        "Flipkart"
+      ],
+      "topic_tags": [
+        "Greedy",
+        "Disjoint Set",
+        "Graph",
+        "Data Structures",
+        "Algorithms"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/total-hamming-distance/1?page=1&company=Microsoft&sortBy=latest",
+      "scraped_at": "2025-06-11T12:14:01.840134",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Total Hamming Distance",
+      "difficulty": "Medium",
+      "accuracy": "56.04%",
+      "submissions": "637+",
+      "avg_time": "Not available"
+    },
+    "content": {
+      "problem": "Given an integer array arr[], return the sum of Hamming distances between all the pairs of the integers in arr.\nNote: The answer is guaranteed to fit within a 32-bit integer.\nExamples:\nInput: arr[] = [1, 14]\nOutput: 4\nExplanation: Binary representations of 1 is 0001, 14 is 1110. The answer will be:\nHammingDistance(1, 14) = 4.\nInput: arr[] = [4, 14, 4, 14]\nOutput: 8\nExplanation: Binary representations of 4 is 0100, 14 is 1110. The answer will be:\nHammingDistance(4, 14) + HammingDistance(4, 4) + HammingDistance(4, 14) + HammingDistance(14, 4) + HammingDistance(14, 14) + HammingDistance(4, 14) = 2 + 0 + 2 + 2 + 0 + 2 = 8.\nConstraints:\n2 ≤ arr.size() ≤ 104\n1 ≤ arr[i] ≤ 109"
+    },
+    "complexity": {
+      "time_complexity": "O(n)",
+      "space_complexity": "O(1)"
+    },
+    "tags": {
+      "company_tags": [
+        "Microsoft"
+      ],
+      "topic_tags": [
+        "Bit Magic",
+        "Data Structures",
+        "Algorithms",
+        "Arrays"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/median-of-2-sorted-arrays-of-same-size/1?page=1&company=Microsoft&sortBy=latest",
+      "scraped_at": "2025-06-11T12:14:12.715527",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Median of 2 Sorted Arrays of Same Size",
+      "difficulty": "Hard",
+      "accuracy": "53.15%",
+      "submissions": "3K+",
+      "avg_time": "35m"
+    },
+    "content": {
+      "problem": "Given two sorted arrays a[] and b[] of equal size, find and return the median of the combined array after merging them into a single sorted array.\nExamples:\nInput: a[] = [-5, 3, 6, 12, 15], b[] = [-12, -10, -6, -3, 4]\nOutput: 0\nExplanation: The merged array is [-12, -10, -6, -5, -3, 3, 4, 6, 12, 15]. So the median of the merged array is (-3 + 3) / 2 = 0.\nInput: a[] = [2, 3, 5, 7], b[] = [10, 12, 14, 16]\nOutput: 8.5\nExplanation: The merged array is [2, 3, 5, 7, 10, 12, 14, 16]. So the median of the merged array is (7 + 10) / 2 = 8.5.\nInput: a[] = [-5], b[] = [-6]\nOutput: -5.5\nExplanation: The merged array is [-6, -5]. So the median of the merged array is (-6 + -5) / 2 = -5.5.\nConstraints:\n1 ≤ a.size(), b.size() ≤ 106\n-106 ≤ a[i], b[i] ≤ 106"
+    },
+    "complexity": {
+      "time_complexity": "O(log n)",
+      "space_complexity": "O(1)"
+    },
+    "tags": {
+      "company_tags": [
+        "Amazon",
+        "Microsoft",
+        "Samsung",
+        "Google"
+      ],
+      "topic_tags": [
+        "Binary Search",
+        "Arrays"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/merge-k-sorted-arrays--151335/1?page=1&company=Microsoft&sortBy=latest",
+      "scraped_at": "2025-06-11T12:14:23.639792",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Merge k Sorted Arrays",
+      "difficulty": "Medium",
+      "accuracy": "82.8%",
+      "submissions": "377+",
+      "avg_time": "Not available"
+    },
+    "content": {
+      "problem": "Given k sorted arrays arranged in the form of a matrix arr[] of size k * k. The task is to merge them into one sorted array. Return the merged sorted array.\nExamples :\nInput: k = 3, arr[][] = [[1, 2, 3}, [4, 5, 6], [7, 8, 9]]\nOutput: [1, 2, 3, 4, 5, 6, 7, 8, 9]\nExplanation: arr[][] has 3 sorted arrays of size 3, arr[][] = [[1, 2, 3],[4, 5, 6],[7, 8, 9]]. The merged list will be [1, 2, 3, 4, 5, 6, 7, 8, 9].\nInput: k = 4, arr[][]= [[1, 2, 3, 4], [2, 2, 3, 4], [5, 5, 6, 6], [7, 8, 9, 9]]\nOutput: [1, 2, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 8, 9, 9]\nExplanation: arr[][] has 4 sorted arrays of size 4, arr[][] = [[1, 2, 2, 2], [3, 3, 4, 4], [5, 5, 6, 6], [7, 8, 9, 9 ]]. The merged list will be [1, 2, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 8, 9, 9].\nConstraints:\n1 <= k <= 100"
+    },
+    "complexity": {
+      "time_complexity": "O(k^2*log(k))",
+      "space_complexity": "O(k^2)"
+    },
+    "tags": {
+      "company_tags": [
+        "VMWare",
+        "Flipkart",
+        "Amazon",
+        "Microsoft",
+        "Citrix"
+      ],
+      "topic_tags": [
+        "Arrays",
+        "Sorting",
+        "Heap",
+        "Data Structures",
+        "Algorithms"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/count-possible-triangles-1587115620--094125/1?page=1&company=Microsoft&sortBy=latest",
+      "scraped_at": "2025-06-11T12:14:55.738082",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Count the number of possible triangles",
+      "difficulty": "Medium",
+      "accuracy": "57.41%",
+      "submissions": "216+",
+      "avg_time": "Not available"
+    },
+    "content": {
+      "problem": "Given an unsorted integer array arr[]. Find the number of triangles that can be formed with three different array elements as lengths of three sides of triangles.\nA triangle with three given sides is only possible if sum of any two sides is always greater than the third side.\nExample 1:\nInput: arr[] = [3, 5, 4]\nOutput: 1\nExplanation: A triangle is possible with all the elements 5, 3 and 4 (5+3>4, 5+4>3, 3+4>5)\nInput: arr[] = [6, 4, 9, 7, 8]\nOutput: 10\nExplanation: There are 10 triangles possible with the given elements like (6,4,9), (6,7,8),...\nConstraints:\n3 <= arr.size() <= 103\n1 <= arr[i] <= 103"
+    },
+    "complexity": {
+      "time_complexity": "O(n^2)",
+      "space_complexity": "O(1)"
+    },
+    "tags": {
+      "company_tags": [
+        "Amazon",
+        "Microsoft"
+      ],
+      "topic_tags": [
+        "Arrays",
+        "Sorting",
+        "Data Structures",
+        "Algorithms"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/queue-using-two-stacks--115418/1?page=1&company=Microsoft&sortBy=latest",
+      "scraped_at": "2025-06-11T12:15:06.548968",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Queue using two Stacks",
+      "difficulty": "Easy",
+      "accuracy": "68.68%",
+      "submissions": "670+",
+      "avg_time": "Not available"
+    },
+    "content": {
+      "problem": "Implement a Queue using 2 stacks s1 and s2.\nA Query q is of 2 Types\n(i) 1 x (a query of this type means  pushing 'x' into the queue)\n(ii) 2   (a query of this type means to pop an element from the queue and print the popped element)\nNote: If there is no element return -1 as the answer while popping.\nExamples:\nInput: queries = [[1, 2],[1, 3],[2],[1, 4],[2]]\nOutput: 2 3\nExplanation:\n1 2 the queue will be {2}\n1 3 the queue will be {2 3}\n2   poped element will be 2 the queue will be {3}\n1 4 the queue will be {3 4}\n2   poped element will be 3.\nInput: queries = [[1, 2],[2],[2],[1, 4]]\nOutput: 2 -1\nExplanation:\n1 2 the queue will be {2}\n2   poped element will be 2 and\nthen the queue will be empty\n2   the queue is empty and hence -1\n1 4 the queue will be {4}.\nConstraints:\n1 <=queries.size() <= 100\n1 <= x <= 100"
+    },
+    "complexity": {
+      "time_complexity": "O(n)",
+      "space_complexity": "O(n)"
+    },
+    "tags": {
+      "company_tags": [
+        "Flipkart",
+        "Morgan Stanley",
+        "Accolite",
+        "Amazon",
+        "Microsoft",
+        "D-E-Shaw",
+        "Hike",
+        "MakeMyTrip",
+        "Oracle",
+        "Walmart",
+        "Goldman Sachs",
+        "MAQ Software",
+        "Adobe",
+        "InfoEdge",
+        "InMobi"
+      ],
+      "topic_tags": [
+        "Stack",
+        "Queue",
+        "STL",
+        "Data Structures"
+      ]
+    },
+    "interview_experiences": [
+      {
+        "title": "Maq Software Interview Experience Set 10 On Campus",
+        "url": "https://www.geeksforgeeks.org/maq-software-interview-experience-set-10-on-campus/",
+        "content_summary": "1. Written Round : 1) 30 Aptitude questions(30 min). 2) 2-Coding questions(30 min). 2-a) Write an algorithm for dutch national flag problem 2-b) Write an algorithm for n-queens problem Total 40 people were selected for second round. 2.Technical Round 1 (around 1Hr 15min):- 1) What is web technology. 2) Write some Basic syntax of HTML. 3) Given 2 tables of employee containing employee_id,employee_name and department containing employee_id(foreign key), dept_id find the name of the employee who worked in maximum no. of departments. 4) Discussion about projects which I had written in resume. 5) What is inheritance, overloading and over-riding. 6) Difference between Encapsulation and abstraction. 7) What is indexing in databases. 8) What are clustered and non-clustered indexes. 9) Real life application of Data Structures. 10) Which Data structure used in printer. 11) Which Data structure used for maintaining Dictionary.(Trie) 12) What is the searching and space complexity of your Trie for maintaining Dictionary. 13) 2 simple puzzle. 14) Add 2 numbers a and b without using ?+? operator. 15) find nth Fibonacci number. (Gave O(logn) solution) 3.Technical Round 2 (around 1 Hr):- 1) How many square in (8*8) chess board. 2) Give general formula for square in (n*n) board and prove it. 3) Write code for Sudoku Game Problem and discuss time complexity of the code which was written by me. Discuss many thing about that code he said to optimise the code then i optimise some portion of code then we move on to the next question. 4) puzzle:- 2 jar one contain 4 red and other one 4 blue randomly select any jar maximize the probability of selecting red ball by rearranging the balls. Puzzel#6 http://www.crazyforcode.com/probability-puzzles-interview/ 5) Write code for calculating factorial of big number (Array). 6) Puzzel:-Given a pastry. someone eat it from one side how you divide it into 2 equal parts. 7) Egg droping Puzzel. I give solution of 2 egg 100 floor puzzle but then said to give the generalized formula for it then i solve it using DP. 4. HR+Technical Round(around 1 Hr) :- Q1-Tell me about yourself? Q2-Family background? Q3-Discussion about projects which I had written in resume. Q4-Write code for making Queue using 2 stack. Discuss about time complexity and space complexity and he said optimise the code. Q5-Write code for Water Jug problem (check condition are we able to make any given number in any of the jug or not). Q6-Puzzel:-Given a rectangle and a circle and a point lie on circle and center lie line y=x and 1 point of rectangle lie on origin. circle put into rectangle find the radius of circle. A total of 3 students were offered the job(I was one of them). 2 students were offered the intern. Thank you so much geeksforgeeks team.\nRelated Practice Problems\nThe Nth Fibonnaci\nQueue using two Stacks\nTwo water Jug problem\nAll Practice Problems for MAQ Software !\n\nComment\nMore info\nCampus Training Program\nNext Article\nMAQ Software Interview Experience | Set 10 (On-Campus)"
+      },
+      {
+        "title": "Walmart Lab Interview Experience Set 8 Off Campus 3 Years Experience",
+        "url": "https://www.geeksforgeeks.org/walmart-lab-interview-experience-set-8-off-campus-3-years-experience/",
+        "content_summary": "Round 1 (Coding round): 1) Range [L, R] is given. Need to find what is the maximum repeating digit in prime numbers between L and R (both inclusive). If more number of digits is repeated max times, return whichever digit is maximum Eg: [2, 13] - maximum repeating digit is 1 among {2, 3, 5, 7, 11, 13} [2, 9] - answer 7 2) Given a number \"S\", find out how many number of ways a, b, c, d (all > 1) can exist such that a+b+c+d = S; Round 2: 1) OOPS Concepts 2) Reverse alternate nodes in linked list Eg: 1->2->3->4->5 ahould become 2->1->4->3->5 3) Iterative post order traversal of binary tree 4) Queue implementation using stacks Round 3 (Java): 1) Arraylist, Linkedlist - when to use what 2) Hashmap, Hashtable, concurrent hash map 3) Hashcode, Equals, Hashmap implementation 4) Serializable interface 5) AbstractClass Vs Interface 6) Multi threading, Difference between extends thread, implements runnable 7) Callable interface, Executor framework 8) Collections sorting, comparable interface 9) Best thing I have done so far what I proud of Round 4: 1) Given NxN matrix, (X,Y) position. Find how many ways You can reach from (X,Y) to (N,N). You are allowed to traverse in 2 directions - Right, Down 2) Find loop in linked list. Find starting node of loop 3) Binary tree zigzag traversal 4) Given list of stock prices. You are allowed to buy and sell only once. a) Find the maximum gain you can get b) Find the maximum loss you can get 5) Binary tree is height balanced or not. (Every node in tree should be height balanced) 6) Implement String trim algorithm 7) Write a multi-threaded program - launch 10 threads and exit from main thread after all those threads completed Round 5 (Manager): 1) Given a number in form of array, maximize the number w.r.t allowed number of swaps (can swap only adjacent elements) - maximize(int[] data, int numSwaps) Eg: 1265 is number - if 1 swap allowed - maximum number we can get out of it is 2165 1265 is number - if 3 swaps allowed - maximum number we can get out of it is 6215 2) Questions on my projects 3) So many behavioural questions Round 6 (HR): Why do you want to change? What You are expecting? and some other HR questions.\nAll Practice Problems for Walmart !\nRelated Practice Problems\nCount all possible paths from top left to bottom right\nCheck for Balanced Tree\nStock buy and sell\nLargest number in K swaps\nDetect Loop in linked list\nQueue using two Stacks\nFind the highest occurring digit in prime numbers in a range\nFind the highest occurring digit in prime numbers in a range\n\nComment\nMore info\nCampus Training Program\nNext Article\nWalmart Lab Interview Experience | Set 8 (Off-Campus 3 Years Experience)"
+      },
+      {
+        "title": "Makemytrip Interview Experience Set 9 Off Campus For Sr Android Developer",
+        "url": "https://www.geeksforgeeks.org/makemytrip-interview-experience-set-9-off-campus-for-sr-android-developer/",
+        "content_summary": "First round (Written) : 1. 4 Android questions: a) What's Recyclerview? Describe all components of Recyclerview with all callbacks and the benefits of Recyclerview. b) Difference between thread, async task and service (in tabular format). c) Callbacks invoked during addition of a fragment to back stack and while popping back from back stack. d) Scenario in which only onDestroy is called for an activity without onPause() and onStop() 2. Describe a scenario in which deadlock occurs and a solution to overcome it. 3. Given an array, find the maximum difference between two array elements A[m] and A[n], such that n>m. 4. The relation between group of friends is transitive. So if student A is friends with student B, and B is friends with C, A becomes friends with C. They form a circle of friends. Given a matrix N*N and N students, each matrix entry indicating 'Y' or 'N' if they're friends or if they're not friends. We need to determine the number of circles. Eg - 6 students, A,B,C,D,E,F. A is friends with B, B with C. D is friends with E. F is friends with none. Output : 3 circles. F2F Round 1: Starting with Java basics : 1. Uses of final, string pool concept, serialization, synchronization (how it can be done) 2. How can you implement thread pool executor. 3. Is it possible to declare final variable in abstract class. 4. What is externalization. Android : Lots of basic questions: You need to provide more area for checking/unchecking checkbox than the default area of checkbox. How would you do it. How would you implement zoom in zoom out functionality in Android. How do you implement GCM push notifications. What things would you do in each lifecycle method of activity? What is IllegalStateException in Android? Any scenario when you encounter it and how to solve it? Advantages and disadvantages of using fragment. How would you implement swipe animation in Android. How do you detect whether keyboard is open in an Android app. And some more. But I don't exactly remember. DS: Implement queue using 2 stacks. After this, the interviewer seemed satisfied with my responses. F2F Round 2 : Android design questions: 1. You have a textview(3 lines) and a button below it. On clicking the button textview whole content should show. (Content is very large but due to 3 lines initially its not shown completely). You need to add animation while showing the full text of textview. How would you design this. 2. Some question related to showing images (for adult and child, like in flight booking system, we have 2 buttons for adding and removing adults/child). When there is 1 adult and 1 child, it should show as AC where A and C are icons for adult and child. On adding 1 more adult, it should show as AAC instead of ACA. How would you design such a system. Got stuck in this round, and was rejected.\nAll Practice Problems for MakeMyTrip !\nRelated Practice Problems\nMaximum Difference\n\nComment\nMore info\nCampus Training Program\nNext Article\nMakeMyTrip Interview Experience | Set 9 (Off-Campus for Sr. Android developer))"
+      },
+      {
+        "title": "Adobe Interview Experience Set 48 Campus",
+        "url": "https://www.geeksforgeeks.org/adobe-interview-experience-set-48-campus/",
+        "content_summary": "Coding Round:\nA variation of Knapsack\nEasy string manipulation problem\nA brute-force based string matching problem\nTechnical Round 1:\nFinding the length of a Linked-List with a cycle.\nDifference between a stack and a heap with respect to Virtual Memory\nGiven a cube in 3D space with integer dimensions, print all the lattice points on the surface of the cube.\nTechnical Round 2:\nPrint Pyramid of 1's with given height.\nAllocate 2D arrays in C with both dimensions accepted as input.\nCan C programs without main() function exist? (Object Files, Shared and Static Libraries, and how to create them using GCC)\nWhat is a graph traversal?\nPrint all nodes with shortest distance k from a given root node in a graph.\nHow does Breadth-first Search work?\nTechnical Round 3:\nCreate a queue from a 2 stacks\nPrint Fibonacci sequence in order using only recursion and no extra space.\nCreate a function to match a simple regex.\nHR Round:\nWhy want to join Adobe?\nWhat is the team preference?\nWhat are your shortcomings?\nGiven a table of data, where each row determines a metric, convert it to a single column of data where the new data item indicates the metric with reasonable accuracy (Principal Component Analysis)\nHaving a research background, why want to join a software company?\nDetails about college events\nIf you don't like the team you are assigned to, how will you tackle this?\n\nComment\nMore info\nCampus Training Program\nNext Article\nAdobe Interview Experience | Set 48 (On-Campus)"
+      }
+    ]
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/bits-counting/1?page=1&company=Microsoft&sortBy=latest",
+      "scraped_at": "2025-06-11T12:15:28.946052",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Bits Counting",
+      "difficulty": "Medium",
+      "accuracy": "77.98%",
+      "submissions": "1K+",
+      "avg_time": "Not available"
+    },
+    "content": {
+      "problem": "Given an integer n, return an array ans of size n + 1, where each element i (0 ≤ i ≤ n) represents the count of 1s in the binary form of i.\nExamples :\nInput: n = 2\nOutput: [0, 1, 1]\nExplanation:\n0 --> 0\n1 --> 1\n2 --> 10\nInput: n = 5\nOutput: [0, 1, 1, 2, 1, 2]\nExplanation:\n0 --> 0\n1 --> 1\n2 --> 10\n3 --> 11\n4 --> 100\n5 --> 101\nConstraints:\n0 ≤ n ≤ 105"
+    },
+    "complexity": {
+      "time_complexity": "O(n)",
+      "space_complexity": "O(n)"
+    },
+    "tags": {
+      "company_tags": [
+        "Bloomberg",
+        "Facebook",
+        "Adobe",
+        "Google",
+        "Amazon",
+        "Microsoft",
+        "Apple",
+        "Yahoo",
+        "Nvidia",
+        "Uber"
+      ],
+      "topic_tags": [
+        "Bit Magic",
+        "Dynamic Programming",
+        "Arrays"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/root-to-leaf-paths-sum/1?page=1&company=Microsoft&sortBy=latest",
+      "scraped_at": "2025-06-11T12:15:39.783544",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Root to leaf paths sum",
+      "difficulty": "Medium",
+      "accuracy": "58.4%",
+      "submissions": "49K+",
+      "avg_time": "Not available"
+    },
+    "content": {
+      "problem": "Given a binary tree, where every node value is a number. Find the sum of all the numbers that are formed from root to leaf paths. The formation of the numbers would be like 10*parent + current (see the examples for more clarification).\nExamples:\nInput:\nOutput: 13997\nExplanation : There are 4 leaves, resulting in leaf path of 632, 6357, 6354, 654 sums to 13997.\nInput:\nOutput: 2630\nExplanation: There are 3 leaves, resulting in leaf path of 1240, 1260, 130 sums to 2630.\nInput:\n1\n/\n2\nOutput: 12\nExplanation: There is 1 leaf, resulting in leaf path of 12.\nConstraints:\n1 ≤ number of nodes ≤ 31\n1 ≤ node->data ≤ 100"
+    },
+    "complexity": {
+      "time_complexity": "O(n)",
+      "space_complexity": "O(h)"
+    },
+    "tags": {
+      "company_tags": [
+        "Amazon",
+        "Microsoft",
+        "OYO Rooms",
+        "Google"
+      ],
+      "topic_tags": [
+        "Tree",
+        "Data Structures"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/minimum-depth-of-a-binary-tree/1?page=1&company=Microsoft&sortBy=latest",
+      "scraped_at": "2025-06-11T12:15:50.415872",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Minimum Depth of a Binary Tree",
+      "difficulty": "Easy",
+      "accuracy": "42.09%",
+      "submissions": "77K+",
+      "avg_time": "Not available"
+    },
+    "content": {
+      "problem": "Given a binary tree, find its minimum depth.\nExamples:\nInput: root = [1, 3, 2, 4]\nOutput: 2\nExplanation: Minimum depth is between nodes 1 and 2 since minimum depth is defined as the number of nodes along the shortest path from the root node down to the nearest leaf node.\nInput: root = [10, 20, 30, N, 40, N, 60, N, N, 2]\nOutput: 3\nExplanation: Minimum depth is between nodes 10,20 and 40.\nExpected Time Complexity: O(n)\nExpected Auxiliary Space: O(height of the tree)\nConstraints:\n1 ≤ number of nodes ≤ 105"
+    },
+    "complexity": {
+      "time_complexity": "Not specified",
+      "space_complexity": "Not specified"
+    },
+    "tags": {
+      "company_tags": [
+        "Amazon",
+        "Microsoft",
+        "Facebook"
+      ],
+      "topic_tags": [
+        "Tree",
+        "Data Structures"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/level-order-traversal-line-by-line/1?page=1&company=Microsoft&sortBy=latest",
+      "scraped_at": "2025-06-11T12:16:01.403329",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Level Order Line by Line",
+      "difficulty": "Easy",
+      "accuracy": "53.78%",
+      "submissions": "83K+",
+      "avg_time": "20m"
+    },
+    "content": {
+      "problem": "Given a Binary Tree, your task is to find its level order traversal.\nNote: The driver code prints the levels '$' separated.\nExamples:\nInput: root = [1, 4, N, 4, 2]\n1\n/\n4\n/   \\\n4    2\nOutput:1 $ 4 $ 4 2 $\nExplanation: At first level 1 present then at second level 4 present then at third level 4 2 present.\nInput: root = [10, 20, 30, 40, 60]\n10\n/    \\\n20      30\n/     \\\n40     60\nOutput: 10 $ 20 30 $ 40 60 $\nExplanation: At first level 10 present then at second level 20 30 present then at third level 40 60 present.\nInput: root = [10. 20, 30, 40, 70]\n10\n/    \\\n20      30\n/     \\\n40     70\nOutput: 10 $ 20 30 $ 40 70 $\nExplanation: At first level 10 present then at second level 20 30 present then at third level 40 70 present.\nConstraints:\n1 <= number of nodes <= 1000\n0 <= node->data <= 100"
+    },
+    "complexity": {
+      "time_complexity": "O(n)",
+      "space_complexity": "O(n)"
+    },
+    "tags": {
+      "company_tags": [
+        "Morgan Stanley",
+        "Amazon",
+        "Microsoft",
+        "Snapdeal",
+        "Hike"
+      ],
+      "topic_tags": [
+        "Tree",
+        "Data Structures"
+      ]
+    },
+    "interview_experiences": [
+      {
+        "title": "Hike Interview Experience Set 5",
+        "url": "https://www.geeksforgeeks.org/hike-interview-experience-set-5/",
+        "content_summary": "Round I 1.Implement expiry cache system : every page in cache have id and expiry time (TTL of few seconds). After page expires it behaves as free space and can be used for new pages/replacement. Had a long discussion on everything. Round II very boring round 1. Nodes at given distance in binary tree 2.Check Mirror in N-ary tree 3. Largest Sum Contiguous Subarray Round III very boring round 1.Level order traversal Line by Line 2. ZigZag traversal of tree 3. Search in a Rotated Array 4.Value equal to index value finally something new.. 5. given a sorted array say A : (-4,-2,0,1,4,6,8,10). There is a function f(x) = a*x^2 + b*x + c , apply this function on A where x is any ith element from array A and a,b,c belongs to set of real numbers. Will f(A) will be sorted, if not then sort it in O(n). It is very easy if you still remember concepts of quadratic equation from maths. I did not remember so he helped me. Logic is that any quadratic equation is represented by parabola on graph and graph has minimum value at dy/dx = 0,i.e, 2*a*x + b = 0. Both sides of this point graph keeps increasing/decreasing to the infinity depending upon value of a. Calculate value of x = -b/(2*a). find it in sorted array or find its ceiling in log n. starting from this point to both ends, perform merge sort. Round IV 1. implement LRU cache 2. Implement following. There are three type of request : i) www.someurl.com/conn_id=?&timeout=? -: for this conn_id you will wait for timeout sec and after that return reponse, in meantime you can get some more requests of any one of three types ii) www.someurl.com/stat/ -: return all id waiting to timeout along with their remaining timeout interval ii) www.someurl.com/kill/conn_id=? -: end wait timeout of this conn_id and return response for this conn_id I gave a solution with heap. He asked how to handle case when a request is waiting for timout and new request came in meantime. How to do server side scalability in this case. 3. He asked about current work and technologies I am working upon. I said Java, Spring MVC for backend and html,css, javascript for front end and suddenly he asked what is difference between Java and javascript. Could not figure out at that time. Javascript is also an object oriented language an can be used at server side like node js. Still there are lot of differences.\n  Related Practice Problems\nTwo Mirror Trees\nLevel order traversal Line by Line\nNodes at given distance in binary tree\nLRU Cache\nSearch in a Rotated Array\nLevel order traversal in spiral form\nKadane's Algorithm\nAll Practice Problems for Hike !\n\nComment\nMore info\nCampus Training Program\nNext Article\nHike Interview Experience | Set 5"
+      }
+    ]
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/reverse-an-array/1?page=1&company=Microsoft&sortBy=latest",
+      "scraped_at": "2025-06-11T12:16:14.114163",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Reverse an Array",
+      "difficulty": "Easy",
+      "accuracy": "55.32%",
+      "submissions": "189K+",
+      "avg_time": "5m"
+    },
+    "content": {
+      "problem": "You are given an array of integers arr[]. Your task is to reverse the given array.\nNote: Modify the array in place.\nExamples:\nInput: arr = [1, 4, 3, 2, 6, 5]\nOutput: [5, 6, 2, 3, 4, 1]\nExplanation: The elements of the array are 1 4 3 2 6 5. After reversing the array, the first element goes to the last position, the second element goes to the second last position and so on. Hence, the answer is 5 6 2 3 4 1.\nInput: arr = [4, 5, 2]\nOutput: [2, 5, 4]\nExplanation: The elements of the array are 4 5 2. The reversed array will be 2 5 4.\nInput: arr = [1]\nOutput: [1]\nExplanation: The array has only single element, hence the reversed array is same as the original.\nConstraints:\n1<=arr.size()<=105\n0<=arr[i]<=105"
+    },
+    "complexity": {
+      "time_complexity": "O(n)",
+      "space_complexity": "O(1)"
+    },
+    "tags": {
+      "company_tags": [
+        "Bloomberg",
+        "Facebook",
+        "TCS",
+        "Adobe",
+        "Google",
+        "Infosys",
+        "Capgemini",
+        "Morgan Stanley",
+        "Amazon",
+        "Microsoft",
+        "Apple",
+        "Yahoo",
+        "PayPal",
+        "Uber"
+      ],
+      "topic_tags": [
+        "Arrays",
+        "Data Structures"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/buy-stock-2/1?page=1&company=Microsoft&sortBy=latest",
+      "scraped_at": "2025-06-11T12:16:24.945165",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Stock Buy and Sell – Max one Transaction Allowed",
+      "difficulty": "Easy",
+      "accuracy": "49.33%",
+      "submissions": "92K+",
+      "avg_time": "10m"
+    },
+    "content": {
+      "problem": "Given an array prices[] of length n, representing the prices of the stocks on different days. The task is to find the maximum profit possible by buying and selling the stocks on different days when at most one transaction is allowed. Here one transaction means 1 buy + 1 Sell. If it is not possible to make a profit then return 0.\nNote: Stock must be bought before being sold.\nExamples:\nInput: prices[] = [7, 10, 1, 3, 6, 9, 2]\nOutput: 8\nExplanation: You can buy the stock on day 2 at price = 1 and sell it on day 5 at price = 9. Hence, the profit is 8.\nInput: prices[] = [7, 6, 4, 3, 1]\nOutput: 0\nExplanation: Here the prices are in decreasing order, hence if we buy any day then we cannot sell it at a greater price. Hence, the answer is 0.\nInput: prices[] = [1, 3, 6, 9, 11]\nOutput: 10\nExplanation: Since the array is sorted in increasing order, we can make maximum profit by buying at price[0] and selling at price[n-1].\nConstraint:\n1 <= prices.size()<= 105\n0 <= prices[i] <=104"
+    },
+    "complexity": {
+      "time_complexity": "O(n)",
+      "space_complexity": "O(1)"
+    },
+    "tags": {
+      "company_tags": [
+        "Bloomberg",
+        "Facebook",
+        "Intel",
+        "Infosys",
+        "Zoho",
+        "Morgan Stanley",
+        "Amazon",
+        "Microsoft",
+        "Samsung",
+        "Yahoo",
+        "PayPal",
+        "Nvidia",
+        "Oracle",
+        "Visa",
+        "Walmart",
+        "Goldman Sachs",
+        "TCS",
+        "Adobe",
+        "Google",
+        "IBM",
+        "Accenture",
+        "Apple",
+        "Uber"
+      ],
+      "topic_tags": [
+        "Greedy",
+        "Arrays"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/flattening-a-linked-list--170645/1?page=1&company=Microsoft&sortBy=latest",
+      "scraped_at": "2025-06-11T12:16:36.199018",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Flattening a Linked List",
+      "difficulty": "Medium",
+      "accuracy": "50.24%",
+      "submissions": "22K+",
+      "avg_time": "Not available"
+    },
+    "content": {
+      "problem": "Given a Linked List of size N, where every node represents a sub-linked-list and contains two pointers:\n(i) a next pointer to the next node,\n(ii) a bottom pointer to a linked list where this node is head.\nEach of the sub-linked-list is in sorted order.\nFlatten the Link List such that all the nodes appear in a single level while maintaining the sorted order.\nNote: The flattened list will be printed using the bottom pointer instead of next pointer.\nExample 1:\nInput:\n5 -> 10 -> 19 -> 28\n| | | |\n7 20 22 35\n| | |\n8 50 40\n| |\n30 45\nOutput:  5-> 7-> 8- > 10 -> 19-> 20->\n22-> 28-> 30-> 35-> 40-> 45-> 50.\nExplanation:\nThe resultant linked lists has every\nnode in a single level.\n(Note: | represents the bottom pointer.)\nExample 2:\nInput:\n5 -> 10 -> 19 -> 28\n| |\n7 22\n| |\n8 50\n|\n30\nOutput: 5->7->8->10->19->22->28->30->50\nExplanation:\nThe resultant linked lists has every\nnode in a single level.\n(Note: | represents the bottom pointer.)\nYour Task:\nYou do not need to read input or print anything. Complete the function flatten() that takes the head of the linked list as input parameter and returns the head of flattened link list.\nExpected Time Complexity: O(N*M)\nExpected Auxiliary Space: O(1)\nConstraints:\n0 <= N <= 50\n1 <= Mi <= 20\n1 <= Element of linked list <= 103"
+    },
+    "complexity": {
+      "time_complexity": "Not specified",
+      "space_complexity": "Not specified"
+    },
+    "tags": {
+      "company_tags": [
+        "Paytm",
+        "Flipkart",
+        "Amazon",
+        "Microsoft",
+        "Snapdeal",
+        "24*7 Innovation Labs",
+        "Payu",
+        "Visa",
+        "Goldman Sachs",
+        "Qualcomm",
+        "Drishti-Soft"
+      ],
+      "topic_tags": [
+        "Linked List",
+        "Data Structures"
+      ]
+    },
+    "interview_experiences": [
+      {
+        "title": "Paytm Interview Experience Set 8 Hiring Drive For Backend Engineer",
+        "url": "https://www.geeksforgeeks.org/paytm-interview-experience-set-8-hiring-drive-for-backend-engineer/",
+        "content_summary": "Paytm Hiring Drive for Backend Engineer. The selection process was completed on the same day.\nRound 1 ( Written ): It was a technical written round with 20 questions out of which 2 were coding questions. Rest 18 was objective type mainly C, SQL, and Algo.\nWrite code to create a mirror image of a tree.\nGiven an array of arrival and departure times of guests, find a minimum no of rooms required to accommodate guests at any point of time.\nRound 2 :\nWAP to search a number in a row-wise - column-wise sorted matrix.\nFlatten a linked list.\nDiscussions around Binary Search and Ternary Search.\nDiscussed objective questions of a written round.\nRound 3 :\nHow will you store a series of mobile nos in memory efficiently (less space). e.g mobile nos like 999900001,999900003,999900005,999910006,999910007 ... are there. DS should be designed such that retrieval is not inefficient.\nStream of Access logs is given to you with user id, page id, and date. Design Data structure to find n recent unique visitors and pages they visited.\nThe current company projects discussions.\nI thank GFG a lot for helping me in my preparation, finally, I was selected\nAll Practice Problems for Paytm !\nRelated Practice Problems\nMirror Tree\nSearch in a matrix\n\nComment\nMore info\nCampus Training Program\nNext Article\nPaytm Interview Experience | Set 8 (Hiring Drive for Backend Engineer)"
+      }
+    ]
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/remove-duplicate-element-from-sorted-linked-list/1?page=1&company=Microsoft&sortBy=latest",
+      "scraped_at": "2025-06-11T12:16:50.057849",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Remove Duplicates from a Sorted Linked List",
+      "difficulty": "Easy",
+      "accuracy": "49.37%",
+      "submissions": "313K+",
+      "avg_time": "20m"
+    },
+    "content": {
+      "problem": "Given a singly linked list. The task is to remove duplicates (nodes with duplicate values) from the given list (if it exists).\nNote: Try not to use extra space. The nodes are arranged in a sorted way.\nExamples:\nInput:\nLinkedList: 2->2->4->5\nOutput: 2 -> 4 -> 5\nExplanation: In the given linked list 2 -> 2 -> 4 -> 5, only 2 occurs more than 1 time. So we need to remove it once.\nInput:\nLinkedList: 2->2->2->2->2\nOutput: 2\nExplanation: In the given linked list 2 -> 2 -> 2 -> 2, 2 is the only element and is repeated 5 times. So we need to remove any four 2.\nExpected Time Complexity : O(n)\nExpected Space Complexity: O(1)\nConstraints:\n1 <= Number of nodes, data of nodes <= 105"
+    },
+    "complexity": {
+      "time_complexity": "Not specified",
+      "space_complexity": "Not specified"
+    },
+    "tags": {
+      "company_tags": [
+        "Microsoft",
+        "OYO Rooms",
+        "Oracle",
+        "Visa",
+        "Adobe",
+        "Myntra"
+      ],
+      "topic_tags": [
+        "Linked List",
+        "Data Structures"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/flatten-binary-tree-to-linked-list/1?page=1&company=Microsoft&sortBy=latest",
+      "scraped_at": "2025-06-11T12:17:00.970097",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Flatten binary tree to linked list",
+      "difficulty": "Medium",
+      "accuracy": "75.82%",
+      "submissions": "43K+",
+      "avg_time": "Not available"
+    },
+    "content": {
+      "problem": "Given the root of a binary tree, flatten the tree into a \"Linked list\":\nThe \"linked list\" should use the same Node class where the right child pointer points to the next node in the list and the left child pointer is always null.\nThe \"linked list\" should be in the same order as a pre-order traversal of the binary tree.\nExamples:\nInput:\n1\n/ \\\n2 5\n/ \\ \\\n3 4 6\nOutput : 1 2 3 4 5 6\nExplanation: After flattening, the tree looks like this -\n1\n\\\n2\n\\\n3\n\\\n4\n\\\n5\n\\\n6\nHere, left of each node points to NULL and right contains the next node in preorder.The inorder traversal of this flattened tree is 1 2 3 4 5 6.\nInput :\n1\n/ \\\n3 4\n/\n2\n\\\n5\nOutput :\n1 3 4 2 5\nExplanation : After flattening, the tree looks like this -\n1\n\\\n3\n\\\n4\n\\\n2\n\\\n5\nHere, left of each node points to NULL and right contains the next node in preorder.The inorder traversal of this flattened tree is 1 3 4 2 5.\nExpected Time Complexity: O(n)\nExpected Space Complexity: O(1)\nConstraints :\n1<= number of nodes in binary tree <= 105\n1<= data of nodes <= 105"
+    },
+    "complexity": {
+      "time_complexity": "Not specified",
+      "space_complexity": "Not specified"
+    },
+    "tags": {
+      "company_tags": [
+        "Microsoft"
+      ],
+      "topic_tags": [
+        "Linked List",
+        "Tree",
+        "Data Structures"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/add-two-numbers-represented-by-linked-lists/1?page=1&company=Microsoft&sortBy=latest",
+      "scraped_at": "2025-06-11T12:17:11.644215",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Add Number Linked Lists",
+      "difficulty": "Medium",
+      "accuracy": "34.52%",
+      "submissions": "338K+",
+      "avg_time": "30m"
+    },
+    "content": {
+      "problem": "Given the head of two singly linked lists num1 and num2 representing two non-negative integers. The task is to return the head of the linked list representing the sum of these two numbers.\nFor example, num1 represented by the linked list : 1 -> 9 -> 0, similarly num2 represented by the linked list: 2 -> 5. Sum of these two numbers is represented by 2 -> 1 -> 5.\nNote: There can be leading zeros in the input lists, but there should not be any leading zeros in the output list.\nExamples:\nInput: num1 = 4 - > 5, num2 = 3 -> 4 -> 5\nOutput: 3 -> 9 -> 0\nExplanation: Given numbers are 45 and 345. There sum is 390.\nInput: num1 = 0 -> 0 -> 6 -> 3, num2 = 0 -> 7\nOutput: 7 -> 0\nExplanation: Given numbers are 63 and 7. There sum is 70.\nConstraints:\n1 <= size of both linked lists <= 106\n0 <= elements of both linked lists <= 9"
+    },
+    "complexity": {
+      "time_complexity": "O(n + m)",
+      "space_complexity": "O(max(n, m))"
+    },
+    "tags": {
+      "company_tags": [
+        "Flipkart",
+        "Morgan Stanley",
+        "Accolite",
+        "Amazon",
+        "Microsoft",
+        "Snapdeal",
+        "MakeMyTrip",
+        "Qualcomm"
+      ],
+      "topic_tags": [
+        "Linked List",
+        "Data Structures"
+      ]
+    },
+    "interview_experiences": [
+      {
+        "title": "Accolite Interview Experience Set 7 On Campus",
+        "url": "https://www.geeksforgeeks.org/accolite-interview-experience-set-7-on-campus/",
+        "content_summary": "Accolite visited our campus for full time Software development. First round: MCQ round consists of 30 questions 30 minutes. Questions on C aptitude, four to five general aptitude, two puzzle based aptitude questions. Around 120 wrote test, 10 were selected for next round. Second round: It took around 1 and half hour two people were there. All rounds were purely technical. Questions are, Tell me about yourself. Implementation of queue using two stacks and some modification on that. Finding pair in a given array such that sum is equal to given value. Then he modified for negative numbers. Check if a given tree is binary search tree or not with full code. Child sum problem on binary tree told to write code also. One puzzle related to coin and two rooms. Third round: Only one question in this round. I have to design a dictionary of words such that if any word is entered then it should give meaning for all anagrams for that word. We discussed for one hour. First I told about using try data structure to make dictionary and generate all anagrams of that word then searching each words. But he is not satisfied. Then I came up with some modification in structure of try data structure still not satisfied. Then I come up with multilevel hashing Technique. He somewhat satisfied. Fourth round: It was final round and only two people were selected for this. Puzzle: There will be 17 buckets and some 2197(don’t remember exact number) apples. You have to put these apples in buckets such that if I ask any number of apples then just give any number of buckets such that apples in those buckets should equal to that value. Hint, arranged as bits arranged in binary representation of numbers. Finding loop in a linked list. He first asked you already know this question I told yes sir. Then he asked will it work if by changing fast pointer and slow pointer with difference of 3, 4, 5 nodes. Addition of two linked lists with full code. Numbers are in reverse order and all border conditions should be considered like, lengths are not equal. First he told to write for positive numbers I wrote using recursion. Then he told to write negative numbers. We both were told to wait outside. After few minutes they told only I am selected. Thanks geeksforgeeks.\nRelated Practice Problems\nSum of two numbers represented as arrays\nAdd two numbers represented by linked lists\nCheck for BST\nCombination Sum - Part 2\nAll Practice Problems for Accolite !\n\nComment\nMore info\nCampus Training Program\nNext Article\nAccolite Interview Experience | Set 7 (On-Campus)"
+      }
+    ]
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/minimum-element-in-a-sorted-and-rotated-array3611/1?page=1&company=Microsoft&sortBy=latest",
+      "scraped_at": "2025-06-11T12:17:46.670344",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Sorted and Rotated Minimum",
+      "difficulty": "Easy",
+      "accuracy": "40.57%",
+      "submissions": "152K+",
+      "avg_time": "Not available"
+    },
+    "content": {
+      "problem": "A sorted array of distinct elements arr[] is rotated at some unknown point, the task is to find the minimum element in it.\nExamples:\nInput: arr[] = [5, 6, 1, 2, 3, 4]\nOutput: 1\nExplanation: 1 is the minimum element in the array.\nInput: arr[] = [3, 1, 2]\nOutput: 1\nExplanation: Here 1 is the minimum element.\nInput: arr[] = [4, 2, 3]\nOutput: 2\nExplanation: Here 2 is the minimum element.\nConstraints:\n1 ≤ arr.size() ≤ 106\n1 ≤ arr[i] ≤ 109"
+    },
+    "complexity": {
+      "time_complexity": "O(log n)",
+      "space_complexity": "O(1)"
+    },
+    "tags": {
+      "company_tags": [
+        "Morgan Stanley",
+        "Amazon",
+        "Microsoft",
+        "Samsung",
+        "Snapdeal",
+        "Adobe",
+        "Times Internet"
+      ],
+      "topic_tags": [
+        "Searching",
+        "Algorithms"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/pairwise-swap-elements-of-a-linked-list-by-swapping-data/1?page=1&company=Microsoft&sortBy=latest",
+      "scraped_at": "2025-06-11T12:17:57.509015",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Pairwise swap elements of a linked list",
+      "difficulty": "Easy",
+      "accuracy": "52.06%",
+      "submissions": "129K+",
+      "avg_time": "20m"
+    },
+    "content": {
+      "problem": "Given a singly linked list. The task is to swap elements in the linked list pairwise. For example, if the input list is 1 2 3 4, the resulting list after swaps will be 2 1 4 3.\nNote: You need to swap the nodes, not only the data. If only data is swapped then the driver code will print -1.\nExamples:\nInput: LinkedList: 1->2->2->4->5->6->7->8\nOutput: 2->1->4->2->6->5->8->7\nExplanation: After swapping each pair considering (1,2), (2, 4), (5, 6).. so on as pairs, we get 2, 1, 4, 2, 6, 5, 8, 7 as a new linked list.\nInput: LinkedList: 1->3->4->7->9->10->1\nOutput: 3->1->7->4->10->9->1\nExplanation: After swapping each pair considering (1,3), (4, 7), (9, 10).. so on as pairs, we get 3, 1, 7, 4, 10, 9, 1 as a new linked list.\nConstraints:\n1 ≤ size of linked list ≤ 106\n1 ≤ elements of linked list ≤ 106"
+    },
+    "complexity": {
+      "time_complexity": "O(n)",
+      "space_complexity": "O(1)"
+    },
+    "tags": {
+      "company_tags": [
+        "Moonfrog Labs",
+        "Amazon",
+        "Microsoft",
+        "Intuit"
+      ],
+      "topic_tags": [
+        "Linked List",
+        "Data Structures"
+      ]
+    },
+    "interview_experiences": [
+      {
+        "title": "Intuit Interview Experience Set 12",
+        "url": "https://www.geeksforgeeks.org/intuit-interview-experience-set-12/",
+        "content_summary": "Technical Round-1 \n1. Maximum Subarray Sum problem: Different approaches and code \nArticle Link: https://www.geeksforgeeks.org/largest-sum-contiguous-subarray/\nPractice Link: https://www.geeksforgeeks.org/problems/kadanes-algorithm-1587115620/1\n2. Given a 2-D char array, with random alphabets, find the word “INTUIT”, s/t “N” lies in the neighborhood of I, T lies in the neighborhood of N, and so on. Neighborhood meaning any of the eight squares around the middle square. Approach and code using recursion. \n3. Linked List: Pairwise reverse the linked List, eg : 1->2->3->4->NULL to 2->1->4->3->NULL. Code with proper syntax. Dry Run \nArticle Link: https://www.geeksforgeeks.org/pairwise-swap-elements-of-a-given-linked-list/\nPractice Link: https://www.geeksforgeeks.org/problems/pairwise-swap-elements-of-a-linked-list-by-swapping-data/1\nExample Output-based Question. \nint d;\nchar * p1 = malloc(100);\nprintf(“%s %d %s”, p1, d, p2, p3, p4);\n\nAnd so on… \n\n\nTechnical Round-2 \n1. Introduce yourself. \n2. General discussions on the languages: C, C++, Java \n3. Questions related to Pointers: Output based questions – \n4. Memory Leak and a program where this occurs. \n5. General OS concepts \n6. Given 2 processes P1, and P2. And P1 allocates a pointer ptr1 with an address FH1231, discuss if P2 can access this. \n\nTechnical Round-3 \n1. Given 2 strings A and B, determine if B is a rotation of A. Code and logic.\nArticle Link: https://www.geeksforgeeks.org/a-program-to-check-if-strings-are-rotations-of-each-other/\nPractice Link: https://www.geeksforgeeks.org/problems/check-if-strings-are-rotations-of-each-other-or-not-1587115620/1\n2. Given n consecutive numbers starting from 1, determine the one missing number. Different approaches. \nArticle Link: https://www.geeksforgeeks.org/find-the-missing-number/\nPractice Link: https://www.geeksforgeeks.org/problems/missing-number-in-array1416/1\n3. OOPS concepts eg: Comparison of objects, Everything about Inheritance, Static and Dynamic Binding. \n\n\n\n \n\n\n \n\n \n\n\nAll Practice Problems for Intuit ! \n\n\n Related Practice ProblemsMaximum Sub ArrayPairwise swap elements of a linked list by swapping dataMissing number in array\n\n \nComment\nMore info\nCampus Training Program\nNext Article\nIntuit Interview Experience | Set 12"
+      }
+    ]
+  }
+]

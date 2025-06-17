@@ -1,0 +1,926 @@
+[
+  {
+    "position": "Software Engineer",
+    "date": "28 May 2025",
+    "experience_outcome": [
+      "Accepted offer",
+      "Positive experience",
+      "Difficult interview"
+    ],
+    "application_process": "I interviewed at Microsoft (New York, NY)",
+    "interview_process": "The interview process was smooth. The recruiters always made sure that the candidates time who are interviewing for them is being valued. The questions that were asked reflected how my day to day work at this organization would look like.",
+    "interview_questions": [],
+    "company": "Microsoft",
+    "processed_timestamp": "2025-06-12T01:30:04.197424"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "29 May 2025",
+    "experience_outcome": [
+      "No offer",
+      "Positive experience",
+      "Difficult interview"
+    ],
+    "application_process": "I interviewed at Microsoft (Los Angeles, CA)",
+    "interview_process": "Challenging!!!! Many non-technical questions, although those were not as difficult as the programming related questions. Those are nothing like I had seen in my prep and practice sadly. Although the interviewers were very nice and I liked my experience overall.",
+    "interview_questions": [
+      "If you were a bird, what animal would you be"
+    ],
+    "company": "Microsoft",
+    "processed_timestamp": "2025-06-12T01:30:35.076553"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "26 May 2025",
+    "experience_outcome": [
+      "No offer",
+      "Positive experience",
+      "Difficult interview"
+    ],
+    "application_process": "I interviewed at Microsoft",
+    "interview_process": "I started with a recruiter call, followed by a technical phone interview where I solved coding problems in real time. After passing that, I was invited to a virtual onsite loop with four interviews covering algorithms, system design, and behavioral questions focused on collaboration and problem-solving.",
+    "interview_questions": [
+      "Given a string, return the length of the longest substring without repeating characters"
+    ],
+    "company": "Microsoft",
+    "processed_timestamp": "2025-06-12T01:31:31.383614"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "26 May 2025",
+    "experience_outcome": [
+      "No offer",
+      "Negative experience",
+      "Difficult interview"
+    ],
+    "application_process": "I interviewed at Microsoft (Bangalore Rural)",
+    "interview_process": "The interview was very bad. They were biased towards circuital only and did not see others knowledge. They took the interview for formality and have a trend to take only mediocre circuital students having a closed box thinking.",
+    "interview_questions": [
+      "A question on linked list and hash maps- implementation of LRU caching"
+    ],
+    "company": "Microsoft",
+    "processed_timestamp": "2025-06-12T01:32:28.096128"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "5 May 2025",
+    "experience_outcome": [
+      "No offer",
+      "Positive experience"
+    ],
+    "application_process": "I interviewed at Microsoft",
+    "interview_process": "The interview process typically begins with an initial screening, often conducted by a recruiter, to assess general fit and go over the candidate’s background and expectations. If that goes well, it’s followed by one or more technical interviews, where candidates may solve problems, review code, or discuss past projects.",
+    "interview_questions": [
+      "he asks do you like coding"
+    ],
+    "company": "Microsoft",
+    "processed_timestamp": "2025-06-12T01:34:11.011900"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "2 May 2025",
+    "experience_outcome": [
+      "Accepted offer",
+      "Positive experience",
+      "Average interview"
+    ],
+    "application_process": "I interviewed at Microsoft (Hyderābād)",
+    "interview_process": "3 rounds with 2 standard DSA question based on graphs and dynamic programming and one behavioural. No system design asked as Im a fresher. The third round was with skip level manager testing my fitment to the company.",
+    "interview_questions": [
+      "Number of connected components in a graph"
+    ],
+    "company": "Microsoft",
+    "processed_timestamp": "2025-06-12T01:34:37.728538"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "28 Apr 2025",
+    "experience_outcome": [
+      "No offer",
+      "Negative experience",
+      "Easy interview"
+    ],
+    "application_process": "I interviewed at Microsoft",
+    "interview_process": "",
+    "interview_questions": [
+      "Quantos anos de experiência você tem com desenvolvimento de software?"
+    ],
+    "company": "Microsoft",
+    "processed_timestamp": "2025-06-12T01:35:32.275889"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "28 Apr 2025",
+    "experience_outcome": [
+      "No offer",
+      "Positive experience",
+      "Difficult interview"
+    ],
+    "application_process": "I interviewed at Microsoft (Cairo, Cairo Governorate)",
+    "interview_process": "The interview consisted of a system design interview and a series of LeetCode medium questions.",
+    "interview_questions": [
+      "they gave me bunch of LeetCode medium questions"
+    ],
+    "company": "Microsoft",
+    "processed_timestamp": "2025-06-12T01:36:29.184646"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "25 Apr 2025",
+    "experience_outcome": [
+      "No offer",
+      "Neutral experience",
+      "Difficult interview"
+    ],
+    "application_process": "Online questionnaire with detailed questions and screening filters to hone selection. This was then followed by an initial interview by phone and this was conducted by HR representative who was courteous and prompt.",
+    "interview_process": "The interview process consisted of an online questionnaire and a phone interview.",
+    "interview_questions": [
+      "Why I wanted to work for Microsoft"
+    ],
+    "company": "Microsoft",
+    "processed_timestamp": "2025-06-12T01:37:26.505245"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "25 Apr 2025",
+    "experience_outcome": [
+      "Accepted offer",
+      "Positive experience",
+      "Difficult interview"
+    ],
+    "application_process": "I interviewed at Microsoft",
+    "interview_process": "Microsoft offers an outstanding environment for software engineers—challenging projects, supportive leadership, excellent work-life balance, and continuous growth opportunities. The culture values innovation, collaboration, and meaningful impact at global scale. Engineers are empowered to take ownership, drive change, and contribute to technologies that shape the future.",
+    "interview_questions": [
+      "Leetcode problems so make you practice. Also, explain your reasoning behind it."
+    ],
+    "company": "Microsoft",
+    "processed_timestamp": "2025-06-12T01:38:22.171950"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "23 Apr 2025",
+    "experience_outcome": [
+      "Declined offer",
+      "Positive experience",
+      "Easy interview"
+    ],
+    "application_process": "I interviewed at Microsoft (Mahwah, NJ)",
+    "interview_process": "Lengthy but enjoyable. Phone screen followed by another phone screen. Then there was a verbal technical interview followed by an online technical interview. Then there were two more interviews with the hiring manager.",
+    "interview_questions": [
+      "Where do you see yourself in five years?"
+    ],
+    "company": "Microsoft",
+    "processed_timestamp": "2025-06-12T01:39:17.574560"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "21 Apr 2025",
+    "experience_outcome": [
+      "No offer",
+      "Positive experience",
+      "Difficult interview"
+    ],
+    "application_process": "I applied through an employee referral.",
+    "interview_process": "There is total of 4 rounds. First resume shortlisting, the coding, then 3 rounds of interview. First of them was complete DSA and cs fundamentals, next was only DSA, then last one was HR round.",
+    "interview_questions": [
+      "A hard question from leetcode"
+    ],
+    "company": "Microsoft",
+    "processed_timestamp": "2025-06-12T01:40:18.521135"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "16 Apr 2025",
+    "experience_outcome": [
+      "No offer",
+      "Positive experience"
+    ],
+    "application_process": "I interviewed at Microsoft",
+    "interview_process": "It was great, did 4 different interviews each focused on a different aspect of the job based on the programming aspect. The interviewers were great and seemed very interested in responses.",
+    "interview_questions": [
+      "To solve a coding problem"
+    ],
+    "company": "Microsoft",
+    "processed_timestamp": "2025-06-12T01:41:09.917553"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "16 Apr 2025",
+    "experience_outcome": [
+      "Accepted offer",
+      "Positive experience"
+    ],
+    "application_process": "I interviewed at Microsoft (Redmond, WA)",
+    "interview_process": "4 rounds of interviews. 1. Technical phone screen : 30 mins, I was asked questions about RTOS, synchronization primitives, explain linked list and array to a 5 year old. 2. Panel interview 1 hour each, 3 rounds. Questions ranging from strings to linked list and emphasis on a lot of behavioral questions",
+    "interview_questions": [
+      "Asked me about compare/test and compare and swap"
+    ],
+    "company": "Microsoft",
+    "processed_timestamp": "2025-06-12T01:42:05.879824"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "14 Apr 2025",
+    "experience_outcome": [
+      "No offer",
+      "Positive experience"
+    ],
+    "application_process": "I interviewed at Microsoft",
+    "interview_process": "Fairly straight forward interview. This was the first time I interviewed with Microsoft so I was star struck by the Microsoft people. They have this air of superiority that just oozes from every word they speak.",
+    "interview_questions": [
+      "They asked a programming question"
+    ],
+    "company": "Microsoft",
+    "processed_timestamp": "2025-06-12T01:43:00.155718"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "14 Apr 2025",
+    "experience_outcome": [
+      "No offer",
+      "Positive experience",
+      "Difficult interview"
+    ],
+    "application_process": "I interviewed at Microsoft",
+    "interview_process": "It was good. Had 5 rounds and able to clear 3 out of 5. They loop round after first round. It was on the hole a good experience to have with microsoft",
+    "interview_questions": [
+      "Dsa has been asked in first round"
+    ],
+    "company": "Microsoft",
+    "processed_timestamp": "2025-06-12T01:43:51.645029"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "8 Apr 2025",
+    "experience_outcome": [
+      "Accepted offer",
+      "Positive experience",
+      "Average interview"
+    ],
+    "application_process": "I interviewed at Microsoft (Hyderābād)",
+    "interview_process": "The interview process consisted of 4 rounds: virtual interview, coding question, medium difficult coding question, and design discussion with hiring manager.",
+    "interview_questions": [
+      "Coding questions, OOPS, system design"
+    ],
+    "company": "Microsoft",
+    "processed_timestamp": "2025-06-12T01:44:49.562859"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "6 Apr 2025",
+    "experience_outcome": [
+      "Accepted offer",
+      "Positive experience",
+      "Difficult interview"
+    ],
+    "application_process": "I interviewed at Microsoft",
+    "interview_process": "Thorough and mostly coding questions. Plus 1 system design question. All of the interviews were 1 hour long with the final interview being behavioral. The core concepts involved .net and azure.",
+    "interview_questions": [
+      "How would you design a national movie theater website?"
+    ],
+    "company": "Microsoft",
+    "processed_timestamp": "2025-06-12T01:45:43.265792"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "4 Apr 2025",
+    "experience_outcome": [
+      "No offer",
+      "Positive experience",
+      "Easy interview"
+    ],
+    "application_process": "I applied through a recruiter. I interviewed at Microsoft (Bucharest, Bucuresti)",
+    "interview_process": "HR Round only, usual questions",
+    "interview_questions": [
+      "Why is Python your preferred language?"
+    ],
+    "company": "Microsoft",
+    "processed_timestamp": "2025-06-12T01:46:39.054292"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "29 May 2025",
+    "experience_outcome": [
+      "No offer",
+      "Positive experience",
+      "Difficult interview"
+    ],
+    "application_process": "I applied online. I interviewed at Microsoft (Redmond, WA) in Apr 2025",
+    "interview_process": "They asked me about my past experience and grinded deeply on that along with that Easy - Medium Leet code questions. First round went pretty good i would say, second round the interviewer just grinded on my resume very deeply, this was the round that i lost my confidence and the last round was very good the interviewer was super chill.",
+    "interview_questions": [
+      "They asked me leet code easy and medium questions, and about my past experience."
+    ],
+    "company": "Microsoft",
+    "processed_timestamp": "2025-06-12T01:47:38.842962"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "27 Mar 2025",
+    "experience_outcome": [
+      "No offer",
+      "Negative experience"
+    ],
+    "application_process": "I interviewed at Microsoft",
+    "interview_process": "passed the codility test and got an email saying that. However, I was never invited for a following interview. The test itself was average level of leetcode and was constructed from 2 questions.",
+    "interview_questions": [
+      "leet code question level medium"
+    ],
+    "company": "Microsoft",
+    "processed_timestamp": "2025-06-12T01:48:33.171643"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "26 Mar 2025",
+    "experience_outcome": [
+      "No offer",
+      "Negative experience"
+    ],
+    "application_process": "I interviewed at Microsoft (Bucharest, Bucuresti)",
+    "interview_process": "General programming challenges that test string manipulation, sorting, loops, arrays",
+    "interview_questions": [
+      "General programming challenges that test string manipulation, sorting, loops, arrays"
+    ],
+    "company": "Microsoft",
+    "processed_timestamp": "2025-06-12T01:49:30.137267"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "26 Mar 2025",
+    "experience_outcome": [
+      "Declined offer",
+      "Negative experience"
+    ],
+    "application_process": "I interviewed at Microsoft (Cairo, Cairo Governorate)",
+    "interview_process": "3 problem solving interview, leetcode medium, revers k linked list, last interview with the manager",
+    "interview_questions": [
+      "revers k linked list in leetcode"
+    ],
+    "company": "Microsoft",
+    "processed_timestamp": "2025-06-12T01:50:25.681090"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "24 Mar 2025",
+    "experience_outcome": [
+      "No offer",
+      "Neutral experience",
+      "Average interview"
+    ],
+    "application_process": "I interviewed at Microsoft",
+    "interview_process": "Sessions went good, interviewers were kind. The AA interview went horrible, interviewer has been late and rude. Maybe this is part of the interview process.. HR have not coordinated a feedback call although I asked for",
+    "interview_questions": [
+      "Multiple behavioral questions. No STAR questions were asked, more of a kind of fit and motivation."
+    ],
+    "company": "Microsoft",
+    "processed_timestamp": "2025-06-12T01:51:19.567357"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "22 Mar 2025",
+    "experience_outcome": [
+      "Declined offer",
+      "Positive experience",
+      "Difficult interview"
+    ],
+    "application_process": "I interviewed at Microsoft (New York, NY)",
+    "interview_process": "The interview process consisted of a single round.",
+    "interview_questions": [
+      "define a moment in your career you failed"
+    ],
+    "company": "Microsoft",
+    "processed_timestamp": "2025-06-12T01:52:13.396280"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "20 Mar 2025",
+    "experience_outcome": [
+      "No offer",
+      "Positive experience"
+    ],
+    "application_process": "I interviewed at Microsoft",
+    "interview_process": "1 Hackerrank + 2 interview rounds (background + coding). Interacting with the interviewer is important. Help can be given as long as you discuss what you think with them. Try to focus on the role and align with you experience. They may ask small little things in your resume, and made you distract.",
+    "interview_questions": [
+      "Walk me through your CV"
+    ],
+    "company": "Microsoft",
+    "processed_timestamp": "2025-06-12T01:53:08.011807"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "17 Mar 2025",
+    "experience_outcome": [
+      "No offer",
+      "Neutral experience",
+      "Difficult interview"
+    ],
+    "application_process": "I interviewed at Microsoft. The initial screening was a 30 minute call with a recruiter. We discussed my resume, covered behavioral questions and evaluated the cultural fit. Then, the technical phone screen was a 60 minute call of two programming problems. They were DSA based, some Leetcode mediums.",
+    "interview_process": "The initial screening was a 30 minute call with a recruiter. We discussed my resume, covered behavioral questions and evaluated the cultural fit. Then, the technical phone screen was a 60 minute call of two programming problems.",
+    "interview_questions": [
+      "Why do you want to work at Microsoft?"
+    ],
+    "company": "Microsoft",
+    "processed_timestamp": "2025-06-12T01:53:59.558742"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "14 Mar 2025",
+    "experience_outcome": [
+      "Declined offer",
+      "Positive experience",
+      "Average interview"
+    ],
+    "application_process": "I interviewed at Microsoft (Cairo, Cairo Governorate)",
+    "interview_process": "First It begins with problem solving challenge on codility with medium problems after that there was a four-rounds interview in a row with different people with different roles, the first two were technical and problem solving and the other were behavioral.",
+    "interview_questions": [
+      "How many barbers you can guess in your city."
+    ],
+    "company": "Microsoft",
+    "processed_timestamp": "2025-06-12T01:54:55.267690"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "13 Mar 2025",
+    "experience_outcome": [
+      "No offer",
+      "Positive experience",
+      "Difficult interview"
+    ],
+    "application_process": "I interviewed at Microsoft",
+    "interview_process": "Some difficult programming questions.  Not easy to answer but people are friendly. Good company culture and nice environment. It went well and really recommend to have an interview experience with the company.",
+    "interview_questions": [
+      "Algorithm question in mid to hard level"
+    ],
+    "company": "Microsoft",
+    "processed_timestamp": "2025-06-12T01:55:48.857601"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "8 Mar 2025",
+    "experience_outcome": [
+      "No offer",
+      "Positive experience",
+      "Difficult interview"
+    ],
+    "application_process": "I interviewed at Microsoft (Hyderābād)",
+    "interview_process": "3 rounds. 1 - Technical DSA based round - 3 medium to hard questions based on graphs, trees and Dyanamic Programming. 2- System Design - OOPs concept with given problem statement were asked. 3 - HR interview - Personality Questions, Behavioural Questions, situation based question.",
+    "interview_questions": [
+      "sort the arrays by using bubble sort"
+    ],
+    "company": "Microsoft",
+    "processed_timestamp": "2025-06-12T01:56:45.676624"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "7 Mar 2025",
+    "experience_outcome": [
+      "No offer",
+      "Positive experience",
+      "Difficult interview"
+    ],
+    "application_process": "I interviewed at Microsoft (Belgrade, Central Serbia)",
+    "interview_process": "First I got 4 algorithm tasks, medium. After that I had 4 interviews: coding sessions, design sessions and behavioural. The overall impression was great. The interviewers were very kind and helpful.",
+    "interview_questions": [
+      "Compare two languages by choise."
+    ],
+    "company": "Microsoft",
+    "processed_timestamp": "2025-06-12T01:57:44.611498"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "5 Mar 2025",
+    "experience_outcome": [
+      "No offer",
+      "Positive experience"
+    ],
+    "application_process": "I interviewed at Microsoft (Cairo, Cairo Governorate)",
+    "interview_process": "The interview process involved a technical assessment conducted on HackerRank, followed by a virtual interview with a senior software engineer from Microsoft Egypt, where we discussed various technical concepts and problem-solving approaches.",
+    "interview_questions": [
+      "Can you explain the differences between SQL and NoSQL databases and when you would choose one over the other?"
+    ],
+    "company": "Microsoft",
+    "processed_timestamp": "2025-06-12T01:58:43.475832"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "27 Mar 2025",
+    "experience_outcome": [
+      "No offer",
+      "Neutral experience",
+      "Easy interview"
+    ],
+    "application_process": "I applied online.",
+    "interview_process": "It was a great experience. They believe in behavioral heavily and thus prepare very well for those. Mostly focus on conflict, tell me one time you were wrong. They also have a habit of diving deep into your resume.",
+    "interview_questions": [
+      "Behavourial, Prep hard on those!"
+    ],
+    "company": "Microsoft",
+    "processed_timestamp": "2025-06-12T01:59:40.025023"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "24 Feb 2025",
+    "experience_outcome": [
+      "No offer",
+      "Neutral experience",
+      "Difficult interview"
+    ],
+    "application_process": "I interviewed at Microsoft (Barcelona)",
+    "interview_process": "The process consisted in the validation of the CV, an online assessment with 'hard' coding problems (available on LeetCode), a technical interview, and a final loop with interviews with the team.",
+    "interview_questions": [
+      "Algoritmo DBFS, Heapq, test de 1:50h, dificil"
+    ],
+    "company": "Microsoft",
+    "processed_timestamp": "2025-06-12T02:00:37.921239"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "19 Feb 2025",
+    "experience_outcome": [
+      "Declined offer",
+      "Negative experience",
+      "Average interview"
+    ],
+    "application_process": "I interviewed at Microsoft",
+    "interview_process": "HR and Technical Interview, the technical interview was really stale and the interviewer started the chat aggressively with no apparent reason.",
+    "interview_questions": [
+      "Low level questions regarding specific technologies"
+    ],
+    "company": "Microsoft",
+    "processed_timestamp": "2025-06-12T02:01:32.286165"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "19 Feb 2025",
+    "experience_outcome": [
+      "No offer",
+      "Negative experience"
+    ],
+    "application_process": "I interviewed at Microsoft (Redmond, WA)",
+    "interview_process": "Average interview",
+    "interview_questions": [
+      "Tell me about a situation when you collaborate with others"
+    ],
+    "company": "Microsoft",
+    "processed_timestamp": "2025-06-12T02:02:26.066319"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "16 Feb 2025",
+    "experience_outcome": [
+      "No offer",
+      "Positive experience"
+    ],
+    "application_process": "I interviewed at Microsoft (Palo Alto, CA)",
+    "interview_process": "Very good process. Ask questions about Sorting algorithms (implementation, time complexity...)",
+    "interview_questions": [
+      "Sorting algorithms (implementation, time complexity...)"
+    ],
+    "company": "Microsoft",
+    "processed_timestamp": "2025-06-12T02:03:23.619173"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "11 Feb 2025",
+    "experience_outcome": [
+      "No offer",
+      "Neutral experience",
+      "Difficult interview"
+    ],
+    "application_process": "I interviewed at Microsoft (Bengaluru)",
+    "interview_process": "The interview process consisted of multiple rounds.",
+    "interview_questions": [
+      "Trees and graphs in dsa"
+    ],
+    "company": "Microsoft",
+    "processed_timestamp": "2025-06-12T02:04:20.233564"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "10 Feb 2025",
+    "experience_outcome": [
+      "No offer",
+      "Positive experience",
+      "Difficult interview"
+    ],
+    "application_process": "I interviewed at Microsoft (Nairobi)",
+    "interview_process": "an initial screening call with a recruiter, followed by a technical phone screen with a hiring manager, and then a series of virtual interview rounds including coding challenges and behavioral questions, focusing on assessing both technical skills and cultural fit for the role",
+    "interview_questions": [
+      "You are given an integer array arr. We split arr into some number of chunks (i.e., partitions), and individually sort each chunk. After concatenating them, the result should equal the sorted array. Return the largest number of chunks we can make to sort the array."
+    ],
+    "company": "Microsoft",
+    "processed_timestamp": "2025-06-12T02:05:18.840507"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "9 Feb 2025",
+    "experience_outcome": [
+      "Accepted offer",
+      "Positive experience",
+      "Average interview"
+    ],
+    "application_process": "I applied online.",
+    "interview_process": "1 OA with 2 problems to final round with 3 interview loops. Final round was pretty straightforward - a simple coding question + more behaviorals, a standard graph leetcode style problem, and a system design question",
+    "interview_questions": [
+      "standard BFS question involving a chessboard"
+    ],
+    "company": "Microsoft",
+    "processed_timestamp": "2025-06-12T02:05:20.923173"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "8 Feb 2025",
+    "experience_outcome": [
+      "No offer",
+      "Positive experience",
+      "Difficult interview"
+    ],
+    "application_process": "I interviewed at Microsoft (Bucharest, Bucuresti)",
+    "interview_process": "Very focused on Data Structures and Algorithms plus system design and object oriented programming.",
+    "interview_questions": [
+      "Binary tree get minimum node"
+    ],
+    "company": "Microsoft",
+    "processed_timestamp": "2025-06-12T02:06:14.308179"
+  },
+  {
+    "position": "Software Developer",
+    "date": "1 Feb 2025",
+    "experience_outcome": [
+      "No offer",
+      "Positive experience",
+      "Difficult interview"
+    ],
+    "application_process": "I interviewed at Microsoft",
+    "interview_process": "The interview process was well-structured and efficient, with clear communication at each stage.",
+    "interview_questions": [
+      "relevant experience on your exp"
+    ],
+    "company": "Microsoft",
+    "processed_timestamp": "2025-06-12T02:07:16.335548"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "3 Feb 2025",
+    "experience_outcome": [
+      "Declined offer",
+      "Positive experience",
+      "Average interview"
+    ],
+    "application_process": "I interviewed at Microsoft",
+    "interview_process": "An online coding test assesses programming skills through timed challenges on algorithms, data structures, and problem-solving.",
+    "interview_questions": [
+      "Find an efficient algorithm for this problem"
+    ],
+    "company": "Microsoft",
+    "processed_timestamp": "2025-06-12T02:07:18.433563"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "28 Jan 2025",
+    "experience_outcome": [
+      "Positive experience",
+      "Accepted offer"
+    ],
+    "application_process": "I interviewed at Microsoft (Bengaluru)",
+    "interview_process": "Overall it was more of a one to one communication between me and the interviewer,he was testing my tehnical knowledge,asked about my projects,and real life examples to back what I say.",
+    "interview_questions": [
+      "DSA-Longest Common Substring without repeating characters."
+    ],
+    "company": "Microsoft",
+    "processed_timestamp": "2025-06-12T02:08:08.523015"
+  },
+  {
+    "position": "Software Developer",
+    "date": "5 Feb 2025",
+    "experience_outcome": [
+      "No offer",
+      "Positive experience"
+    ],
+    "application_process": "I applied online. The process took 1+ week.I interviewed at Microsoft (Pune) in Feb 2025",
+    "interview_process": "The job interviews where a person has to go through in order to get a job he wants. Job interviews are usually face-to-face interviews and it includes paperwork.",
+    "interview_questions": [],
+    "company": "Microsoft",
+    "processed_timestamp": "2025-06-12T02:08:10.883592"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "19 Mar 2025",
+    "experience_outcome": [
+      "Accepted offer",
+      "Positive experience",
+      "Average interview"
+    ],
+    "application_process": "I applied through a recruiter. The process took 3 weeks. I interviewed at Microsoft in Feb 2025",
+    "interview_process": "The whole process takes about 20 days. I am at work right now",
+    "interview_questions": [
+      "Past experience for a difficult time"
+    ],
+    "company": "Microsoft",
+    "processed_timestamp": "2025-06-12T02:08:47.173410"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "22 Jan 2025",
+    "experience_outcome": [
+      "Declined offer",
+      "Neutral experience"
+    ],
+    "application_process": "I interviewed at Microsoft (Bellevue, WA)",
+    "interview_process": "First was online tech screening with recruiter. then online assessmnet then onsite interview that consisted of 4-5 back-to-back sessions held on the same day.",
+    "interview_questions": [
+      "In detail descibe a project that you started on your own"
+    ],
+    "company": "Microsoft",
+    "processed_timestamp": "2025-06-12T02:09:41.747615"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "20 Jan 2025",
+    "experience_outcome": [
+      "No offer",
+      "Neutral experience",
+      "Difficult interview"
+    ],
+    "application_process": "I interviewed at Microsoft (Sydney)",
+    "interview_process": "There were several rounds of both technical and behavioural questions with different members of the team as well as management. Each interview consisted of at least 1 technical question focussing on different computer science topics.",
+    "interview_questions": [
+      "Create a hashing function from scratch."
+    ],
+    "company": "Microsoft",
+    "processed_timestamp": "2025-06-12T02:10:36.565153"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "16 Jan 2025",
+    "experience_outcome": [
+      "No offer",
+      "Neutral experience",
+      "Difficult interview"
+    ],
+    "application_process": "I interviewed at Microsoft",
+    "interview_process": "Phone screen, then solved 2 Leetcode questions of medium difficulty in 1 hour",
+    "interview_questions": [
+      "2 Leetcode questions were asked"
+    ],
+    "company": "Microsoft",
+    "processed_timestamp": "2025-06-12T02:11:30.813994"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "10 Jan 2025",
+    "experience_outcome": [
+      "No offer",
+      "Neutral experience",
+      "Average interview"
+    ],
+    "application_process": "I interviewed at Microsoft",
+    "interview_process": "focus on easy level leetcode(they made by themselves so constrains not clear, need to communicate) and OOP (design a movie seat booking system, sudo code is enough), only a few quick behavior questions.",
+    "interview_questions": [
+      "What was your biggest failure"
+    ],
+    "company": "Microsoft",
+    "processed_timestamp": "2025-06-12T02:12:22.089529"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "9 Jan 2025",
+    "experience_outcome": [
+      "Declined offer",
+      "Positive experience",
+      "Average interview"
+    ],
+    "application_process": "I interviewed at Microsoft (Hyderābād)",
+    "interview_process": "Proper Process and timely interviews. Interview was average difficult and related questions were asked. Easy process.",
+    "interview_questions": [
+      "Complete technical on data structures."
+    ],
+    "company": "Microsoft",
+    "processed_timestamp": "2025-06-12T02:13:16.686085"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "5 Jan 2025",
+    "experience_outcome": [
+      "No offer",
+      "Negative experience",
+      "Difficult interview"
+    ],
+    "application_process": "I applied online. I interviewed at Microsoft",
+    "interview_process": "The process was for their internship program. Compared to my friends who also went through the process, mine was completely different. They had a zoom with other interviewees while mine was direct 2 technical interviews",
+    "interview_questions": [
+      "serialize and deserialize a binary tree, create a file system and how would you determine how to find the file path"
+    ],
+    "company": "Microsoft",
+    "processed_timestamp": "2025-06-12T02:14:10.076973"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "3 Jan 2025",
+    "experience_outcome": [
+      "No offer",
+      "Positive experience"
+    ],
+    "application_process": "I applied online. I interviewed at Microsoft.",
+    "interview_process": "Standard Interview process. Asked an algorithm question and gave me thrity minutes. Question was to find position of robot after given a set of instructions for movement. Before the algorithm question they asked standard cultural questions.",
+    "interview_questions": [
+      "Q: position of robot after given movements"
+    ],
+    "company": "Microsoft",
+    "processed_timestamp": "2025-06-12T02:15:03.345467"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "1 Jan 2025",
+    "experience_outcome": [
+      "No offer",
+      "Neutral experience",
+      "Average interview"
+    ],
+    "application_process": "I applied online. I interviewed at Microsoft",
+    "interview_process": "Three rounds, remote, 45 mins each with 15 mins break. All three rounds was with the US team. Consists of behavioural questions and technical ones. Technical questions includes a graph question, a api design question and a DNS server design question.",
+    "interview_questions": [
+      "How do you design an API call to log the user input (string) and another to retrieve all the same input in the last five minutes."
+    ],
+    "company": "Microsoft",
+    "processed_timestamp": "2025-06-12T02:15:56.964479"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "20 Feb 2025",
+    "experience_outcome": [
+      "Declined offer",
+      "Negative experience",
+      "Average interview"
+    ],
+    "application_process": "I applied online. The process took 5 months.",
+    "interview_process": "Complex and long interview process which takes months. Includes coding challenges, algorithms and OOP, but also system design. Four interviews planned on one day, can be a bit exhausting.",
+    "interview_questions": [
+      "Algorithms for finding a path in a tree + OOP questions about design patterns."
+    ],
+    "company": "Microsoft",
+    "processed_timestamp": "2025-06-12T02:16:52.676705"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "4 Mar 2025",
+    "experience_outcome": [
+      "No offer",
+      "Neutral experience",
+      "Difficult interview"
+    ],
+    "application_process": "I applied online. The process took 5 days. I interviewed at Microsoft (Sibiu) in Jan 2025",
+    "interview_process": "Coding challenge using Codility that consisted of 2 problems with 120 minutes provided (60 minutes for each one of them). There is a prep guide for the concepts that occur most frequently as well as a warm-up round to get a grip on how codility's environment behaves.",
+    "interview_questions": [
+      "Leetcode style questions - 2 problems - 120 minutes"
+    ],
+    "company": "Microsoft",
+    "processed_timestamp": "2025-06-12T02:17:49.405670"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "26 Mar 2025",
+    "experience_outcome": [
+      "No offer",
+      "Positive experience"
+    ],
+    "application_process": "I applied online.",
+    "interview_process": "Assessment with two coding questions, followed by a final interview for 3 hours.",
+    "interview_questions": [
+      "can you build a library system"
+    ],
+    "company": "Microsoft",
+    "processed_timestamp": "2025-06-12T02:18:47.080135"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "29 Apr 2025",
+    "experience_outcome": [
+      "No offer",
+      "Neutral experience",
+      "Difficult interview"
+    ],
+    "application_process": "I applied through a staffing agency. The process took 1 week.",
+    "interview_process": "The Microsoft interview process typically includes an initial recruiter screen, one or two technical phone interviews, and a final onsite (virtual or in-person) interview loop with 4–5 rounds.",
+    "interview_questions": [
+      "Introduce myself then give me 2 problems to solve them using any programming language i like"
+    ],
+    "company": "Microsoft",
+    "processed_timestamp": "2025-06-12T02:19:45.810250"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "29 Dec 2024",
+    "experience_outcome": [
+      "Accepted offer",
+      "Positive experience",
+      "Average interview"
+    ],
+    "application_process": "I applied through a recruiter. I interviewed at Microsoft",
+    "interview_process": "Test into 4 rounds of interview. The overall experience was good, the questions are okay and criteria is okay. The questions are mostly leet code style questions with some twists.",
+    "interview_questions": [
+      "Behavioral question about how I would handle some situations"
+    ],
+    "company": "Microsoft",
+    "processed_timestamp": "2025-06-12T02:20:40.154965"
+  }
+]

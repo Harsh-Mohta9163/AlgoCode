@@ -1,0 +1,971 @@
+[
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/earliest-common-slot/1?page=1&company=PayPal&sortBy=latest",
+      "scraped_at": "2025-06-11T12:32:47.868018",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Earliest Common Slot",
+      "difficulty": "Medium",
+      "accuracy": "34.84%",
+      "submissions": "624+",
+      "avg_time": "Not available"
+    },
+    "content": {
+      "problem": "You are given two lists of availability time slots, slots1 and slots2, for two people. Each slot is represented as [start, end], and it is gurranted that within each list, no two slots overlap (i.e., for any two intervals, either start1>end2 or start2>end1). Given a metting duration d, return the earliest common time slot of length of least d. If no such slot exits, return an empty array.\nExamples:\nInput: slots1 = [[10,50], [60,120], [140,210]], slots2 = [[0,15], [60,70]], d = 8\nOutput: [60,68]\nExplanation: The only overlap is [60,70] (10 minutes), which is enough for an 8-minute meeting, so answer is [60,68]\nInput: slots1 = [[10,50], [60,120], [140,210]], slots2 = [[0,15], [60,70]], d = 12\nOutput: []\nExplanation: The only overlap is [60, 70] (10 minutes), but 12 minutes are needed, so no valid slot exists.\nConstraints:\n1 ≤ slots1.size(), slots2.size()  ≤ 105\n-109 ≤ slots1[i], slots2[i] ≤ 109\n1 ≤ d ≤ 106"
+    },
+    "complexity": {
+      "time_complexity": "O(max(n log(n), m log(m)))",
+      "space_complexity": "O(1)"
+    },
+    "tags": {
+      "company_tags": [
+        "Amazon",
+        "Microsoft",
+        "PayPal",
+        "Google",
+        "Uber"
+      ],
+      "topic_tags": [
+        "Sorting",
+        "two-pointer-algorithm",
+        "Arrays",
+        "Data Structures",
+        "Algorithms"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/reverse-an-array/1?page=1&company=PayPal&sortBy=latest",
+      "scraped_at": "2025-06-11T12:32:58.316439",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Reverse an Array",
+      "difficulty": "Easy",
+      "accuracy": "55.32%",
+      "submissions": "189K+",
+      "avg_time": "5m"
+    },
+    "content": {
+      "problem": "You are given an array of integers arr[]. Your task is to reverse the given array.\nNote: Modify the array in place.\nExamples:\nInput: arr = [1, 4, 3, 2, 6, 5]\nOutput: [5, 6, 2, 3, 4, 1]\nExplanation: The elements of the array are 1 4 3 2 6 5. After reversing the array, the first element goes to the last position, the second element goes to the second last position and so on. Hence, the answer is 5 6 2 3 4 1.\nInput: arr = [4, 5, 2]\nOutput: [2, 5, 4]\nExplanation: The elements of the array are 4 5 2. The reversed array will be 2 5 4.\nInput: arr = [1]\nOutput: [1]\nExplanation: The array has only single element, hence the reversed array is same as the original.\nConstraints:\n1<=arr.size()<=105\n0<=arr[i]<=105"
+    },
+    "complexity": {
+      "time_complexity": "O(n)",
+      "space_complexity": "O(1)"
+    },
+    "tags": {
+      "company_tags": [
+        "Bloomberg",
+        "Facebook",
+        "TCS",
+        "Adobe",
+        "Google",
+        "Infosys",
+        "Capgemini",
+        "Morgan Stanley",
+        "Amazon",
+        "Microsoft",
+        "Apple",
+        "Yahoo",
+        "PayPal",
+        "Uber"
+      ],
+      "topic_tags": [
+        "Arrays",
+        "Data Structures"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/buy-stock-2/1?page=1&company=PayPal&sortBy=latest",
+      "scraped_at": "2025-06-11T12:33:08.836733",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Stock Buy and Sell – Max one Transaction Allowed",
+      "difficulty": "Easy",
+      "accuracy": "49.33%",
+      "submissions": "92K+",
+      "avg_time": "10m"
+    },
+    "content": {
+      "problem": "Given an array prices[] of length n, representing the prices of the stocks on different days. The task is to find the maximum profit possible by buying and selling the stocks on different days when at most one transaction is allowed. Here one transaction means 1 buy + 1 Sell. If it is not possible to make a profit then return 0.\nNote: Stock must be bought before being sold.\nExamples:\nInput: prices[] = [7, 10, 1, 3, 6, 9, 2]\nOutput: 8\nExplanation: You can buy the stock on day 2 at price = 1 and sell it on day 5 at price = 9. Hence, the profit is 8.\nInput: prices[] = [7, 6, 4, 3, 1]\nOutput: 0\nExplanation: Here the prices are in decreasing order, hence if we buy any day then we cannot sell it at a greater price. Hence, the answer is 0.\nInput: prices[] = [1, 3, 6, 9, 11]\nOutput: 10\nExplanation: Since the array is sorted in increasing order, we can make maximum profit by buying at price[0] and selling at price[n-1].\nConstraint:\n1 <= prices.size()<= 105\n0 <= prices[i] <=104"
+    },
+    "complexity": {
+      "time_complexity": "O(n)",
+      "space_complexity": "O(1)"
+    },
+    "tags": {
+      "company_tags": [
+        "Bloomberg",
+        "Facebook",
+        "Intel",
+        "Infosys",
+        "Zoho",
+        "Morgan Stanley",
+        "Amazon",
+        "Microsoft",
+        "Samsung",
+        "Yahoo",
+        "PayPal",
+        "Nvidia",
+        "Oracle",
+        "Visa",
+        "Walmart",
+        "Goldman Sachs",
+        "TCS",
+        "Adobe",
+        "Google",
+        "IBM",
+        "Accenture",
+        "Apple",
+        "Uber"
+      ],
+      "topic_tags": [
+        "Greedy",
+        "Arrays"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/unique-frequencies-of-not/1?page=1&company=PayPal&sortBy=latest",
+      "scraped_at": "2025-06-11T12:33:19.680205",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Unique Number of Occurrences",
+      "difficulty": "Easy",
+      "accuracy": "57.68%",
+      "submissions": "50K+",
+      "avg_time": "20m"
+    },
+    "content": {
+      "problem": "Given an array arr of N integers, the task is to check whether the frequency of the elements in the array is unique or not. Or in other words, there are no two distinct numbers in array with equal frequency. If all the frequency is unique then return true, else return false.\nExample 1:\nInput:\nN = 5\narr = [1, 1, 2, 5, 5]\nOutput:\nfalse\nExplanation:\nThe array contains 2 (1’s), 1 (2’s) and 2 (5’s), since the number of frequency of 1 and 5 are the same i.e. 2 times. Therefore, this array does not satisfy the condition.\nExample 2:\nInput:\nN = 10\narr = [2, 2, 5, 10, 1, 2, 10, 5, 10, 2]\nOutput:\ntrue\nExplanation:\nNumber of 1’s -> 1\nNumber of 2’s -> 4\nNumber of 5’s -> 2\nNumber of 10’s -> 3.\nSince, the number of occurrences of elements present in the array is unique. Therefore, this array satisfy the condition.\nYour task:\nYou don't need to read input or print anything. Your task is to complete the function isFrequencyUnique() which take integer N and array arr of size N as arguments, and returns a boolean.\nExpected Time Complexity: O(N)\nExpected Auxiliary Space: O(N)\nConstraints:\n1 <= N <=105\n-109 <= arr[i] <= 109"
+    },
+    "complexity": {
+      "time_complexity": "Not specified",
+      "space_complexity": "Not specified"
+    },
+    "tags": {
+      "company_tags": [
+        "PayPal",
+        "Bloomberg",
+        "Adobe",
+        "Google",
+        "Amazon",
+        "Apple"
+      ],
+      "topic_tags": [
+        "set",
+        "Sorting",
+        "Map"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/frogs-and-jumps--170647/1?page=1&company=PayPal&sortBy=latest",
+      "scraped_at": "2025-06-11T12:33:30.270463",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Frogs and Jumps",
+      "difficulty": "Easy",
+      "accuracy": "49.69%",
+      "submissions": "58K+",
+      "avg_time": "Not available"
+    },
+    "content": {
+      "problem": "N frogs are positioned at one end of the pond. All frogs want to reach the other end of the pond as soon as possible. The pond has some leaves arranged in a straight line. Each frog has the strength to jump exactly K leaves. For example, a  frog having strength 2 will visit the leaves 2, 4, 6, ...  etc. while crossing the pond.\nGiven the strength of each frog and the number of leaves, your task is to find the number of leaves that not be visited by any of the frogs when all frogs have reached the other end of the pond.\nExample 1:\nInput:\nN = 3\nleaves = 4\nfrogs[] = {3, 2, 4}\nOutput: 1\nExplanation:\nLeaf 1 will not be visited by any frog.\nExample 2:\nInput:\nN = 3\nleaves = 6\nfrogs[] = {1, 3, 5}\nOutput: 0\nExplanation:\nFirst frog will visit all the leaves so no\nleaf is left unvisited.\nYour Task:\nComplete the function unvisitedLeaves() which takes the integers N, leaves and the array frogs as the input parameters, and returns the number of unvisited leaves.\nExpected Time Complexity: O(N*log(leaves))\nExpected Auxiliary Space: O(leaves)\nConstraints:\n1 ≤ N, leaves, frogs[i] ≤ 105"
+    },
+    "complexity": {
+      "time_complexity": "Not specified",
+      "space_complexity": "Not specified"
+    },
+    "tags": {
+      "company_tags": [
+        "PayPal"
+      ],
+      "topic_tags": [
+        "Arrays",
+        "sieve",
+        "Data Structures",
+        "Algorithms"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/hit-most-balloons--170637/1?page=1&company=PayPal&sortBy=latest",
+      "scraped_at": "2025-06-11T12:33:53.236521",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Hit most Balloons",
+      "difficulty": "Medium",
+      "accuracy": "39.48%",
+      "submissions": "8K+",
+      "avg_time": "Not available"
+    },
+    "content": {
+      "problem": "You are given an infinite two-dimensional grid. There are N balloons placed at certain coordinates of the grid. You have an arrow with yourself, which you will be using to shoot the balloons. You can select any point on the grid as your starting point and any point on the grid as the target point. When you fire the arrow, all ballons lying on the shortest path between the starting point and target point will be burst. Given the coordinates of the N ballons in an array arr, your task is to find out the maximum number of balloons that you can fire in one arrow shot.\nExample 1:\nInput:\nN = 3\narr[] = {{1, 2}, {2, 3}, {3, 4}}\nOutput:\n3\nExplanation:\nIf you position yourself at point (1,2)\nand fire the arrow aiming at the point (3,4).\nThen all the balloons will burst.\nExample 2:\nInput:\nN = 3\narr[] = {{2,2}, {0,0}, {1,2}}\nOutput:\n2\nExplanation:\nIf you position yourself at point (2,2)\nand fire the arrow aiming at the point (0,0).\nThen the two balloons present at the two points\nwill burst.\nYour Task:\nComplete the function mostBalloons() which takes the integers N and the array arr as the input parameters, and returns the maximum number of balloons that can be burst using one arrow.\nExpected Time Complexity: O(N2)\nExpected Auxiliary Space: O(N)\nConstraints:\n1 ≤ N ≤ 103\n-109 ≤ arr[i][j] ≤ 109"
+    },
+    "complexity": {
+      "time_complexity": "Not specified",
+      "space_complexity": "Not specified"
+    },
+    "tags": {
+      "company_tags": [
+        "PayPal"
+      ],
+      "topic_tags": [
+        "Mathematical",
+        "Geometric",
+        "Algorithms"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/count-pairs-in-array-divisible-by-k/1?page=1&company=PayPal&sortBy=latest",
+      "scraped_at": "2025-06-11T12:34:16.361528",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Count pairs in array divisible by K",
+      "difficulty": "Medium",
+      "accuracy": "40.47%",
+      "submissions": "27K+",
+      "avg_time": "Not available"
+    },
+    "content": {
+      "problem": "Given an array arr[] and positive integer k, the task is to count total number of pairs in the array whose sum is divisible by k.\nExamples:\nInput : arr[] = {2, 2, 1, 7, 5, 3}, k = 4\nOutput : 5\nExplanation : There are five pairs possible whose sum is divisible by '4' i.e., (2, 2), (1, 7), (7, 5), (1, 3) and (5, 3)\nInput : arr[] = {5, 9, 36, 74, 52, 31, 42}, k = 3\nOutput : 7\nExplanation : There are seven pairs whose sum is divisible by 3, i.e, (9, 36), (9,42), (74, 52), (36, 42), (74, 31), (31, 5) and (5, 52).\nYour task :\nYou don't have to read input or print anything. Your task is to complete the function countKdivPairs() which takes the array, it's size and an integer K as input and returns the count of pairs whose sum is divisible by k.\nExpected Time Complexity : O(n)\nExpected Auxiliary Space : O(k)\nConstraints :\n1 <= n <=10^6\n1 <= arr[i] <= 10^6\n1 <= k <= 100"
+    },
+    "complexity": {
+      "time_complexity": "Not specified",
+      "space_complexity": "Not specified"
+    },
+    "tags": {
+      "company_tags": [
+        "PayPal"
+      ],
+      "topic_tags": [
+        "Arrays",
+        "Hash",
+        "Data Structures"
+      ]
+    },
+    "interview_experiences": [
+      {
+        "title": "Paypal Interview Experience On Campus",
+        "url": "https://www.geeksforgeeks.org/paypal-interview-experience-on-campus/",
+        "content_summary": "Recently, I have been through the interview experience of PayPal India and I would like to share my experience with everyone.\nPosition: SDE- 1\nTotally there were four rounds 1 written + 2 technical + 1 HR\nRound1(Coding):\nAs this is the huge elimination round, not only the solution but also time and space complexity matters a lot.\nThis round is for 120 min and we have to solve 2 coding questions\n1. Number of pairs in an array whose sum is divisible by 60\n2.  Number of ways to place the house such that non-houses distances should be minimized\nRound2(Technical Interview):\nInitially, they started to tell me about yourself and they asked to share the screen for coding.\n1. They told me lets go in the bottom-up approach, so at first, they asked to write code for printing ASCII values of the string.\n2. They asked to extend the same to find the frequency of characters in a string\n3. They pasted two arrays and asked to generate a new array with elements that won't occur in both the arrays(The elements only in one array not in another)\n* you shouldn't use any data structure other than arrays( don't use hashmap, sets)\n* you should do in the linear time complexity\n(HINT: The given two arrays are already sorted )\n4. Given a linked list, you have to implement the three methods\nI) Detect the cycle in linked list\nII) Find first node of the linked list\nIII) Find length of loop in linked list\nAfter all the above, they asked some simple questions in DBMS and data structures\n1. what is the primary key?\n2. what is the difference between backtracking and dynamic programming?\n3. what is the difference between natural key and surrogate key?\n4. Approach for solving maze problem\nRound3(Technical Interview):\nInitially, they asked me to explain the approaches of the two problems I solved in the round1 entrance exam.\nThen they asked me to click on the hackerrank list to get the common workspace \n1. Infix to Postfix conversion\n2. They asked me to explain how google search works with abstract classes or UML diagrams\nBoth of the above took more than an hour\nRound4(HR):\nHe gave some scenario-based question and asked to explain the approach and code the logic followed by a few HR questions like\n1. what are your aspirations in life?\n2. Have you ever been in a respectable position?\nFinally, They gave 5 offers to my campus(4 FTE + 1 INT) and I was one of those 4 FTE.\n\nComment\nMore info\nAdvertise with us\nNext Article\nPaypal Interview Experience (On-Campus )"
+      }
+    ]
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/concatenation-of-zig-zag-string-in-n-rows0308/1?page=1&company=PayPal&sortBy=latest",
+      "scraped_at": "2025-06-11T12:34:30.751181",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Concatenation of Zig-Zag String in n Rows",
+      "difficulty": "Medium",
+      "accuracy": "32.92%",
+      "submissions": "15K+",
+      "avg_time": "Not available"
+    },
+    "content": {
+      "problem": "Given a string and number of rows ‘n’. Print the string formed by concatenating n rows when the input string is written in row-wise Zig-Zag fashion.\nExample 1:\nInput:\nstr = \"ABCDEFGH\"\nn = 2\nOutput: \"ACEGBDFH\"\nExplanation:\nLet us write input string in\nZig-Zag fashion in 2 rows.\nA C E G\nB D F H\nNow concatenate the two rows and ignore\nspaces in every row. We get \"ACEGBDFH\"\nExample 2:\nInput:\nstr = \"GEEKSFORGEEKS\"\nn = 3\nOutput: GSGSEKFREKEOE\nExplanation:\nLet us write input string in\nZig-Zag fashion in 3 rows.\nG S G S\nE K F R E K\nE O E\nNow concatenate the two rows and ignore spaces\nin every row. We get \"GSGSEKFREKEOE\"\nYour Task:\nYou need not read input or print anything. Your task is to complete the function convert() which takes 2 arguments(string str, integer n) and returns the resultant string.\nExpected Time Complexity: O(|str|).\nExpected Auxiliary Space: O(|str|).\nConstraints:\n1 ≤ N ≤ 105"
+    },
+    "complexity": {
+      "time_complexity": "Not specified",
+      "space_complexity": "Not specified"
+    },
+    "tags": {
+      "company_tags": [
+        "PayPal"
+      ],
+      "topic_tags": [
+        "Strings",
+        "Data Structures"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/intersection-of-two-arrays2404/1?page=1&company=PayPal&sortBy=latest",
+      "scraped_at": "2025-06-11T12:34:41.651593",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Intersection of Arrays with Distinct",
+      "difficulty": "Easy",
+      "accuracy": "32.83%",
+      "submissions": "223K+",
+      "avg_time": "20m"
+    },
+    "content": {
+      "problem": "Given two unsorted integer arrays a[] and b[] each consisting of distinct elements, the task is to return the count of elements in the intersection (or common elements) of the two arrays.\nIntersection of two arrays can be defined as the set containing distinct common elements between the two arrays.\nExamples:\nInput: a[] = [89, 24, 75, 11, 23], b[] = [89, 2, 4]\nOutput: 1\nExplanation: 89 is the only element in the intersection of two arrays.\nInput: a[] = [1, 2, 4, 3, 5, 6], b[] = [3, 4, 5, 6, 7]\nOutput: 4\nExplanation: 3, 4, 5, and 6 are the elements in the intersection of two arrays.\nInput: a[] = [20, 10, 30, 50, 40], b[] = [15, 25, 30, 20, 35]\nOutput: 2\nExplanation: 20 and 30 are the elements in the intersection of the two arrays.\nConstraints:\n1  ≤  a.size(), b.size() ≤  105\n1  ≤  a[i], b[i]  ≤  105"
+    },
+    "complexity": {
+      "time_complexity": "O(n + m)",
+      "space_complexity": "O(n)"
+    },
+    "tags": {
+      "company_tags": [
+        "Accolite",
+        "Amazon",
+        "Microsoft",
+        "PayPal",
+        "Rockstand"
+      ],
+      "topic_tags": [
+        "two-pointer-algorithm",
+        "Arrays",
+        "Hash",
+        "Data Structures",
+        "Algorithms"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/solve-the-sudoku-1587115621/1?page=1&company=PayPal&sortBy=latest",
+      "scraped_at": "2025-06-11T12:35:14.349511",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Solve the Sudoku",
+      "difficulty": "Hard",
+      "accuracy": "37.98%",
+      "submissions": "120K+",
+      "avg_time": "60m"
+    },
+    "content": {
+      "problem": "Given an incomplete Sudoku configuration in terms of a 9x9  2-D interger square matrix, mat[][], the task is to solve the Sudoku. It is guaranteed that the input Sudoku will have exactly one solution.\nA sudoku solution must satisfy all of the following rules:\nEach of the digits 1-9 must occur exactly once in each row.\nEach of the digits 1-9 must occur exactly once in each column.\nEach of the digits 1-9 must occur exactly once in each of the 9 3x3 sub-boxes of the grid.\nNote: Zeros represent blanks to be filled with numbers 1-9, while non-zero cells are fixed and cannot be changed.\nExamples:\nInput: mat[][] =\nOutput:\nExplanation: Each row, column and 3 x 3 box of the output matrix contains unique numbers.\nInput: mat[][] =\nOutput:\nExplanation: Each row, column and 3 x 3 box of the output matrix contains unique numbers.\nConstraints:\nmat.size() = 9\nmat[i].size() = 9\n0 ≤ mat[i][j] ≤ 9"
+    },
+    "complexity": {
+      "time_complexity": "O(9 ^ (n * n))",
+      "space_complexity": "O(n)"
+    },
+    "tags": {
+      "company_tags": [
+        "Zoho",
+        "Flipkart",
+        "Amazon",
+        "Microsoft",
+        "MakeMyTrip",
+        "Ola Cabs",
+        "Oracle",
+        "MAQ Software",
+        "Directi",
+        "PayPal",
+        "Samsung"
+      ],
+      "topic_tags": [
+        "Matrix",
+        "Backtracking",
+        "Data Structures",
+        "Algorithms"
+      ]
+    },
+    "interview_experiences": [
+      {
+        "title": "Ola Interview Experience Set 8 For Sde 2",
+        "url": "https://www.geeksforgeeks.org/ola-interview-experience-set-8-for-sde-2/",
+        "content_summary": "Design Round: 1. Design LRU cache and implement 2. Solving sudoko 3. Design to replace the existing Support tab navigation based to search based in OLA app. Machine round: Design and implement a sender and receiver system where there can be multiple senders and receivers subscribed to Topics. Each event generated at sender should be received by all receivers subscribed to that topic. Bonus if you can implement group mechanism at receiver side where event is received by one of the receiver in group and received by all groups subscribed to that Topic. (like kafka) Managerial Round: 1. In Depth discussion on projects worked on, flow of entire system of my component. Be confident as u r the boss of ur work. 2. Briefed about the job role and team. 3. Few personal questions like hobbies\nRelated Practice Problems\nSolve the Sudoku\nAll Practice Problems for Ola-Cabs !\n\nComment\nMore info\nCampus Training Program\nNext Article\nOLA Interview Experience | Set 8 (For SDE-2)"
+      }
+    ]
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/subsets-1587115621/1?page=1&company=PayPal&sortBy=latest",
+      "scraped_at": "2025-06-11T12:36:24.952787",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Unique Subsets",
+      "difficulty": "Medium",
+      "accuracy": "39.89%",
+      "submissions": "44K+",
+      "avg_time": "45m"
+    },
+    "content": {
+      "problem": "Given an array arr[] of integers of size N that might contain duplicates, the task is to find all possible unique subsets.\nNote: Each subset should be sorted.\nExample 1:\nInput: N = 3, arr[] = {2,1,2}\nOutput:(),(1),(1 2),(1 2 2),(2),(2 2)\nExplanation:\nAll possible subsets = (),(2),(1),(1,2),(2),(2,2),(2,1),(2,1,2)\nAfter Sorting each subset = (),(2),(1),(1,2),(2),(2,2),(1,2),(1,2,2)\nUnique Susbsets in Lexicographical order = (),(1),(1,2),(1,2,2),(2),(2,2)\nExample 2:\nInput: N = 4, arr[] = {1,2,3,3}\nOutput: (),(1),(1 2),(1 2 3)\n(1 2 3 3),(1 3),(1 3 3),(2),(2 3)\n(2 3 3),(3),(3 3)\nYour Task:\nYour task is to complete the function AllSubsets() which takes the array arr[] and N as input parameters and returns list of all possible unique subsets in lexicographical order.\nExpected Time Complexity: O(2N).\nExpected Auxiliary Space: O(2N * X), X = Length of each subset.\nConstraints:\n1 ≤ N ≤ 12\n1 ≤ arr[i] ≤ 9"
+    },
+    "complexity": {
+      "time_complexity": "Not specified",
+      "space_complexity": "Not specified"
+    },
+    "tags": {
+      "company_tags": [
+        "Amazon",
+        "Microsoft",
+        "PayPal"
+      ],
+      "topic_tags": [
+        "Sorting",
+        "subset",
+        "Backtracking",
+        "Algorithms"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/lowest-common-ancestor-in-a-binary-tree/1?page=1&company=PayPal&sortBy=latest",
+      "scraped_at": "2025-06-11T12:36:35.885141",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "LCA in Binary Tree",
+      "difficulty": "Medium",
+      "accuracy": "52.85%",
+      "submissions": "196K+",
+      "avg_time": "20m"
+    },
+    "content": {
+      "problem": "Given a Binary Tree with all unique values and two nodes value, n1 and n2. The task is to find the lowest common ancestor of the given two nodes. We may assume that either both n1 and n2 are present in the tree or none of them are present.\nLCA: It is the first common ancestor of both the nodes n1 and n2 from bottom of tree.\nExamples:\nInput: root = [1,2,3,4,5,6,7], n1 = 5 , n2 = 6\nOutput: 1\nExplanation: LCA of 5 and 6 is 1.\nInput: root = [5, 2, N, 3, 4], n1 = 3 , n2 = 4\n5\n/\n2\n/ \\\n3 4\nOutput: 2\nExplanation: LCA of 3 and 4 is 2.\nInput: root = [5, 2, N, 3, 4], n1 = 5 , n2 = 4\n5\n/\n2\n/ \\\n3 4\nOutput: 5\nExplanation: LCA of 5 and 4 is 5.\nConstraints:\n1 ≤ number of nodes ≤ 105\n1 ≤ node->data ≤ 105"
+    },
+    "complexity": {
+      "time_complexity": "O(n)",
+      "space_complexity": "O(n)"
+    },
+    "tags": {
+      "company_tags": [
+        "Flipkart",
+        "Accolite",
+        "Amazon",
+        "Microsoft",
+        "OYO Rooms",
+        "Snapdeal",
+        "MakeMyTrip",
+        "Payu",
+        "Google",
+        "Times Internet",
+        "Cisco",
+        "PayPal",
+        "Expedia",
+        "Twitter",
+        "American Express"
+      ],
+      "topic_tags": [
+        "Tree",
+        "Data Structures"
+      ]
+    },
+    "interview_experiences": [
+      {
+        "title": "American Express Interview Experience Set 2",
+        "url": "https://www.geeksforgeeks.org/american-express-interview-experience-set-2/",
+        "content_summary": "Round 1: \nRound 1 had 2 sections, One was a coding round having 2 problems. \n1: Given a list of Students and Subjects along with credits of each, a student can select only those subjects whose credits are less than equal to his/her credits. \nReturn the number of pairs of students and subjects. \ne.g: \nSubjects:{3,4,1,2} \nstudents:{5,3} \n\nSo there can be 7 pairs as The Student having 5 credits can select all the subjects and the student having credits 3 can select subjects with credits 1,2,3. \nEasy Binary search and sort question. \n\n2. Find LCA of a binary tree. \nArticle Link Problem Link\nBoth questions were fairly easy but required to be done in 30 minutes. \n\n2nd Section had 50 questions in 40 minutes consisting of 10 questions each from Aptitude, logical reasoning, Data structures, JavaScript and basic C/C++ questions. \n\n\nRound 2: \nRound2 was a technical round and was fairly easy. The interviewer was very friendly and started the discussion with my projects and internships. \nThen he asked me a few SQL queries related to self-join and find Manager and employee in a given table. \nFew basic C/C++ questions like What is dangling pointer, Post increment operator, Static functions. \nThen a programming question on Sieve. Then few easy puzzles like 3 bulbs and 3 switches puzzle and a bee traveling between two trains. All available on GeeksForGeeks. \n\nRound 3: \nRound 3 was semi-technical. It started off with a small case study which was very interesting and based on Cricket World Cup and How American Express can tie-up with Hilton Hotel. Then a question on trie because it was mentioned in my resume and it ended up really well. \n\nRound 4 HR: \nVery General Questions on Why American Express, strengths and Weakness, Plans of Future Studies, and Which team would I select if given a chance. \n\nI didn't get selected in the end and they eventually recruited 5 out of last 7. No clue why didn't they select me, sometimes it's not your day or someone else was better than you in some way or other so you just have to move on. \nBut GeeksForGeeks is more than enough for companies like Amex where they offer Semi-Technical profiles. \n\n \n\n\n \nComment\nMore info\nCampus Training Program\nNext Article\nAmerican Express Interview Experience | Set 2"
+      }
+    ]
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/earliest-common-slot/1?page=1&company=PayPal&sortBy=latest",
+      "scraped_at": "2025-06-11T12:37:15.541966",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Earliest Common Slot",
+      "difficulty": "Medium",
+      "accuracy": "34.84%",
+      "submissions": "624+",
+      "avg_time": "Not available"
+    },
+    "content": {
+      "problem": "You are given two lists of availability time slots, slots1 and slots2, for two people. Each slot is represented as [start, end], and it is gurranted that within each list, no two slots overlap (i.e., for any two intervals, either start1>end2 or start2>end1). Given a metting duration d, return the earliest common time slot of length of least d. If no such slot exits, return an empty array.\nExamples:\nInput: slots1 = [[10,50], [60,120], [140,210]], slots2 = [[0,15], [60,70]], d = 8\nOutput: [60,68]\nExplanation: The only overlap is [60,70] (10 minutes), which is enough for an 8-minute meeting, so answer is [60,68]\nInput: slots1 = [[10,50], [60,120], [140,210]], slots2 = [[0,15], [60,70]], d = 12\nOutput: []\nExplanation: The only overlap is [60, 70] (10 minutes), but 12 minutes are needed, so no valid slot exists.\nConstraints:\n1 ≤ slots1.size(), slots2.size()  ≤ 105\n-109 ≤ slots1[i], slots2[i] ≤ 109\n1 ≤ d ≤ 106"
+    },
+    "complexity": {
+      "time_complexity": "O(max(n log(n), m log(m)))",
+      "space_complexity": "O(1)"
+    },
+    "tags": {
+      "company_tags": [
+        "Amazon",
+        "Microsoft",
+        "PayPal",
+        "Google",
+        "Uber"
+      ],
+      "topic_tags": [
+        "Sorting",
+        "two-pointer-algorithm",
+        "Arrays",
+        "Data Structures",
+        "Algorithms"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/reverse-an-array/1?page=1&company=PayPal&sortBy=latest",
+      "scraped_at": "2025-06-11T12:37:26.907842",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Reverse an Array",
+      "difficulty": "Easy",
+      "accuracy": "55.32%",
+      "submissions": "189K+",
+      "avg_time": "5m"
+    },
+    "content": {
+      "problem": "You are given an array of integers arr[]. Your task is to reverse the given array.\nNote: Modify the array in place.\nExamples:\nInput: arr = [1, 4, 3, 2, 6, 5]\nOutput: [5, 6, 2, 3, 4, 1]\nExplanation: The elements of the array are 1 4 3 2 6 5. After reversing the array, the first element goes to the last position, the second element goes to the second last position and so on. Hence, the answer is 5 6 2 3 4 1.\nInput: arr = [4, 5, 2]\nOutput: [2, 5, 4]\nExplanation: The elements of the array are 4 5 2. The reversed array will be 2 5 4.\nInput: arr = [1]\nOutput: [1]\nExplanation: The array has only single element, hence the reversed array is same as the original.\nConstraints:\n1<=arr.size()<=105\n0<=arr[i]<=105"
+    },
+    "complexity": {
+      "time_complexity": "O(n)",
+      "space_complexity": "O(1)"
+    },
+    "tags": {
+      "company_tags": [
+        "Bloomberg",
+        "Facebook",
+        "TCS",
+        "Adobe",
+        "Google",
+        "Infosys",
+        "Capgemini",
+        "Morgan Stanley",
+        "Amazon",
+        "Microsoft",
+        "Apple",
+        "Yahoo",
+        "PayPal",
+        "Uber"
+      ],
+      "topic_tags": [
+        "Arrays",
+        "Data Structures"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/buy-stock-2/1?page=1&company=PayPal&sortBy=latest",
+      "scraped_at": "2025-06-11T12:37:38.291070",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Stock Buy and Sell – Max one Transaction Allowed",
+      "difficulty": "Easy",
+      "accuracy": "49.33%",
+      "submissions": "92K+",
+      "avg_time": "10m"
+    },
+    "content": {
+      "problem": "Given an array prices[] of length n, representing the prices of the stocks on different days. The task is to find the maximum profit possible by buying and selling the stocks on different days when at most one transaction is allowed. Here one transaction means 1 buy + 1 Sell. If it is not possible to make a profit then return 0.\nNote: Stock must be bought before being sold.\nExamples:\nInput: prices[] = [7, 10, 1, 3, 6, 9, 2]\nOutput: 8\nExplanation: You can buy the stock on day 2 at price = 1 and sell it on day 5 at price = 9. Hence, the profit is 8.\nInput: prices[] = [7, 6, 4, 3, 1]\nOutput: 0\nExplanation: Here the prices are in decreasing order, hence if we buy any day then we cannot sell it at a greater price. Hence, the answer is 0.\nInput: prices[] = [1, 3, 6, 9, 11]\nOutput: 10\nExplanation: Since the array is sorted in increasing order, we can make maximum profit by buying at price[0] and selling at price[n-1].\nConstraint:\n1 <= prices.size()<= 105\n0 <= prices[i] <=104"
+    },
+    "complexity": {
+      "time_complexity": "O(n)",
+      "space_complexity": "O(1)"
+    },
+    "tags": {
+      "company_tags": [
+        "Bloomberg",
+        "Facebook",
+        "Intel",
+        "Infosys",
+        "Zoho",
+        "Morgan Stanley",
+        "Amazon",
+        "Microsoft",
+        "Samsung",
+        "Yahoo",
+        "PayPal",
+        "Nvidia",
+        "Oracle",
+        "Visa",
+        "Walmart",
+        "Goldman Sachs",
+        "TCS",
+        "Adobe",
+        "Google",
+        "IBM",
+        "Accenture",
+        "Apple",
+        "Uber"
+      ],
+      "topic_tags": [
+        "Greedy",
+        "Arrays"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/unique-frequencies-of-not/1?page=1&company=PayPal&sortBy=latest",
+      "scraped_at": "2025-06-11T12:37:49.570575",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Unique Number of Occurrences",
+      "difficulty": "Easy",
+      "accuracy": "57.68%",
+      "submissions": "50K+",
+      "avg_time": "20m"
+    },
+    "content": {
+      "problem": "Given an array arr of N integers, the task is to check whether the frequency of the elements in the array is unique or not. Or in other words, there are no two distinct numbers in array with equal frequency. If all the frequency is unique then return true, else return false.\nExample 1:\nInput:\nN = 5\narr = [1, 1, 2, 5, 5]\nOutput:\nfalse\nExplanation:\nThe array contains 2 (1’s), 1 (2’s) and 2 (5’s), since the number of frequency of 1 and 5 are the same i.e. 2 times. Therefore, this array does not satisfy the condition.\nExample 2:\nInput:\nN = 10\narr = [2, 2, 5, 10, 1, 2, 10, 5, 10, 2]\nOutput:\ntrue\nExplanation:\nNumber of 1’s -> 1\nNumber of 2’s -> 4\nNumber of 5’s -> 2\nNumber of 10’s -> 3.\nSince, the number of occurrences of elements present in the array is unique. Therefore, this array satisfy the condition.\nYour task:\nYou don't need to read input or print anything. Your task is to complete the function isFrequencyUnique() which take integer N and array arr of size N as arguments, and returns a boolean.\nExpected Time Complexity: O(N)\nExpected Auxiliary Space: O(N)\nConstraints:\n1 <= N <=105\n-109 <= arr[i] <= 109"
+    },
+    "complexity": {
+      "time_complexity": "Not specified",
+      "space_complexity": "Not specified"
+    },
+    "tags": {
+      "company_tags": [
+        "PayPal",
+        "Bloomberg",
+        "Adobe",
+        "Google",
+        "Amazon",
+        "Apple"
+      ],
+      "topic_tags": [
+        "set",
+        "Sorting",
+        "Map"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/frogs-and-jumps--170647/1?page=1&company=PayPal&sortBy=latest",
+      "scraped_at": "2025-06-11T12:38:00.321898",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Frogs and Jumps",
+      "difficulty": "Easy",
+      "accuracy": "49.69%",
+      "submissions": "58K+",
+      "avg_time": "Not available"
+    },
+    "content": {
+      "problem": "N frogs are positioned at one end of the pond. All frogs want to reach the other end of the pond as soon as possible. The pond has some leaves arranged in a straight line. Each frog has the strength to jump exactly K leaves. For example, a  frog having strength 2 will visit the leaves 2, 4, 6, ...  etc. while crossing the pond.\nGiven the strength of each frog and the number of leaves, your task is to find the number of leaves that not be visited by any of the frogs when all frogs have reached the other end of the pond.\nExample 1:\nInput:\nN = 3\nleaves = 4\nfrogs[] = {3, 2, 4}\nOutput: 1\nExplanation:\nLeaf 1 will not be visited by any frog.\nExample 2:\nInput:\nN = 3\nleaves = 6\nfrogs[] = {1, 3, 5}\nOutput: 0\nExplanation:\nFirst frog will visit all the leaves so no\nleaf is left unvisited.\nYour Task:\nComplete the function unvisitedLeaves() which takes the integers N, leaves and the array frogs as the input parameters, and returns the number of unvisited leaves.\nExpected Time Complexity: O(N*log(leaves))\nExpected Auxiliary Space: O(leaves)\nConstraints:\n1 ≤ N, leaves, frogs[i] ≤ 105"
+    },
+    "complexity": {
+      "time_complexity": "Not specified",
+      "space_complexity": "Not specified"
+    },
+    "tags": {
+      "company_tags": [
+        "PayPal"
+      ],
+      "topic_tags": [
+        "Arrays",
+        "sieve",
+        "Data Structures",
+        "Algorithms"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/hit-most-balloons--170637/1?page=1&company=PayPal&sortBy=latest",
+      "scraped_at": "2025-06-11T12:38:23.846381",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Hit most Balloons",
+      "difficulty": "Medium",
+      "accuracy": "39.48%",
+      "submissions": "8K+",
+      "avg_time": "Not available"
+    },
+    "content": {
+      "problem": "You are given an infinite two-dimensional grid. There are N balloons placed at certain coordinates of the grid. You have an arrow with yourself, which you will be using to shoot the balloons. You can select any point on the grid as your starting point and any point on the grid as the target point. When you fire the arrow, all ballons lying on the shortest path between the starting point and target point will be burst. Given the coordinates of the N ballons in an array arr, your task is to find out the maximum number of balloons that you can fire in one arrow shot.\nExample 1:\nInput:\nN = 3\narr[] = {{1, 2}, {2, 3}, {3, 4}}\nOutput:\n3\nExplanation:\nIf you position yourself at point (1,2)\nand fire the arrow aiming at the point (3,4).\nThen all the balloons will burst.\nExample 2:\nInput:\nN = 3\narr[] = {{2,2}, {0,0}, {1,2}}\nOutput:\n2\nExplanation:\nIf you position yourself at point (2,2)\nand fire the arrow aiming at the point (0,0).\nThen the two balloons present at the two points\nwill burst.\nYour Task:\nComplete the function mostBalloons() which takes the integers N and the array arr as the input parameters, and returns the maximum number of balloons that can be burst using one arrow.\nExpected Time Complexity: O(N2)\nExpected Auxiliary Space: O(N)\nConstraints:\n1 ≤ N ≤ 103\n-109 ≤ arr[i][j] ≤ 109"
+    },
+    "complexity": {
+      "time_complexity": "Not specified",
+      "space_complexity": "Not specified"
+    },
+    "tags": {
+      "company_tags": [
+        "PayPal"
+      ],
+      "topic_tags": [
+        "Mathematical",
+        "Geometric",
+        "Algorithms"
+      ]
+    },
+    "interview_experiences": [
+      {
+        "title": "Paypal Interview Experience Sde 1 On Campus",
+        "url": "https://www.geeksforgeeks.org/paypal-interview-experience-sde-1-on-campus/",
+        "content_summary": "Online Assessment: 2 Questions - 120 Minutes\nQuestion 1 - Coloring nx3 board with 3 colors\nAn automated painting system needs a program that can paint an n x 3 grid in red, green and blue such that no row or column contains cells that are all the same color. Determine the number of valid patterns that can be painted given n rows. Since the number of patterns can be large, return the value modulo (10^9 + 7)\nSample Input: n = 4\nSample Output: 296490\nLink (Same question): https://math.stackexchange.com/questions/3215805/coloring-a-3-times-n-board-using-3-colors\nQuestion 2 - Undirected Graph Question\nTechnical Round 1\n1. Split array into subarray with given conditions.\nAll the characters in each of the splitted subarray must not be in another subarray\nSample Input - \"aabacadfgrdtyu\"\nSample Output - {\"aabaca\", \"dfgrd\", \"tyu\"}\n2. Are the given 2 intervals intersecting? (fully optimized)\nSample Input - [2, 5], [4, 7]\nSample Output - True\nSample Input - [2, 3], [4, 7]\nSample Output - False\nTechnical Round 2:\n1. Find the word that comes more than 1 time in a string (Case Insensitive)\n(Output the first occurrence of the word)\nSample Input - \"Paypal is a good company but PayPal hires more than once\"\nSample Output - [\"Paypal\"]\n2. Any sorting algo (bubble sort) with time complexity, then optimize or use some faster algo with time complexity\nStarted with bubble sort - O(n^2) time\nFinalised with merge sort - O(nlogn) time\nSome other basic Computer Science questions on OS, DBMS, SQL etc\nSome questions based on my resume and my projects.\nSome more HR type questions\nFinal Round:\nK frogs are there with a number assigned. There is 1 long queue with numbers from 1 to n. Frog with number 2 can visit 2, 4,6,8... And so with other frogs. What are the numbers in the queue that won't be visited after all the frogs have done their visit?\nA grid is present with many balloons. You have 1 arrow. What is the max no of balloons that u can shoot with that arrow? The angle of the shoot can be anything from 0 to 360 degrees.\nSimilar Question: https://www.geeksforgeeks.org/count-maximum-points-on-same-line/\nMy all rounds were good and solved most of the questions in one attempt. 3rd round was worst and was not able to solve any questions : (\nMy suggestions:\nDon't fake anything either in your resume or with your projects.\nBe honest in your resume and don't mention things you don't know\nProjects are an important part of the resume. Don't mention projects done by your friends/ taken from GitHub\nHave a good understanding of OS, DBMS, Network, etc (core CS subjects)\nBe positive and have confidence in yourself\nAll the best for your interviews.\n\nComment\nMore info\nAdvertise with us\nNext Article\nPayPal Interview Experience | SDE 1 (On-Campus)"
+      }
+    ]
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/count-pairs-in-array-divisible-by-k/1?page=1&company=PayPal&sortBy=latest",
+      "scraped_at": "2025-06-11T12:38:40.276045",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Count pairs in array divisible by K",
+      "difficulty": "Medium",
+      "accuracy": "40.47%",
+      "submissions": "27K+",
+      "avg_time": "Not available"
+    },
+    "content": {
+      "problem": "Given an array arr[] and positive integer k, the task is to count total number of pairs in the array whose sum is divisible by k.\nExamples:\nInput : arr[] = {2, 2, 1, 7, 5, 3}, k = 4\nOutput : 5\nExplanation : There are five pairs possible whose sum is divisible by '4' i.e., (2, 2), (1, 7), (7, 5), (1, 3) and (5, 3)\nInput : arr[] = {5, 9, 36, 74, 52, 31, 42}, k = 3\nOutput : 7\nExplanation : There are seven pairs whose sum is divisible by 3, i.e, (9, 36), (9,42), (74, 52), (36, 42), (74, 31), (31, 5) and (5, 52).\nYour task :\nYou don't have to read input or print anything. Your task is to complete the function countKdivPairs() which takes the array, it's size and an integer K as input and returns the count of pairs whose sum is divisible by k.\nExpected Time Complexity : O(n)\nExpected Auxiliary Space : O(k)\nConstraints :\n1 <= n <=10^6\n1 <= arr[i] <= 10^6\n1 <= k <= 100"
+    },
+    "complexity": {
+      "time_complexity": "Not specified",
+      "space_complexity": "Not specified"
+    },
+    "tags": {
+      "company_tags": [
+        "PayPal"
+      ],
+      "topic_tags": [
+        "Arrays",
+        "Hash",
+        "Data Structures"
+      ]
+    },
+    "interview_experiences": [
+      {
+        "title": "Paypal Interview Experience On Campus",
+        "url": "https://www.geeksforgeeks.org/paypal-interview-experience-on-campus/",
+        "content_summary": "Recently, I have been through the interview experience of PayPal India and I would like to share my experience with everyone.\nPosition: SDE- 1\nTotally there were four rounds 1 written + 2 technical + 1 HR\nRound1(Coding):\nAs this is the huge elimination round, not only the solution but also time and space complexity matters a lot.\nThis round is for 120 min and we have to solve 2 coding questions\n1. Number of pairs in an array whose sum is divisible by 60\n2.  Number of ways to place the house such that non-houses distances should be minimized\nRound2(Technical Interview):\nInitially, they started to tell me about yourself and they asked to share the screen for coding.\n1. They told me lets go in the bottom-up approach, so at first, they asked to write code for printing ASCII values of the string.\n2. They asked to extend the same to find the frequency of characters in a string\n3. They pasted two arrays and asked to generate a new array with elements that won't occur in both the arrays(The elements only in one array not in another)\n* you shouldn't use any data structure other than arrays( don't use hashmap, sets)\n* you should do in the linear time complexity\n(HINT: The given two arrays are already sorted )\n4. Given a linked list, you have to implement the three methods\nI) Detect the cycle in linked list\nII) Find first node of the linked list\nIII) Find length of loop in linked list\nAfter all the above, they asked some simple questions in DBMS and data structures\n1. what is the primary key?\n2. what is the difference between backtracking and dynamic programming?\n3. what is the difference between natural key and surrogate key?\n4. Approach for solving maze problem\nRound3(Technical Interview):\nInitially, they asked me to explain the approaches of the two problems I solved in the round1 entrance exam.\nThen they asked me to click on the hackerrank list to get the common workspace \n1. Infix to Postfix conversion\n2. They asked me to explain how google search works with abstract classes or UML diagrams\nBoth of the above took more than an hour\nRound4(HR):\nHe gave some scenario-based question and asked to explain the approach and code the logic followed by a few HR questions like\n1. what are your aspirations in life?\n2. Have you ever been in a respectable position?\nFinally, They gave 5 offers to my campus(4 FTE + 1 INT) and I was one of those 4 FTE.\n\nComment\nMore info\nAdvertise with us\nNext Article\nPaypal Interview Experience (On-Campus )"
+      }
+    ]
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/concatenation-of-zig-zag-string-in-n-rows0308/1?page=1&company=PayPal&sortBy=latest",
+      "scraped_at": "2025-06-11T12:38:53.761409",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Concatenation of Zig-Zag String in n Rows",
+      "difficulty": "Medium",
+      "accuracy": "32.92%",
+      "submissions": "15K+",
+      "avg_time": "Not available"
+    },
+    "content": {
+      "problem": "Given a string and number of rows ‘n’. Print the string formed by concatenating n rows when the input string is written in row-wise Zig-Zag fashion.\nExample 1:\nInput:\nstr = \"ABCDEFGH\"\nn = 2\nOutput: \"ACEGBDFH\"\nExplanation:\nLet us write input string in\nZig-Zag fashion in 2 rows.\nA C E G\nB D F H\nNow concatenate the two rows and ignore\nspaces in every row. We get \"ACEGBDFH\"\nExample 2:\nInput:\nstr = \"GEEKSFORGEEKS\"\nn = 3\nOutput: GSGSEKFREKEOE\nExplanation:\nLet us write input string in\nZig-Zag fashion in 3 rows.\nG S G S\nE K F R E K\nE O E\nNow concatenate the two rows and ignore spaces\nin every row. We get \"GSGSEKFREKEOE\"\nYour Task:\nYou need not read input or print anything. Your task is to complete the function convert() which takes 2 arguments(string str, integer n) and returns the resultant string.\nExpected Time Complexity: O(|str|).\nExpected Auxiliary Space: O(|str|).\nConstraints:\n1 ≤ N ≤ 105"
+    },
+    "complexity": {
+      "time_complexity": "Not specified",
+      "space_complexity": "Not specified"
+    },
+    "tags": {
+      "company_tags": [
+        "PayPal"
+      ],
+      "topic_tags": [
+        "Strings",
+        "Data Structures"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/intersection-of-two-arrays2404/1?page=1&company=PayPal&sortBy=latest",
+      "scraped_at": "2025-06-11T12:39:04.873617",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Intersection of Arrays with Distinct",
+      "difficulty": "Easy",
+      "accuracy": "32.83%",
+      "submissions": "223K+",
+      "avg_time": "20m"
+    },
+    "content": {
+      "problem": "Given two unsorted integer arrays a[] and b[] each consisting of distinct elements, the task is to return the count of elements in the intersection (or common elements) of the two arrays.\nIntersection of two arrays can be defined as the set containing distinct common elements between the two arrays.\nExamples:\nInput: a[] = [89, 24, 75, 11, 23], b[] = [89, 2, 4]\nOutput: 1\nExplanation: 89 is the only element in the intersection of two arrays.\nInput: a[] = [1, 2, 4, 3, 5, 6], b[] = [3, 4, 5, 6, 7]\nOutput: 4\nExplanation: 3, 4, 5, and 6 are the elements in the intersection of two arrays.\nInput: a[] = [20, 10, 30, 50, 40], b[] = [15, 25, 30, 20, 35]\nOutput: 2\nExplanation: 20 and 30 are the elements in the intersection of the two arrays.\nConstraints:\n1  ≤  a.size(), b.size() ≤  105\n1  ≤  a[i], b[i]  ≤  105"
+    },
+    "complexity": {
+      "time_complexity": "O(n + m)",
+      "space_complexity": "O(n)"
+    },
+    "tags": {
+      "company_tags": [
+        "Accolite",
+        "Amazon",
+        "Microsoft",
+        "PayPal",
+        "Rockstand"
+      ],
+      "topic_tags": [
+        "two-pointer-algorithm",
+        "Arrays",
+        "Hash",
+        "Data Structures",
+        "Algorithms"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/solve-the-sudoku-1587115621/1?page=1&company=PayPal&sortBy=latest",
+      "scraped_at": "2025-06-11T12:39:38.043478",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Solve the Sudoku",
+      "difficulty": "Hard",
+      "accuracy": "37.98%",
+      "submissions": "120K+",
+      "avg_time": "60m"
+    },
+    "content": {
+      "problem": "Given an incomplete Sudoku configuration in terms of a 9x9  2-D interger square matrix, mat[][], the task is to solve the Sudoku. It is guaranteed that the input Sudoku will have exactly one solution.\nA sudoku solution must satisfy all of the following rules:\nEach of the digits 1-9 must occur exactly once in each row.\nEach of the digits 1-9 must occur exactly once in each column.\nEach of the digits 1-9 must occur exactly once in each of the 9 3x3 sub-boxes of the grid.\nNote: Zeros represent blanks to be filled with numbers 1-9, while non-zero cells are fixed and cannot be changed.\nExamples:\nInput: mat[][] =\nOutput:\nExplanation: Each row, column and 3 x 3 box of the output matrix contains unique numbers.\nInput: mat[][] =\nOutput:\nExplanation: Each row, column and 3 x 3 box of the output matrix contains unique numbers.\nConstraints:\nmat.size() = 9\nmat[i].size() = 9\n0 ≤ mat[i][j] ≤ 9"
+    },
+    "complexity": {
+      "time_complexity": "O(9 ^ (n * n))",
+      "space_complexity": "O(n)"
+    },
+    "tags": {
+      "company_tags": [
+        "Zoho",
+        "Flipkart",
+        "Amazon",
+        "Microsoft",
+        "MakeMyTrip",
+        "Ola Cabs",
+        "Oracle",
+        "MAQ Software",
+        "Directi",
+        "PayPal",
+        "Samsung"
+      ],
+      "topic_tags": [
+        "Matrix",
+        "Backtracking",
+        "Data Structures",
+        "Algorithms"
+      ]
+    },
+    "interview_experiences": [
+      {
+        "title": "Ola Interview Experience Set 8 For Sde 2",
+        "url": "https://www.geeksforgeeks.org/ola-interview-experience-set-8-for-sde-2/",
+        "content_summary": "Design Round: 1. Design LRU cache and implement 2. Solving sudoko 3. Design to replace the existing Support tab navigation based to search based in OLA app. Machine round: Design and implement a sender and receiver system where there can be multiple senders and receivers subscribed to Topics. Each event generated at sender should be received by all receivers subscribed to that topic. Bonus if you can implement group mechanism at receiver side where event is received by one of the receiver in group and received by all groups subscribed to that Topic. (like kafka) Managerial Round: 1. In Depth discussion on projects worked on, flow of entire system of my component. Be confident as u r the boss of ur work. 2. Briefed about the job role and team. 3. Few personal questions like hobbies\nRelated Practice Problems\nSolve the Sudoku\nAll Practice Problems for Ola-Cabs !\n\nComment\nMore info\nCampus Training Program\nNext Article\nOLA Interview Experience | Set 8 (For SDE-2)"
+      },
+      {
+        "title": "Makemytrip Interview Experience Set 10 On Campus",
+        "url": "https://www.geeksforgeeks.org/makemytrip-interview-experience-set-10-on-campus/",
+        "content_summary": "MakeMyTrip recently visited our campus. There were 5 rounds. Online Round ( 1 Hour ) This round consisted of 20 aptitude questions and 3 coding Questions. Coding Questions: 1. Next smallest palindrome 2. Given a number find the inverse of it such that (number * inverse)modulo 10^9+7=1 input 2 output 5*10^8+3 3. Check whether frequency of alphabets on first half of string is equal to frequency on second half. input: HELHE, HEALE,HEAHAE Output: Yes,No,Yes Technical Interview 1 Firstly the interviewer asked me to introduce myself, asked me about my projects. Then he moved on to coding questions and puzzles All the questions below were in random order. 1. Coding question : Full codes to be written a> Algorithm to check whether sudoku is solved or not b> Given a list of songs design an algorithm such that random song is selected every time and no song repeats until the list is exhausted. (Optimise space and time complexity) c> Rotation of an array. ( Had to do in O(1) space complexity) 5. Puzzles: 1. 25 horses puzzle 2. http://www.xkcd.com/blue_eyes.html 3. Two containers of 3L and 5L. Get 4L water using them 4. https://sbjoshi.wordpress.com/2008/06/04/puzzle-burning-ropes/ 5. Bicycle with 2 tyres and 1 spare tyre. Each tyre can cover a distance of 25KM. Find Maximum distance that can be travelled Technical Interview 2 Coding Questions: 1. Given a number permute the digits to get largest number possible. 2. Print 1\n             23\n\n            456\n3. Transpose of a matrix n times. Puzzles and other questions 1. Things to keep in mind while making a missile.(Software point of view) 2. http://www.crazyforcode.com/bad-king-wine-bottles-puzzle/ HR Round Basic details, family background and why do you want to join this company? Where do you see yourself after 5 years and questions about weakness and strengths. Guess Estimate Round 1) Approximate the number of petrol pumps in India\nAll Practice Problems for MakeMyTrip !\nRelated Practice Problems\nSolve the Sudoku\nTwo water Jug problem\nTranspose of Matrix\n\nComment\nMore info\nCampus Training Program\nNext Article\nMakeMyTrip Interview Experience | Set 10 (On-Campus)"
+      }
+    ]
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/subsets-1587115621/1?page=1&company=PayPal&sortBy=latest",
+      "scraped_at": "2025-06-11T12:40:11.378980",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Unique Subsets",
+      "difficulty": "Medium",
+      "accuracy": "39.89%",
+      "submissions": "44K+",
+      "avg_time": "45m"
+    },
+    "content": {
+      "problem": "Given an array arr[] of integers of size N that might contain duplicates, the task is to find all possible unique subsets.\nNote: Each subset should be sorted.\nExample 1:\nInput: N = 3, arr[] = {2,1,2}\nOutput:(),(1),(1 2),(1 2 2),(2),(2 2)\nExplanation:\nAll possible subsets = (),(2),(1),(1,2),(2),(2,2),(2,1),(2,1,2)\nAfter Sorting each subset = (),(2),(1),(1,2),(2),(2,2),(1,2),(1,2,2)\nUnique Susbsets in Lexicographical order = (),(1),(1,2),(1,2,2),(2),(2,2)\nExample 2:\nInput: N = 4, arr[] = {1,2,3,3}\nOutput: (),(1),(1 2),(1 2 3)\n(1 2 3 3),(1 3),(1 3 3),(2),(2 3)\n(2 3 3),(3),(3 3)\nYour Task:\nYour task is to complete the function AllSubsets() which takes the array arr[] and N as input parameters and returns list of all possible unique subsets in lexicographical order.\nExpected Time Complexity: O(2N).\nExpected Auxiliary Space: O(2N * X), X = Length of each subset.\nConstraints:\n1 ≤ N ≤ 12\n1 ≤ arr[i] ≤ 9"
+    },
+    "complexity": {
+      "time_complexity": "Not specified",
+      "space_complexity": "Not specified"
+    },
+    "tags": {
+      "company_tags": [
+        "Amazon",
+        "Microsoft",
+        "PayPal"
+      ],
+      "topic_tags": [
+        "Sorting",
+        "subset",
+        "Backtracking",
+        "Algorithms"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/lowest-common-ancestor-in-a-binary-tree/1?page=1&company=PayPal&sortBy=latest",
+      "scraped_at": "2025-06-11T12:40:22.378800",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "LCA in Binary Tree",
+      "difficulty": "Medium",
+      "accuracy": "52.85%",
+      "submissions": "196K+",
+      "avg_time": "20m"
+    },
+    "content": {
+      "problem": "Given a Binary Tree with all unique values and two nodes value, n1 and n2. The task is to find the lowest common ancestor of the given two nodes. We may assume that either both n1 and n2 are present in the tree or none of them are present.\nLCA: It is the first common ancestor of both the nodes n1 and n2 from bottom of tree.\nExamples:\nInput: root = [1,2,3,4,5,6,7], n1 = 5 , n2 = 6\nOutput: 1\nExplanation: LCA of 5 and 6 is 1.\nInput: root = [5, 2, N, 3, 4], n1 = 3 , n2 = 4\n5\n/\n2\n/ \\\n3 4\nOutput: 2\nExplanation: LCA of 3 and 4 is 2.\nInput: root = [5, 2, N, 3, 4], n1 = 5 , n2 = 4\n5\n/\n2\n/ \\\n3 4\nOutput: 5\nExplanation: LCA of 5 and 4 is 5.\nConstraints:\n1 ≤ number of nodes ≤ 105\n1 ≤ node->data ≤ 105"
+    },
+    "complexity": {
+      "time_complexity": "O(n)",
+      "space_complexity": "O(n)"
+    },
+    "tags": {
+      "company_tags": [
+        "Flipkart",
+        "Accolite",
+        "Amazon",
+        "Microsoft",
+        "OYO Rooms",
+        "Snapdeal",
+        "MakeMyTrip",
+        "Payu",
+        "Google",
+        "Times Internet",
+        "Cisco",
+        "PayPal",
+        "Expedia",
+        "Twitter",
+        "American Express"
+      ],
+      "topic_tags": [
+        "Tree",
+        "Data Structures"
+      ]
+    },
+    "interview_experiences": [
+      {
+        "title": "American Express Interview Experience Set 2",
+        "url": "https://www.geeksforgeeks.org/american-express-interview-experience-set-2/",
+        "content_summary": "Round 1: \nRound 1 had 2 sections, One was a coding round having 2 problems. \n1: Given a list of Students and Subjects along with credits of each, a student can select only those subjects whose credits are less than equal to his/her credits. \nReturn the number of pairs of students and subjects. \ne.g: \nSubjects:{3,4,1,2} \nstudents:{5,3} \n\nSo there can be 7 pairs as The Student having 5 credits can select all the subjects and the student having credits 3 can select subjects with credits 1,2,3. \nEasy Binary search and sort question. \n\n2. Find LCA of a binary tree. \nArticle Link Problem Link\nBoth questions were fairly easy but required to be done in 30 minutes. \n\n2nd Section had 50 questions in 40 minutes consisting of 10 questions each from Aptitude, logical reasoning, Data structures, JavaScript and basic C/C++ questions. \n\n\nRound 2: \nRound2 was a technical round and was fairly easy. The interviewer was very friendly and started the discussion with my projects and internships. \nThen he asked me a few SQL queries related to self-join and find Manager and employee in a given table. \nFew basic C/C++ questions like What is dangling pointer, Post increment operator, Static functions. \nThen a programming question on Sieve. Then few easy puzzles like 3 bulbs and 3 switches puzzle and a bee traveling between two trains. All available on GeeksForGeeks. \n\nRound 3: \nRound 3 was semi-technical. It started off with a small case study which was very interesting and based on Cricket World Cup and How American Express can tie-up with Hilton Hotel. Then a question on trie because it was mentioned in my resume and it ended up really well. \n\nRound 4 HR: \nVery General Questions on Why American Express, strengths and Weakness, Plans of Future Studies, and Which team would I select if given a chance. \n\nI didn't get selected in the end and they eventually recruited 5 out of last 7. No clue why didn't they select me, sometimes it's not your day or someone else was better than you in some way or other so you just have to move on. \nBut GeeksForGeeks is more than enough for companies like Amex where they offer Semi-Technical profiles. \n\n \n\n\n \nComment\nMore info\nCampus Training Program\nNext Article\nAmerican Express Interview Experience | Set 2"
+      }
+    ]
+  }
+]

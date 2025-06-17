@@ -1,0 +1,1159 @@
+[
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/earliest-common-slot/1?page=1&company=Uber&sortBy=latest",
+      "scraped_at": "2025-06-11T12:24:27.122086",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Earliest Common Slot",
+      "difficulty": "Medium",
+      "accuracy": "34.84%",
+      "submissions": "624+",
+      "avg_time": "Not available"
+    },
+    "content": {
+      "problem": "You are given two lists of availability time slots, slots1 and slots2, for two people. Each slot is represented as [start, end], and it is gurranted that within each list, no two slots overlap (i.e., for any two intervals, either start1>end2 or start2>end1). Given a metting duration d, return the earliest common time slot of length of least d. If no such slot exits, return an empty array.\nExamples:\nInput: slots1 = [[10,50], [60,120], [140,210]], slots2 = [[0,15], [60,70]], d = 8\nOutput: [60,68]\nExplanation: The only overlap is [60,70] (10 minutes), which is enough for an 8-minute meeting, so answer is [60,68]\nInput: slots1 = [[10,50], [60,120], [140,210]], slots2 = [[0,15], [60,70]], d = 12\nOutput: []\nExplanation: The only overlap is [60, 70] (10 minutes), but 12 minutes are needed, so no valid slot exists.\nConstraints:\n1 ≤ slots1.size(), slots2.size()  ≤ 105\n-109 ≤ slots1[i], slots2[i] ≤ 109\n1 ≤ d ≤ 106"
+    },
+    "complexity": {
+      "time_complexity": "O(max(n log(n), m log(m)))",
+      "space_complexity": "O(1)"
+    },
+    "tags": {
+      "company_tags": [
+        "Amazon",
+        "Microsoft",
+        "PayPal",
+        "Google",
+        "Uber"
+      ],
+      "topic_tags": [
+        "Sorting",
+        "two-pointer-algorithm",
+        "Arrays",
+        "Data Structures",
+        "Algorithms"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/interval-list-intersections/1?page=1&company=Uber&sortBy=latest",
+      "scraped_at": "2025-06-11T12:24:37.465348",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Interval List Intersections",
+      "difficulty": "Medium",
+      "accuracy": "44.47%",
+      "submissions": "517+",
+      "avg_time": "Not available"
+    },
+    "content": {
+      "problem": "Given two 2-D arrays which represent intervals. Each 2-D array represents a list of intervals. Each list of intervals is disjoint and sorted in increasing order. Find the intersection or set of ranges that are common to both the lists.\nNote: Disjoint means no element is common in a list\nExamples:\nInput: a[][] = [[0, 4], [5, 10], [13, 20], [24, 25]], b[][] = [[1, 5], [8, 12], [15, 24], [25, 26]]\nOutput: [[1, 4], [5, 5], [8, 10], [15, 20], [24, 24], [25, 25]]\nExplanation: [1, 4] lies completely within the range [0, 4] and [1, 5]. Hence, [1, 4] is the desired intersection. Similarly, [24, 24] lies completely within two intervals [24, 25] and [15, 24]\nInput: a[][] = [[0, 2], [5, 10], [12, 22], [24, 25]], b[][] = [[1, 4], [9, 12], [15, 24], [25, 26]]\nOutput: [[1, 2], [9, 10], [12, 12], [15, 22], [24, 24], [25, 25]]\nExplanation: [1, 2] lies completely within the range [0, 2] and [1, 4]. Hence, [1, 2] is the desired intersection. Similarly, [12, 12] lies completely within two intervals [12, 22] and [9, 12]\nConstraints\n1 ≤ a.size(), b.size() ≤ 105\n-109 ≤ a[i], b[i] ≤ 109"
+    },
+    "complexity": {
+      "time_complexity": "O(n + m)",
+      "space_complexity": "O(1)"
+    },
+    "tags": {
+      "company_tags": [
+        "Bloomberg",
+        "Amazon",
+        "Microsoft",
+        "Google",
+        "Uber"
+      ],
+      "topic_tags": [
+        "two-pointer-algorithm",
+        "Arrays",
+        "Data Structures",
+        "Algorithms"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/bits-counting/1?page=1&company=Uber&sortBy=latest",
+      "scraped_at": "2025-06-11T12:24:47.992196",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Bits Counting",
+      "difficulty": "Medium",
+      "accuracy": "77.98%",
+      "submissions": "1K+",
+      "avg_time": "Not available"
+    },
+    "content": {
+      "problem": "Given an integer n, return an array ans of size n + 1, where each element i (0 ≤ i ≤ n) represents the count of 1s in the binary form of i.\nExamples :\nInput: n = 2\nOutput: [0, 1, 1]\nExplanation:\n0 --> 0\n1 --> 1\n2 --> 10\nInput: n = 5\nOutput: [0, 1, 1, 2, 1, 2]\nExplanation:\n0 --> 0\n1 --> 1\n2 --> 10\n3 --> 11\n4 --> 100\n5 --> 101\nConstraints:\n0 ≤ n ≤ 105"
+    },
+    "complexity": {
+      "time_complexity": "O(n)",
+      "space_complexity": "O(n)"
+    },
+    "tags": {
+      "company_tags": [
+        "Bloomberg",
+        "Facebook",
+        "Adobe",
+        "Google",
+        "Amazon",
+        "Microsoft",
+        "Apple",
+        "Yahoo",
+        "Nvidia",
+        "Uber"
+      ],
+      "topic_tags": [
+        "Bit Magic",
+        "Dynamic Programming",
+        "Arrays"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/reverse-an-array/1?page=1&company=Uber&sortBy=latest",
+      "scraped_at": "2025-06-11T12:24:58.563078",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Reverse an Array",
+      "difficulty": "Easy",
+      "accuracy": "55.32%",
+      "submissions": "189K+",
+      "avg_time": "5m"
+    },
+    "content": {
+      "problem": "You are given an array of integers arr[]. Your task is to reverse the given array.\nNote: Modify the array in place.\nExamples:\nInput: arr = [1, 4, 3, 2, 6, 5]\nOutput: [5, 6, 2, 3, 4, 1]\nExplanation: The elements of the array are 1 4 3 2 6 5. After reversing the array, the first element goes to the last position, the second element goes to the second last position and so on. Hence, the answer is 5 6 2 3 4 1.\nInput: arr = [4, 5, 2]\nOutput: [2, 5, 4]\nExplanation: The elements of the array are 4 5 2. The reversed array will be 2 5 4.\nInput: arr = [1]\nOutput: [1]\nExplanation: The array has only single element, hence the reversed array is same as the original.\nConstraints:\n1<=arr.size()<=105\n0<=arr[i]<=105"
+    },
+    "complexity": {
+      "time_complexity": "O(n)",
+      "space_complexity": "O(1)"
+    },
+    "tags": {
+      "company_tags": [
+        "Bloomberg",
+        "Facebook",
+        "TCS",
+        "Adobe",
+        "Google",
+        "Infosys",
+        "Capgemini",
+        "Morgan Stanley",
+        "Amazon",
+        "Microsoft",
+        "Apple",
+        "Yahoo",
+        "PayPal",
+        "Uber"
+      ],
+      "topic_tags": [
+        "Arrays",
+        "Data Structures"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/buy-stock-2/1?page=1&company=Uber&sortBy=latest",
+      "scraped_at": "2025-06-11T12:25:09.244361",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Stock Buy and Sell – Max one Transaction Allowed",
+      "difficulty": "Easy",
+      "accuracy": "49.33%",
+      "submissions": "92K+",
+      "avg_time": "10m"
+    },
+    "content": {
+      "problem": "Given an array prices[] of length n, representing the prices of the stocks on different days. The task is to find the maximum profit possible by buying and selling the stocks on different days when at most one transaction is allowed. Here one transaction means 1 buy + 1 Sell. If it is not possible to make a profit then return 0.\nNote: Stock must be bought before being sold.\nExamples:\nInput: prices[] = [7, 10, 1, 3, 6, 9, 2]\nOutput: 8\nExplanation: You can buy the stock on day 2 at price = 1 and sell it on day 5 at price = 9. Hence, the profit is 8.\nInput: prices[] = [7, 6, 4, 3, 1]\nOutput: 0\nExplanation: Here the prices are in decreasing order, hence if we buy any day then we cannot sell it at a greater price. Hence, the answer is 0.\nInput: prices[] = [1, 3, 6, 9, 11]\nOutput: 10\nExplanation: Since the array is sorted in increasing order, we can make maximum profit by buying at price[0] and selling at price[n-1].\nConstraint:\n1 <= prices.size()<= 105\n0 <= prices[i] <=104"
+    },
+    "complexity": {
+      "time_complexity": "O(n)",
+      "space_complexity": "O(1)"
+    },
+    "tags": {
+      "company_tags": [
+        "Bloomberg",
+        "Facebook",
+        "Intel",
+        "Infosys",
+        "Zoho",
+        "Morgan Stanley",
+        "Amazon",
+        "Microsoft",
+        "Samsung",
+        "Yahoo",
+        "PayPal",
+        "Nvidia",
+        "Oracle",
+        "Visa",
+        "Walmart",
+        "Goldman Sachs",
+        "TCS",
+        "Adobe",
+        "Google",
+        "IBM",
+        "Accenture",
+        "Apple",
+        "Uber"
+      ],
+      "topic_tags": [
+        "Greedy",
+        "Arrays"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/koko-eating-bananas/1?page=1&company=Uber&sortBy=latest",
+      "scraped_at": "2025-06-11T12:25:19.930390",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Koko Eating Bananas",
+      "difficulty": "Medium",
+      "accuracy": "50.27%",
+      "submissions": "21K+",
+      "avg_time": "20m"
+    },
+    "content": {
+      "problem": "Koko is given an array arr[], where each element represents a pile of bananas. She has exactly k hours to eat all the bananas.\nEach hour, Koko can choose one pile and eat up to s bananas from it.\nIf the pile has at least s bananas, she eats exactly s bananas.\nIf the pile has fewer than s bananas, she eats the entire pile in that hour.\nKoko can only eat from one pile per hour.\nYour task is to find the minimum value of s (bananas per hour) such that Koko can finish all the piles within k hours.\nExamples:\nInput: arr[] = [3, 6, 7, 11] , k = 8\nOutput: 4\nExplanation: Koko eats at least 4 bananas per hour to finish all piles within 8 hours, as she can consume each pile in 1 + 2 + 2 + 3 = 8 hours.\nInput: arr[] = [30, 11, 23, 4, 20], k = 5\nOutput: 30\nExplanation: With 30 bananas per hour, Koko completes each pile in 1 hour, totaling 5 hours, which matches k = 5.\nInput: arr[] = [5, 10, 15, 20], k = 7\nOutput: 10\nExplanation: At 10 bananas per hour, Koko finishes in 7 hours, just within the k = 7 limit.\nConstraint:\n1 <= arr.size() <= 105\n1 <= arr[i] <= 106\narr.size() <= k <= 106"
+    },
+    "complexity": {
+      "time_complexity": "O(n log m), where m is the max bananas from all piles",
+      "space_complexity": "O(1)"
+    },
+    "tags": {
+      "company_tags": [
+        "Bloomberg",
+        "Amazon",
+        "Microsoft",
+        "Walmart",
+        "Adobe",
+        "Arcesium",
+        "Uber"
+      ],
+      "topic_tags": [
+        "Binary Search",
+        "Arrays"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/shortest-path-using-atmost-one-curved-edge--170647/1?page=1&company=Uber&sortBy=latest",
+      "scraped_at": "2025-06-11T12:25:30.266245",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Shortest Path Using Atmost One Curved Edge",
+      "difficulty": "Hard",
+      "accuracy": "59.43%",
+      "submissions": "18K+",
+      "avg_time": "Not available"
+    },
+    "content": {
+      "problem": "Given an undirected connected graph of n vertices and list of m edges in a graph and for each pair of vertices that are connected by an edge.\nThere are two edges between them, one curved edge and one straight edge i.e. the tuple (x, y, w1, w2) means that between vertices x and y, there is a straight edge with weight w1 and a curved edge with weight w2.\nYou are given two vertices a and b and you have to go from a to b through a series of edges such that in the entire path you can use at most 1 curved edge. Your task is to find the shortest path from a to b satisfying the above condition. If there is no path from a to b, return -1.\nExamples\nInput: n = 4, m = 4, a = 2, b = 4\nedges[][] = [[1, 2, 1, 4], [1, 3, 2, 4],\n[1, 4, 3, 1], [2, 4, 6, 5]]\nOutput: 2\nExplanation:\nWe can follow the path 2 -> 1 -> 4.\nThis gives a distance of 1+3 = 4 if we follow\nall straight paths. But we can take the curved\npath from 1 -> 4, which costs 1. This\nwill result in a cost of 1 + 1 = 2\nInput: n = 2, m = 1, a = 1, b = 2\nedges = [[1, 2, 4, 1]]\nOutput : 1\nExplanation:\nTake the curved path from 1 to 2 which costs 1.\nYour Task:\nYou don't need to read input or print anything. Your task is to complete the function shortestPath() which takes 4 integers n, m, a, and b, and a list of lists named edges of size m as input and returns the cost of shortest path from a to b.\nExpected Time Complexity: O((m+n)log(n))\nExpected Auxiliary Space: O(n+m)\nConstraints:\n1 ≤ n,m ≤ 105\n1 ≤ a,b ≤ n\nweight of edges ≤ 104"
+    },
+    "complexity": {
+      "time_complexity": "Not specified",
+      "space_complexity": "Not specified"
+    },
+    "tags": {
+      "company_tags": [
+        "Uber"
+      ],
+      "topic_tags": [
+        "Graph",
+        "Shortest Path",
+        "Data Structures",
+        "Algorithms"
+      ]
+    },
+    "interview_experiences": [
+      {
+        "title": "Uber Interview Experience On Campus For Internship 2018 19",
+        "url": "https://www.geeksforgeeks.org/uber-interview-experience-on-campus-for-internship-2018-19/",
+        "content_summary": "Round 1: The first round was an online coding round which consisted of 3 coding questions to be attempted in 90 minutes. Question 1 :- There is a meeting scheduled in an office that lasts for time t and starts at time 0. In between the meeting there are n presentations whose start and end times are given i.e. the ith presentation starts at s[i] and ends at e[i]-1. The presentations do not overlap with each other. You are given k, the maximum number of presentations that you can reschedule keeping the original order intact. Note that the duration of the presentation can't be changed. You can only change the start and end time. Your task is to maximize the longest time period in which there is no presentation scheduled during the meeting. Constraints :- 1<=t<=1, 000, 000, 000 0<=k<=n 1<=n<=100, 000 e[i]<=s[i+1],   0<=i <n-1 s[i] < e[i] for 0<=i<=n-1   Question 2 :- You are given a n x  m grid consisting of values 0 and 1. A value of 1 means that you can enter that cell and 0 implies that entry to that cell is not allowed. You start at the upper-left corner of the grid (1, 1) and you have to reach the bottom-right corner (n, m) such that you can only move in the right or down direction from every cell. Your task is to calculate the total number of ways of reaching the target. Constraints :- 1<=n, m<=10, 000   Question 3 :- You are given a list of edges in a graph and for each pair of vertices that are connected by an edge, there are two edges between them, one curved edge and one straight edge i.e. the tuple (x, y, w1, w2) means that between vertices x and y, there is a straight edge with weight w1 and a curved edge with weight w2. You are given two vertices a and b and you have to go from a to b through a series of edges such that in the entire path you can use at most 1 curved edge. Your task is to find the shortest path from a to b satisfying the above condition.   Round 2: This was a technical round and lasted for about an hour. I was asked to design a Snakes And Ladder game and code the same in the language of my choice. I used random numbers to design the board and following which I was asked to play the game between two players and I coded the same. He introduced a trick to the question and asked me to rate the difficulty of the board. I thought in terms of the shortest path(Breadth First Search) from start to the end but he said that a better approach would be to calculate the probability of reaching a particular number from the start. So I used Dynamic Programming to calculate the probability of reaching a particular number in x number of moves where 1<=x<=maximum cap on the number of moves following which a tie would be declared. He then asked me that he didn't want a game that would finish in just 15 moves as that would make the game boring. So I was told to  calculate the probability that the game finishes in 15 to  100 moves. Finally he asked me to tell just by looking at the position of the players that who was in the winning position at that moment. He was satisfied by my responses. Round 3: This was a problem solving round and lasted for 75 minutes. He gave me a very complicated question. Here it goes... There are 3 integers a, b, w. There  are 2 equations -\nw+a=b\na (bitwise AND) b =0;\nI was given the value of w and he asked me to calculate the number of pairs (a, b) satisfying the two equations. Assume  that there are no overflows. I used Recursion + Bit Manipulation to solve this and he seemed satisfied with my approach though I required some of his help as well.   P.S.  :- I got a call for an offer 3 hours later.    \n\nComment\nMore info\nAdvertise with us\nNext Article\nUber Interview Experience (On Campus for Internship 2018-19)"
+      }
+    ]
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/unique-paths-in-a-grid--170647/1?page=1&company=Uber&sortBy=latest",
+      "scraped_at": "2025-06-11T12:25:44.379764",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Unique Paths in a Grid",
+      "difficulty": "Medium",
+      "accuracy": "50.47%",
+      "submissions": "53K+",
+      "avg_time": "Not available"
+    },
+    "content": {
+      "problem": "You are given a 2d list grid[][] of size n x m consisting of values 0 and 1.\nA value of 0 means that you can enter that cell and 1 implies that entry to that cell is not allowed.\nYou start at the upper-left corner of the grid (1, 1) and you have to reach the bottom-right corner (n, m) such that you can only move in the right or down direction from every cell.\nYour task is to calculate the total number of ways of reaching the target.\nNote: The first (1, 1) and last (n, m) cell of the grid can also be 1.\nIt is guaranteed that the total number of ways will fit within a 32-bit integer.\nExamples:\nInput: n = 3, m = 3,\ngrid[][] = [[0, 0, 0], [0, 1, 0], [0, 0, 0]]\nOutput: 2\nExplanation: There are two ways to reach the bottom-right corner:\n1. Right -> Right -> Down -> Down\n2. Down -> Down -> Right -> Right\nInput: n = 1, m = 3,\ngrid[][] = [[1, 0, 1]]\nOutput: 0\nExplanation: There is no possible path to reach the end.\nConstraints:\n1 ≤ n*m ≤ 106"
+    },
+    "complexity": {
+      "time_complexity": "O(n * m)",
+      "space_complexity": "O(n * m)"
+    },
+    "tags": {
+      "company_tags": [
+        "Uber"
+      ],
+      "topic_tags": [
+        "Dynamic Programming",
+        "Matrix",
+        "Data Structures",
+        "Algorithms"
+      ]
+    },
+    "interview_experiences": [
+      {
+        "title": "Uber Interview Experience On Campus For Internship 2018 19",
+        "url": "https://www.geeksforgeeks.org/uber-interview-experience-on-campus-for-internship-2018-19/",
+        "content_summary": "Round 1: The first round was an online coding round which consisted of 3 coding questions to be attempted in 90 minutes. Question 1 :- There is a meeting scheduled in an office that lasts for time t and starts at time 0. In between the meeting there are n presentations whose start and end times are given i.e. the ith presentation starts at s[i] and ends at e[i]-1. The presentations do not overlap with each other. You are given k, the maximum number of presentations that you can reschedule keeping the original order intact. Note that the duration of the presentation can't be changed. You can only change the start and end time. Your task is to maximize the longest time period in which there is no presentation scheduled during the meeting. Constraints :- 1<=t<=1, 000, 000, 000 0<=k<=n 1<=n<=100, 000 e[i]<=s[i+1],   0<=i <n-1 s[i] < e[i] for 0<=i<=n-1   Question 2 :- You are given a n x  m grid consisting of values 0 and 1. A value of 1 means that you can enter that cell and 0 implies that entry to that cell is not allowed. You start at the upper-left corner of the grid (1, 1) and you have to reach the bottom-right corner (n, m) such that you can only move in the right or down direction from every cell. Your task is to calculate the total number of ways of reaching the target. Constraints :- 1<=n, m<=10, 000   Question 3 :- You are given a list of edges in a graph and for each pair of vertices that are connected by an edge, there are two edges between them, one curved edge and one straight edge i.e. the tuple (x, y, w1, w2) means that between vertices x and y, there is a straight edge with weight w1 and a curved edge with weight w2. You are given two vertices a and b and you have to go from a to b through a series of edges such that in the entire path you can use at most 1 curved edge. Your task is to find the shortest path from a to b satisfying the above condition.   Round 2: This was a technical round and lasted for about an hour. I was asked to design a Snakes And Ladder game and code the same in the language of my choice. I used random numbers to design the board and following which I was asked to play the game between two players and I coded the same. He introduced a trick to the question and asked me to rate the difficulty of the board. I thought in terms of the shortest path(Breadth First Search) from start to the end but he said that a better approach would be to calculate the probability of reaching a particular number from the start. So I used Dynamic Programming to calculate the probability of reaching a particular number in x number of moves where 1<=x<=maximum cap on the number of moves following which a tie would be declared. He then asked me that he didn't want a game that would finish in just 15 moves as that would make the game boring. So I was told to  calculate the probability that the game finishes in 15 to  100 moves. Finally he asked me to tell just by looking at the position of the players that who was in the winning position at that moment. He was satisfied by my responses. Round 3: This was a problem solving round and lasted for 75 minutes. He gave me a very complicated question. Here it goes... There are 3 integers a, b, w. There  are 2 equations -\nw+a=b\na (bitwise AND) b =0;\nI was given the value of w and he asked me to calculate the number of pairs (a, b) satisfying the two equations. Assume  that there are no overflows. I used Recursion + Bit Manipulation to solve this and he seemed satisfied with my approach though I required some of his help as well.   P.S.  :- I got a call for an offer 3 hours later.    \n\nComment\nMore info\nAdvertise with us\nNext Article\nUber Interview Experience (On Campus for Internship 2018-19)"
+      }
+    ]
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/3-sum-closest/1?page=1&company=Uber&sortBy=latest",
+      "scraped_at": "2025-06-11T12:25:56.862731",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "3 Sum Closest",
+      "difficulty": "Medium",
+      "accuracy": "49.69%",
+      "submissions": "22K+",
+      "avg_time": "Not available"
+    },
+    "content": {
+      "problem": "Given an array arr[] and an integer target, the task is to find the sum of three integers in arr[] such that the sum is closest to target.\nNote: If multiple sums are closest to target, return the maximum one.\nExamples:\nInput: arr[] = [-1, 2, 2, 4], target = 4\nOutput: 5\nExplanation: All possible triplets\n[-1, 2, 2], sum = (-1) + 2 + 2 = 3\n[-1, 2, 4], sum = (-1) + 2 + 4 = 5\n[-1, 2, 4], sum = (-1) + 2 + 4 = 5\n[2, 2, 4], sum = 2 + 2 + 4 = 8\nTriplet [-1, 2, 2], [-1, 2, 4] and [-1, 2, 4] have sum closest to target, so return the maximum one, that is 5.\nInput: arr[] = [1, 10, 4, 5], target = 10\nOutput: 10\nExplanation: All possible triplets\n[1, 10, 4], sum = (1 + 10 + 4) = 15\n[1, 10, 5], sum = (1 + 10 + 5) = 16\n[1, 4, 5], sum = (1 + 4 + 5) = 10\n[10, 4, 5], sum = (10 + 4 + 5) = 19\nTriplet [1, 4, 5] has sum = 10 which is closest to target.\nConstraints:\n3 <= arr.size() <= 103\n-103 ≤ arr[i] ≤ 103\n-104 ≤ target ≤ 104"
+    },
+    "complexity": {
+      "time_complexity": "O(n^2)",
+      "space_complexity": "O(1)"
+    },
+    "tags": {
+      "company_tags": [
+        "Amazon",
+        "Microsoft",
+        "Adobe",
+        "Google",
+        "Zoho",
+        "Uber",
+        "Facebook"
+      ],
+      "topic_tags": [
+        "Sorting",
+        "two-pointer-algorithm",
+        "Arrays"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/count-the-subarrays-having-product-less-than-k1708/1?page=1&company=Uber&sortBy=latest",
+      "scraped_at": "2025-06-11T12:26:07.296013",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Subarrays Product Less than K",
+      "difficulty": "Medium",
+      "accuracy": "21.0%",
+      "submissions": "107K+",
+      "avg_time": "Not available"
+    },
+    "content": {
+      "problem": "Given an array of positive numbers, the task is to find the number of possible contiguous subarrays having product less than a given number k.\nExample 1:\nInput :\nn = 4, k = 10\na[] = [1, 2, 3, 4]\nOutput :\n7\nExplanation:\nThe contiguous subarrays are {1}, {2}, {3}, {4}\n{1, 2}, {1, 2, 3} and {2, 3}, in all these subarrays\nproduct of elements is less than 10, count of\nsuch subarray is 7.\n{2,3,4} will not be a valid subarray, because\n2*3*4=24 which is greater than 10.\nExample 2:\nInput:\nn = 7 , k = 100\na[] = [1, 9, 2, 8, 6, 4, 3]\nOutput:\n16\nYour Task:\nYou don't need to read input or print anything. Your task is to complete the function countSubArrayProductLessThanK() which takes the array a[], its size n and an integer k as inputs and returns the count of required subarrays.\nConstraints:\n1<=n<=106\n1<=k<=1015\n1<=a[i]<=105"
+    },
+    "complexity": {
+      "time_complexity": "O(n)",
+      "space_complexity": "O(1)"
+    },
+    "tags": {
+      "company_tags": [
+        "Goldman Sachs",
+        "Facebook",
+        "Walmart",
+        "Yatra.com",
+        "Amazon",
+        "Linkedin",
+        "Microsoft",
+        "Uber"
+      ],
+      "topic_tags": [
+        "Arrays",
+        "Data Structures",
+        "Algorithms",
+        "sliding-window"
+      ]
+    },
+    "interview_experiences": [
+      {
+        "title": "Goldman Sachs Interview Experience Set 32 Campus",
+        "url": "https://www.geeksforgeeks.org/goldman-sachs-interview-experience-set-32-campus/",
+        "content_summary": "Goldman Sachs conducted on campus hiring for tech interns in our campus. CGPA cutoff: 7.0 Branches Eligible: All circuital branches\nOnline Round:\nAn online round was conducted on hackerrank. The duration of the test was 90 minutes. There were 5 MCQs ( 10 marks each, -3 negative marking) and two coding questions( one 35 marks, and the other 15 marks) MCQs were based on the concepts of Data Structures and Algorithms. Proper in- depth knowledge was required to solve these MCQs. Coding questions: 1. Given a string, find the first non repeating character. 2. Given an array, find the number of contiguous subarrays such that the product of the elements of the subarray is less than or equal to a given positive integer k. ( Brute force gave TLE in this question. So proper optimised O(n) complexity solution was required) After the online round, 6 students were shortlisted out of 170 for the personal interviews.\nPersonal Interview Round 1:\n1.) Given a string, print all possible permutations of the characters of that strings. (Had to cover all the edge cases) 2.) What is elastic search. 3.) Modification of the first question, asked to give permuatations containing only 3 characters. Few more questions were asked on graphs.\nPersonal Interview Round 2:\n1.) Find the median of the stream of integers 2.) Talked about my resume and the projects I did 3.) Given a binary tree, check if it is Binary Search Tree without using extra space Few more questions on heaps. This round mostly revolved around trees and heap.\nPersonal Interview Round 3:\n1.) Talked about my Resume 2.) What is JSON 3.) What is REST api 4.) Egg dropping puzzle One more puzzle was asked. I cant recall it now\nPersonal Interview Round 4:\n1.) Discussed questions of the first online test( conducted on hacker rank) 2.) Questions on probability and statistics Few more HR questions Finally , two students were selected for the internship.\n\nComment\nMore info\nAdvertise with us\nNext Article\nGoldman Sachs Interview Experience | Set 32 (On campus)"
+      }
+    ]
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/roman-number-to-integer3201/1?page=1&company=Uber&sortBy=latest",
+      "scraped_at": "2025-06-11T12:26:22.992813",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Roman Number to Integer",
+      "difficulty": "Easy",
+      "accuracy": "43.31%",
+      "submissions": "187K+",
+      "avg_time": "20m"
+    },
+    "content": {
+      "problem": "Given a string in Roman number format (s), your task is to convert it to an integer. Various symbols and their values are given below.\nNote: I = 1, V = 5, X = 10, L = 50, C = 100, D = 500, M = 1000\nExamples:\nInput: s = \"IX\"\nOutput: 9\nExplanation: IX is a Roman symbol which represents 10 – 1 = 9.\nInput: s = \"XL\"\nOutput: 40\nExplanation: XL is a Roman symbol which represents 50 – 10 = 40.\nInput: s = \"MCMIV\"\nOutput: 1904\nExplanation: M is 1000, CM is 1000 – 100 = 900, and IV is 4. So we have total as 1000 + 900 + 4 = 1904.\nConstraints:\n1<= roman number <=3999\ns[i] belongs to [I, V, X, L, C, D, M]"
+    },
+    "complexity": {
+      "time_complexity": "O(n)",
+      "space_complexity": "O(1)"
+    },
+    "tags": {
+      "company_tags": [
+        "Zoho",
+        "Amazon",
+        "Microsoft",
+        "Facebook",
+        "Twitter",
+        "Uber"
+      ],
+      "topic_tags": [
+        "Strings",
+        "Data Structures"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/allocate-minimum-number-of-pages0937/1?page=1&company=Uber&sortBy=latest",
+      "scraped_at": "2025-06-11T12:26:33.744871",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Allocate Minimum Pages",
+      "difficulty": "Medium",
+      "accuracy": "35.51%",
+      "submissions": "279K+",
+      "avg_time": "35m"
+    },
+    "content": {
+      "problem": "You are given an array arr[] of integers, where each element arr[i] represents the number of pages in the ith book. You also have an integer k representing the number of students. The task is to allocate books to each student such that:\nEach student receives atleast one book.\nEach student is assigned a contiguous sequence of books.\nNo book is assigned to more than one student.\nThe objective is to minimize the maximum number of pages assigned to any student. In other words, out of all possible allocations, find the arrangement where the student who receives the most pages still has the smallest possible maximum.\nNote: Return -1 if a valid assignment is not possible, and allotment should be in contiguous order (see the explanation for better understanding).\nExamples:\nInput: arr[] = [12, 34, 67, 90], k = 2\nOutput: 113\nExplanation: Allocation can be done in following ways:\n[12] and [34, 67, 90] Maximum Pages = 191\n[12, 34] and [67, 90] Maximum Pages = 157\n[12, 34, 67] and [90] Maximum Pages = 113.\nTherefore, the minimum of these cases is 113, which is selected as the output.\nInput: arr[] = [15, 17, 20], k = 5\nOutput: -1\nExplanation: Allocation can not be done.\nInput: arr[] = [22, 23, 67], k = 1\nOutput: 112\nConstraints:\n1 <=  arr.size() <= 106\n1 <= arr[i] <= 103\n1 <= k <= 103"
+    },
+    "complexity": {
+      "time_complexity": "O(n log n)",
+      "space_complexity": "O(1)"
+    },
+    "tags": {
+      "company_tags": [
+        "Infosys",
+        "Amazon",
+        "Microsoft",
+        "Google",
+        "Codenation",
+        "Uber"
+      ],
+      "topic_tags": [
+        "Searching",
+        "Divide and Conquer",
+        "Algorithms"
+      ]
+    },
+    "interview_experiences": [
+      {
+        "title": "Amazon Interview Experience On Campus For Sde 1 5",
+        "url": "https://www.geeksforgeeks.org/amazon-interview-experience-on-campus-for-sde-1-5/",
+        "content_summary": "There were totally 5 rounds,(1 online coding Test+3 Technical Interviews+1 (managerial-cum-technical  Round))\nRound-1(Online Coding Test)\nThe test was conducted on amazon's platform.\nIt had 4 sections:\nCode Debugging (C, C++, Java)[Not sure of python and other languages]. (20 minutes)\nAptitude and Reasoning Ability. (35 minutes)\nWorkstyles Assessment. (20 minutes)\nCoding Round. (70 minutes)\nThe first 3 sections were fairly easy, but one needs to be a tad bit quicker to finish all the questions on time.\nThere were 2 coding questions. Different sets had different questions. links to a few of them are as follows:\nQ1) https://www.geeksforgeeks.org/merge-two-sorted-linked-lists/amp/\nQ2) https://www.geeksforgeeks.org/clone-linked-list-next-arbit-pointer-set-2/\nQ3) https://www.geeksforgeeks.org/search-in-row-wise-and-column-wise-sorted-matrix/  \nQ4) https://leetcode.com/problems/two-sum/\nQ5) https://leetcode.com/problems/critical-connections-in-a-network/\nRound -2(Technical Interview)\nQ1) https://www.geeksforgeeks.org/check-number-can-expressed-sum-consecutive-numbers/\nThe solution given on the above link was not expected, but the interviewer was satisfied \nwith  O(n ^{ 0.5}) approach   \nQ2)https://www.geeksforgeeks.org/print-k-sum-paths-binary-tree/\nRound-3(Technical Interview)\nQ1)The idea was similar to the problem given in the link below, but the question was completely different.\nhttps://www.geeksforgeeks.org/painters-partition-problem/\nQ2)https://stackoverflow.com/questions/28871860/algorithm-to-find-the-maximum-non-adjacent-sum-in-n-ary-tree\nRound-4(Technical Interview)\nQ1)https://www.geeksforgeeks.org/minimum-steps-reach-target-knight/\nA lot of reasonings and variations(like, why BFS, can we do with DFS, if no then why?, its time and space complexity, can we do by using only O(1) memory to keep track of distance, etc ).  \nQ2)As the first question gulped the majority of the time because of its variations and reasoning, he told me that he would ask me a theoretical question.\nSo, first, he asked me to write down all the data structures which I know. And then, to think of real-time applications of each of them.  \nRound-5(Technical-cum-Managerial) \n1)https://www.geeksforgeeks.org/find-rotation-count-rotated-sorted-array/\n2)What would you do if you are stuck in a huge Technical problem? Support your answer with a realtime situation you have faced.\n3) Describe an incident where you were in a difficult situation(professional, not personal) first but then, finally came out of it successfully?\nAnd a few other \"Describe an incident\" Questions were also asked.\n Additional Information\nThe Interviews were conducted on Amazon Chime(A video calling platform).\nCoding questions were asked to code on Amazon's LiveCode platform where both the interviewer and the interviewee can simultaneously edit and view the code.\nThe Interviews were of 1 hr each.\n\nTips:\nBe thorough with  Time and space complexity calculation, as it is the first question you might get after proposing an algorithm to the interviewer.\nDon't be silent in the interview, keep sharing all your thoughts and budding ideas, it would not only engage the interviewer but also help you to get fresh ideas.\nBe polite and carefully listen to the interviewer(you might be lucky to grab a few clues).\nA big Thank you to GeeksforGeeks for transforming me from a reader to a writer.\n \nComment\nMore info\nAdvertise with us\nNext Article\nAmazon Interview Experience | On-Campus for SDE-1"
+      }
+    ]
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/equilibrium-point-1587115620/1?page=1&company=Uber&sortBy=latest",
+      "scraped_at": "2025-06-11T12:26:47.294785",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Equilibrium Point",
+      "difficulty": "Easy",
+      "accuracy": "28.13%",
+      "submissions": "642K+",
+      "avg_time": "15m"
+    },
+    "content": {
+      "problem": "Given an array of integers arr[], the task is to find the first equilibrium point in the array.\nThe equilibrium point in an array is an index (0-based indexing) such that the sum of all elements before that index is the same as the sum of elements after it. Return -1 if no such point exists.\nExamples:\nInput: arr[] = [1, 2, 0, 3]\nOutput: 2\nExplanation: The sum of left of index 2 is 1 + 2 = 3 and sum on right of index 2 is 3.\nInput: arr[] = [1, 1, 1, 1]\nOutput: -1\nExplanation: There is no equilibrium index in the array.\nInput: arr[] = [-7, 1, 5, 2, -4, 3, 0]\nOutput: 3\nExplanation: The sum of left of index 3 is -7 + 1 + 5 = -1 and sum on right of index 3 is -4 + 3 + 0 = -1.\nConstraints:\n3 <= arr.size() <= 105\n-104 <= arr[i] <= 104"
+    },
+    "complexity": {
+      "time_complexity": "O(n)",
+      "space_complexity": "O(1)"
+    },
+    "tags": {
+      "company_tags": [
+        "Amazon",
+        "Adobe",
+        "Google",
+        "Facebook",
+        "Microsoft",
+        "Uber"
+      ],
+      "topic_tags": [
+        "prefix-sum",
+        "Arrays",
+        "Data Structures",
+        "Algorithms"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/find-nth-element-of-spiral-matrix/1?page=1&company=Uber&sortBy=latest",
+      "scraped_at": "2025-06-11T12:26:58.386776",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Find kth element of spiral matrix",
+      "difficulty": "Medium",
+      "accuracy": "50.66%",
+      "submissions": "53K+",
+      "avg_time": "20m"
+    },
+    "content": {
+      "problem": "Given a matrix with n rows and m columns. Your task is to find the kth element which is obtained while traversing the matrix spirally. You need to complete the method findK which takes four arguments the first argument is the matrix A and the next two arguments will be n and m denoting the size of the matrix A and then the forth argument is an integer k. The function will return the kth element obtained while traversing the matrix spirally.\nExample 1:\nInput:\nn = 4, m = 4, k = 10\nA[][] = {{1 2 3 4},\n{5 6 7 8},\n{9 10 11 12},\n{13 14 15 16}}\nOutput:\n13\nExplanation:\nThe spiral order of matrix will look like 1->2->3->4->8->12->16->15->14->13->9->5->6->7->11->10. So the 10th element in this order is 13.\nExample 2:\nInput:\nn = 3, m = 3, k = 4\nA[][] = {{1 2 3},\n{4 5 6},\n{7 8 9}}\nOutput:\n6\nExplanation:\nThe spiral order of matrix will look like 1->2->3->6->9->8->7->4->5. So the 4th element in this order is 6.\nYour Task:\nYou only need to implement the given function findK(). Do not read input, instead use the arguments given in the function. Return the K'th element obtained by traversing matrix spirally.\nExpected Time Complexity: O(n*m)\nExpected Auxiliary Space: O(n*m)\nConstraints:\n1<=n,m<=103\n1<=k<=n*m\n-109 <= A[i][j] <= 109"
+    },
+    "complexity": {
+      "time_complexity": "Not specified",
+      "space_complexity": "Not specified"
+    },
+    "tags": {
+      "company_tags": [
+        "Amazon",
+        "Bloomberg",
+        "Facebook",
+        "Microsoft",
+        "Uber"
+      ],
+      "topic_tags": [
+        "Matrix",
+        "Data Structures"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/earliest-common-slot/1?page=1&company=Uber&sortBy=latest",
+      "scraped_at": "2025-06-11T12:27:09.409232",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Earliest Common Slot",
+      "difficulty": "Medium",
+      "accuracy": "34.84%",
+      "submissions": "624+",
+      "avg_time": "Not available"
+    },
+    "content": {
+      "problem": "You are given two lists of availability time slots, slots1 and slots2, for two people. Each slot is represented as [start, end], and it is gurranted that within each list, no two slots overlap (i.e., for any two intervals, either start1>end2 or start2>end1). Given a metting duration d, return the earliest common time slot of length of least d. If no such slot exits, return an empty array.\nExamples:\nInput: slots1 = [[10,50], [60,120], [140,210]], slots2 = [[0,15], [60,70]], d = 8\nOutput: [60,68]\nExplanation: The only overlap is [60,70] (10 minutes), which is enough for an 8-minute meeting, so answer is [60,68]\nInput: slots1 = [[10,50], [60,120], [140,210]], slots2 = [[0,15], [60,70]], d = 12\nOutput: []\nExplanation: The only overlap is [60, 70] (10 minutes), but 12 minutes are needed, so no valid slot exists.\nConstraints:\n1 ≤ slots1.size(), slots2.size()  ≤ 105\n-109 ≤ slots1[i], slots2[i] ≤ 109\n1 ≤ d ≤ 106"
+    },
+    "complexity": {
+      "time_complexity": "O(max(n log(n), m log(m)))",
+      "space_complexity": "O(1)"
+    },
+    "tags": {
+      "company_tags": [
+        "Amazon",
+        "Microsoft",
+        "PayPal",
+        "Google",
+        "Uber"
+      ],
+      "topic_tags": [
+        "Sorting",
+        "two-pointer-algorithm",
+        "Arrays",
+        "Data Structures",
+        "Algorithms"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/interval-list-intersections/1?page=1&company=Uber&sortBy=latest",
+      "scraped_at": "2025-06-11T12:27:20.279843",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Interval List Intersections",
+      "difficulty": "Medium",
+      "accuracy": "44.47%",
+      "submissions": "517+",
+      "avg_time": "Not available"
+    },
+    "content": {
+      "problem": "Given two 2-D arrays which represent intervals. Each 2-D array represents a list of intervals. Each list of intervals is disjoint and sorted in increasing order. Find the intersection or set of ranges that are common to both the lists.\nNote: Disjoint means no element is common in a list\nExamples:\nInput: a[][] = [[0, 4], [5, 10], [13, 20], [24, 25]], b[][] = [[1, 5], [8, 12], [15, 24], [25, 26]]\nOutput: [[1, 4], [5, 5], [8, 10], [15, 20], [24, 24], [25, 25]]\nExplanation: [1, 4] lies completely within the range [0, 4] and [1, 5]. Hence, [1, 4] is the desired intersection. Similarly, [24, 24] lies completely within two intervals [24, 25] and [15, 24]\nInput: a[][] = [[0, 2], [5, 10], [12, 22], [24, 25]], b[][] = [[1, 4], [9, 12], [15, 24], [25, 26]]\nOutput: [[1, 2], [9, 10], [12, 12], [15, 22], [24, 24], [25, 25]]\nExplanation: [1, 2] lies completely within the range [0, 2] and [1, 4]. Hence, [1, 2] is the desired intersection. Similarly, [12, 12] lies completely within two intervals [12, 22] and [9, 12]\nConstraints\n1 ≤ a.size(), b.size() ≤ 105\n-109 ≤ a[i], b[i] ≤ 109"
+    },
+    "complexity": {
+      "time_complexity": "O(n + m)",
+      "space_complexity": "O(1)"
+    },
+    "tags": {
+      "company_tags": [
+        "Bloomberg",
+        "Amazon",
+        "Microsoft",
+        "Google",
+        "Uber"
+      ],
+      "topic_tags": [
+        "two-pointer-algorithm",
+        "Arrays",
+        "Data Structures",
+        "Algorithms"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/bits-counting/1?page=1&company=Uber&sortBy=latest",
+      "scraped_at": "2025-06-11T12:27:30.773206",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Bits Counting",
+      "difficulty": "Medium",
+      "accuracy": "77.98%",
+      "submissions": "1K+",
+      "avg_time": "Not available"
+    },
+    "content": {
+      "problem": "Given an integer n, return an array ans of size n + 1, where each element i (0 ≤ i ≤ n) represents the count of 1s in the binary form of i.\nExamples :\nInput: n = 2\nOutput: [0, 1, 1]\nExplanation:\n0 --> 0\n1 --> 1\n2 --> 10\nInput: n = 5\nOutput: [0, 1, 1, 2, 1, 2]\nExplanation:\n0 --> 0\n1 --> 1\n2 --> 10\n3 --> 11\n4 --> 100\n5 --> 101\nConstraints:\n0 ≤ n ≤ 105"
+    },
+    "complexity": {
+      "time_complexity": "O(n)",
+      "space_complexity": "O(n)"
+    },
+    "tags": {
+      "company_tags": [
+        "Bloomberg",
+        "Facebook",
+        "Adobe",
+        "Google",
+        "Amazon",
+        "Microsoft",
+        "Apple",
+        "Yahoo",
+        "Nvidia",
+        "Uber"
+      ],
+      "topic_tags": [
+        "Bit Magic",
+        "Dynamic Programming",
+        "Arrays"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/reverse-an-array/1?page=1&company=Uber&sortBy=latest",
+      "scraped_at": "2025-06-11T12:27:42.021364",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Reverse an Array",
+      "difficulty": "Easy",
+      "accuracy": "55.32%",
+      "submissions": "189K+",
+      "avg_time": "5m"
+    },
+    "content": {
+      "problem": "You are given an array of integers arr[]. Your task is to reverse the given array.\nNote: Modify the array in place.\nExamples:\nInput: arr = [1, 4, 3, 2, 6, 5]\nOutput: [5, 6, 2, 3, 4, 1]\nExplanation: The elements of the array are 1 4 3 2 6 5. After reversing the array, the first element goes to the last position, the second element goes to the second last position and so on. Hence, the answer is 5 6 2 3 4 1.\nInput: arr = [4, 5, 2]\nOutput: [2, 5, 4]\nExplanation: The elements of the array are 4 5 2. The reversed array will be 2 5 4.\nInput: arr = [1]\nOutput: [1]\nExplanation: The array has only single element, hence the reversed array is same as the original.\nConstraints:\n1<=arr.size()<=105\n0<=arr[i]<=105"
+    },
+    "complexity": {
+      "time_complexity": "O(n)",
+      "space_complexity": "O(1)"
+    },
+    "tags": {
+      "company_tags": [
+        "Bloomberg",
+        "Facebook",
+        "TCS",
+        "Adobe",
+        "Google",
+        "Infosys",
+        "Capgemini",
+        "Morgan Stanley",
+        "Amazon",
+        "Microsoft",
+        "Apple",
+        "Yahoo",
+        "PayPal",
+        "Uber"
+      ],
+      "topic_tags": [
+        "Arrays",
+        "Data Structures"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/buy-stock-2/1?page=1&company=Uber&sortBy=latest",
+      "scraped_at": "2025-06-11T12:27:52.970688",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Stock Buy and Sell – Max one Transaction Allowed",
+      "difficulty": "Easy",
+      "accuracy": "49.33%",
+      "submissions": "92K+",
+      "avg_time": "10m"
+    },
+    "content": {
+      "problem": "Given an array prices[] of length n, representing the prices of the stocks on different days. The task is to find the maximum profit possible by buying and selling the stocks on different days when at most one transaction is allowed. Here one transaction means 1 buy + 1 Sell. If it is not possible to make a profit then return 0.\nNote: Stock must be bought before being sold.\nExamples:\nInput: prices[] = [7, 10, 1, 3, 6, 9, 2]\nOutput: 8\nExplanation: You can buy the stock on day 2 at price = 1 and sell it on day 5 at price = 9. Hence, the profit is 8.\nInput: prices[] = [7, 6, 4, 3, 1]\nOutput: 0\nExplanation: Here the prices are in decreasing order, hence if we buy any day then we cannot sell it at a greater price. Hence, the answer is 0.\nInput: prices[] = [1, 3, 6, 9, 11]\nOutput: 10\nExplanation: Since the array is sorted in increasing order, we can make maximum profit by buying at price[0] and selling at price[n-1].\nConstraint:\n1 <= prices.size()<= 105\n0 <= prices[i] <=104"
+    },
+    "complexity": {
+      "time_complexity": "O(n)",
+      "space_complexity": "O(1)"
+    },
+    "tags": {
+      "company_tags": [
+        "Bloomberg",
+        "Facebook",
+        "Intel",
+        "Infosys",
+        "Zoho",
+        "Morgan Stanley",
+        "Amazon",
+        "Microsoft",
+        "Samsung",
+        "Yahoo",
+        "PayPal",
+        "Nvidia",
+        "Oracle",
+        "Visa",
+        "Walmart",
+        "Goldman Sachs",
+        "TCS",
+        "Adobe",
+        "Google",
+        "IBM",
+        "Accenture",
+        "Apple",
+        "Uber"
+      ],
+      "topic_tags": [
+        "Greedy",
+        "Arrays"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/koko-eating-bananas/1?page=1&company=Uber&sortBy=latest",
+      "scraped_at": "2025-06-11T12:28:03.910165",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Koko Eating Bananas",
+      "difficulty": "Medium",
+      "accuracy": "50.27%",
+      "submissions": "21K+",
+      "avg_time": "20m"
+    },
+    "content": {
+      "problem": "Koko is given an array arr[], where each element represents a pile of bananas. She has exactly k hours to eat all the bananas.\nEach hour, Koko can choose one pile and eat up to s bananas from it.\nIf the pile has at least s bananas, she eats exactly s bananas.\nIf the pile has fewer than s bananas, she eats the entire pile in that hour.\nKoko can only eat from one pile per hour.\nYour task is to find the minimum value of s (bananas per hour) such that Koko can finish all the piles within k hours.\nExamples:\nInput: arr[] = [3, 6, 7, 11] , k = 8\nOutput: 4\nExplanation: Koko eats at least 4 bananas per hour to finish all piles within 8 hours, as she can consume each pile in 1 + 2 + 2 + 3 = 8 hours.\nInput: arr[] = [30, 11, 23, 4, 20], k = 5\nOutput: 30\nExplanation: With 30 bananas per hour, Koko completes each pile in 1 hour, totaling 5 hours, which matches k = 5.\nInput: arr[] = [5, 10, 15, 20], k = 7\nOutput: 10\nExplanation: At 10 bananas per hour, Koko finishes in 7 hours, just within the k = 7 limit.\nConstraint:\n1 <= arr.size() <= 105\n1 <= arr[i] <= 106\narr.size() <= k <= 106"
+    },
+    "complexity": {
+      "time_complexity": "O(n log m), where m is the max bananas from all piles",
+      "space_complexity": "O(1)"
+    },
+    "tags": {
+      "company_tags": [
+        "Bloomberg",
+        "Amazon",
+        "Microsoft",
+        "Walmart",
+        "Adobe",
+        "Arcesium",
+        "Uber"
+      ],
+      "topic_tags": [
+        "Binary Search",
+        "Arrays"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/shortest-path-using-atmost-one-curved-edge--170647/1?page=1&company=Uber&sortBy=latest",
+      "scraped_at": "2025-06-11T12:28:14.500329",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Shortest Path Using Atmost One Curved Edge",
+      "difficulty": "Hard",
+      "accuracy": "59.43%",
+      "submissions": "18K+",
+      "avg_time": "Not available"
+    },
+    "content": {
+      "problem": "Given an undirected connected graph of n vertices and list of m edges in a graph and for each pair of vertices that are connected by an edge.\nThere are two edges between them, one curved edge and one straight edge i.e. the tuple (x, y, w1, w2) means that between vertices x and y, there is a straight edge with weight w1 and a curved edge with weight w2.\nYou are given two vertices a and b and you have to go from a to b through a series of edges such that in the entire path you can use at most 1 curved edge. Your task is to find the shortest path from a to b satisfying the above condition. If there is no path from a to b, return -1.\nExamples\nInput: n = 4, m = 4, a = 2, b = 4\nedges[][] = [[1, 2, 1, 4], [1, 3, 2, 4],\n[1, 4, 3, 1], [2, 4, 6, 5]]\nOutput: 2\nExplanation:\nWe can follow the path 2 -> 1 -> 4.\nThis gives a distance of 1+3 = 4 if we follow\nall straight paths. But we can take the curved\npath from 1 -> 4, which costs 1. This\nwill result in a cost of 1 + 1 = 2\nInput: n = 2, m = 1, a = 1, b = 2\nedges = [[1, 2, 4, 1]]\nOutput : 1\nExplanation:\nTake the curved path from 1 to 2 which costs 1.\nYour Task:\nYou don't need to read input or print anything. Your task is to complete the function shortestPath() which takes 4 integers n, m, a, and b, and a list of lists named edges of size m as input and returns the cost of shortest path from a to b.\nExpected Time Complexity: O((m+n)log(n))\nExpected Auxiliary Space: O(n+m)\nConstraints:\n1 ≤ n,m ≤ 105\n1 ≤ a,b ≤ n\nweight of edges ≤ 104"
+    },
+    "complexity": {
+      "time_complexity": "Not specified",
+      "space_complexity": "Not specified"
+    },
+    "tags": {
+      "company_tags": [
+        "Uber"
+      ],
+      "topic_tags": [
+        "Graph",
+        "Shortest Path",
+        "Data Structures",
+        "Algorithms"
+      ]
+    },
+    "interview_experiences": [
+      {
+        "title": "Uber Interview Experience On Campus For Internship 2018 19",
+        "url": "https://www.geeksforgeeks.org/uber-interview-experience-on-campus-for-internship-2018-19/",
+        "content_summary": "Round 1: The first round was an online coding round which consisted of 3 coding questions to be attempted in 90 minutes. Question 1 :- There is a meeting scheduled in an office that lasts for time t and starts at time 0. In between the meeting there are n presentations whose start and end times are given i.e. the ith presentation starts at s[i] and ends at e[i]-1. The presentations do not overlap with each other. You are given k, the maximum number of presentations that you can reschedule keeping the original order intact. Note that the duration of the presentation can't be changed. You can only change the start and end time. Your task is to maximize the longest time period in which there is no presentation scheduled during the meeting. Constraints :- 1<=t<=1, 000, 000, 000 0<=k<=n 1<=n<=100, 000 e[i]<=s[i+1],   0<=i <n-1 s[i] < e[i] for 0<=i<=n-1   Question 2 :- You are given a n x  m grid consisting of values 0 and 1. A value of 1 means that you can enter that cell and 0 implies that entry to that cell is not allowed. You start at the upper-left corner of the grid (1, 1) and you have to reach the bottom-right corner (n, m) such that you can only move in the right or down direction from every cell. Your task is to calculate the total number of ways of reaching the target. Constraints :- 1<=n, m<=10, 000   Question 3 :- You are given a list of edges in a graph and for each pair of vertices that are connected by an edge, there are two edges between them, one curved edge and one straight edge i.e. the tuple (x, y, w1, w2) means that between vertices x and y, there is a straight edge with weight w1 and a curved edge with weight w2. You are given two vertices a and b and you have to go from a to b through a series of edges such that in the entire path you can use at most 1 curved edge. Your task is to find the shortest path from a to b satisfying the above condition.   Round 2: This was a technical round and lasted for about an hour. I was asked to design a Snakes And Ladder game and code the same in the language of my choice. I used random numbers to design the board and following which I was asked to play the game between two players and I coded the same. He introduced a trick to the question and asked me to rate the difficulty of the board. I thought in terms of the shortest path(Breadth First Search) from start to the end but he said that a better approach would be to calculate the probability of reaching a particular number from the start. So I used Dynamic Programming to calculate the probability of reaching a particular number in x number of moves where 1<=x<=maximum cap on the number of moves following which a tie would be declared. He then asked me that he didn't want a game that would finish in just 15 moves as that would make the game boring. So I was told to  calculate the probability that the game finishes in 15 to  100 moves. Finally he asked me to tell just by looking at the position of the players that who was in the winning position at that moment. He was satisfied by my responses. Round 3: This was a problem solving round and lasted for 75 minutes. He gave me a very complicated question. Here it goes... There are 3 integers a, b, w. There  are 2 equations -\nw+a=b\na (bitwise AND) b =0;\nI was given the value of w and he asked me to calculate the number of pairs (a, b) satisfying the two equations. Assume  that there are no overflows. I used Recursion + Bit Manipulation to solve this and he seemed satisfied with my approach though I required some of his help as well.   P.S.  :- I got a call for an offer 3 hours later.    \n\nComment\nMore info\nAdvertise with us\nNext Article\nUber Interview Experience (On Campus for Internship 2018-19)"
+      }
+    ]
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/unique-paths-in-a-grid--170647/1?page=1&company=Uber&sortBy=latest",
+      "scraped_at": "2025-06-11T12:28:28.604803",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Unique Paths in a Grid",
+      "difficulty": "Medium",
+      "accuracy": "50.47%",
+      "submissions": "53K+",
+      "avg_time": "Not available"
+    },
+    "content": {
+      "problem": "You are given a 2d list grid[][] of size n x m consisting of values 0 and 1.\nA value of 0 means that you can enter that cell and 1 implies that entry to that cell is not allowed.\nYou start at the upper-left corner of the grid (1, 1) and you have to reach the bottom-right corner (n, m) such that you can only move in the right or down direction from every cell.\nYour task is to calculate the total number of ways of reaching the target.\nNote: The first (1, 1) and last (n, m) cell of the grid can also be 1.\nIt is guaranteed that the total number of ways will fit within a 32-bit integer.\nExamples:\nInput: n = 3, m = 3,\ngrid[][] = [[0, 0, 0], [0, 1, 0], [0, 0, 0]]\nOutput: 2\nExplanation: There are two ways to reach the bottom-right corner:\n1. Right -> Right -> Down -> Down\n2. Down -> Down -> Right -> Right\nInput: n = 1, m = 3,\ngrid[][] = [[1, 0, 1]]\nOutput: 0\nExplanation: There is no possible path to reach the end.\nConstraints:\n1 ≤ n*m ≤ 106"
+    },
+    "complexity": {
+      "time_complexity": "O(n * m)",
+      "space_complexity": "O(n * m)"
+    },
+    "tags": {
+      "company_tags": [
+        "Uber"
+      ],
+      "topic_tags": [
+        "Dynamic Programming",
+        "Matrix",
+        "Data Structures",
+        "Algorithms"
+      ]
+    },
+    "interview_experiences": [
+      {
+        "title": "Uber Interview Experience On Campus For Internship 2018 19",
+        "url": "https://www.geeksforgeeks.org/uber-interview-experience-on-campus-for-internship-2018-19/",
+        "content_summary": "Round 1: The first round was an online coding round which consisted of 3 coding questions to be attempted in 90 minutes. Question 1 :- There is a meeting scheduled in an office that lasts for time t and starts at time 0. In between the meeting there are n presentations whose start and end times are given i.e. the ith presentation starts at s[i] and ends at e[i]-1. The presentations do not overlap with each other. You are given k, the maximum number of presentations that you can reschedule keeping the original order intact. Note that the duration of the presentation can't be changed. You can only change the start and end time. Your task is to maximize the longest time period in which there is no presentation scheduled during the meeting. Constraints :- 1<=t<=1, 000, 000, 000 0<=k<=n 1<=n<=100, 000 e[i]<=s[i+1],   0<=i <n-1 s[i] < e[i] for 0<=i<=n-1   Question 2 :- You are given a n x  m grid consisting of values 0 and 1. A value of 1 means that you can enter that cell and 0 implies that entry to that cell is not allowed. You start at the upper-left corner of the grid (1, 1) and you have to reach the bottom-right corner (n, m) such that you can only move in the right or down direction from every cell. Your task is to calculate the total number of ways of reaching the target. Constraints :- 1<=n, m<=10, 000   Question 3 :- You are given a list of edges in a graph and for each pair of vertices that are connected by an edge, there are two edges between them, one curved edge and one straight edge i.e. the tuple (x, y, w1, w2) means that between vertices x and y, there is a straight edge with weight w1 and a curved edge with weight w2. You are given two vertices a and b and you have to go from a to b through a series of edges such that in the entire path you can use at most 1 curved edge. Your task is to find the shortest path from a to b satisfying the above condition.   Round 2: This was a technical round and lasted for about an hour. I was asked to design a Snakes And Ladder game and code the same in the language of my choice. I used random numbers to design the board and following which I was asked to play the game between two players and I coded the same. He introduced a trick to the question and asked me to rate the difficulty of the board. I thought in terms of the shortest path(Breadth First Search) from start to the end but he said that a better approach would be to calculate the probability of reaching a particular number from the start. So I used Dynamic Programming to calculate the probability of reaching a particular number in x number of moves where 1<=x<=maximum cap on the number of moves following which a tie would be declared. He then asked me that he didn't want a game that would finish in just 15 moves as that would make the game boring. So I was told to  calculate the probability that the game finishes in 15 to  100 moves. Finally he asked me to tell just by looking at the position of the players that who was in the winning position at that moment. He was satisfied by my responses. Round 3: This was a problem solving round and lasted for 75 minutes. He gave me a very complicated question. Here it goes... There are 3 integers a, b, w. There  are 2 equations -\nw+a=b\na (bitwise AND) b =0;\nI was given the value of w and he asked me to calculate the number of pairs (a, b) satisfying the two equations. Assume  that there are no overflows. I used Recursion + Bit Manipulation to solve this and he seemed satisfied with my approach though I required some of his help as well.   P.S.  :- I got a call for an offer 3 hours later.    \n\nComment\nMore info\nAdvertise with us\nNext Article\nUber Interview Experience (On Campus for Internship 2018-19)"
+      }
+    ]
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/3-sum-closest/1?page=1&company=Uber&sortBy=latest",
+      "scraped_at": "2025-06-11T12:28:41.713289",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "3 Sum Closest",
+      "difficulty": "Medium",
+      "accuracy": "49.69%",
+      "submissions": "22K+",
+      "avg_time": "Not available"
+    },
+    "content": {
+      "problem": "Given an array arr[] and an integer target, the task is to find the sum of three integers in arr[] such that the sum is closest to target.\nNote: If multiple sums are closest to target, return the maximum one.\nExamples:\nInput: arr[] = [-1, 2, 2, 4], target = 4\nOutput: 5\nExplanation: All possible triplets\n[-1, 2, 2], sum = (-1) + 2 + 2 = 3\n[-1, 2, 4], sum = (-1) + 2 + 4 = 5\n[-1, 2, 4], sum = (-1) + 2 + 4 = 5\n[2, 2, 4], sum = 2 + 2 + 4 = 8\nTriplet [-1, 2, 2], [-1, 2, 4] and [-1, 2, 4] have sum closest to target, so return the maximum one, that is 5.\nInput: arr[] = [1, 10, 4, 5], target = 10\nOutput: 10\nExplanation: All possible triplets\n[1, 10, 4], sum = (1 + 10 + 4) = 15\n[1, 10, 5], sum = (1 + 10 + 5) = 16\n[1, 4, 5], sum = (1 + 4 + 5) = 10\n[10, 4, 5], sum = (10 + 4 + 5) = 19\nTriplet [1, 4, 5] has sum = 10 which is closest to target.\nConstraints:\n3 <= arr.size() <= 103\n-103 ≤ arr[i] ≤ 103\n-104 ≤ target ≤ 104"
+    },
+    "complexity": {
+      "time_complexity": "O(n^2)",
+      "space_complexity": "O(1)"
+    },
+    "tags": {
+      "company_tags": [
+        "Amazon",
+        "Microsoft",
+        "Adobe",
+        "Google",
+        "Zoho",
+        "Uber",
+        "Facebook"
+      ],
+      "topic_tags": [
+        "Sorting",
+        "two-pointer-algorithm",
+        "Arrays"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/count-the-subarrays-having-product-less-than-k1708/1?page=1&company=Uber&sortBy=latest",
+      "scraped_at": "2025-06-11T12:28:53.216874",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Subarrays Product Less than K",
+      "difficulty": "Medium",
+      "accuracy": "21.0%",
+      "submissions": "107K+",
+      "avg_time": "Not available"
+    },
+    "content": {
+      "problem": "Given an array of positive numbers, the task is to find the number of possible contiguous subarrays having product less than a given number k.\nExample 1:\nInput :\nn = 4, k = 10\na[] = [1, 2, 3, 4]\nOutput :\n7\nExplanation:\nThe contiguous subarrays are {1}, {2}, {3}, {4}\n{1, 2}, {1, 2, 3} and {2, 3}, in all these subarrays\nproduct of elements is less than 10, count of\nsuch subarray is 7.\n{2,3,4} will not be a valid subarray, because\n2*3*4=24 which is greater than 10.\nExample 2:\nInput:\nn = 7 , k = 100\na[] = [1, 9, 2, 8, 6, 4, 3]\nOutput:\n16\nYour Task:\nYou don't need to read input or print anything. Your task is to complete the function countSubArrayProductLessThanK() which takes the array a[], its size n and an integer k as inputs and returns the count of required subarrays.\nConstraints:\n1<=n<=106\n1<=k<=1015\n1<=a[i]<=105"
+    },
+    "complexity": {
+      "time_complexity": "Not specified",
+      "space_complexity": "Not specified"
+    },
+    "tags": {
+      "company_tags": [
+        "Goldman Sachs",
+        "Facebook",
+        "Walmart",
+        "Yatra.com",
+        "Amazon",
+        "Linkedin",
+        "Microsoft",
+        "Uber"
+      ],
+      "topic_tags": [
+        "Arrays",
+        "Data Structures",
+        "Algorithms",
+        "sliding-window"
+      ]
+    },
+    "interview_experiences": [
+      {
+        "title": "Goldman Sachs Interview Experience Set 32 Campus",
+        "url": "https://www.geeksforgeeks.org/goldman-sachs-interview-experience-set-32-campus/",
+        "content_summary": "Goldman Sachs conducted on campus hiring for tech interns in our campus. CGPA cutoff: 7.0 Branches Eligible: All circuital branches\nOnline Round:\nAn online round was conducted on hackerrank. The duration of the test was 90 minutes. There were 5 MCQs ( 10 marks each, -3 negative marking) and two coding questions( one 35 marks, and the other 15 marks) MCQs were based on the concepts of Data Structures and Algorithms. Proper in- depth knowledge was required to solve these MCQs. Coding questions: 1. Given a string, find the first non repeating character. 2. Given an array, find the number of contiguous subarrays such that the product of the elements of the subarray is less than or equal to a given positive integer k. ( Brute force gave TLE in this question. So proper optimised O(n) complexity solution was required) After the online round, 6 students were shortlisted out of 170 for the personal interviews.\nPersonal Interview Round 1:\n1.) Given a string, print all possible permutations of the characters of that strings. (Had to cover all the edge cases) 2.) What is elastic search. 3.) Modification of the first question, asked to give permuatations containing only 3 characters. Few more questions were asked on graphs.\nPersonal Interview Round 2:\n1.) Find the median of the stream of integers 2.) Talked about my resume and the projects I did 3.) Given a binary tree, check if it is Binary Search Tree without using extra space Few more questions on heaps. This round mostly revolved around trees and heap.\nPersonal Interview Round 3:\n1.) Talked about my Resume 2.) What is JSON 3.) What is REST api 4.) Egg dropping puzzle One more puzzle was asked. I cant recall it now\nPersonal Interview Round 4:\n1.) Discussed questions of the first online test( conducted on hacker rank) 2.) Questions on probability and statistics Few more HR questions Finally , two students were selected for the internship.\n\nComment\nMore info\nAdvertise with us\nNext Article\nGoldman Sachs Interview Experience | Set 32 (On campus)"
+      }
+    ]
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/roman-number-to-integer3201/1?page=1&company=Uber&sortBy=latest",
+      "scraped_at": "2025-06-11T12:29:07.015693",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Roman Number to Integer",
+      "difficulty": "Easy",
+      "accuracy": "43.31%",
+      "submissions": "187K+",
+      "avg_time": "Not available"
+    },
+    "content": {
+      "problem": "Given a string in Roman number format (s), your task is to convert it to an integer. Various symbols and their values are given below.\nNote: I = 1, V = 5, X = 10, L = 50, C = 100, D = 500, M = 1000\nExamples:\nInput: s = \"IX\"\nOutput: 9\nExplanation: IX is a Roman symbol which represents 10 – 1 = 9.\nInput: s = \"XL\"\nOutput: 40\nExplanation: XL is a Roman symbol which represents 50 – 10 = 40.\nInput: s = \"MCMIV\"\nOutput: 1904\nExplanation: M is 1000, CM is 1000 – 100 = 900, and IV is 4. So we have total as 1000 + 900 + 4 = 1904.\nConstraints:\n1<= roman number <=3999\ns[i] belongs to [I, V, X, L, C, D, M]"
+    },
+    "complexity": {
+      "time_complexity": "Not specified",
+      "space_complexity": "Not specified"
+    },
+    "tags": {
+      "company_tags": [
+        "Zoho",
+        "Amazon",
+        "Microsoft",
+        "Facebook",
+        "Twitter",
+        "Uber"
+      ],
+      "topic_tags": [
+        "Strings",
+        "Data Structures"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/allocate-minimum-number-of-pages0937/1?page=1&company=Uber&sortBy=latest",
+      "scraped_at": "2025-06-11T12:29:18.136008",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Allocate Minimum Pages",
+      "difficulty": "Medium",
+      "accuracy": "35.51%",
+      "submissions": "279K+",
+      "avg_time": "Not available"
+    },
+    "content": {
+      "problem": "You are given an array arr[] of integers, where each element arr[i] represents the number of pages in the ith book. You also have an integer k representing the number of students. The task is to allocate books to each student such that:\nEach student receives atleast one book.\nEach student is assigned a contiguous sequence of books.\nNo book is assigned to more than one student.\nThe objective is to minimize the maximum number of pages assigned to any student. In other words, out of all possible allocations, find the arrangement where the student who receives the most pages still has the smallest possible maximum.\nNote: Return -1 if a valid assignment is not possible, and allotment should be in contiguous order (see the explanation for better understanding).\nExamples:\nInput: arr[] = [12, 34, 67, 90], k = 2\nOutput: 113\nExplanation: Allocation can be done in following ways:\n[12] and [34, 67, 90] Maximum Pages = 191\n[12, 34] and [67, 90] Maximum Pages = 157\n[12, 34, 67] and [90] Maximum Pages = 113.\nTherefore, the minimum of these cases is 113, which is selected as the output.\nInput: arr[] = [15, 17, 20], k = 5\nOutput: -1\nExplanation: Allocation can not be done.\nInput: arr[] = [22, 23, 67], k = 1\nOutput: 112\nConstraints:\n1 <=  arr.size() <= 106\n1 <= arr[i] <= 103\n1 <= k <= 103"
+    },
+    "complexity": {
+      "time_complexity": "Not specified",
+      "space_complexity": "Not specified"
+    },
+    "tags": {
+      "company_tags": [
+        "Infosys",
+        "Amazon",
+        "Microsoft",
+        "Google",
+        "Codenation",
+        "Uber"
+      ],
+      "topic_tags": [
+        "Searching",
+        "Divide and Conquer",
+        "Algorithms"
+      ]
+    },
+    "interview_experiences": [
+      {
+        "title": "Amazon Interview Experience On Campus For Sde 1 5",
+        "url": "https://www.geeksforgeeks.org/amazon-interview-experience-on-campus-for-sde-1-5/",
+        "content_summary": "There were totally 5 rounds,(1 online coding Test+3 Technical Interviews+1 (managerial-cum-technical  Round))\nRound-1(Online Coding Test)\nThe test was conducted on amazon's platform.\nIt had 4 sections:\nCode Debugging (C, C++, Java)[Not sure of python and other languages]. (20 minutes)\nAptitude and Reasoning Ability. (35 minutes)\nWorkstyles Assessment. (20 minutes)\nCoding Round. (70 minutes)\nThe first 3 sections were fairly easy, but one needs to be a tad bit quicker to finish all the questions on time.\nThere were 2 coding questions. Different sets had different questions. links to a few of them are as follows:\nQ1) https://www.geeksforgeeks.org/merge-two-sorted-linked-lists/amp/\nQ2) https://www.geeksforgeeks.org/clone-linked-list-next-arbit-pointer-set-2/\nQ3) https://www.geeksforgeeks.org/search-in-row-wise-and-column-wise-sorted-matrix/  \nQ4) https://leetcode.com/problems/two-sum/\nQ5) https://leetcode.com/problems/critical-connections-in-a-network/\nRound -2(Technical Interview)\nQ1) https://www.geeksforgeeks.org/check-number-can-expressed-sum-consecutive-numbers/\nThe solution given on the above link was not expected, but the interviewer was satisfied \nwith  O(n ^{ 0.5}) approach   \nQ2)https://www.geeksforgeeks.org/print-k-sum-paths-binary-tree/\nRound-3(Technical Interview)\nQ1)The idea was similar to the problem given in the link below, but the question was completely different.\nhttps://www.geeksforgeeks.org/painters-partition-problem/\nQ2)https://stackoverflow.com/questions/28871860/algorithm-to-find-the-maximum-non-adjacent-sum-in-n-ary-tree\nRound-4(Technical Interview)\nQ1)https://www.geeksforgeeks.org/minimum-steps-reach-target-knight/\nA lot of reasonings and variations(like, why BFS, can we do with DFS, if no then why?, its time and space complexity, can we do by using only O(1) memory to keep track of distance, etc ).  \nQ2)As the first question gulped the majority of the time because of its variations and reasoning, he told me that he would ask me a theoretical question.\nSo, first, he asked me to write down all the data structures which I know. And then, to think of real-time applications of each of them.  \nRound-5(Technical-cum-Managerial) \n1)https://www.geeksforgeeks.org/find-rotation-count-rotated-sorted-array/\n2)What would you do if you are stuck in a huge Technical problem? Support your answer with a realtime situation you have faced.\n3) Describe an incident where you were in a difficult situation(professional, not personal) first but then, finally came out of it successfully?\nAnd a few other \"Describe an incident\" Questions were also asked.\n Additional Information\nThe Interviews were conducted on Amazon Chime(A video calling platform).\nCoding questions were asked to code on Amazon's LiveCode platform where both the interviewer and the interviewee can simultaneously edit and view the code.\nThe Interviews were of 1 hr each.\n\nTips:\nBe thorough with  Time and space complexity calculation, as it is the first question you might get after proposing an algorithm to the interviewer.\nDon't be silent in the interview, keep sharing all your thoughts and budding ideas, it would not only engage the interviewer but also help you to get fresh ideas.\nBe polite and carefully listen to the interviewer(you might be lucky to grab a few clues).\nA big Thank you to GeeksforGeeks for transforming me from a reader to a writer.\n \nComment\nMore info\nAdvertise with us\nNext Article\nAmazon Interview Experience | On-Campus for SDE-1"
+      }
+    ]
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/equilibrium-point-1587115620/1?page=1&company=Uber&sortBy=latest",
+      "scraped_at": "2025-06-11T12:29:31.867911",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Equilibrium Point",
+      "difficulty": "Easy",
+      "accuracy": "28.13%",
+      "submissions": "642K+",
+      "avg_time": "Not available"
+    },
+    "content": {
+      "problem": "Given an array of integers arr[], the task is to find the first equilibrium point in the array.\nThe equilibrium point in an array is an index (0-based indexing) such that the sum of all elements before that index is the same as the sum of elements after it. Return -1 if no such point exists.\nExamples:\nInput: arr[] = [1, 2, 0, 3]\nOutput: 2\nExplanation: The sum of left of index 2 is 1 + 2 = 3 and sum on right of index 2 is 3.\nInput: arr[] = [1, 1, 1, 1]\nOutput: -1\nExplanation: There is no equilibrium index in the array.\nInput: arr[] = [-7, 1, 5, 2, -4, 3, 0]\nOutput: 3\nExplanation: The sum of left of index 3 is -7 + 1 + 5 = -1 and sum on right of index 3 is -4 + 3 + 0 = -1.\nConstraints:\n3 <= arr.size() <= 105\n-104 <= arr[i] <= 104"
+    },
+    "complexity": {
+      "time_complexity": "Not specified",
+      "space_complexity": "Not specified"
+    },
+    "tags": {
+      "company_tags": [
+        "Amazon",
+        "Adobe",
+        "Google",
+        "Facebook",
+        "Microsoft",
+        "Uber"
+      ],
+      "topic_tags": [
+        "prefix-sum",
+        "Arrays",
+        "Data Structures",
+        "Algorithms"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/find-nth-element-of-spiral-matrix/1?page=1&company=Uber&sortBy=latest",
+      "scraped_at": "2025-06-11T12:29:42.941177",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Find kth element of spiral matrix",
+      "difficulty": "Medium",
+      "accuracy": "50.66%",
+      "submissions": "53K+",
+      "avg_time": "Not available"
+    },
+    "content": {
+      "problem": "Given a matrix with n rows and m columns. Your task is to find the kth element which is obtained while traversing the matrix spirally. You need to complete the method findK which takes four arguments the first argument is the matrix A and the next two arguments will be n and m denoting the size of the matrix A and then the forth argument is an integer k. The function will return the kth element obtained while traversing the matrix spirally.\nExample 1:\nInput:\nn = 4, m = 4, k = 10\nA[][] = {{1 2 3 4},\n{5 6 7 8},\n{9 10 11 12},\n{13 14 15 16}}\nOutput:\n13\nExplanation:\nThe spiral order of matrix will look like 1->2->3->4->8->12->16->15->14->13->9->5->6->7->11->10. So the 10th element in this order is 13.\nExample 2:\nInput:\nn = 3, m = 3, k = 4\nA[][] = {{1 2 3},\n{4 5 6},\n{7 8 9}}\nOutput:\n6\nExplanation:\nThe spiral order of matrix will look like 1->2->3->6->9->8->7->4->5. So the 4th element in this order is 6.\nYour Task:\nYou only need to implement the given function findK(). Do not read input, instead use the arguments given in the function. Return the K'th element obtained by traversing matrix spirally.\nExpected Time Complexity: O(n*m)\nExpected Auxiliary Space: O(n*m)\nConstraints:\n1<=n,m<=103\n1<=k<=n*m\n-109 <= A[i][j] <= 109"
+    },
+    "complexity": {
+      "time_complexity": "Not specified",
+      "space_complexity": "Not specified"
+    },
+    "tags": {
+      "company_tags": [
+        "Amazon",
+        "Bloomberg",
+        "Facebook",
+        "Microsoft",
+        "Uber"
+      ],
+      "topic_tags": [
+        "Matrix",
+        "Data Structures"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/remove-the-balls--170647/1",
+      "scraped_at": "2025-06-11T12:29:54.279042",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Remove the balls",
+      "difficulty": "Medium",
+      "accuracy": "58.66%",
+      "submissions": "33K+",
+      "avg_time": "Not available"
+    },
+    "content": {
+      "problem": "You are given two arrays, color and radius, representing a sequence of balls:\ncolor[i] is the color of the i-th ball.\nradius[i] is the radius of the i-th ball.\nIf two consecutive balls have the same color and radius, remove them both. Repeat this process until no more such pairs exist.\nReturn the number of balls remaining after all possible removals.\nExamples:\nInput: color[] = [2, 3, 5], radius[] = [3, 3, 5]\nOutput: 3\nExplanation: All the 3 balls have different colors and radius.\nInput: color[] = [2, 2, 5], radius[] = [3, 3, 5]\nOutput: 1\nExplanation: First ball and second ball have same color 2 and same radius 3. So, after removing only one ball is left. It cannot be removed from the array. Hence, the final array has length 1.\nConstraints:\n1 ≤ color.size() = radius.size() ≤ 105\n1 ≤ color[i] ≤ 109\n1 ≤ radius[i] ≤ 109"
+    },
+    "complexity": {
+      "time_complexity": "Not specified",
+      "space_complexity": "Not specified"
+    },
+    "tags": {
+      "company_tags": [],
+      "topic_tags": [
+        "Stack",
+        "Data Structures"
+      ]
+    },
+    "interview_experiences": []
+  }
+]

@@ -1,0 +1,92 @@
+interview_experiences,metadata.url,metadata.scraped_at,metadata.source,basic_info.title,basic_info.difficulty,basic_info.accuracy,basic_info.submissions,basic_info.avg_time,content.problem,complexity.time_complexity,complexity.space_complexity,tags.company_tags,tags.topic_tags
+[],https://www.geeksforgeeks.org/problems/remove-the-balls--170647/1,2025-06-11T12:30:16.496839,GeeksforGeeks,Remove the balls,Medium,58.66%,33K+,Not available,"You are given two arrays, color and radius, representing a sequence of balls:
+color[i] is the color of the i-th ball.
+radius[i] is the radius of the i-th ball.
+If two consecutive balls have the same color and radius, remove them both. Repeat this process until no more such pairs exist.
+Return the number of balls remaining after all possible removals.
+Examples:
+Input: color[] = [2, 3, 5], radius[] = [3, 3, 5]
+Output: 3
+Explanation: All the 3 balls have different colors and radius.
+Input: color[] = [2, 2, 5], radius[] = [3, 3, 5]
+Output: 1
+Explanation: First ball and second ball have same color 2 and same radius 3. So, after removing only one ball is left. It cannot be removed from the array. Hence, the final array has length 1.
+Constraints:
+1 ≤ color.size() = radius.size() ≤ 105
+1 ≤ color[i] ≤ 109
+1 ≤ radius[i] ≤ 109",Not specified,Not specified,[],"['Stack', 'Data Structures']"
+"[{'title': 'Paytm Interview Experience Set 8 Hiring Drive For Backend Engineer', 'url': 'https://www.geeksforgeeks.org/paytm-interview-experience-set-8-hiring-drive-for-backend-engineer/', 'content_summary': 'Paytm Hiring Drive for Backend Engineer. The selection process was completed on the same day.\nRound 1 ( Written ): It was a technical written round with 20 questions out of which 2 were coding questions. Rest 18 was objective type mainly C, SQL, and Algo.\nWrite code to create a mirror image of a tree.\nGiven an array of arrival and departure times of guests, find a minimum no of rooms required to accommodate guests at any point of time.\nRound 2 :\nWAP to search a number in a row-wise - column-wise sorted matrix.\nFlatten a linked list.\nDiscussions around Binary Search and Ternary Search.\nDiscussed objective questions of a written round.\nRound 3 :\nHow will you store a series of mobile nos in memory efficiently (less space). e.g mobile nos like 999900001,999900003,999900005,999910006,999910007 ... are there. DS should be designed such that retrieval is not inefficient.\nStream of Access logs is given to you with user id, page id, and date. Design Data structure to find n recent unique visitors and pages they visited.\nThe current company projects discussions.\nI thank GFG a lot for helping me in my preparation, finally, I was selected\nAll Practice Problems for Paytm !\nRelated Practice Problems\nMirror Tree\nSearch in a matrix\n\nComment\nMore info\nCampus Training Program\nNext Article\nPaytm Interview Experience | Set 8 (Hiring Drive for Backend Engineer)'}]",https://www.geeksforgeeks.org/problems/flattening-a-linked-list--170645/1?page=1&company=Qualcomm&sortBy=latest,2025-06-11T12:30:27.238853,GeeksforGeeks,Flattening a Linked List,Medium,50.24%,22K+,Not available,"Given a Linked List of size N, where every node represents a sub-linked-list and contains two pointers:
+(i) a next pointer to the next node,
+(ii) a bottom pointer to a linked list where this node is head.
+Each of the sub-linked-list is in sorted order.
+Flatten the Link List such that all the nodes appear in a single level while maintaining the sorted order.
+Note: The flattened list will be printed using the bottom pointer instead of next pointer.
+Example 1:
+Input:
+5 -> 10 -> 19 -> 28
+| | | |
+7 20 22 35
+| | |
+8 50 40
+| |
+30 45
+Output:  5-> 7-> 8- > 10 -> 19-> 20->
+22-> 28-> 30-> 35-> 40-> 45-> 50.
+Explanation:
+The resultant linked lists has every
+node in a single level.
+(Note: | represents the bottom pointer.)
+Example 2:
+Input:
+5 -> 10 -> 19 -> 28
+| |
+7 22
+| |
+8 50
+|
+30
+Output: 5->7->8->10->19->22->28->30->50
+Explanation:
+The resultant linked lists has every
+node in a single level.
+(Note: | represents the bottom pointer.)
+Your Task:
+You do not need to read input or print anything. Complete the function flatten() that takes the head of the linked list as input parameter and returns the head of flattened link list.
+Expected Time Complexity: O(N*M)
+Expected Auxiliary Space: O(1)
+Constraints:
+0 <= N <= 50
+1 <= Mi <= 20
+1 <= Element of linked list <= 103",Not specified,Not specified,"['Paytm', 'Flipkart', 'Amazon', 'Microsoft', 'Snapdeal', '24*7 Innovation Labs', 'Payu', 'Visa', 'Goldman Sachs', 'Qualcomm', 'Drishti-Soft']","['Linked List', 'Data Structures']"
+"[{'title': 'Accolite Interview Experience Set 7 On Campus', 'url': 'https://www.geeksforgeeks.org/accolite-interview-experience-set-7-on-campus/', 'content_summary': 'Accolite visited our campus for full time Software development. First round: MCQ round consists of 30 questions 30 minutes. Questions on C aptitude, four to five general aptitude, two puzzle based aptitude questions. Around 120 wrote test, 10 were selected for next round. Second round: It took around 1 and half hour two people were there. All rounds were purely technical. Questions are, Tell me about yourself. Implementation of queue using two stacks and some modification on that. Finding pair in a given array such that sum is equal to given value. Then he modified for negative numbers. Check if a given tree is binary search tree or not with full code. Child sum problem on binary tree told to write code also. One puzzle related to coin and two rooms. Third round: Only one question in this round. I have to design a dictionary of words such that if any word is entered then it should give meaning for all anagrams for that word. We discussed for one hour. First I told about using try data structure to make dictionary and generate all anagrams of that word then searching each words. But he is not satisfied. Then I came up with some modification in structure of try data structure still not satisfied. Then I come up with multilevel hashing Technique. He somewhat satisfied. Fourth round: It was final round and only two people were selected for this. Puzzle: There will be 17 buckets and some 2197(don’t remember exact number) apples. You have to put these apples in buckets such that if I ask any number of apples then just give any number of buckets such that apples in those buckets should equal to that value. Hint, arranged as bits arranged in binary representation of numbers. Finding loop in a linked list. He first asked you already know this question I told yes sir. Then he asked will it work if by changing fast pointer and slow pointer with difference of 3, 4, 5 nodes. Addition of two linked lists with full code. Numbers are in reverse order and all border conditions should be considered like, lengths are not equal. First he told to write for positive numbers I wrote using recursion. Then he told to write negative numbers. We both were told to wait outside. After few minutes they told only I am selected. Thanks geeksforgeeks.\nRelated Practice Problems\nSum of two numbers represented as arrays\nAdd two numbers represented by linked lists\nCheck for BST\nCombination Sum - Part 2\nAll Practice Problems for Accolite !\n\nComment\nMore info\nCampus Training Program\nNext Article\nAccolite Interview Experience | Set 7 (On-Campus)'}]",https://www.geeksforgeeks.org/problems/add-two-numbers-represented-by-linked-lists/1?page=1&company=Qualcomm&sortBy=latest,2025-06-11T12:30:40.967747,GeeksforGeeks,Add Number Linked Lists,Medium,34.52%,338K+,Not available,"Given the head of two singly linked lists num1 and num2 representing two non-negative integers. The task is to return the head of the linked list representing the sum of these two numbers.
+For example, num1 represented by the linked list : 1 -> 9 -> 0, similarly num2 represented by the linked list: 2 -> 5. Sum of these two numbers is represented by 2 -> 1 -> 5.
+Note: There can be leading zeros in the input lists, but there should not be any leading zeros in the output list.
+Examples:
+Input: num1 = 4 - > 5, num2 = 3 -> 4 -> 5
+Output: 3 -> 9 -> 0
+Explanation: Given numbers are 45 and 345. There sum is 390.
+Input: num1 = 0 -> 0 -> 6 -> 3, num2 = 0 -> 7
+Output: 7 -> 0
+Explanation: Given numbers are 63 and 7. There sum is 70.
+Constraints:
+1 <= size of both linked lists <= 106
+0 <= elements of both linked lists <= 9",Not specified,Not specified,"['Flipkart', 'Morgan Stanley', 'Accolite', 'Amazon', 'Microsoft', 'Snapdeal', 'MakeMyTrip', 'Qualcomm']","['Linked List', 'Data Structures']"
+[],about:blank,2025-06-11T12:31:37.291078,GeeksforGeeks,Title not found,Not specified,Not available,Not available,Not available,Problem statement not found,Not specified,Not specified,[],[]
+[],https://www.geeksforgeeks.org/problems/find-length-of-loop/1?page=1&company=Qualcomm&sortBy=latest,2025-06-11T12:31:48.660623,GeeksforGeeks,Find length of Loop,Easy,44.26%,259K+,Not available,"Given the head of a linked list, determine whether the list contains a loop. If a loop is present, return the number of nodes in the loop, otherwise return 0.
+Note: 'c' is the position of the node which is the next pointer of the last node of the linkedlist. If c is 0, then there is no loop.
+Examples:
+Input: head: 1 → 2 → 3 → 4 → 5, c = 2
+Output: 4
+Explanation: There exists a loop in the linked list and the length of the loop is 4.
+Input: head: 25 → 14 → 19 → 33 → 10 → 21 → 39 → 90 → 58 → 45, c = 4
+Output: 7
+Explanation: The loop is from 33 to 45. So length of loop is 33 → 10 → 21 → 39 → 90 → 58 → 45 = 7.
+The number 33 is connected to the last node of the linkedlist to form the loop because according to the input the 4th node from the beginning(1 based indexing)
+will be connected to the last node in the LinkedList.
+Input: head: 0 → 1 → 2 → 3, c = 0
+Output: 0
+Explanation: There is no loop.
+Constraints:
+1 ≤ no. of nodes ≤ 106
+0 ≤ node.data ≤ 106
+0 ≤ c ≤ n-1",Not specified,Not specified,"['Amazon', 'Adobe', 'Qualcomm']","['Linked List', 'Data Structures']"

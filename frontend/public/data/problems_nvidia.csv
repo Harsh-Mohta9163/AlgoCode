@@ -1,0 +1,311 @@
+interview_experiences,metadata.url,metadata.scraped_at,metadata.source,basic_info.title,basic_info.difficulty,basic_info.accuracy,basic_info.submissions,basic_info.avg_time,content.problem,complexity.time_complexity,complexity.space_complexity,tags.company_tags,tags.topic_tags
+[],https://www.geeksforgeeks.org/problems/bits-counting/1?page=1&company=Nvidia&sortBy=latest,2025-06-11T12:45:21.512516,GeeksforGeeks,Bits Counting,Medium,77.97%,1K+,Not available,"Given an integer n, return an array ans of size n + 1, where each element i (0 ≤ i ≤ n) represents the count of 1s in the binary form of i.
+Examples :
+Input: n = 2
+Output: [0, 1, 1]
+Explanation:
+0 --> 0
+1 --> 1
+2 --> 10
+Input: n = 5
+Output: [0, 1, 1, 2, 1, 2]
+Explanation:
+0 --> 0
+1 --> 1
+2 --> 10
+3 --> 11
+4 --> 100
+5 --> 101
+Constraints:
+0 ≤ n ≤ 105",O(n),O(n),"['Bloomberg', 'Facebook', 'Adobe', 'Google', 'Amazon', 'Microsoft', 'Apple', 'Yahoo', 'Nvidia', 'Uber']","['Bit Magic', 'Dynamic Programming', 'Arrays']"
+[],https://www.geeksforgeeks.org/problems/buy-stock-2/1?page=1&company=Nvidia&sortBy=latest,2025-06-11T12:45:33.470051,GeeksforGeeks,Stock Buy and Sell – Max one Transaction Allowed,Easy,49.33%,92K+,10m,"Given an array prices[] of length n, representing the prices of the stocks on different days. The task is to find the maximum profit possible by buying and selling the stocks on different days when at most one transaction is allowed. Here one transaction means 1 buy + 1 Sell. If it is not possible to make a profit then return 0.
+Note: Stock must be bought before being sold.
+Examples:
+Input: prices[] = [7, 10, 1, 3, 6, 9, 2]
+Output: 8
+Explanation: You can buy the stock on day 2 at price = 1 and sell it on day 5 at price = 9. Hence, the profit is 8.
+Input: prices[] = [7, 6, 4, 3, 1]
+Output: 0
+Explanation: Here the prices are in decreasing order, hence if we buy any day then we cannot sell it at a greater price. Hence, the answer is 0.
+Input: prices[] = [1, 3, 6, 9, 11]
+Output: 10
+Explanation: Since the array is sorted in increasing order, we can make maximum profit by buying at price[0] and selling at price[n-1].
+Constraint:
+1 <= prices.size()<= 105
+0 <= prices[i] <=104",O(n),O(1),"['Bloomberg', 'Facebook', 'Intel', 'Infosys', 'Zoho', 'Morgan Stanley', 'Amazon', 'Microsoft', 'Samsung', 'Yahoo', 'PayPal', 'Nvidia', 'Oracle', 'Visa', 'Walmart', 'Goldman Sachs', 'TCS', 'Adobe', 'Google', 'IBM', 'Accenture', 'Apple', 'Uber']","['Greedy', 'Arrays']"
+"[{'title': 'Directi Interview Experience Set 14 On Campus', 'url': 'https://www.geeksforgeeks.org/directi-interview-experience-set-14-on-campus/', 'content_summary': ""Direct I came for Full Time recruitment for Applications Engineer, Operations Engineer and Platform Engineer in our campus. Round 1 Online test on Codechef contains 3 Coding Questions 1.Find the maximum sum of path between any two leaf nodes in a binary tree represented as an array. Example: Given Tree – {1,2,3,4,5,6,7} Answer: (5+2+1+3+7) = 18 2. Find the given words in a grid. Return true if present else return false. Example: grid = {{a,b,c},{d,e,f},{g,h,i}}; words to find = {“abc”,”abeih”,”efg”} Answer : true, true, false 3. Some tree Related Question (Tough One) Those who solved 1 coding question complete are selected for next round. Round 2 Data Structure Design Round (36 minutes) [Skype Interview] The interview contains one data structure question i.e. Design a data structure which will find minimum gap in O(1). Insert(x) – O(logn) Delete(x) – O(logn) Search(x) – O(logn) mingap() – O(1) Note – mingap is the minimum absolute difference between two elements present in the structure. Example: {4, 7, 9, 1, 5, 12, 18} mingap is 1 (5-4) Note – Same question for all at same time Round 3 Algorithm Design Round (50 minutes) [Skype Interview] The interview contains 1 Algorithm design question Given n boxes of different weights and m machines of different weight carrying capacity. Find the minimum time required to move all boxes. Each machine take 1 minute to carry one time. Since the connection got lost, she called me again after some time and changed the question. You are playing on a ladder with some moves and with some constraints over you. You are given a int [] changeLevels, the ith element of which is the number of levels you will change with respect to your current position that is you can move changeLevels[i] steps UP or changeLevels[i] steps DOWN any of the one. You are also given the beginLevel which is your initial position on ladder and maxLevel which is the highest level of ladder. In any case while executing You can't go beyond the maxLevel or below level 0(Zero). Return the maximum Level you can attain after executing all the changeLevels i.e. final level. If there is no way to go through the list without exceeding maxLevel or going below 0, return 1. Note – Optimized Algorithm is required, not simple recursion solution. No one got selected for Operations Engineer, however some are selected for interview for Applications Engineer. i.e. Again all rounds except coding round.\nAll Practice Problems for Directi !\nRelated Practice Problems\nWord Boggle\n\nComment\nMore info\nCampus Training Program\nNext Article\nDirecti Interview Experience | Set 14 (On-Campus)""}, {'title': 'Makemytrip Interview Experience Set 7 On Campus', 'url': 'https://www.geeksforgeeks.org/makemytrip-interview-experience-set-7-on-campus/', 'content_summary': 'Recently makemytrip visited our Campus and I got selected in recruitment drive.The placement drive consisted of 4 rounds. Round1: MCQ and coding round It was an online test of 60 minutes consisting of 20 aptitude question and 3 coding question. Platform used for the test was of makemytrip and slightly difficult to understand. Question1: Calculate the power of a ^ b mod c using logn approach.The thing that was to be taken care of was that you did not needed to return or print your answer but you had to store it in their predefined global variable. You could easily find the solution on geeksforgeeks site. Question2: Given a sentence you were supposed to calculate the count of Capital , small letter and number.Question seemed to be quite easy but the pick was that you needed to store the answer in char* output variable in the form of c1:c2:c3 where c1 represent count of capital letter c2 represent count of small letter and c3 represent count of number. (Hint use sprintf to store your answer in formatted way in the variable sprintf(output,""%d:%d:%d"",c1,c2,c3); ) Question3: Activity Scheduling problem You are given 2 arrays representing the starting and finishing time of activities . Determine the maximum number of non conflicting activities that you can achieve. (Hint : make a structure of start and finish time and sort according to finishing interval) I solved 2 completely and 1 partially Tip:Since they have only one sample test case so even you are not able to solve the coding question just store the hard coded answer in that variable. I did that in last :P) Out of 110 students 30 students got selected for Personal Interview round. Round 2: Personal Interview Since I was last candidate in that list waiting from 10:30 am My turn came at 10:30 PM.The interviewer was very cool and friendly.He started with asking tell me about yourself and what projects I have done.After half hour rigerous discussion over my project and making schema of databases I used in project He started asking question on ds. Question1: Sort a linklist consisting of 0,1,2\'s. (Hint: I used hashmap of stl in c++ to store the count of 0,1 and 2) Question 2: Given a stock You need to find the maximum profit you can earn .You are allowed to buy and sell as many number of time you can.) Question 3:Design a treeset in java. (Hint:I told him to use BST but he told to think of more optimized way so Ii told AVL and wrote functions for insertion in AVL tree) Question4:Diffrentiate between method overloading and method overriding.What are static blocks in java. Question5: Drilling question on deployment descriptor,struts,mysql. Round3: Personal Interview The interviewer seemed to be exhausted . He asked me that Since you are the last person so all the question you would have asked. So tell me what all question you have asked. I told him distinct palindromic substring in string, LIS, LCS etc students told that you are asking.He thought for a while and told me to write standard bfs code for graph traversal. Question2: You have been given a matrix of character and a dictionary.You need to find the valid words that you can obtain from it and print it. (Hint:I used dfs to find the valid sequence and assumed that all words are stored in a hashmap) After these He asked 6 puzzles to be solved in a given time. Puzzle 1 : 1.5 hen give 1.5 egg in 1.5 day. How many hens are required to have 4 dozen of egg in 6 days. Puzzle 2: 2 ropes and take 1hr to burn. Calculate 45 min Puzzle 3:10 jar with 10gm marble in each jar.One jar contain 9gm marbles only.Find the defective jar in one turn. Puzzle4:150 person are standing in a queue in sorted order.A blind person comes and wants to be at right position in queue.So he asks any person whether he can stand in front of him.He will reply in Yes or No . You have to find the right place after 2Yes. Give a strategy to find the correct place. (Hint:This puzzle can be reduced to egg drop puzzle) Puzzle 5:25 horse having race find top 3 Puzzle 6:A person is riding a car and he sees a milestone A. After 1hr he sees milestone B which has digits reversed of A.After one hour more he finds a milestone C which contains all the digits of A and B . Given that A < B < C find the speed of car. (Other question that were asked from my friend 1.Distinct Palindrome in string 2.Transaction minimize problem 3.LCS and LIS (dp approach) 4.Diameter of tree 5.Pattern Matching Algorithm (KMP)) HR round: He asked me about my family background,what I do ,hobbies.What I know about makemytrip.What location I would prefer , whether I am satisfied with package or not,Working environment etc, It lasted for half hour. Tip:(Be expressive,Think out loud,Be confident. They need to know your approach not the solution)\nAll Practice Problems for MakeMyTrip !\nRelated Practice Problems\nN meetings in one room\nStock buy and sell\nWord Boggle\nDistinct palindromic substrings\nDiameter of Binary Tree\nLongest Prefix Suffix\nPower of Numbers\nGiven a linked list of 0s, 1s and 2s, sort it.\nLongest Common Subsequence\n\nComment\nMore info\nCampus Training Program\nNext Article\nMakeMyTrip Interview Experience | Set 7 (On-Campus)'}]",https://www.geeksforgeeks.org/problems/word-boggle-ii--141631/1?page=1&company=Nvidia&sortBy=latest,2025-06-11T12:45:45.743689,GeeksforGeeks,Open the gates,Medium,46.17%,11K+,Not available,"Geek and his friends went on a trip to one of the hill stations in Geekland. While trekking they found a treasure map, it was in the form of r x c size board, each cell on the map denotes a latin uppercase letter. On the bottom of the map it was written that there are n gates with a specific name and if they could find out the name of the gate on the map that gate would open. Help Geek and his friends to find out the gates they could possibly open with the map they found.
+A name can be formed by a sequence of adjacent characters on the map. We can move to any of 8 adjacent characters. While forming a word we can move to any of the 8 adjacent cells. A cell can be used only once in one name.
+NOTE: All gate names returned must be different even it occurs multiple times in the input.
+Example 1:
+Input:
+n = 3
+gate_names = {""ZARA"", ""ZETH"", ""MYTH""}
+r = 3, c = 3
+map = A Z E
+R Y T
+M A H
+Output:
+{""ZARA"", ""ZETH"", ""MYTH""}
+Explanation:
+Opening gate ZARA
+A Z E
+R Y T
+M A H
+Opening gate ZETH
+A Z E
+R Y T
+M A H
+Opening gate MYTH
+A Z E
+R Y T
+M A H
+Example 2:
+Input:
+n = 5
+gate_names = {""NYX"",""ONYX"",""VIRA"",""KARA"", ""NYX""}
+r = 3, c = 3
+map = N O A
+P Y V
+K R X
+Output:
+{""NYX"", ""ONYX""}
+Explanation:
+Opening gate NYX
+N O A
+P Y V
+K R X
+Opening gate ONYX
+N O A
+P Y V
+K R X
+Note that NYX is counted only once.
+Your task:
+You don’t need to read input or print anything. Your task is to complete the function openGates() which takes the gate_names contaning n space-separated strings and r*c map as input parameters and returns a list of gate names that can be opened
+Expected Time Complexity: O(4^(N^2))
+Expected Auxiliary Space: O(N^2)
+Constraints:
+1 ≤ n ≤ 15
+1 ≤ r, c ≤ 50
+1 ≤ length of each gate name ≤ 60
+All words of gate_names and all characters of map are uppercase letters from 'A' to 'Z'",Not specified,Not specified,"['Amazon', 'Microsoft', 'MakeMyTrip', 'Directi', 'Google', 'Facebook', 'Yahoo', 'Nvidia']","['Recursion', 'DFS', 'Graph', 'Trie', 'Data Structures', 'Algorithms', 'Advanced Data Structure']"
+"[{'title': 'Qualcomm Interview Experience Set 8 Experienced', 'url': 'https://www.geeksforgeeks.org/qualcomm-interview-experience-set-8-experienced/', 'content_summary': 'It was really good experience at Qualcomm. I was interviewed for Associate Software Engineer and have an experience of an year, first by telephonic round and then F2F interview.\nRound-1 Telephonic around: 70 minutes (Taken by 2 persons)\n1. All they asked at first was about Projects done in my company and at college level. 2. Then main thing they ask was OS and its concepts:      \na. Memory management.      \nb. CPU scheduling.      \nc. Deadlock and its real time examples.      \nd. Questions on how two processes can communicate in OS, give different ways.\n3. Coding questions:      \nReverse a linked list.\nPrint left view of a binary tree.\nImplement your own memcpy. After completion of this round they asked me if I can travel to Hyderabad for further rounds.At 7th January 2017 I gave F2F interview.\nRound-2 F2F:120 minutes\nHe started with simple intro then explained me the position for which interview was going on. 1. Then after he asked me about all of the projects on which I have worked till this time. He also asked different situations like how you use to fix the issues of memory overflow, crashes in your current company.\n2. Questions on big and little endian:      \na. Their notation and what are the different OS which one is big endian and which one is little endian.      \nb. You have one code now this code must work on both little and big endian in same way how will you do that: I gave solution of having different macros for different OS like for linux, windows it will work as little endian and another macro for SUN and motorola OS it will work as big endian.      \nc. Some more explanations on this topic only.\n3. Find the word in given para :\nThis is my island of love and it is meant for kids of 10 years.\nNow you have to find word \'is\' in this given para(word can come in other word) whose count is 4. Then implement the same logic, if you have to find \'is\' if it separate word. They asked me the different solutions for this question using ""strcmp"" and your own logic. I gave solutions via hashMap and normal word searching and strcmp.\n4. He gave me 10 output questions based on pointers. 5. Again he asked me some basic questions on programming like one x.h file is included in another y.cpp file and x.h file is included in z.h file and z.h is included in a.cpp now asked me several questions like which file have which variable accessed and what is the order of print statements and etc questions.\nRound-3 F2F: 80 minutes\nIn this round he asked me about questions asked in previous round. 1. Then he started with questions on OS      \na. Process and thread difference.      \nb. How will you handle 2 thread working on same MAP.Then asked several questions on mutex and different types of locking systems.      \nc. Questions on Storage classes in C. 2.\nReverse the bits of a number.\nMin distance between two given nodes of a Binary Tree\nIn the above question he asked me about call stack of the program. 4. Use of stack and queue DS. 5. Difference between stack and heap memory. Asked me to explain by writing a simple program. 6. Questions on Function pointers and usage.\nRound-4 F2F: 80 minutes\nThis round was more logical and was tough because in this round I was asked basic questions on pointers and how memory is accessed by different functions. 1. He asked me to explain Inline function.Then asked me which are the cases where inline would not work.He asked me internals of inline how it works and why this function works more faster then any other normal function.He asked me is there is any common thing between function pointer and inline function. Afterwards he also explained some points in this topic to me. 2. He told me to write my own sizeof operator (https://www.geeksforgeeks.org/implement-your-own-sizeof/) 3.\nProgram to Detect loop in a circular linked list.\n4. He also asked the question : Reverse the bits of a number and count the number of set bits in the given number. 5. Many questions on static variable and static function.\nRound-5 F2F: 20-30 minutes [Manager round, HR round]\n1. He asked me about my previous company and projects done there. 2. Then explained about the position. 3. He asked me about my joining and all and all basic questions is work interesting or not. 4. Why Qualcomm? Relocation? salary expectation? NOTE: One must be clear with pointers and memory management and DS questions. Basics of C is they ask a lot.\nAll Practice Problems for Qualcomm !\nRelated Practice Problems\nReverse a linked list\nLeft View of Binary Tree\nReverse Bits\nMin distance between two given nodes of a Binary Tree\nDetect Loop in linked list\nSet Bits\n\nComment\nMore info\nCampus Training Program\nNext Article\nQualcomm Interview Experience | Set 8 (Experienced)'}]",https://www.geeksforgeeks.org/problems/reverse-bits3556/1?page=1&company=Nvidia&sortBy=latest,2025-06-11T12:46:13.303575,GeeksforGeeks,Reverse Bits,Easy,53.96%,69K+,Not available,"Given a number x, reverse its binary form and return the answer in decimal.
+Example 1:
+Input:
+x = 1
+Output:
+2147483648
+Explanation:
+Binary of 1 in 32 bits representation-
+00000000000000000000000000000001
+Reversing the binary form we get,
+10000000000000000000000000000000,
+whose decimal value is 2147483648.
+Example 2:
+Input:
+x = 5
+Output:
+2684354560
+Explanation:
+Binary of 5 in 32 bits representation-
+00000000000000000000000000000101
+Reversing the binary form we get,
+10100000000000000000000000000000,
+whose decimal value is 2684354560.
+Your Task:
+You don't need to read input or print anything. Your task is to complete the function reversedBits() which takes an Integer x as input and returns the reverse binary form of x in decimal form.
+Expected Time Complexity: O(log (x))
+Expected Auxiliary Space: O(1)
+Constraints:
+0  <=  x  <  232",Not specified,Not specified,"['Amazon', 'Cisco', 'Qualcomm', 'HCL', 'Nvidia']","['Mathematical', 'Bit Magic', 'Data Structures', 'Algorithms']"
+"[{'title': 'Directi Interview Experience Set 14 On Campus', 'url': 'https://www.geeksforgeeks.org/directi-interview-experience-set-14-on-campus/', 'content_summary': ""Direct I came for Full Time recruitment for Applications Engineer, Operations Engineer and Platform Engineer in our campus. Round 1 Online test on Codechef contains 3 Coding Questions 1.Find the maximum sum of path between any two leaf nodes in a binary tree represented as an array. Example: Given Tree – {1,2,3,4,5,6,7} Answer: (5+2+1+3+7) = 18 2. Find the given words in a grid. Return true if present else return false. Example: grid = {{a,b,c},{d,e,f},{g,h,i}}; words to find = {“abc”,”abeih”,”efg”} Answer : true, true, false 3. Some tree Related Question (Tough One) Those who solved 1 coding question complete are selected for next round. Round 2 Data Structure Design Round (36 minutes) [Skype Interview] The interview contains one data structure question i.e. Design a data structure which will find minimum gap in O(1). Insert(x) – O(logn) Delete(x) – O(logn) Search(x) – O(logn) mingap() – O(1) Note – mingap is the minimum absolute difference between two elements present in the structure. Example: {4, 7, 9, 1, 5, 12, 18} mingap is 1 (5-4) Note – Same question for all at same time Round 3 Algorithm Design Round (50 minutes) [Skype Interview] The interview contains 1 Algorithm design question Given n boxes of different weights and m machines of different weight carrying capacity. Find the minimum time required to move all boxes. Each machine take 1 minute to carry one time. Since the connection got lost, she called me again after some time and changed the question. You are playing on a ladder with some moves and with some constraints over you. You are given a int [] changeLevels, the ith element of which is the number of levels you will change with respect to your current position that is you can move changeLevels[i] steps UP or changeLevels[i] steps DOWN any of the one. You are also given the beginLevel which is your initial position on ladder and maxLevel which is the highest level of ladder. In any case while executing You can't go beyond the maxLevel or below level 0(Zero). Return the maximum Level you can attain after executing all the changeLevels i.e. final level. If there is no way to go through the list without exceeding maxLevel or going below 0, return 1. Note – Optimized Algorithm is required, not simple recursion solution. No one got selected for Operations Engineer, however some are selected for interview for Applications Engineer. i.e. Again all rounds except coding round.\nAll Practice Problems for Directi !\nRelated Practice Problems\nWord Boggle\n\nComment\nMore info\nCampus Training Program\nNext Article\nDirecti Interview Experience | Set 14 (On-Campus)""}, {'title': 'Makemytrip Interview Experience Set 7 On Campus', 'url': 'https://www.geeksforgeeks.org/makemytrip-interview-experience-set-7-on-campus/', 'content_summary': 'Recently makemytrip visited our Campus and I got selected in recruitment drive.The placement drive consisted of 4 rounds. Round1: MCQ and coding round It was an online test of 60 minutes consisting of 20 aptitude question and 3 coding question. Platform used for the test was of makemytrip and slightly difficult to understand. Question1: Calculate the power of a ^ b mod c using logn approach.The thing that was to be taken care of was that you did not needed to return or print your answer but you had to store it in their predefined global variable. You could easily find the solution on geeksforgeeks site. Question2: Given a sentence you were supposed to calculate the count of Capital , small letter and number.Question seemed to be quite easy but the pick was that you needed to store the answer in char* output variable in the form of c1:c2:c3 where c1 represent count of capital letter c2 represent count of small letter and c3 represent count of number. (Hint use sprintf to store your answer in formatted way in the variable sprintf(output,""%d:%d:%d"",c1,c2,c3); ) Question3: Activity Scheduling problem You are given 2 arrays representing the starting and finishing time of activities . Determine the maximum number of non conflicting activities that you can achieve. (Hint : make a structure of start and finish time and sort according to finishing interval) I solved 2 completely and 1 partially Tip:Since they have only one sample test case so even you are not able to solve the coding question just store the hard coded answer in that variable. I did that in last :P) Out of 110 students 30 students got selected for Personal Interview round. Round 2: Personal Interview Since I was last candidate in that list waiting from 10:30 am My turn came at 10:30 PM.The interviewer was very cool and friendly.He started with asking tell me about yourself and what projects I have done.After half hour rigerous discussion over my project and making schema of databases I used in project He started asking question on ds. Question1: Sort a linklist consisting of 0,1,2\'s. (Hint: I used hashmap of stl in c++ to store the count of 0,1 and 2) Question 2: Given a stock You need to find the maximum profit you can earn .You are allowed to buy and sell as many number of time you can.) Question 3:Design a treeset in java. (Hint:I told him to use BST but he told to think of more optimized way so Ii told AVL and wrote functions for insertion in AVL tree) Question4:Diffrentiate between method overloading and method overriding.What are static blocks in java. Question5: Drilling question on deployment descriptor,struts,mysql. Round3: Personal Interview The interviewer seemed to be exhausted . He asked me that Since you are the last person so all the question you would have asked. So tell me what all question you have asked. I told him distinct palindromic substring in string, LIS, LCS etc students told that you are asking.He thought for a while and told me to write standard bfs code for graph traversal. Question2: You have been given a matrix of character and a dictionary.You need to find the valid words that you can obtain from it and print it. (Hint:I used dfs to find the valid sequence and assumed that all words are stored in a hashmap) After these He asked 6 puzzles to be solved in a given time. Puzzle 1 : 1.5 hen give 1.5 egg in 1.5 day. How many hens are required to have 4 dozen of egg in 6 days. Puzzle 2: 2 ropes and take 1hr to burn. Calculate 45 min Puzzle 3:10 jar with 10gm marble in each jar.One jar contain 9gm marbles only.Find the defective jar in one turn. Puzzle4:150 person are standing in a queue in sorted order.A blind person comes and wants to be at right position in queue.So he asks any person whether he can stand in front of him.He will reply in Yes or No . You have to find the right place after 2Yes. Give a strategy to find the correct place. (Hint:This puzzle can be reduced to egg drop puzzle) Puzzle 5:25 horse having race find top 3 Puzzle 6:A person is riding a car and he sees a milestone A. After 1hr he sees milestone B which has digits reversed of A.After one hour more he finds a milestone C which contains all the digits of A and B . Given that A < B < C find the speed of car. (Other question that were asked from my friend 1.Distinct Palindrome in string 2.Transaction minimize problem 3.LCS and LIS (dp approach) 4.Diameter of tree 5.Pattern Matching Algorithm (KMP)) HR round: He asked me about my family background,what I do ,hobbies.What I know about makemytrip.What location I would prefer , whether I am satisfied with package or not,Working environment etc, It lasted for half hour. Tip:(Be expressive,Think out loud,Be confident. They need to know your approach not the solution)\nAll Practice Problems for MakeMyTrip !\nRelated Practice Problems\nN meetings in one room\nStock buy and sell\nWord Boggle\nDistinct palindromic substrings\nDiameter of Binary Tree\nLongest Prefix Suffix\nPower of Numbers\nGiven a linked list of 0s, 1s and 2s, sort it.\nLongest Common Subsequence\n\nComment\nMore info\nCampus Training Program\nNext Article\nMakeMyTrip Interview Experience | Set 7 (On-Campus)'}]",https://www.geeksforgeeks.org/problems/word-boggle4143/1?page=1&company=Nvidia&sortBy=latest,2025-06-11T12:46:27.590003,GeeksforGeeks,Word Boggle,Medium,15.85%,89K+,20m,"Given a dictionary of distinct words and an M x N board where every cell has one character. Find all possible words from the dictionary that can be formed by a sequence of adjacent characters on the board. We can move to any of 8 adjacent characters
+Note: While forming a word we can move to any of the 8 adjacent cells. A cell can be used only once in one word.
+Example 1:
+Input:
+N = 1
+dictionary = {""CAT""}
+R = 3, C = 3
+board = {{C,A,P},{A,N,D},{T,I,E}}
+Output:
+CAT
+Explanation:
+C A P
+A N D
+T I E
+Words we got is denoted using same color.
+Example 2:
+Input:
+N = 4
+dictionary = {""GEEKS"",""FOR"",""QUIZ"",""GO""}
+R = 3, C = 3
+board = {{G,I,Z},{U,E,K},{Q,S,E}}
+Output:
+GEEKS QUIZ
+Explanation:
+G I Z
+U E K
+Q S E
+Words we got is denoted using same color.
+Your task:
+You dont need to read input or print anything. Your task is to complete the function wordBoggle() which takes the dictionary contaning N space-separated strings and R*C board as input parameters and returns a list of words that exist on the board in lexicographical order.
+Expected Time Complexity: O(N*W + R*C^2)
+Expected Auxiliary Space: O(N*W + R*C)
+Constraints:
+1 ≤ N ≤ 15
+1 ≤ R, C ≤ 50
+1 ≤ length of Word ≤ 60
+Each word can consist of both lowercase and uppercase letters.",Not specified,Not specified,"['Amazon', 'Microsoft', 'MakeMyTrip', 'Directi', 'Google', 'Facebook', 'Yahoo', 'Nvidia']","['Recursion', 'DFS', 'Graph', 'Backtracking', 'Trie', 'Data Structures', 'Algorithms', 'Advanced Data Structure']"
+[],https://www.geeksforgeeks.org/problems/bits-counting/1?page=1&company=Nvidia&sortBy=latest,2025-06-11T12:46:44.780989,GeeksforGeeks,Bits Counting,Medium,77.97%,1K+,Not available,"Given an integer n, return an array ans of size n + 1, where each element i (0 ≤ i ≤ n) represents the count of 1s in the binary form of i.
+Examples :
+Input: n = 2
+Output: [0, 1, 1]
+Explanation:
+0 --> 0
+1 --> 1
+2 --> 10
+Input: n = 5
+Output: [0, 1, 1, 2, 1, 2]
+Explanation:
+0 --> 0
+1 --> 1
+2 --> 10
+3 --> 11
+4 --> 100
+5 --> 101
+Constraints:
+0 ≤ n ≤ 105",O(n),O(n),"['Bloomberg', 'Facebook', 'Adobe', 'Google', 'Amazon', 'Microsoft', 'Apple', 'Yahoo', 'Nvidia', 'Uber']","['Bit Magic', 'Dynamic Programming', 'Arrays']"
+[],https://www.geeksforgeeks.org/problems/buy-stock-2/1?page=1&company=Nvidia&sortBy=latest,2025-06-11T12:46:56.428774,GeeksforGeeks,Stock Buy and Sell – Max one Transaction Allowed,Easy,49.33%,92K+,10m,"Given an array prices[] of length n, representing the prices of the stocks on different days. The task is to find the maximum profit possible by buying and selling the stocks on different days when at most one transaction is allowed. Here one transaction means 1 buy + 1 Sell. If it is not possible to make a profit then return 0.
+Note: Stock must be bought before being sold.
+Examples:
+Input: prices[] = [7, 10, 1, 3, 6, 9, 2]
+Output: 8
+Explanation: You can buy the stock on day 2 at price = 1 and sell it on day 5 at price = 9. Hence, the profit is 8.
+Input: prices[] = [7, 6, 4, 3, 1]
+Output: 0
+Explanation: Here the prices are in decreasing order, hence if we buy any day then we cannot sell it at a greater price. Hence, the answer is 0.
+Input: prices[] = [1, 3, 6, 9, 11]
+Output: 10
+Explanation: Since the array is sorted in increasing order, we can make maximum profit by buying at price[0] and selling at price[n-1].
+Constraint:
+1 <= prices.size()<= 105
+0 <= prices[i] <=104",O(n),O(1),"['Bloomberg', 'Facebook', 'Intel', 'Infosys', 'Zoho', 'Morgan Stanley', 'Amazon', 'Microsoft', 'Samsung', 'Yahoo', 'PayPal', 'Nvidia', 'Oracle', 'Visa', 'Walmart', 'Goldman Sachs', 'TCS', 'Adobe', 'Google', 'IBM', 'Accenture', 'Apple', 'Uber']","['Greedy', 'Arrays']"
+"[{'title': 'Directi Interview Experience Set 14 On Campus', 'url': 'https://www.geeksforgeeks.org/directi-interview-experience-set-14-on-campus/', 'content_summary': ""Direct I came for Full Time recruitment for Applications Engineer, Operations Engineer and Platform Engineer in our campus. Round 1 Online test on Codechef contains 3 Coding Questions 1.Find the maximum sum of path between any two leaf nodes in a binary tree represented as an array. Example: Given Tree – {1,2,3,4,5,6,7} Answer: (5+2+1+3+7) = 18 2. Find the given words in a grid. Return true if present else return false. Example: grid = {{a,b,c},{d,e,f},{g,h,i}}; words to find = {“abc”,”abeih”,”efg”} Answer : true, true, false 3. Some tree Related Question (Tough One) Those who solved 1 coding question complete are selected for next round. Round 2 Data Structure Design Round (36 minutes) [Skype Interview] The interview contains one data structure question i.e. Design a data structure which will find minimum gap in O(1). Insert(x) – O(logn) Delete(x) – O(logn) Search(x) – O(logn) mingap() – O(1) Note – mingap is the minimum absolute difference between two elements present in the structure. Example: {4, 7, 9, 1, 5, 12, 18} mingap is 1 (5-4) Note – Same question for all at same time Round 3 Algorithm Design Round (50 minutes) [Skype Interview] The interview contains 1 Algorithm design question Given n boxes of different weights and m machines of different weight carrying capacity. Find the minimum time required to move all boxes. Each machine take 1 minute to carry one time. Since the connection got lost, she called me again after some time and changed the question. You are playing on a ladder with some moves and with some constraints over you. You are given a int [] changeLevels, the ith element of which is the number of levels you will change with respect to your current position that is you can move changeLevels[i] steps UP or changeLevels[i] steps DOWN any of the one. You are also given the beginLevel which is your initial position on ladder and maxLevel which is the highest level of ladder. In any case while executing You can't go beyond the maxLevel or below level 0(Zero). Return the maximum Level you can attain after executing all the changeLevels i.e. final level. If there is no way to go through the list without exceeding maxLevel or going below 0, return 1. Note – Optimized Algorithm is required, not simple recursion solution. No one got selected for Operations Engineer, however some are selected for interview for Applications Engineer. i.e. Again all rounds except coding round.\nAll Practice Problems for Directi !\nRelated Practice Problems\nWord Boggle\n\nComment\nMore info\nCampus Training Program\nNext Article\nDirecti Interview Experience | Set 14 (On-Campus)""}, {'title': 'Makemytrip Interview Experience Set 7 On Campus', 'url': 'https://www.geeksforgeeks.org/makemytrip-interview-experience-set-7-on-campus/', 'content_summary': 'Recently makemytrip visited our Campus and I got selected in recruitment drive.The placement drive consisted of 4 rounds. Round1: MCQ and coding round It was an online test of 60 minutes consisting of 20 aptitude question and 3 coding question. Platform used for the test was of makemytrip and slightly difficult to understand. Question1: Calculate the power of a ^ b mod c using logn approach.The thing that was to be taken care of was that you did not needed to return or print your answer but you had to store it in their predefined global variable. You could easily find the solution on geeksforgeeks site. Question2: Given a sentence you were supposed to calculate the count of Capital , small letter and number.Question seemed to be quite easy but the pick was that you needed to store the answer in char* output variable in the form of c1:c2:c3 where c1 represent count of capital letter c2 represent count of small letter and c3 represent count of number. (Hint use sprintf to store your answer in formatted way in the variable sprintf(output,""%d:%d:%d"",c1,c2,c3); ) Question3: Activity Scheduling problem You are given 2 arrays representing the starting and finishing time of activities . Determine the maximum number of non conflicting activities that you can achieve. (Hint : make a structure of start and finish time and sort according to finishing interval) I solved 2 completely and 1 partially Tip:Since they have only one sample test case so even you are not able to solve the coding question just store the hard coded answer in that variable. I did that in last :P) Out of 110 students 30 students got selected for Personal Interview round. Round 2: Personal Interview Since I was last candidate in that list waiting from 10:30 am My turn came at 10:30 PM.The interviewer was very cool and friendly.He started with asking tell me about yourself and what projects I have done.After half hour rigerous discussion over my project and making schema of databases I used in project He started asking question on ds. Question1: Sort a linklist consisting of 0,1,2\'s. (Hint: I used hashmap of stl in c++ to store the count of 0,1 and 2) Question 2: Given a stock You need to find the maximum profit you can earn .You are allowed to buy and sell as many number of time you can.) Question 3:Design a treeset in java. (Hint:I told him to use BST but he told to think of more optimized way so Ii told AVL and wrote functions for insertion in AVL tree) Question4:Diffrentiate between method overloading and method overriding.What are static blocks in java. Question5: Drilling question on deployment descriptor,struts,mysql. Round3: Personal Interview The interviewer seemed to be exhausted . He asked me that Since you are the last person so all the question you would have asked. So tell me what all question you have asked. I told him distinct palindromic substring in string, LIS, LCS etc students told that you are asking.He thought for a while and told me to write standard bfs code for graph traversal. Question2: You have been given a matrix of character and a dictionary.You need to find the valid words that you can obtain from it and print it. (Hint:I used dfs to find the valid sequence and assumed that all words are stored in a hashmap) After these He asked 6 puzzles to be solved in a given time. Puzzle 1 : 1.5 hen give 1.5 egg in 1.5 day. How many hens are required to have 4 dozen of egg in 6 days. Puzzle 2: 2 ropes and take 1hr to burn. Calculate 45 min Puzzle 3:10 jar with 10gm marble in each jar.One jar contain 9gm marbles only.Find the defective jar in one turn. Puzzle4:150 person are standing in a queue in sorted order.A blind person comes and wants to be at right position in queue.So he asks any person whether he can stand in front of him.He will reply in Yes or No . You have to find the right place after 2Yes. Give a strategy to find the correct place. (Hint:This puzzle can be reduced to egg drop puzzle) Puzzle 5:25 horse having race find top 3 Puzzle 6:A person is riding a car and he sees a milestone A. After 1hr he sees milestone B which has digits reversed of A.After one hour more he finds a milestone C which contains all the digits of A and B . Given that A < B < C find the speed of car. (Other question that were asked from my friend 1.Distinct Palindrome in string 2.Transaction minimize problem 3.LCS and LIS (dp approach) 4.Diameter of tree 5.Pattern Matching Algorithm (KMP)) HR round: He asked me about my family background,what I do ,hobbies.What I know about makemytrip.What location I would prefer , whether I am satisfied with package or not,Working environment etc, It lasted for half hour. Tip:(Be expressive,Think out loud,Be confident. They need to know your approach not the solution)\nAll Practice Problems for MakeMyTrip !\nRelated Practice Problems\nN meetings in one room\nStock buy and sell\nWord Boggle\nDistinct palindromic substrings\nDiameter of Binary Tree\nLongest Prefix Suffix\nPower of Numbers\nGiven a linked list of 0s, 1s and 2s, sort it.\nLongest Common Subsequence\n\nComment\nMore info\nCampus Training Program\nNext Article\nMakeMyTrip Interview Experience | Set 7 (On-Campus)'}]",https://www.geeksforgeeks.org/problems/word-boggle-ii--141631/1?page=1&company=Nvidia&sortBy=latest,2025-06-11T12:47:07.767178,GeeksforGeeks,Open the gates,Medium,46.17%,11K+,Not available,"Geek and his friends went on a trip to one of the hill stations in Geekland. While trekking they found a treasure map, it was in the form of r x c size board, each cell on the map denotes a latin uppercase letter. On the bottom of the map it was written that there are n gates with a specific name and if they could find out the name of the gate on the map that gate would open. Help Geek and his friends to find out the gates they could possibly open with the map they found.
+A name can be formed by a sequence of adjacent characters on the map. We can move to any of 8 adjacent characters. While forming a word we can move to any of the 8 adjacent cells. A cell can be used only once in one name.
+NOTE: All gate names returned must be different even it occurs multiple times in the input.
+Example 1:
+Input:
+n = 3
+gate_names = {""ZARA"", ""ZETH"", ""MYTH""}
+r = 3, c = 3
+map = A Z E
+R Y T
+M A H
+Output:
+{""ZARA"", ""ZETH"", ""MYTH""}
+Explanation:
+Opening gate ZARA
+A Z E
+R Y T
+M A H
+Opening gate ZETH
+A Z E
+R Y T
+M A H
+Opening gate MYTH
+A Z E
+R Y T
+M A H
+Example 2:
+Input:
+n = 5
+gate_names = {""NYX"",""ONYX"",""VIRA"",""KARA"", ""NYX""}
+r = 3, c = 3
+map = N O A
+P Y V
+K R X
+Output:
+{""NYX"", ""ONYX""}
+Explanation:
+Opening gate NYX
+N O A
+P Y V
+K R X
+Opening gate ONYX
+N O A
+P Y V
+K R X
+Note that NYX is counted only once.
+Your task:
+You don’t need to read input or print anything. Your task is to complete the function openGates() which takes the gate_names contaning n space-separated strings and r*c map as input parameters and returns a list of gate names that can be opened
+Expected Time Complexity: O(4^(N^2))
+Expected Auxiliary Space: O(N^2)
+Constraints:
+1 ≤ n ≤ 15
+1 ≤ r, c ≤ 50
+1 ≤ length of each gate name ≤ 60
+All words of gate_names and all characters of map are uppercase letters from 'A' to 'Z'",Not specified,Not specified,"['Amazon', 'Microsoft', 'MakeMyTrip', 'Directi', 'Google', 'Facebook', 'Yahoo', 'Nvidia']","['Recursion', 'DFS', 'Graph', 'Trie', 'Data Structures', 'Algorithms', 'Advanced Data Structure']"
+"[{'title': 'Qualcomm Interview Experience Set 8 Experienced', 'url': 'https://www.geeksforgeeks.org/qualcomm-interview-experience-set-8-experienced/', 'content_summary': 'It was really good experience at Qualcomm. I was interviewed for Associate Software Engineer and have an experience of an year, first by telephonic round and then F2F interview.\nRound-1 Telephonic around: 70 minutes (Taken by 2 persons)\n1. All they asked at first was about Projects done in my company and at college level. 2. Then main thing they ask was OS and its concepts:      \na. Memory management.      \nb. CPU scheduling.      \nc. Deadlock and its real time examples.      \nd. Questions on how two processes can communicate in OS, give different ways.\n3. Coding questions:      \nReverse a linked list.\nPrint left view of a binary tree.\nImplement your own memcpy. After completion of this round they asked me if I can travel to Hyderabad for further rounds.At 7th January 2017 I gave F2F interview.\nRound-2 F2F:120 minutes\nHe started with simple intro then explained me the position for which interview was going on. 1. Then after he asked me about all of the projects on which I have worked till this time. He also asked different situations like how you use to fix the issues of memory overflow, crashes in your current company.\n2. Questions on big and little endian:      \na. Their notation and what are the different OS which one is big endian and which one is little endian.      \nb. You have one code now this code must work on both little and big endian in same way how will you do that: I gave solution of having different macros for different OS like for linux, windows it will work as little endian and another macro for SUN and motorola OS it will work as big endian.      \nc. Some more explanations on this topic only.\n3. Find the word in given para :\nThis is my island of love and it is meant for kids of 10 years.\nNow you have to find word \'is\' in this given para(word can come in other word) whose count is 4. Then implement the same logic, if you have to find \'is\' if it separate word. They asked me the different solutions for this question using ""strcmp"" and your own logic. I gave solutions via hashMap and normal word searching and strcmp.\n4. He gave me 10 output questions based on pointers. 5. Again he asked me some basic questions on programming like one x.h file is included in another y.cpp file and x.h file is included in z.h file and z.h is included in a.cpp now asked me several questions like which file have which variable accessed and what is the order of print statements and etc questions.\nRound-3 F2F: 80 minutes\nIn this round he asked me about questions asked in previous round. 1. Then he started with questions on OS      \na. Process and thread difference.      \nb. How will you handle 2 thread working on same MAP.Then asked several questions on mutex and different types of locking systems.      \nc. Questions on Storage classes in C. 2.\nReverse the bits of a number.\nMin distance between two given nodes of a Binary Tree\nIn the above question he asked me about call stack of the program. 4. Use of stack and queue DS. 5. Difference between stack and heap memory. Asked me to explain by writing a simple program. 6. Questions on Function pointers and usage.\nRound-4 F2F: 80 minutes\nThis round was more logical and was tough because in this round I was asked basic questions on pointers and how memory is accessed by different functions. 1. He asked me to explain Inline function.Then asked me which are the cases where inline would not work.He asked me internals of inline how it works and why this function works more faster then any other normal function.He asked me is there is any common thing between function pointer and inline function. Afterwards he also explained some points in this topic to me. 2. He told me to write my own sizeof operator (https://www.geeksforgeeks.org/implement-your-own-sizeof/) 3.\nProgram to Detect loop in a circular linked list.\n4. He also asked the question : Reverse the bits of a number and count the number of set bits in the given number. 5. Many questions on static variable and static function.\nRound-5 F2F: 20-30 minutes [Manager round, HR round]\n1. He asked me about my previous company and projects done there. 2. Then explained about the position. 3. He asked me about my joining and all and all basic questions is work interesting or not. 4. Why Qualcomm? Relocation? salary expectation? NOTE: One must be clear with pointers and memory management and DS questions. Basics of C is they ask a lot.\nAll Practice Problems for Qualcomm !\nRelated Practice Problems\nReverse a linked list\nLeft View of Binary Tree\nReverse Bits\nMin distance between two given nodes of a Binary Tree\nDetect Loop in linked list\nSet Bits\n\nComment\nMore info\nCampus Training Program\nNext Article\nQualcomm Interview Experience | Set 8 (Experienced)'}]",https://www.geeksforgeeks.org/problems/reverse-bits3556/1?page=1&company=Nvidia&sortBy=latest,2025-06-11T12:47:23.988646,GeeksforGeeks,Reverse Bits,Easy,53.96%,69K+,Not available,"Given a number x, reverse its binary form and return the answer in decimal.
+Example 1:
+Input:
+x = 1
+Output:
+2147483648
+Explanation:
+Binary of 1 in 32 bits representation-
+00000000000000000000000000000001
+Reversing the binary form we get,
+10000000000000000000000000000000,
+whose decimal value is 2147483648.
+Example 2:
+Input:
+x = 5
+Output:
+2684354560
+Explanation:
+Binary of 5 in 32 bits representation-
+00000000000000000000000000000101
+Reversing the binary form we get,
+10100000000000000000000000000000,
+whose decimal value is 2684354560.
+Your Task:
+You don't need to read input or print anything. Your task is to complete the function reversedBits() which takes an Integer x as input and returns the reverse binary form of x in decimal form.
+Expected Time Complexity: O(log (x))
+Expected Auxiliary Space: O(1)
+Constraints:
+0  <=  x  <  232",Not specified,Not specified,"['Amazon', 'Cisco', 'Qualcomm', 'HCL', 'Nvidia']","['Mathematical', 'Bit Magic', 'Data Structures', 'Algorithms']"
+"[{'title': 'Directi Interview Experience Set 14 On Campus', 'url': 'https://www.geeksforgeeks.org/directi-interview-experience-set-14-on-campus/', 'content_summary': ""Direct I came for Full Time recruitment for Applications Engineer, Operations Engineer and Platform Engineer in our campus. Round 1 Online test on Codechef contains 3 Coding Questions 1.Find the maximum sum of path between any two leaf nodes in a binary tree represented as an array. Example: Given Tree – {1,2,3,4,5,6,7} Answer: (5+2+1+3+7) = 18 2. Find the given words in a grid. Return true if present else return false. Example: grid = {{a,b,c},{d,e,f},{g,h,i}}; words to find = {“abc”,”abeih”,”efg”} Answer : true, true, false 3. Some tree Related Question (Tough One) Those who solved 1 coding question complete are selected for next round. Round 2 Data Structure Design Round (36 minutes) [Skype Interview] The interview contains one data structure question i.e. Design a data structure which will find minimum gap in O(1). Insert(x) – O(logn) Delete(x) – O(logn) Search(x) – O(logn) mingap() – O(1) Note – mingap is the minimum absolute difference between two elements present in the structure. Example: {4, 7, 9, 1, 5, 12, 18} mingap is 1 (5-4) Note – Same question for all at same time Round 3 Algorithm Design Round (50 minutes) [Skype Interview] The interview contains 1 Algorithm design question Given n boxes of different weights and m machines of different weight carrying capacity. Find the minimum time required to move all boxes. Each machine take 1 minute to carry one time. Since the connection got lost, she called me again after some time and changed the question. You are playing on a ladder with some moves and with some constraints over you. You are given a int [] changeLevels, the ith element of which is the number of levels you will change with respect to your current position that is you can move changeLevels[i] steps UP or changeLevels[i] steps DOWN any of the one. You are also given the beginLevel which is your initial position on ladder and maxLevel which is the highest level of ladder. In any case while executing You can't go beyond the maxLevel or below level 0(Zero). Return the maximum Level you can attain after executing all the changeLevels i.e. final level. If there is no way to go through the list without exceeding maxLevel or going below 0, return 1. Note – Optimized Algorithm is required, not simple recursion solution. No one got selected for Operations Engineer, however some are selected for interview for Applications Engineer. i.e. Again all rounds except coding round.\nAll Practice Problems for Directi !\nRelated Practice Problems\nWord Boggle\n\nComment\nMore info\nCampus Training Program\nNext Article\nDirecti Interview Experience | Set 14 (On-Campus)""}, {'title': 'Makemytrip Interview Experience Set 7 On Campus', 'url': 'https://www.geeksforgeeks.org/makemytrip-interview-experience-set-7-on-campus/', 'content_summary': 'Recently makemytrip visited our Campus and I got selected in recruitment drive.The placement drive consisted of 4 rounds. Round1: MCQ and coding round It was an online test of 60 minutes consisting of 20 aptitude question and 3 coding question. Platform used for the test was of makemytrip and slightly difficult to understand. Question1: Calculate the power of a ^ b mod c using logn approach.The thing that was to be taken care of was that you did not needed to return or print your answer but you had to store it in their predefined global variable. You could easily find the solution on geeksforgeeks site. Question2: Given a sentence you were supposed to calculate the count of Capital , small letter and number.Question seemed to be quite easy but the pick was that you needed to store the answer in char* output variable in the form of c1:c2:c3 where c1 represent count of capital letter c2 represent count of small letter and c3 represent count of number. (Hint use sprintf to store your answer in formatted way in the variable sprintf(output,""%d:%d:%d"",c1,c2,c3); ) Question3: Activity Scheduling problem You are given 2 arrays representing the starting and finishing time of activities . Determine the maximum number of non conflicting activities that you can achieve. (Hint : make a structure of start and finish time and sort according to finishing interval) I solved 2 completely and 1 partially Tip:Since they have only one sample test case so even you are not able to solve the coding question just store the hard coded answer in that variable. I did that in last :P) Out of 110 students 30 students got selected for Personal Interview round. Round 2: Personal Interview Since I was last candidate in that list waiting from 10:30 am My turn came at 10:30 PM.The interviewer was very cool and friendly.He started with asking tell me about yourself and what projects I have done.After half hour rigerous discussion over my project and making schema of databases I used in project He started asking question on ds. Question1: Sort a linklist consisting of 0,1,2\'s. (Hint: I used hashmap of stl in c++ to store the count of 0,1 and 2) Question 2: Given a stock You need to find the maximum profit you can earn .You are allowed to buy and sell as many number of time you can.) Question 3:Design a treeset in java. (Hint:I told him to use BST but he told to think of more optimized way so Ii told AVL and wrote functions for insertion in AVL tree) Question4:Diffrentiate between method overloading and method overriding.What are static blocks in java. Question5: Drilling question on deployment descriptor,struts,mysql. Round3: Personal Interview The interviewer seemed to be exhausted . He asked me that Since you are the last person so all the question you would have asked. So tell me what all question you have asked. I told him distinct palindromic substring in string, LIS, LCS etc students told that you are asking.He thought for a while and told me to write standard bfs code for graph traversal. Question2: You have been given a matrix of character and a dictionary.You need to find the valid words that you can obtain from it and print it. (Hint:I used dfs to find the valid sequence and assumed that all words are stored in a hashmap) After these He asked 6 puzzles to be solved in a given time. Puzzle 1 : 1.5 hen give 1.5 egg in 1.5 day. How many hens are required to have 4 dozen of egg in 6 days. Puzzle 2: 2 ropes and take 1hr to burn. Calculate 45 min Puzzle 3:10 jar with 10gm marble in each jar.One jar contain 9gm marbles only.Find the defective jar in one turn. Puzzle4:150 person are standing in a queue in sorted order.A blind person comes and wants to be at right position in queue.So he asks any person whether he can stand in front of him.He will reply in Yes or No . You have to find the right place after 2Yes. Give a strategy to find the correct place. (Hint:This puzzle can be reduced to egg drop puzzle) Puzzle 5:25 horse having race find top 3 Puzzle 6:A person is riding a car and he sees a milestone A. After 1hr he sees milestone B which has digits reversed of A.After one hour more he finds a milestone C which contains all the digits of A and B . Given that A < B < C find the speed of car. (Other question that were asked from my friend 1.Distinct Palindrome in string 2.Transaction minimize problem 3.LCS and LIS (dp approach) 4.Diameter of tree 5.Pattern Matching Algorithm (KMP)) HR round: He asked me about my family background,what I do ,hobbies.What I know about makemytrip.What location I would prefer , whether I am satisfied with package or not,Working environment etc, It lasted for half hour. Tip:(Be expressive,Think out loud,Be confident. They need to know your approach not the solution)\nAll Practice Problems for MakeMyTrip !\nRelated Practice Problems\nN meetings in one room\nStock buy and sell\nWord Boggle\nDistinct palindromic substrings\nDiameter of Binary Tree\nLongest Prefix Suffix\nPower of Numbers\nGiven a linked list of 0s, 1s and 2s, sort it.\nLongest Common Subsequence\n\nComment\nMore info\nCampus Training Program\nNext Article\nMakeMyTrip Interview Experience | Set 7 (On-Campus)'}]",https://www.geeksforgeeks.org/problems/word-boggle4143/1?page=1&company=Nvidia&sortBy=latest,2025-06-11T12:47:37.892954,GeeksforGeeks,Word Boggle,Medium,15.85%,89K+,20m,"Given a dictionary of distinct words and an M x N board where every cell has one character. Find all possible words from the dictionary that can be formed by a sequence of adjacent characters on the board. We can move to any of 8 adjacent characters
+Note: While forming a word we can move to any of the 8 adjacent cells. A cell can be used only once in one word.
+Example 1:
+Input:
+N = 1
+dictionary = {""CAT""}
+R = 3, C = 3
+board = {{C,A,P},{A,N,D},{T,I,E}}
+Output:
+CAT
+Explanation:
+C A P
+A N D
+T I E
+Words we got is denoted using same color.
+Example 2:
+Input:
+N = 4
+dictionary = {""GEEKS"",""FOR"",""QUIZ"",""GO""}
+R = 3, C = 3
+board = {{G,I,Z},{U,E,K},{Q,S,E}}
+Output:
+GEEKS QUIZ
+Explanation:
+G I Z
+U E K
+Q S E
+Words we got is denoted using same color.
+Your task:
+You dont need to read input or print anything. Your task is to complete the function wordBoggle() which takes the dictionary contaning N space-separated strings and R*C board as input parameters and returns a list of words that exist on the board in lexicographical order.
+Expected Time Complexity: O(N*W + R*C^2)
+Expected Auxiliary Space: O(N*W + R*C)
+Constraints:
+1 ≤ N ≤ 15
+1 ≤ R, C ≤ 50
+1 ≤ length of Word ≤ 60
+Each word can consist of both lowercase and uppercase letters.",Not specified,Not specified,"['Amazon', 'Microsoft', 'MakeMyTrip', 'Directi', 'Google', 'Facebook', 'Yahoo', 'Nvidia']","['Recursion', 'DFS', 'Graph', 'Backtracking', 'Trie', 'Data Structures', 'Algorithms', 'Advanced Data Structure']"

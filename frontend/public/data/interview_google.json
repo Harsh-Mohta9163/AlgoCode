@@ -1,0 +1,805 @@
+[
+  {
+    "position": "Software Developer",
+    "date": "3 Jun 2025",
+    "experience_outcome": [
+      "Declined offer",
+      "Neutral experience",
+      "Easy interview"
+    ],
+    "application_process": "I applied through other source. The process took 1 day. I interviewed at Google (Palo Alto, CA)",
+    "interview_process": "Tutto bene, un po' noioso. Però alla fine mi hanno offerto uno snack di addio visto che non ho accettato la loro offerta di assunzione in quanto sono troppo nerd",
+    "interview_questions": [],
+    "company": "Google",
+    "processed_timestamp": "2025-06-12T08:12:16.384665"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "29 May 2025",
+    "experience_outcome": [
+      "No offer",
+      "Negative experience",
+      "Difficult interview"
+    ],
+    "application_process": "I interviewed at Google (Bengaluru)",
+    "interview_process": "Interviewer came late just asked questions and finished, no feedback from HR. It has been 6 months TPS passed no OA scheduled. HR keeps calling every month to tell that you are part of process.",
+    "interview_questions": [
+      "Coding question was related to Heap"
+    ],
+    "company": "Google",
+    "processed_timestamp": "2025-06-12T08:12:43.711284"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "29 May 2025",
+    "experience_outcome": [
+      "No offer",
+      "Difficult interview",
+      "Neutral experience"
+    ],
+    "application_process": "Recruiter reached out from linkedin and gave 1 month for preparation.",
+    "interview_process": "after intense 1 month preparation i appeared for TPS and interviewer is from china",
+    "interview_questions": [
+      "Straightway pasted question and asked me to solve"
+    ],
+    "company": "Google",
+    "processed_timestamp": "2025-06-12T08:13:43.113661"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "29 May 2025",
+    "experience_outcome": [
+      "No offer",
+      "Positive experience"
+    ],
+    "application_process": "I interviewed at Google",
+    "interview_process": "It was organized. The interviewer was really open and nice. I felt at ease answering the questions. She was clear in explaining the interview process and what would come in the following interviews.",
+    "interview_questions": [
+      "They asked about what I did in college."
+    ],
+    "company": "Google",
+    "processed_timestamp": "2025-06-12T08:14:37.314202"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "22 May 2025",
+    "experience_outcome": [
+      "No offer",
+      "Positive experience",
+      "Average interview"
+    ],
+    "application_process": "I interviewed at Google",
+    "interview_process": "Pretty good experience but it was a really long process (took almost 4 months from start to finish). Starts with an online assessment, then four back to back interviews. After that it goes to the HC and the team match.",
+    "interview_questions": [
+      "Basically leetcode data structures questions."
+    ],
+    "company": "Google",
+    "processed_timestamp": "2025-06-12T08:17:27.525111"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "21 May 2025",
+    "experience_outcome": [
+      "Declined offer",
+      "Positive experience"
+    ],
+    "application_process": "I interviewed at Google (Warsaw, Masovia)",
+    "interview_process": "Best interview ever, but i declined because i got a lot of more money and i took another offer that other company gave me, also they had easier interveiw. Overall very good experience.",
+    "interview_questions": [
+      "How to reverse binary tree"
+    ],
+    "company": "Google",
+    "processed_timestamp": "2025-06-12T08:18:21.749797"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "21 May 2025",
+    "experience_outcome": [
+      "Accepted offer",
+      "Positive experience",
+      "Average interview"
+    ],
+    "application_process": "I interviewed at Google (Sunnyvale, CA)",
+    "interview_process": "Coding assessment then four round onsite. Moved to team matching process after passing onsite, matched with second team I talked to after a few days, rejected from first team.",
+    "interview_questions": [],
+    "company": "Google",
+    "processed_timestamp": "2025-06-12T08:19:15.854267"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "20 May 2025",
+    "experience_outcome": [
+      "No offer",
+      "Positive experience",
+      "Difficult interview"
+    ],
+    "application_process": "I interviewed at Google",
+    "interview_process": "Loads of steps multiple whiteboard interviews as well as behaviour. Took quite a long time due to scheduling. No feedback due to company policy. Can consider those 6h as wasted.",
+    "interview_questions": [],
+    "company": "Google",
+    "processed_timestamp": "2025-06-12T08:20:06.083618"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "20 May 2025",
+    "experience_outcome": [
+      "Declined offer",
+      "Positive experience"
+    ],
+    "application_process": "I interviewed at Google",
+    "interview_process": "The Google interview process typically involves multiple stages, including an initial recruiter screening, one or two technical phone interviews, and an onsite or virtual panel with several rounds focused on data structures, algorithms, system design, and behavioral questions. Candidates are evaluated on problem-solving ability, coding skills, and cultural fit.",
+    "interview_questions": [
+      "Data structure and algorithm in first round"
+    ],
+    "company": "Google",
+    "processed_timestamp": "2025-06-12T08:20:58.275812"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "20 May 2025",
+    "experience_outcome": [
+      "Declined offer",
+      "Positive experience",
+      "Average interview"
+    ],
+    "application_process": "I interviewed at Google (Bangalore Rural)",
+    "interview_process": "The journey was seamless, engaging, and insightful. I absorbed valuable knowledge, sharpened my skills, and gained incredible experience that broadened my perspective. It was a rewarding process filled with growth and discovery.",
+    "interview_questions": [
+      "Where You see Yourself in next few years"
+    ],
+    "company": "Google",
+    "processed_timestamp": "2025-06-12T08:21:51.670543"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "19 May 2025",
+    "experience_outcome": [
+      "No offer",
+      "Positive experience",
+      "Difficult interview"
+    ],
+    "application_process": "I interviewed at Google (Mountain View, CA)",
+    "interview_process": "The interview process began with an online coding assessment via HackerRank consisting of two algorithmic questions. This was followed by a virtual technical screening where I was asked to solve data structures and system design problems in a shared coding environment. I then moved on to an onsite round (done virtually) consisting of four interviews: two on data structures/algorithms, one on system design, and one behavioral. Each round was about 45 minutes long, and the interviewers were friendly and gave helpful hints when I got stuck.",
+    "interview_questions": [
+      "Given an array of integers, return the indices of the two numbers that add up to a specific target."
+    ],
+    "company": "Google",
+    "processed_timestamp": "2025-06-12T08:23:42.970646"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "17 May 2025",
+    "experience_outcome": [
+      "No offer",
+      "Neutral experience",
+      "Average interview"
+    ],
+    "application_process": "I interviewed at Google",
+    "interview_process": "A typical software engineer interview at Google involves multiple rigorous rounds focused on problem-solving, algorithms, and data structures. Candidates usually start with a phone screen, where they solve coding problems in a shared document. This is followed by several on-site or virtual interviews covering technical topics such as system design, coding, and sometimes behavioral assessments. Interviewers evaluate clarity of thought, coding efficiency, and problem decomposition. Google places strong emphasis on communication, so explaining your thought process clearly is crucial. Overall, the process is intellectually demanding but designed to identify candidates who excel in both technical skill and collaborative problem-solving.",
+    "interview_questions": [
+      "They ask you typical leetcode questions DSA"
+    ],
+    "company": "Google",
+    "processed_timestamp": "2025-06-12T08:25:34.806589"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "16 May 2025",
+    "experience_outcome": [
+      "No offer",
+      "Positive experience"
+    ],
+    "application_process": "I interviewed at Google (Mountain View, CA)",
+    "interview_process": "Simple leetcode style questions mostly leetcode easy or leetcode medium. Lot of importance given to analyzing the big O complexity of your solution. First round was a phone screen followed by an onsite round. Overall process was fairly quick, maybe like 2 months end of end.",
+    "interview_questions": [
+      "Read and write from a circular disk"
+    ],
+    "company": "Google",
+    "processed_timestamp": "2025-06-12T08:26:28.234029"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "14 May 2025",
+    "experience_outcome": [
+      "No offer",
+      "Difficult interview",
+      "Neutral experience"
+    ],
+    "application_process": "I interviewed at Google",
+    "interview_process": "Leetcode mediums/hards, system design (scalable, clean APIs), behavioral stuff (teamwork, leadership, “Googliness”), 4-6 rounds, strong focus on problem-solving, communication, tradeoffs. Expect whiteboard or Google Docs, interviewer hints, and follow-up questions.",
+    "interview_questions": [
+      "Leetcode Med/Hard questions, pretty straightforward"
+    ],
+    "company": "Google",
+    "processed_timestamp": "2025-06-12T08:27:23.638496"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "13 May 2025",
+    "experience_outcome": [
+      "Declined offer",
+      "Positive experience",
+      "Difficult interview"
+    ],
+    "application_process": "I interviewed at Google (London, England)",
+    "interview_process": "Initial phone interview, then 3 parts. First one was hard, second system, third was with VL. In overall it was average and good experience.",
+    "interview_questions": [
+      "Implement dead letter kfka which run kn"
+    ],
+    "company": "Google",
+    "processed_timestamp": "2025-06-12T08:28:18.210810"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "11 May 2025",
+    "experience_outcome": [
+      "No offer",
+      "Positive experience",
+      "Easy interview"
+    ],
+    "application_process": "I interviewed at Google (Singapore)",
+    "interview_process": "Here are some common data structures and algorithms (DSA) interview questions that are often asked in Google interviews:",
+    "interview_questions": [
+      "1. How do you approach this or this problem",
+      "2. What do you want to do in your life"
+    ],
+    "company": "Google",
+    "processed_timestamp": "2025-06-12T08:31:09.234073"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "9 May 2025",
+    "experience_outcome": [
+      "No offer",
+      "Difficult interview",
+      "Neutral experience"
+    ],
+    "application_process": "I applied online.",
+    "interview_process": "The process took roughly five weeks in total. First round was a recruiter screen standard stuff, nothing surprising. Then came a technical phone screen over Google Meet with a shared Doc; the question was graph-based, I got to a working solution but felt pretty rushed and got almost no feedback. After that, they scheduled a virtual onsite with four back-to-back interviews: two technical rounds (dynamic programming and binary trees), a system design (designing a rate limiter), and one behavioral round.",
+    "interview_questions": [],
+    "company": "Google",
+    "processed_timestamp": "2025-06-12T08:33:58.074752"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "8 May 2025",
+    "experience_outcome": [
+      "No offer",
+      "Positive experience",
+      "Average interview"
+    ],
+    "application_process": "I interviewed at Google",
+    "interview_process": "",
+    "interview_questions": [
+      "Data Structures & Algorithms: Given an array of integers, return indices of the two numbers such that they add up to a specific target.",
+      "Graphs: Given a list of airline tickets represented by pairs of departure and arrival airports, reconstruct the itinerary in lexical order.",
+      "Dynamic Programming: You are climbing a staircase. Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?",
+      "Trees: Given a binary tree, return the level order traversal of its nodes’ values (i.e., from left to right, level by level)."
+    ],
+    "company": "Google",
+    "processed_timestamp": "2025-06-12T08:34:54.597011"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "8 May 2025",
+    "experience_outcome": [
+      "Accepted offer",
+      "Positive experience",
+      "Average interview"
+    ],
+    "application_process": "I interviewed at Google",
+    "interview_process": "One online assessment + back to back coding interviews + team match! Overall straightforward and clear. If you don’t do well in one of the interviews, third one will be scheduled",
+    "interview_questions": [
+      "Coding + behavior questions, like bfs and dfs"
+    ],
+    "company": "Google",
+    "processed_timestamp": "2025-06-12T08:35:46.852712"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "7 May 2025",
+    "experience_outcome": [
+      "No offer",
+      "Positive experience",
+      "Average interview"
+    ],
+    "application_process": "I interviewed at Google (Sydney)",
+    "interview_process": "first round is intro meeting and know more about your background and there is a tutorial session give you the guidance about how to do in the coding interview 2/3/4 rounds are live coding test",
+    "interview_questions": [
+      "normal for round one, a Iteration Function code question for R2"
+    ],
+    "company": "Google",
+    "processed_timestamp": "2025-06-12T08:36:41.159500"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "7 May 2025",
+    "experience_outcome": [
+      "No offer",
+      "Positive experience",
+      "Difficult interview"
+    ],
+    "application_process": "I applied through university.",
+    "interview_process": "Interviewing at Google as an engineer was challenging yet rewarding. The process tested problem-solving, coding, and system design skills. Interviewers were professional, and the experience offered valuable insights into high-level engineering.",
+    "interview_questions": [
+      "Design a scalable URL shortening service like bit.ly—how would you handle billions of requests, ensure uniqueness, and allow for analytics?"
+    ],
+    "company": "Google",
+    "processed_timestamp": "2025-06-12T08:37:37.030670"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "6 May 2025",
+    "experience_outcome": [
+      "No offer",
+      "Positive experience",
+      "Average interview"
+    ],
+    "application_process": "I interviewed at Google",
+    "interview_process": "Got a call from google engineer and was asked a design question, not super complicated. Passed the coding phone screen but stopped the interview process because accepted another job offer",
+    "interview_questions": [
+      "system design question in java"
+    ],
+    "company": "Google",
+    "processed_timestamp": "2025-06-12T08:39:23.922643"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "2 May 2025",
+    "experience_outcome": [
+      "No offer",
+      "Neutral experience",
+      "Average interview"
+    ],
+    "application_process": "I interviewed at Google (Bengaluru)",
+    "interview_process": "The interview process consisted of an initial online assessment followed by two technical rounds and one HR round. The focus was on data structures, system design basics, and problem-solving. Communication was smooth but the feedback took longer than expected.",
+    "interview_questions": [
+      "Can you design a basic rate limiter for a web service?"
+    ],
+    "company": "Google",
+    "processed_timestamp": "2025-06-12T08:41:16.032807"
+  },
+  {
+    "position": "Software Developer",
+    "date": "2 May 2025",
+    "experience_outcome": [
+      "No offer",
+      "Neutral experience",
+      "Average interview"
+    ],
+    "application_process": "I interviewed at Google (Toronto, ON)",
+    "interview_process": "It was fairly easy, but since I wasn't shortlisted, maybe I didn't get to the hard part. I guess that's why. But I will advise everyone to give it a trial; you never know, you might be the next big thing.",
+    "interview_questions": [
+      "I was asked to fill in my details."
+    ],
+    "company": "Google",
+    "processed_timestamp": "2025-06-12T08:42:11.531287"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "2 May 2025",
+    "experience_outcome": [
+      "No offer",
+      "Positive experience",
+      "Average interview"
+    ],
+    "application_process": "I interviewed at Google (San Francisco, CA)",
+    "interview_process": "One round was easy but Onsite round were a little tricky. Overall it was Average Interview. But all coding round were there. No Behavioral round",
+    "interview_questions": [
+      "Find the number which is coming only once into an integer array."
+    ],
+    "company": "Google",
+    "processed_timestamp": "2025-06-12T08:43:07.895086"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "1 May 2025",
+    "experience_outcome": [
+      "Accepted offer",
+      "Positive experience",
+      "Difficult interview"
+    ],
+    "application_process": "The interview process at CodeNimbus begins with an online application where candidates submit their resume and portfolio. After an initial review, selected applicants are invited to a 30-minute phone screening with a recruiter to discuss their background, interests, and availability.",
+    "interview_process": "Those who pass this stage move on to a technical assessment, which involves solving real-world coding problems through an online platform. Successful candidates are then scheduled for a virtual interview with a senior developer, where they discuss system design, past projects, and tackle a live coding challenge. Finally, top candidates meet with the team for a culture fit interview before receiving an offer.",
+    "interview_questions": [
+      "what i was good at"
+    ],
+    "company": "Google",
+    "processed_timestamp": "2025-06-12T08:44:04.583709"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "22 May 2025",
+    "experience_outcome": [
+      "No offer",
+      "Positive experience",
+      "Difficult interview"
+    ],
+    "application_process": "I applied through a recruiter. The process took 2 months. I interviewed at Google (Bengaluru) in May 2025",
+    "interview_process": "1st Phone Screening Round 2nd Technical Screening Round 3 Onsite rounds 1 Googlyness round 1 Team matching round",
+    "interview_questions": [
+      "DSA questions related to BST"
+    ],
+    "company": "Google",
+    "processed_timestamp": "2025-06-12T08:45:01.192788"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "30 Apr 2025",
+    "experience_outcome": [
+      "Declined offer",
+      "Negative experience",
+      "Difficult interview"
+    ],
+    "application_process": "I interviewed at Google",
+    "interview_process": "The Google interview process typically includes resume screening, a recruiter call, one or two technical phone interviews, and a full round of 4–6 onsite or virtual interviews covering coding, system design, and behavioral questions.",
+    "interview_questions": [
+      "Software related Questions and other things"
+    ],
+    "company": "Google",
+    "processed_timestamp": "2025-06-12T08:45:58.781561"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "30 Apr 2025",
+    "experience_outcome": [
+      "No offer",
+      "Difficult interview",
+      "Neutral experience"
+    ],
+    "application_process": "I interviewed at Google",
+    "interview_process": "Le processus d'entretien d'embauche à Google est un processus où tu es testé dans ta manière de reflexion/raisonnement dans plusieurs perspectives ou situations réelles ou théoriques avant d'être testé techniquement sur tes hard skills.",
+    "interview_questions": [
+      "Si tu fais la taille d'une pièce de monnaie et que tu es coincé dans une bouteille, comment tu fais pour sortir ?"
+    ],
+    "company": "Google",
+    "processed_timestamp": "2025-06-12T08:46:50.670882"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "30 Apr 2025",
+    "experience_outcome": [
+      "No offer",
+      "Negative experience",
+      "Average interview"
+    ],
+    "application_process": "I interviewed at Google",
+    "interview_process": "Had two interviews 45 mins back to back for the STEP engineering program. Questions were leetcode medium difficulty, finished them very quickly and ended up being ghosted for the team matching phase.",
+    "interview_questions": [
+      "LIS with a slight twist."
+    ],
+    "company": "Google",
+    "processed_timestamp": "2025-06-12T08:47:43.108279"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "30 Apr 2025",
+    "experience_outcome": [
+      "No offer",
+      "Negative experience",
+      "Difficult interview"
+    ],
+    "application_process": "I interviewed at Google (San Francisco, CA)",
+    "interview_process": "Very hard. It was really insanely hard. I had no idea how to prepare at all. The portal is not great either. Make sure to brush up on your resume and be prepared to do so.",
+    "interview_questions": [
+      "Tell me about yourself and your skills"
+    ],
+    "company": "Google",
+    "processed_timestamp": "2025-06-12T08:48:39.421011"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "23 May 2025",
+    "experience_outcome": [
+      "No offer",
+      "Positive experience",
+      "Difficult interview"
+    ],
+    "application_process": "I applied online. I interviewed at Google (New York, NY) in May 2025",
+    "interview_process": "For the Early Career position - standard with three coding rounds, and one Googleyness round. Technical rounds at Google focuses on Trees, Graphs and also standard array questions.",
+    "interview_questions": [
+      "Behavioural focused on STAR type questions giving scenarios and asking how I dealt with them"
+    ],
+    "company": "Google",
+    "processed_timestamp": "2025-06-12T08:50:32.913795"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "29 Apr 2025",
+    "experience_outcome": [
+      "Declined offer",
+      "Neutral experience",
+      "Average interview"
+    ],
+    "application_process": "I interviewed at Google (Munich, Bavaria)",
+    "interview_process": "Standard, a bit boring, just what you would expect from a Big Tech interview - depends on what you get. But it is okay, I mean it is a well organized process.",
+    "interview_questions": [
+      "Something with bits and bytes."
+    ],
+    "company": "Google",
+    "processed_timestamp": "2025-06-12T08:51:29.319545"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "29 Apr 2025",
+    "experience_outcome": [
+      "No offer",
+      "Positive experience",
+      "Easy interview"
+    ],
+    "application_process": "I interviewed at Google (Toronto, ON)",
+    "interview_process": "In the interview, I was asked a technical question that tested my problem-solving skills, coding efficiency, and ability to clearly explain my thought process while working through a real-world scenario.",
+    "interview_questions": [],
+    "company": "Google",
+    "processed_timestamp": "2025-06-12T08:52:22.000023"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "26 Apr 2025",
+    "experience_outcome": [
+      "No offer",
+      "Easy interview",
+      "Positive experience"
+    ],
+    "application_process": "I interviewed at Google",
+    "interview_process": "I had a phone call with some questions, then I had to answer couple of questions about algorithms and python and then couple weeks later whiteboard coding interview, overall nice interview, frinedly interviewer, ",
+    "interview_questions": [
+      "I was asked about merge sort big O notation, some python methods, during whiteboard coding I had to solve sliding window problem"
+    ],
+    "company": "Google",
+    "processed_timestamp": "2025-06-12T08:53:16.313864"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "25 Apr 2025",
+    "experience_outcome": [
+      "Accepted offer",
+      "Positive experience",
+      "Easy interview"
+    ],
+    "application_process": "I interviewed at Google",
+    "interview_process": "They only made me do an onsite because this was about a year after I had gotten to the team match stage for the same position but then turned it down for external reasons. I got to skip doing the phone screen.",
+    "interview_questions": [
+      "I forget, I'm sorry. Standard 3 technicals and 1 nontechnical."
+    ],
+    "company": "Google",
+    "processed_timestamp": "2025-06-12T08:54:11.699906"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "24 Apr 2025",
+    "experience_outcome": [
+      "No offer",
+      "Positive experience",
+      "Average interview"
+    ],
+    "application_process": "I interviewed at Google",
+    "interview_process": "4 rounds with 3 rounds of technical and 1 round of BQ. pretty good experience and interviewers are nice and communicative. It was intense but fair. The interviewers were respectful and gave enough hints to keep things moving. I appreciated how clear the expectations were.",
+    "interview_questions": [
+      "coding questions, what's your most complicated projects"
+    ],
+    "company": "Google",
+    "processed_timestamp": "2025-06-12T08:55:03.254940"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "23 Apr 2025",
+    "experience_outcome": [
+      "No offer",
+      "Positive experience",
+      "Difficult interview"
+    ],
+    "application_process": "I interviewed at Google (San Francisco, CA)",
+    "interview_process": "Great interview and i want to try again later because it would be awesome to work for google one day. I would love to try again.",
+    "interview_questions": [
+      "What is your biggest weakness?"
+    ],
+    "company": "Google",
+    "processed_timestamp": "2025-06-12T08:55:58.690478"
+  },
+  {
+    "position": "Software Developer",
+    "date": "22 Apr 2025",
+    "experience_outcome": [
+      "Accepted offer",
+      "Positive experience",
+      "Average interview"
+    ],
+    "application_process": "I interviewed at Google",
+    "interview_process": "Great and efficient interview process, the team and the people were nice and asked great questions. I sincerely hope I get an offer, it would be a dream to work here.",
+    "interview_questions": [
+      "Tell us about your career"
+    ],
+    "company": "Google",
+    "processed_timestamp": "2025-06-12T08:56:53.023925"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "22 Apr 2025",
+    "experience_outcome": [
+      "No offer",
+      "Neutral experience",
+      "Average interview"
+    ],
+    "application_process": "I interviewed at Google",
+    "interview_process": "Standard coding question. The first interview got cancelled for some reason as no one showed up and was rescheduled. On the interview re-do, it seemed like interviewer's side kept having connection issues.",
+    "interview_questions": [
+      "Standard coding style question, lots of follow ups"
+    ],
+    "company": "Google",
+    "processed_timestamp": "2025-06-12T08:57:44.518034"
+  },
+  {
+    "position": "Software Developer",
+    "date": "Apr 2025",
+    "experience_outcome": [
+      "No offer",
+      "Positive experience",
+      "Average interview"
+    ],
+    "application_process": "I interviewed at Google (Waterloo, ON)",
+    "interview_process": "The interview was extremely challenging and heavily centered around assessing coding proficiency. It involved complex algorithmic problems and required a deep understanding of data structures, logical reasoning, and efficient problem-solving skills, reflecting a strong emphasis on technical programming capabilities.",
+    "interview_questions": [
+      "A set of rules for an imaginary game was provided, and the task was to write code that accurately implemented those rules and simulated the game’s behavior based on the given logic."
+    ],
+    "company": "Google",
+    "processed_timestamp": "2025-06-12T08:58:40.402881"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "20 Apr 2025",
+    "experience_outcome": [
+      "Accepted offer",
+      "Positive experience",
+      "Average interview"
+    ],
+    "application_process": "I interviewed at Google",
+    "interview_process": "It was okay, it was not too hard, it was not too bad. It was not too difficult and it was not too long. Interview had coding and behavioral questions",
+    "interview_questions": [
+      "Technical questions and behavioral questions"
+    ],
+    "company": "Google",
+    "processed_timestamp": "2025-06-12T08:59:33.660327"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "19 Apr 2025",
+    "experience_outcome": [
+      "Accepted offer",
+      "Positive experience",
+      "Difficult interview"
+    ],
+    "application_process": "I interviewed at Google (Warsaw, Masovia)",
+    "interview_process": "The process took a few months, consisted of 1 phone screening with HR, 3 technical interviews and 1 googleyness interview. The technical interviews were all algorithms and data structures related.",
+    "interview_questions": [
+      "Questions are confidential, so I cannot provide detailed questions. Doing leetcode style tasks should be enough to prepare, just remember to explain everything you're doing step by step - this is the most important part."
+    ],
+    "company": "Google",
+    "processed_timestamp": "2025-06-12T09:00:32.709837"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "18 Apr 2025",
+    "experience_outcome": [
+      "No offer",
+      "Neutral experience",
+      "Average interview"
+    ],
+    "application_process": "I interviewed at Google (Denver, CO)",
+    "interview_process": "Interview process was long - 5-6 rounds of interviews. Lots of technical questions and samples. Met with several members of the hiring team at different stages of the interview process.",
+    "interview_questions": [
+      "Describe your programming style that you use"
+    ],
+    "company": "Google",
+    "processed_timestamp": "2025-06-12T09:01:28.736839"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "17 Apr 2025",
+    "experience_outcome": [
+      "No offer",
+      "Neutral experience",
+      "Neutral experience"
+    ],
+    "application_process": "I interviewed at Google (Hyderābād)",
+    "interview_process": "Had phone interview round-lasted for 45 minutes -difficulty level is medium- Array Based questions Linked List questions interviewer was helpful and encouraging constructive approach is the best way to crack this round if you are stuck you should definitely ask interviewer",
+    "interview_questions": [
+      "Find the pairs which follows this condition arr[i]-arr[j] = i-j",
+      "Merge k sorted linked list"
+    ],
+    "company": "Google",
+    "processed_timestamp": "2025-06-12T09:02:23.522031"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "17 Apr 2025",
+    "experience_outcome": [
+      "No offer",
+      "Positive experience",
+      "Difficult interview"
+    ],
+    "application_process": "I interviewed at Google (Mountain View, CA)",
+    "interview_process": "4 remote interviews, 3 coding 1 system design",
+    "interview_questions": [
+      "Given a grid of 1,-1,and0 find the shortest path to connect all 1's. -1 is impassable."
+    ],
+    "company": "Google",
+    "processed_timestamp": "2025-06-12T09:04:17.231251"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "16 Apr 2025",
+    "experience_outcome": [
+      "No offer",
+      "Positive experience",
+      "Average interview"
+    ],
+    "application_process": "I interviewed at Google (Poland, ME)",
+    "interview_process": "The interview consisted of two technical problem-solving questions in the style of LeetCode. We were given access to a shared Google Doc, where we were expected to write our solutions in real-time. The focus was not only on arriving at the correct answer but also on explaining our thought process clearly and communicating effectively throughout the session.",
+    "interview_questions": [
+      "LeetCode Medium (Prefix Sum)",
+      "Follow Up is 2d prefix sum"
+    ],
+    "company": "Google",
+    "processed_timestamp": "2025-06-12T09:06:10.654448"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "16 Apr 2025",
+    "experience_outcome": [
+      "No offer",
+      "Positive experience",
+      "Average interview"
+    ],
+    "application_process": "I interviewed at Google",
+    "interview_process": "3 technical rounds and 1 behavioral. The technical questions focused on maps, tries, and probability. Each round emphasized problem-solving and clear communication. The behavioral round assessed collaboration and ownership, and some of the general questions you can expect",
+    "interview_questions": [
+      "The technical questions focused on maps, tries, and probability."
+    ],
+    "company": "Google",
+    "processed_timestamp": "2025-06-12T09:07:05.013897"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "15 Apr 2025",
+    "experience_outcome": [
+      "No offer",
+      "Positive experience",
+      "Difficult interview"
+    ],
+    "application_process": "I interviewed at Google (Minnesota Lake, MN)",
+    "interview_process": "Did leetcode hard and you have to know a lot like white board etc. and also BS AND BST and some backend stuff and also be good at OOP dnd d",
+    "interview_questions": [],
+    "company": "Google",
+    "processed_timestamp": "2025-06-12T09:07:56.187107"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "14 Apr 2025",
+    "experience_outcome": [
+      "No offer",
+      "Negative experience"
+    ],
+    "application_process": "I interviewed at Google (Gurgaon, Haryana)",
+    "interview_process": "HR called for screening and did first round of tech interview and told I was selected in first round but after that ghosted. I tried calling but didn't got any response.",
+    "interview_questions": [
+      "It was sliding window problem"
+    ],
+    "company": "Google",
+    "processed_timestamp": "2025-06-12T09:08:53.804301"
+  },
+  {
+    "position": "Software Engineer",
+    "date": "13 Apr 2025",
+    "experience_outcome": [
+      "No offer",
+      "Positive experience",
+      "Difficult interview"
+    ],
+    "application_process": "I interviewed at Google (New York, NY)",
+    "interview_process": "Straight forward, LC style. Dynamic programming question, think about something like knapsack problem. Recruiter reached out and did a phone screen. Recruiter was very quick at scheduling the interview and getting the feedback in time.",
+    "interview_questions": [],
+    "company": "Google",
+    "processed_timestamp": "2025-06-12T09:09:49.185161"
+  }
+]

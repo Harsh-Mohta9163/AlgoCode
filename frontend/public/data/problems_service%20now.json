@@ -1,0 +1,96 @@
+[
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/egg-dropping-puzzle-1587115620/1?page=1&company=Service%20Now&sortBy=latest",
+      "scraped_at": "2025-06-11T12:49:16.475713",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Egg Dropping Puzzle",
+      "difficulty": "Medium",
+      "accuracy": "39.64%",
+      "submissions": "154K+",
+      "avg_time": "Not available"
+    },
+    "content": {
+      "problem": "You are given n identical eggs and you have access to a k-floored building from 1 to k.\nThere exists a floor f where 0 <= f <= k such that any egg dropped from a floor higher than f will break, and any egg dropped from or below floor f will not break.\nThere are few rules given below.\nAn egg that survives a fall can be used again.\nA broken egg must be discarded.\nThe effect of a fall is the same for all eggs.\nIf the egg doesn't break at a certain floor, it will not break at any floor below.\nIf the egg breaks on a certain floor, it will break on any floor above.\nReturn the minimum number of moves you need to determine the value of f with certainty.\nExamples:\nInput: n = 2, k = 36\nOutput: 8\nExplanation: In all the situations, 8 maximum moves are required to find the maximum floor. Following is the strategy to do so:\nDrop from floor 8 → If breaks, check 1-7 sequentially.\nDrop from floor 15 → If breaks, check 9-14.\nDrop from floor 21 → If breaks, check 16-20.\nDrop from floor 26 → If breaks, check 22-25.\nDrop from floor 30 → If breaks, check 27-29.\nDrop from floor 33 → If breaks, check 31-32.\nDrop from floor 35 → If breaks, check 34.\nDrop from floor 36 → Final check.\nInput: n = 1, k = 36\nOutput: 36\nExplanation: Drop the egg from the first-floor window; if it survives, drop it from the second-floor window. Continue upward until it breaks. In the worst case, this method may require 36 droppings.\nConstraints:\n1 ≤ n ≤ 1000\n1 ≤ k ≤ 1000"
+    },
+    "complexity": {
+      "time_complexity": "O(n*k)",
+      "space_complexity": "O(n*k)"
+    },
+    "tags": {
+      "company_tags": [
+        "VMWare",
+        "Amazon",
+        "Microsoft",
+        "Samsung",
+        "D-E-Shaw",
+        "Hike",
+        "MakeMyTrip",
+        "Oracle",
+        "Goldman Sachs",
+        "MAQ Software",
+        "Google",
+        "Myntra",
+        "nearbuy",
+        "Opera",
+        "Philips",
+        "Service Now",
+        "Unisys"
+      ],
+      "topic_tags": [
+        "Dynamic Programming",
+        "Algorithms"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/egg-dropping-puzzle-1587115620/1?page=1&company=Service%20Now&sortBy=latest",
+      "scraped_at": "2025-06-11T12:49:27.027902",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Egg Dropping Puzzle",
+      "difficulty": "Medium",
+      "accuracy": "39.64%",
+      "submissions": "154K+",
+      "avg_time": "Not available"
+    },
+    "content": {
+      "problem": "You are given n identical eggs and you have access to a k-floored building from 1 to k.\nThere exists a floor f where 0 <= f <= k such that any egg dropped from a floor higher than f will break, and any egg dropped from or below floor f will not break.\nThere are few rules given below.\nAn egg that survives a fall can be used again.\nA broken egg must be discarded.\nThe effect of a fall is the same for all eggs.\nIf the egg doesn't break at a certain floor, it will not break at any floor below.\nIf the egg breaks on a certain floor, it will break on any floor above.\nReturn the minimum number of moves you need to determine the value of f with certainty.\nExamples:\nInput: n = 2, k = 36\nOutput: 8\nExplanation: In all the situations, 8 maximum moves are required to find the maximum floor. Following is the strategy to do so:\nDrop from floor 8 → If breaks, check 1-7 sequentially.\nDrop from floor 15 → If breaks, check 9-14.\nDrop from floor 21 → If breaks, check 16-20.\nDrop from floor 26 → If breaks, check 22-25.\nDrop from floor 30 → If breaks, check 27-29.\nDrop from floor 33 → If breaks, check 31-32.\nDrop from floor 35 → If breaks, check 34.\nDrop from floor 36 → Final check.\nInput: n = 1, k = 36\nOutput: 36\nExplanation: Drop the egg from the first-floor window; if it survives, drop it from the second-floor window. Continue upward until it breaks. In the worst case, this method may require 36 droppings.\nConstraints:\n1 ≤ n ≤ 1000\n1 ≤ k ≤ 1000"
+    },
+    "complexity": {
+      "time_complexity": "O(n*k)",
+      "space_complexity": "O(n*k)"
+    },
+    "tags": {
+      "company_tags": [
+        "VMWare",
+        "Amazon",
+        "Microsoft",
+        "Samsung",
+        "D-E-Shaw",
+        "Hike",
+        "MakeMyTrip",
+        "Oracle",
+        "Goldman Sachs",
+        "MAQ Software",
+        "Google",
+        "Myntra",
+        "nearbuy",
+        "Opera",
+        "Philips",
+        "Service Now",
+        "Unisys"
+      ],
+      "topic_tags": [
+        "Dynamic Programming",
+        "Algorithms"
+      ]
+    },
+    "interview_experiences": []
+  }
+]

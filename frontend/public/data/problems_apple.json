@@ -1,0 +1,949 @@
+[
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/sum-of-xor-of-all-possible-subsets/1?page=1&company=Apple&sortBy=latest",
+      "scraped_at": "2025-06-11T12:33:24.826437",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Sum of XOR of all possible subsets",
+      "difficulty": "Medium",
+      "accuracy": "35.4%",
+      "submissions": "1K+",
+      "avg_time": "Not available"
+    },
+    "content": {
+      "problem": "Given an array arr[], return the sum of the XOR of all elements for every possible subset of the array. Subsets with the same elements should be counted multiple times.\nAn array a is a subset of an array b if a can be obtained from b by deleting some (possibly zero) elements of b.\nNote: The answer is guaranteed to fit within a 32-bit integer.\nExamples:\nInput: arr[] = [7, 2]\nOutput: 14\nExplanation: Subsets are: [[], [7], [2], [7, 2]]\nSum of all XOR's = 7 + 2 + (7 ^ 2) = 14.\nInput: arr[] = [1, 2, 3]\nOutput: 12\nExplanation: Subsets are: [[], [1], [2], [3], [1, 2], [1, 3], [2, 3], [1, 2, 3]]\nSum of all XOR's = 1 + 2 + 3 + (1 ^ 2)  + (1 ^ 3) + (2 ^ 3) + (1 ^ 2 ^ 3) = 12.\nConstraints:\n1 ≤ arr.size() ≤ 30\n1 ≤ arr[i] ≤ 103"
+    },
+    "complexity": {
+      "time_complexity": "O(n)",
+      "space_complexity": "O(1)"
+    },
+    "tags": {
+      "company_tags": [
+        "Adobe",
+        "Amazon",
+        "Apple",
+        "Google"
+      ],
+      "topic_tags": [
+        "Bit Magic",
+        "Data Structures",
+        "Algorithms"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/bits-counting/1?page=1&company=Apple&sortBy=latest",
+      "scraped_at": "2025-06-11T12:33:35.044887",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Bits Counting",
+      "difficulty": "Medium",
+      "accuracy": "77.98%",
+      "submissions": "1K+",
+      "avg_time": "Not available"
+    },
+    "content": {
+      "problem": "Given an integer n, return an array ans of size n + 1, where each element i (0 ≤ i ≤ n) represents the count of 1s in the binary form of i.\nExamples :\nInput: n = 2\nOutput: [0, 1, 1]\nExplanation:\n0 --> 0\n1 --> 1\n2 --> 10\nInput: n = 5\nOutput: [0, 1, 1, 2, 1, 2]\nExplanation:\n0 --> 0\n1 --> 1\n2 --> 10\n3 --> 11\n4 --> 100\n5 --> 101\nConstraints:\n0 ≤ n ≤ 105"
+    },
+    "complexity": {
+      "time_complexity": "O(n)",
+      "space_complexity": "O(n)"
+    },
+    "tags": {
+      "company_tags": [
+        "Bloomberg",
+        "Facebook",
+        "Adobe",
+        "Google",
+        "Amazon",
+        "Microsoft",
+        "Apple",
+        "Yahoo",
+        "Nvidia",
+        "Uber"
+      ],
+      "topic_tags": [
+        "Bit Magic",
+        "Dynamic Programming",
+        "Arrays"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/k-th-missing-element3635/1?page=1&company=Apple&sortBy=latest",
+      "scraped_at": "2025-06-11T12:33:45.521323",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "K-th missing element",
+      "difficulty": "Easy",
+      "accuracy": "31.53%",
+      "submissions": "32K+",
+      "avg_time": "Not available"
+    },
+    "content": {
+      "problem": "Given an increasing sequence arr, we need to find the K-th smallest missing element, taking the first element of the array as the starting point in the increasing sequence. If there is no k-th missing element then output -1.\nExample:\nInput: arr[] = [1, 3, 4, 5, 7] and k = 2\nOutput: 6\nExplanation: k = 2, Missing numbers are 2 and 6. So 2nd missing number is 6.\nInput: arr[] = [2, 3, 4, 5, 6, 8] and k = 1\nOutput: 7\nExplanation: k = 1, the first missing number in the array is 7.\nExpected Time Complexity: O(n).\nExpected Auxiliary Space: O(1).\nConstraints:\n1 ≤  arr.size() ≤ 106\n0 ≤  k, arr[i] ≤ 105"
+    },
+    "complexity": {
+      "time_complexity": "Not specified",
+      "space_complexity": "Not specified"
+    },
+    "tags": {
+      "company_tags": [
+        "Amazon",
+        "Facebook",
+        "Apple",
+        "Google"
+      ],
+      "topic_tags": [
+        "Arrays",
+        "Data Structures"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/reverse-an-array/1?page=1&company=Apple&sortBy=latest",
+      "scraped_at": "2025-06-11T12:33:56.381265",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Reverse an Array",
+      "difficulty": "Easy",
+      "accuracy": "55.32%",
+      "submissions": "189K+",
+      "avg_time": "5m"
+    },
+    "content": {
+      "problem": "You are given an array of integers arr[]. Your task is to reverse the given array.\nNote: Modify the array in place.\nExamples:\nInput: arr = [1, 4, 3, 2, 6, 5]\nOutput: [5, 6, 2, 3, 4, 1]\nExplanation: The elements of the array are 1 4 3 2 6 5. After reversing the array, the first element goes to the last position, the second element goes to the second last position and so on. Hence, the answer is 5 6 2 3 4 1.\nInput: arr = [4, 5, 2]\nOutput: [2, 5, 4]\nExplanation: The elements of the array are 4 5 2. The reversed array will be 2 5 4.\nInput: arr = [1]\nOutput: [1]\nExplanation: The array has only single element, hence the reversed array is same as the original.\nConstraints:\n1<=arr.size()<=105\n0<=arr[i]<=105"
+    },
+    "complexity": {
+      "time_complexity": "O(n)",
+      "space_complexity": "O(1)"
+    },
+    "tags": {
+      "company_tags": [
+        "Bloomberg",
+        "Facebook",
+        "TCS",
+        "Adobe",
+        "Google",
+        "Infosys",
+        "Capgemini",
+        "Morgan Stanley",
+        "Amazon",
+        "Microsoft",
+        "Apple",
+        "Yahoo",
+        "PayPal",
+        "Uber"
+      ],
+      "topic_tags": [
+        "Arrays",
+        "Data Structures"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/buy-stock-2/1?page=1&company=Apple&sortBy=latest",
+      "scraped_at": "2025-06-11T12:34:07.360092",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Stock Buy and Sell – Max one Transaction Allowed",
+      "difficulty": "Easy",
+      "accuracy": "49.33%",
+      "submissions": "92K+",
+      "avg_time": "10m"
+    },
+    "content": {
+      "problem": "Given an array prices[] of length n, representing the prices of the stocks on different days. The task is to find the maximum profit possible by buying and selling the stocks on different days when at most one transaction is allowed. Here one transaction means 1 buy + 1 Sell. If it is not possible to make a profit then return 0.\nNote: Stock must be bought before being sold.\nExamples:\nInput: prices[] = [7, 10, 1, 3, 6, 9, 2]\nOutput: 8\nExplanation: You can buy the stock on day 2 at price = 1 and sell it on day 5 at price = 9. Hence, the profit is 8.\nInput: prices[] = [7, 6, 4, 3, 1]\nOutput: 0\nExplanation: Here the prices are in decreasing order, hence if we buy any day then we cannot sell it at a greater price. Hence, the answer is 0.\nInput: prices[] = [1, 3, 6, 9, 11]\nOutput: 10\nExplanation: Since the array is sorted in increasing order, we can make maximum profit by buying at price[0] and selling at price[n-1].\nConstraint:\n1 <= prices.size()<= 105\n0 <= prices[i] <=104"
+    },
+    "complexity": {
+      "time_complexity": "O(n)",
+      "space_complexity": "O(1)"
+    },
+    "tags": {
+      "company_tags": [
+        "Bloomberg",
+        "Facebook",
+        "Intel",
+        "Infosys",
+        "Zoho",
+        "Morgan Stanley",
+        "Amazon",
+        "Microsoft",
+        "Samsung",
+        "Yahoo",
+        "PayPal",
+        "Nvidia",
+        "Oracle",
+        "Visa",
+        "Walmart",
+        "Goldman Sachs",
+        "TCS",
+        "Adobe",
+        "Google",
+        "IBM",
+        "Accenture",
+        "Apple",
+        "Uber"
+      ],
+      "topic_tags": [
+        "Greedy",
+        "Arrays"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/unique-frequencies-of-not/1?page=1&company=Apple&sortBy=latest",
+      "scraped_at": "2025-06-11T12:34:18.472392",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Unique Number of Occurrences",
+      "difficulty": "Easy",
+      "accuracy": "57.68%",
+      "submissions": "50K+",
+      "avg_time": "20m"
+    },
+    "content": {
+      "problem": "Given an array arr of N integers, the task is to check whether the frequency of the elements in the array is unique or not. Or in other words, there are no two distinct numbers in array with equal frequency. If all the frequency is unique then return true, else return false.\nExample 1:\nInput:\nN = 5\narr = [1, 1, 2, 5, 5]\nOutput:\nfalse\nExplanation:\nThe array contains 2 (1’s), 1 (2’s) and 2 (5’s), since the number of frequency of 1 and 5 are the same i.e. 2 times. Therefore, this array does not satisfy the condition.\nExample 2:\nInput:\nN = 10\narr = [2, 2, 5, 10, 1, 2, 10, 5, 10, 2]\nOutput:\ntrue\nExplanation:\nNumber of 1’s -> 1\nNumber of 2’s -> 4\nNumber of 5’s -> 2\nNumber of 10’s -> 3.\nSince, the number of occurrences of elements present in the array is unique. Therefore, this array satisfy the condition.\nYour task:\nYou don't need to read input or print anything. Your task is to complete the function isFrequencyUnique() which take integer N and array arr of size N as arguments, and returns a boolean.\nExpected Time Complexity: O(N)\nExpected Auxiliary Space: O(N)\nConstraints:\n1 <= N <=105\n-109 <= arr[i] <= 109"
+    },
+    "complexity": {
+      "time_complexity": "Not specified",
+      "space_complexity": "Not specified"
+    },
+    "tags": {
+      "company_tags": [
+        "PayPal",
+        "Bloomberg",
+        "Adobe",
+        "Google",
+        "Amazon",
+        "Apple"
+      ],
+      "topic_tags": [
+        "set",
+        "Sorting",
+        "Map"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/largest-divisible-subset--170643/1?page=1&company=Apple&sortBy=latest",
+      "scraped_at": "2025-06-11T12:34:29.474310",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Largest Divisible Subset",
+      "difficulty": "Medium",
+      "accuracy": "44.8%",
+      "submissions": "8K+",
+      "avg_time": "20m"
+    },
+    "content": {
+      "problem": "Given a set of distinct positive integers nums, return the largest subset answer such that every pair (answer[i], answer[j]) of elements in this subset satisfies:\nanswer[i] % answer[j] == 0, or\nanswer[j] % answer[i] == 0\nIf there are multiple subsets of the largest size, return the lexicographically greatest array after sorting it in ascending order.\nExamples:\nInput: arr[] = [1, 2, 3, 6]\nOutput: [1, 3, 6]\nExplanation: The largest divisible subset can be either [1, 2, 6] or [1, 3, 6], both having a length of 3. However, [1, 3, 6] is lexicographically greater than [1, 2, 6], so it is the correct output.\nInput: arr[] = [1, 2, 4, 8]\nOutput: [1, 2, 4, 8]\nExplanation: The largest divisible subset is [1, 2, 4, 8], where each element divides the next one. This subset is already the lexicographically greatest.\nInput: arr[] = [3, 5, 10, 20, 21]\nOutput: [5, 10, 20]\nExplanation: The largest divisible subset is [5, 10, 20], where each element is divisible by the previous one. Other valid subsets like [3] or [21] are smaller in size.\nConstraint:\n1 ≤ arr.size() ≤ 103\n1  ≤ arr[i] ≤ 109"
+    },
+    "complexity": {
+      "time_complexity": "O(n^2)",
+      "space_complexity": "O(n)"
+    },
+    "tags": {
+      "company_tags": [
+        "Bloomberg",
+        "Facebook",
+        "Adobe",
+        "Google",
+        "Amazon",
+        "Apple",
+        "Microsoft",
+        "Yahoo"
+      ],
+      "topic_tags": [
+        "Dynamic Programming",
+        "Sorting",
+        "Arrays"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/prerequisite-tasks/1?page=1&company=Apple&sortBy=latest",
+      "scraped_at": "2025-06-11T12:34:40.532854",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Prerequisite Tasks",
+      "difficulty": "Medium",
+      "accuracy": "37.81%",
+      "submissions": "78K+",
+      "avg_time": "25m"
+    },
+    "content": {
+      "problem": "There are a total of N tasks, labeled from 0 to N-1. Some tasks may have prerequisites, for example to do task 0 you have to first complete task 1, which is expressed as a pair: [0, 1]\nGiven the total number of tasks N and a list of P prerequisite pairs, find if it is possible to finish all tasks.\nExamples:\nInput: N = 4, P = 3, prerequisites = [[1,0],[2,1],[3,2]]\nOutput: Yes\nExplanation: To do task 1 you should have completed task 0, and to do task 2 you should have finished task 1, and to do task 3 you should have finished task 2. So it is possible.\nInput: N = 2, P = 2, prerequisites = [[1,0],[0,1]]\nOutput: No\nExplanation: To do task 1 you should have completed task 0, and to do task 0 you should have finished task 1. So it is impossible.\nConstraints:\n1 ≤ N ≤ 104\n1 ≤ P ≤ 105"
+    },
+    "complexity": {
+      "time_complexity": "O(N + P)",
+      "space_complexity": "O(N + P)"
+    },
+    "tags": {
+      "company_tags": [
+        "Amazon",
+        "Microsoft",
+        "Google",
+        "Facebook",
+        "Twitter",
+        "Apple"
+      ],
+      "topic_tags": [
+        "Graph",
+        "Data Structures"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/word-search/1?page=1&company=Apple&sortBy=latest",
+      "scraped_at": "2025-06-11T12:34:51.240677",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Word Search",
+      "difficulty": "Medium",
+      "accuracy": "32.69%",
+      "submissions": "76K+",
+      "avg_time": "20m"
+    },
+    "content": {
+      "problem": "You are given a two-dimensional mat[][] of size n*m containing English alphabets and a string word. Check if the word exists on the mat. The word can be constructed by using letters from adjacent cells, either horizontally or vertically. The same cell cannot be used more than once.\nExamples :\nInput: mat[][] = [['T', 'E', 'E'], ['S', 'G', 'K'], ['T', 'E', 'L']], word = \"GEEK\"\nOutput: true\nExplanation:\nThe letter cells which are used to construct the \"GEEK\" are colored.\nInput: mat[][] = [['T', 'E', 'U'], ['S', 'G', 'K'], ['T', 'E', 'L']], word = \"GEEK\"\nOutput: false\nExplanation:\nIt is impossible to construct the string word from the mat using each cell only once.\nInput: mat[][] = [['A', 'B', 'A'], ['B', 'A', 'B']], word = \"AB\"\nOutput: true\nExplanation:\nThere are multiple ways to construct the word \"AB\".\nConstraints:\n1 ≤ n, m ≤ 6\n1 ≤ L ≤ 15\nmat and word consists of only lowercase and uppercase English letters."
+    },
+    "complexity": {
+      "time_complexity": "O(n * m * 3^L)",
+      "space_complexity": "O(n * m)"
+    },
+    "tags": {
+      "company_tags": [
+        "Amazon",
+        "Microsoft",
+        "Intuit",
+        "Apple"
+      ],
+      "topic_tags": [
+        "Recursion",
+        "DFS",
+        "Graph",
+        "Backtracking",
+        "Data Structures",
+        "Algorithms"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/three-sum-closest/1?page=1&company=Apple&sortBy=latest",
+      "scraped_at": "2025-06-11T12:35:02.103634",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Closest Three Sum",
+      "difficulty": "Medium",
+      "accuracy": "17.65%",
+      "submissions": "83K+",
+      "avg_time": "30m"
+    },
+    "content": {
+      "problem": "Given an array, arr of integers, and another number target, find three integers in the array such that their sum is closest to the target. Return the sum of the three integers.\nNote: If there are multiple solutions, return the maximum one.\nExamples :\nInput: arr[] = [-7, 9, 8, 3, 1, 1], target = 2\nOutput: 2\nExplanation: There is only one triplet present in the array where elements are -7,8,1 whose sum is 2.\nInput: arr[] = [5, 2, 7, 5], target = 13\nOutput: 14\nExplanation: There is one triplet with sum 12 and other with sum 14 in the array. Triplet elements are 5, 2, 5 and 2, 7, 5 respectively. Since abs(13-12) ==abs(13-14) maximum triplet sum will be preferred i.e 14.\nExpected Time Complexity: O(n2)\nExpected Auxiliary Space: O(1)\nConstraints:\n3 ≤ arr.size() ≤ 103\n-105 ≤ arr[i] ≤ 105\n1 ≤ target ≤ 105"
+    },
+    "complexity": {
+      "time_complexity": "Not specified",
+      "space_complexity": "Not specified"
+    },
+    "tags": {
+      "company_tags": [
+        "Amazon",
+        "Microsoft",
+        "Google",
+        "Apple"
+      ],
+      "topic_tags": [
+        "Arrays",
+        "Hash",
+        "Data Structures",
+        "two-pointer-algorithm"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/find-median-in-a-stream-1587115620/1?page=1&company=Apple&sortBy=latest",
+      "scraped_at": "2025-06-11T12:35:13.096276",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Find median in a stream",
+      "difficulty": "Hard",
+      "accuracy": "30.34%",
+      "submissions": "148K+",
+      "avg_time": "45m"
+    },
+    "content": {
+      "problem": "Given a data stream arr[] where integers are read sequentially, the task is to determine the median of the elements encountered so far after each new integer is read.\nThere are two cases for median on the basis of data set size.\n1. If the data set has an odd number then the middle one will be consider as median.\n2. If the data set has an even number then there is no distinct middle value and the median will be the arithmetic mean of the two middle values.\nExamples:\nInput: arr[] = [5, 15, 1, 3, 2, 8]\nOutput: [5.0, 10.0, 5.0, 4.0, 3.0, 4.0]\nExplanation:\nAfter reading 1st element of stream – 5 -> median = 5.0\nAfter reading 2nd element of stream – 5, 15 -> median = (5+15)/2 = 10.0\nAfter reading 3rd element of stream – 5, 15, 1 -> median = 5.0\nAfter reading 4th element of stream – 5, 15, 1, 3 -> median = (3+5)/2 = 4.0\nAfter reading 5th element of stream – 5, 15, 1, 3, 2 -> median = 3.0\nAfter reading 6th element of stream – 5, 15, 1, 3, 2, 8 -> median = (3+5)/2 = 4.0\nInput: arr[] = [2, 2, 2, 2]\nOutput: [2.0, 2.0, 2.0, 2.0]\nExplanation:\nAfter reading 1st element of stream – 2 -> median = 2.0\nAfter reading 2nd element of stream – 2, 2 -> median = (2+2)/2 = 2.0\nAfter reading 3rd element of stream – 2, 2, 2 -> median = 2.0\nAfter reading 4th element of stream – 2, 2, 2, 2 ->  median = (2+2)/2 = 2.0\nConstraints:\n1 <= arr.size() <= 105\n1 <= x <= 106"
+    },
+    "complexity": {
+      "time_complexity": "O(n log n)",
+      "space_complexity": "O(n)"
+    },
+    "tags": {
+      "company_tags": [
+        "Flipkart",
+        "Morgan Stanley",
+        "Amazon",
+        "Microsoft",
+        "Samsung",
+        "D-E-Shaw",
+        "Ola Cabs",
+        "Oracle",
+        "Intuit",
+        "Adobe",
+        "Google",
+        "SAP Labs",
+        "Facebook",
+        "Yahoo",
+        "Belzabar",
+        "Apple"
+      ],
+      "topic_tags": [
+        "Heap",
+        "Design-Pattern",
+        "Data Structures"
+      ]
+    },
+    "interview_experiences": [
+      {
+        "title": "Intuit Interview Experience Set 6",
+        "url": "https://www.geeksforgeeks.org/intuit-interview-experience-set-6/",
+        "content_summary": "Experience - 1.8years Round-1:(Technical-1:10 min) 1. Introduce yourself. 2. Deep discussion on the current project which I'm working on.(project high level architecture, questions on design, frameworks used etc.,) 3. Write a clean code to find the median of incoming stream of integers(I started with brute force approach and with a little help from the interviewer I could come up with the optimized solution,discussion on complexities) 4. Find the top 'k' repeating elements in a given file. 5. Basic questions on java. 6. What do you know about spring frame work? 7. Questions on Hadoop,hive,sqoop etc., Round-2(Technical-2hrs) 1. Introduce yourself. 2. Deep discussion on the projects that I have worked on.(High level design, Technologies used etc.,) 3. What are the object oriented features present in java? 4. What is polymorphism? 5. Difference between run time and compile time polymorphism with example. 6. What are the different types of exceptions that you have faced till now? 7. Difference between array out of bounds and array out of index exception? 8. Exceptions hierarchy. 9. Difference between checked and unchecked exceptions with example? 10. What are the different collection which you have used till date? 11. Collection hierarchy. 12. Difference between arraylist and list? 13. Difference between set and map? Which of them can contain null values? 14. Equals and hashcode with example? 15. Write a clean program which takes input as \"entuet\" and converts it to \"Intuit\". She was basically checking if I know how to code in java. 16. Write a program which takes input as a file containing few sentences and outputs in descending manner the list of repeated keywords. 17. Questions on map-red in Hadoop with an example 18. few SQL queries. 19. MVC design Pattern with example. 20. How to send the username and password of a database securely when you use sqoop? 21. Difference between equals and hash code? When to override etc? 22. What is single ton design pattern? 23. Give me a real life example of where we use Singleton pattern? 24. How hash table works internally? 25. Why do u want to leave your current company? 26. Why do you want to join Intuit? 27. Do you have any questions for me? Though I couldn't make it after this round ..it was super duper exhausting interview experience. It was a back to back interview and I was scribbling on the board these 3hrs. Thank you geeksforgeeks.\nAll Practice Problems for Intuit !\nRelated Practice Problems\nFind median in a stream\n\nComment\nMore info\nCampus Training Program\nNext Article\nIntuit Interview Experience | Set 6"
+      },
+      {
+        "title": "Intuit Interview Experience Set 7 3 5 Years Experienced",
+        "url": "https://www.geeksforgeeks.org/intuit-interview-experience-set-7-3-5-years-experienced/",
+        "content_summary": "1st Round : (2 hrs) 1. Implement LRU Cache, 2. Implement your own Blocking Queue. 3. Questions on Collections , a. How AtomicInteger works b. Hierarchy of Collection c. Internal Functioning of Hashmap. d. Fail fast and Fail Safe Iterator. e. Write different ways in which you can traverse over a map. 4. Print odd and Even Numbers using Threads 5. Questions on Concurrent API, Executor Class, Executor Service, ThreadFactory. 6. Questions on Serialisation/Deserialisation 7. Questions on Design Patters - Composite, Observer, Decorator etc I dont remember other questions, but the interviewer grilled me completely in Java. 2nd Round: (1.5 to 2 hrs) 1. Search in a rotated sorted array. 2. Implement Heap Sort. 3. Given an Alien Language , with all sorted words , find the order of alphabets. 4. Find median in a stream of numbers. 5. Implement Producer Consumer Model with Theadpool, without Executor Framework. 6. Garbage collector design discussion 3rd Round: (1 hr) 1. Find the Median in two sorted arrays. 2. OS questions - questions related to memory management and allocation. - Fragmentation. 3. Design Question - Bus Seat booking System. Later i was informed that i was not selected, but i was really impressed with the nature of the interviewers, they were very friendly and cooperative, I was happy that i realised how hard i need to work. Thanks GeeksforGeeks because of which i could solve few of them.\nAll Practice Problems for Intuit !\nRelated Practice Problems\nHeap Sort\nFind median in a stream\nLRU Cache\nSearch in a Rotated Array\n\nComment\nMore info\nCampus Training Program\nNext Article\nIntuit Interview Experience | Set 7 (For 3.5 Years Experienced)"
+      },
+      {
+        "title": "Google Interview Experience For Sde",
+        "url": "https://www.geeksforgeeks.org/google-interview-experience-for-sde/",
+        "content_summary": "During Covid-19 lockdown, I was contacted by a recruiter from Google for a Software Engineer role based in India. I was given tons of resources by the recruiter to prepare for the interviews. I will try to share all possible resources, questions (hint), most important topics to study, platforms for practicing (daily questions and mock interviews), some tips, good blogs, and of course the mistakes that you should never make while preparing for big techs. Undoubtedly the technical interviews at Google are heavily based on DSA and it has got its own level of difficulty but I gave my best and went up to 3rd round after the written coding round. This drive and experience are really full of learning. \nLet's start the preparation\nStep 1: Bookmark the GFG Google Archives. It helped me a lot during my preparations. Reading other's interview experiences is one of the best ways to get yourselves ready for the next job interview. \n Step 2(Data structures): Most important data structures which you don't want to miss are: Lists, Maps, Stacks, Priority Queues, Binary Trees, Graphs, Bags, Sets \n Step 3(Important topics): Most commonly asked topics in Google Interviews ( as per the mail I received from my recruiter ) :  \nBFS/DFS/Flood fill\nBinary Search\nTree traversals\nHash tables\nLinked list, stacks, queues, two pointers/sliding window\nBinary heaps\nDynamic programming\nUnion find\nAd hoc/string manipulations\nOther topics which you should know: Trie, segment trees/Fenwick trees, bitmasks.\n Step 4(Sites to practice): Highly recommended sites for practicing questions ( usually practice medium and hard level questions) :  \nLeetcode (highly encouraged)\nGeeksforgeeks (highly encouraged)\nTopcoder\nCodeforces\nStep 5(Coding Book): It's really great if you take out some time to practice problems from the famous Book, https://books.google.co.uk/books/about/Cracking_the_Coding_Interview.html?id=anhAXwAACAAJ&hl=en\nStep 6(Mock Interviews): Highly recommended is preamp (https://www.pramp.com/#/).  \n Step 7(BigOCheetsheet) This is a great bigocheatsheet that could be of great help https://www.bigocheatsheet.com/ \n Step 8: Resource by Google's Recruiter-> How to best prepare for a technical interview: \nhttps://www.youtube.com/watch?v=ko-KkSmp-Lk\nStep 9(Don't forget!): Some tips for practicing coding on Google docs \nhttps://www.quora.com/What-are-some-tips-for-practicing-coding-on-Google-docs-for-a-phone-screen\nStep 10(Google Coding Questions): Important list of Google Coding questions.\nhttps://techdevguide.withgoogle.com/resources/?types=coding-interview-question#!\nSharing my interview details (question patterns and difficulty)\nRound 1(Coding): This round had 2 questions of easy/medium difficulty. Both were based on concepts of DP. The first question was quite similar to the classical DP question (minimum steps to reach 1) https://www.spoj.com/problems/MST1/. The second question was quite the same as https://leetcode.com/problems/longest-palindromic-substring/. In this, we are supposed to find the longest palindromic substring in a given string. The first question was fully solved and the second one was partially accepted since I used the brute force approach. \n Round 2(Telephonic Interview): This round went quite well. In this, I was asked 2 questions. The first one was a medium level pattern searching question (strings). GFG link for further details. The second question was based on heaps (priority queues),  GFG link. \n\nRound 3: This round was also virtual. It has some difficult questions when compared to the previous rounds. The first question was similar to https://leetcode.com/problems/text-justification/, the other question was based on a similar concept like https://leetcode.com/problems/the-skyline-problem/, another one was https://leetcode.com/problems/angle-between-hands-of-a-clock/. This round went okayish and I was called for the next round.  \n Round 4: This round was tougher than all previous rounds, 1 DP medium and 1 Graph Hard question was asked. I was able to solve the first one but got stuck in Graphs :(. Graph question was similar to https://leetcode.com/problems/shortest-path-with-alternating-colors/ ( little more tricky) and the DP question was also from leetcode medium. This round did not go too well for me.  \n Tips:\nPrepare a good resume (clean, clear, and precise). Don't put any unnecessary information.\nJust before your next Online Interview:\nKeep a pen and paper ready, you never know when to write\nKeep a water bottle with you\nPut your phone on silent\nLogin 5 minutes before (it's important)\nSpeak up loud and clear\nMake most of the “Tell me about yourself” question\nDon’t give up! Even if you’ve had a bad interview for a job that you truly think would be a great fit for you, don’t give up! \n \nComment\nMore info\nAdvertise with us\nNext Article\nGoogle Interview Experience for SDE"
+      },
+      {
+        "title": "Amazon Interview Experience For 6 Months Internship",
+        "url": "https://www.geeksforgeeks.org/amazon-interview-experience-for-6-months-internship/",
+        "content_summary": "Amazon  visited our campus (MNIT JAIPUR) for 6 months summer internship programs.Eligible branches were CS ,EEand ECE.\nRound 1: Online assessment consisting of 4 sections conducted on the AMCAT platform.\nCode Debugging: 7 questions C/C++/Java (20 minutes)\nCoding: 2 questions (70 minutes)\nMerge two sorted linked lists\nCheck if a binary tree is subtree of another binary tree\nWorkstyle Assessment: (20 minutes)\nReasoning Ability: 24 questions (35 minutes)\nTechnical Round 1(90 minutes): First, the interviewer asked me to introduce myself. Then he directly jumps to coding questions.\n1.) Median of Stream of Running Integers using STL\n Initially, I told him the brute force approach using insertion sort, explained to him its complexity. Then he told me to optimise it, I gave him solution using min_heap and max_heap. He seems to satisfy, and he told me to code it.\n2) He gave me a tree and ask me to print its different views. He said u have a fixed time(30 minutes), have to code this approach.\nLeft -view\nRight-View\nTop-View\nReverse-Top View\n3)   Implementation Details of  \nLRU cache\nLFU cache\nMixture of LRU cache and LFU cache\nThen he jumps to the operating system and asked me about paging, cache, and what's the advantage of caching.\nTechnical Round 2(50 minutes): After a formal introduction, the interviewer directly jump to coding questions.:-\nGive me a situation of a company, where a hierarchy of manager. A manager can have a different number of employees who are working under him. Now, this employee can have a different number of workers who are working under that employee. This can be up to any level.\nHe told me to find the youngest common manager of two workers.\nSolution: Basically it's a problem of finding a common ancestor in the n-array Tree. Firstly I created an n array tree then gave him 2 approaches \nUsing recursion\nFirst, find the path from the root to that worker and then compare the path and check the node just before the first mismatching node.\n2) How to find Lexicographically previous permutation?\n3) Maximum Profit using at-most k-transaction\nhttps://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/\nI gave him 2 solutions first one was using recursion and top-down approach and the 2nd one was using the bottom approach.\n Finally, the result declared after 10 days and two students were selected for the internship. I was one of them.\nThank you Geeksforgeeks for helping me prepare for my interview.\nThis article is contributed by Deepak Kumar.\n\nComment\nMore info\nAdvertise with us\nNext Article\nAmazon Interview Experience for 6-Months Internship"
+      },
+      {
+        "title": "Adobe Interview Experience Mts 2 1 5 Years Experienced",
+        "url": "https://www.geeksforgeeks.org/adobe-interview-experience-mts-2-1-5-years-experienced/",
+        "content_summary": "Round 1: It was an online test time duration for this round was 75min. We were given 22 questions that conations:\n15 aptitude logical reasoning questions.\n5 C++ questions.\n2 coding questions.\nGiven a list of names and votes… output the winner with maximum votes.\nConsider a string, s = “abc”. An alphabetically-ordered sequence of substrings of s would be {“a”, “ab”, “abc”, “b”, “bc”, “c”}. If we reduce this sequence to only those substrings that start with a vowel and end with a consonant, we’re left with {“ab”, “abc”}. The alphabetically first element in this reduced list is “ab”, and the alphabetically last element is “abc”. As a reminder:\nVowels: a, e, i, o, and u.\nConsonants: b, c, d, f, g, h, j, k, l, m, n, p, q, r, s, t, v, w, x, y, and z.\nI was asked to write the code for every question. The interviewers dry ran every code and asked me to optimize the solution. I was asked about the space complexity and time complexity for every solution that I gave.\nRound 2:\nk largest(or smallest) elements in an array\nMedian in a stream of integers (running integers)\nGiven a dictionary of words and two words A and B, find the minimum path required to convert A to B. Only one character can be changed at a time while going from A to B and every word thus formed must be a valid dictionary word.Example:\nIf dictionary = {\n\"cat\", \"rat\", \"hat\", \"sag\", \"bag\", \"bug\", \"dog\", \"hog\", \"hot\", \"dot\",\n\"rot\", \"lot\", \"log\", \"cry\", \"pry\", \"fry\", \"fat\", \"fog\", \"pot\", \"fat\"\n}\nA = \"cat\",\nB = \"dog\",\nthen shortest path from A to B should be printed as:\ncat->hat->hot->dot->dog\nRound 3: This was a Technical round.\nThere are n houses build in a circle, each of which contains some value in it. A thief is going to steal the maximal value of these houses, but he can’t steal in two adjacent houses because the owner of the stolen houses will tell his two neighbors left and right side. What is the maximum stolen value? For houses in a straight line?\nGiven the start and end times of all meetings, the task is to find the minimum number of meeting rooms required for the office so that no meeting waits.\nRound 4: This was a Technical round.\nImplement 1-D array dynamically\nImplement 2-D array dynamically using a single pointer\nImplement 2-D array dynamically using a double pointer\nImplement memcpy\nImplement strcmp\nDiscussion on threads, locks, deadlocks, endianess\nPrint 2-D array in spiral form\nRound 5: This was a Technical round.\nGiven N cubes(6 faces), each face of the cubes has an alphabet written on it. You have to find out whether a given paragraph can be formed with those cubes or not.\nHow will you modify the solution for the above question when W can be considered as M, N can be considered as Z(mirror alphabets)\nGiven a road of width w and length l. There are perfect circular potholes on the road. You are given the radius and center of each pothole. You need to find out whether you can cross the road or not.\nRound 6: This was a Technical round(Managerial)\nDesign an elevator\nWrite an algorithm to assign an elevator to a user.\nImplement a binary search tree in a given 100 bytes of memory.\nHow will you handle the internal fragmentation in the provided memory area for the solution to the above question? Internal fragmentation will occur after the deletion of nodes\nHe gave me a case study of his team-related work and ask me to optimize it.\nRound 7: This was a Technical round(Directors)\nIt contains 2 programs:Program 1:\nint *p;\np = (int *)malloc(sizeof(int));\nprintf(\"%x\\n\", p); // prints 0x12345\n*p = 1;\nwait(x);// Jump to program 2\nprintf(\"%d\\n, *p);\nProgram 2:\nint *p;\np = 0x12345; // assigns the address stored in p of program 1\n*p = 2;\nprintf(\"%d\\n, *p);\nsignal(x);\nWhat is the output of printf() statements of both programs 1 and 2? Why program 2 will fail?\nDiscussion on Paging, Logical Address, Physical address, thrashing, Physical address calculation, etc.\nSearching, Insertion and Deletion in 2-d row-wise and column-wise sorted array\nAfter 10 days, Got the call from HR about Selection.\n\nComment\nMore info\nAdvertise with us\nNext Article\nAdobe Interview Experience | MTS-2 (1.5 years experienced)"
+      },
+      {
+        "title": "Flipkart Interview Experience For Sde 2",
+        "url": "https://www.geeksforgeeks.org/flipkart-interview-experience-for-sde-2/",
+        "content_summary": "Round 1: Telephonic Round 1 \n\nDiscussion about technologies I have worked on. \nWhat is IoC? How it is related with dependency injection? What are the advantages of dependency injection? \n\nGiven words from Alien dictionary, find sequence of characters. \n\nGFG Link: https://www.geeksforgeeks.org/given-sorted-dictionary-find-precedence-characters/ \n\n  \n\nGiven n stalls with their positions on x axis and given k people, distribute k people on stalls s.t. people are farthest apart from each other. \n\n  \n\nRound 2: Telephonic Round 2 \n\nGiven N houses and amount to colour each house with red, green and blue colors, find minimum amount required to paint all houses such that no 2 houses have same colour. \n\nCreate an Immutable Stack. The solution should be most space optimised. \n\nExample - Push 10 (create a new stack say s1 with element only 10) \n\nPush 20 (Create a new stack s2 with elements 10 and 20) - So now 2 stacks are there s1 and s2. \n\nPush 30 (Create a new stack s3 with elements 10, 20 and 30) - So now 3 stacks are there s1, s2 and s3. \n\nPop 30 (Create a new stack s4 with elements 10 and 20) - So now 4 stacks are there s1, s2, s3 and s4. \n\nGiven a numeric keypad, a value n and a starting digit on keypad, find number of numbers of length n that can be formed if you are allowed to only go to adjacent digits (up, down, left and right) from starting digit. \n\n  \n\nRound 3: Machine Coding Round - On Site \n\nDesign a task planner. Different types of tasks are present - bug, feature and story. And their attributes are given. Also a Sprint which is a collection of tasks. \nA person should be able to create a Sprint, add a task to Sprint, change assignee or status of task, show all tasks of a particular Sprint and show all tasks assigned to a user, etc. \n\n  \n\nRound 4: F2F Interview - On Site \n\nGiven N teams and each team has M members with their heights given. Now N teams have come together for a group photo. Now we have to arrange teams in rows. \nConditions: \n1. One row will have members from one team only. \n2. The height of a person at ith row should be greater than the height of the corresponding person at i-1th row so that all persons are visible in the photo. \n3. Either entire team will get the photo clicked or if any one member of team is not visible then that entire team will forfeit the group photo. \nWe have to find the maximum no. of teams that can be clicked in a single photo. \n\n  \n\nGiven a stream of running integers, we have to find the median at each time. \n\nGFG Link: https://www.geeksforgeeks.org/problems/find-median-in-a-stream-1587115620/1\n\n  \n\nGiven an array of length N of integers 0-9 only, we have to find the largest number divisible by 3 that can be created from elements of that array. \n\n  \n\nI was eliminated after the fourth round. \n\n \n \nComment\nMore info\nAdvertise with us\nNext Article\nFlipkart Interview Experience for SDE 2"
+      }
+    ]
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/sum-of-xor-of-all-possible-subsets/1?page=1&company=Apple&sortBy=latest",
+      "scraped_at": "2025-06-11T12:36:04.604579",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Sum of XOR of all possible subsets",
+      "difficulty": "Medium",
+      "accuracy": "35.4%",
+      "submissions": "1K+",
+      "avg_time": "Not available"
+    },
+    "content": {
+      "problem": "Given an array arr[], return the sum of the XOR of all elements for every possible subset of the array. Subsets with the same elements should be counted multiple times.\nAn array a is a subset of an array b if a can be obtained from b by deleting some (possibly zero) elements of b.\nNote: The answer is guaranteed to fit within a 32-bit integer.\nExamples:\nInput: arr[] = [7, 2]\nOutput: 14\nExplanation: Subsets are: [[], [7], [2], [7, 2]]\nSum of all XOR's = 7 + 2 + (7 ^ 2) = 14.\nInput: arr[] = [1, 2, 3]\nOutput: 12\nExplanation: Subsets are: [[], [1], [2], [3], [1, 2], [1, 3], [2, 3], [1, 2, 3]]\nSum of all XOR's = 1 + 2 + 3 + (1 ^ 2)  + (1 ^ 3) + (2 ^ 3) + (1 ^ 2 ^ 3) = 12.\nConstraints:\n1 ≤ arr.size() ≤ 30\n1 ≤ arr[i] ≤ 103"
+    },
+    "complexity": {
+      "time_complexity": "O(n)",
+      "space_complexity": "O(1)"
+    },
+    "tags": {
+      "company_tags": [
+        "Adobe",
+        "Amazon",
+        "Apple",
+        "Google"
+      ],
+      "topic_tags": [
+        "Bit Magic",
+        "Data Structures",
+        "Algorithms"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/bits-counting/1?page=1&company=Apple&sortBy=latest",
+      "scraped_at": "2025-06-11T12:36:15.782660",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Bits Counting",
+      "difficulty": "Medium",
+      "accuracy": "77.98%",
+      "submissions": "1K+",
+      "avg_time": "Not available"
+    },
+    "content": {
+      "problem": "Given an integer n, return an array ans of size n + 1, where each element i (0 ≤ i ≤ n) represents the count of 1s in the binary form of i.\nExamples :\nInput: n = 2\nOutput: [0, 1, 1]\nExplanation:\n0 --> 0\n1 --> 1\n2 --> 10\nInput: n = 5\nOutput: [0, 1, 1, 2, 1, 2]\nExplanation:\n0 --> 0\n1 --> 1\n2 --> 10\n3 --> 11\n4 --> 100\n5 --> 101\nConstraints:\n0 ≤ n ≤ 105"
+    },
+    "complexity": {
+      "time_complexity": "O(n)",
+      "space_complexity": "O(n)"
+    },
+    "tags": {
+      "company_tags": [
+        "Bloomberg",
+        "Facebook",
+        "Adobe",
+        "Google",
+        "Amazon",
+        "Microsoft",
+        "Apple",
+        "Yahoo",
+        "Nvidia",
+        "Uber"
+      ],
+      "topic_tags": [
+        "Bit Magic",
+        "Dynamic Programming",
+        "Arrays"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/k-th-missing-element3635/1?page=1&company=Apple&sortBy=latest",
+      "scraped_at": "2025-06-11T12:36:26.791083",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "K-th missing element",
+      "difficulty": "Easy",
+      "accuracy": "31.53%",
+      "submissions": "32K+",
+      "avg_time": "Not available"
+    },
+    "content": {
+      "problem": "Given an increasing sequence arr, we need to find the K-th smallest missing element, taking the first element of the array as the starting point in the increasing sequence. If there is no k-th missing element then output -1.\nExample:\nInput: arr[] = [1, 3, 4, 5, 7] and k = 2\nOutput: 6\nExplanation: k = 2, Missing numbers are 2 and 6. So 2nd missing number is 6.\nInput: arr[] = [2, 3, 4, 5, 6, 8] and k = 1\nOutput: 7\nExplanation: k = 1, the first missing number in the array is 7.\nExpected Time Complexity: O(n).\nExpected Auxiliary Space: O(1).\nConstraints:\n1 ≤  arr.size() ≤ 106\n0 ≤  k, arr[i] ≤ 105"
+    },
+    "complexity": {
+      "time_complexity": "Not specified",
+      "space_complexity": "Not specified"
+    },
+    "tags": {
+      "company_tags": [
+        "Amazon",
+        "Facebook",
+        "Apple",
+        "Google"
+      ],
+      "topic_tags": [
+        "Arrays",
+        "Data Structures"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/reverse-an-array/1?page=1&company=Apple&sortBy=latest",
+      "scraped_at": "2025-06-11T12:36:37.864815",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Reverse an Array",
+      "difficulty": "Easy",
+      "accuracy": "55.32%",
+      "submissions": "189K+",
+      "avg_time": "5m"
+    },
+    "content": {
+      "problem": "You are given an array of integers arr[]. Your task is to reverse the given array.\nNote: Modify the array in place.\nExamples:\nInput: arr = [1, 4, 3, 2, 6, 5]\nOutput: [5, 6, 2, 3, 4, 1]\nExplanation: The elements of the array are 1 4 3 2 6 5. After reversing the array, the first element goes to the last position, the second element goes to the second last position and so on. Hence, the answer is 5 6 2 3 4 1.\nInput: arr = [4, 5, 2]\nOutput: [2, 5, 4]\nExplanation: The elements of the array are 4 5 2. The reversed array will be 2 5 4.\nInput: arr = [1]\nOutput: [1]\nExplanation: The array has only single element, hence the reversed array is same as the original.\nConstraints:\n1<=arr.size()<=105\n0<=arr[i]<=105"
+    },
+    "complexity": {
+      "time_complexity": "O(n)",
+      "space_complexity": "O(1)"
+    },
+    "tags": {
+      "company_tags": [
+        "Bloomberg",
+        "Facebook",
+        "TCS",
+        "Adobe",
+        "Google",
+        "Infosys",
+        "Capgemini",
+        "Morgan Stanley",
+        "Amazon",
+        "Microsoft",
+        "Apple",
+        "Yahoo",
+        "PayPal",
+        "Uber"
+      ],
+      "topic_tags": [
+        "Arrays",
+        "Data Structures"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/buy-stock-2/1?page=1&company=Apple&sortBy=latest",
+      "scraped_at": "2025-06-11T12:36:48.724509",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Stock Buy and Sell – Max one Transaction Allowed",
+      "difficulty": "Easy",
+      "accuracy": "49.33%",
+      "submissions": "92K+",
+      "avg_time": "10m"
+    },
+    "content": {
+      "problem": "Given an array prices[] of length n, representing the prices of the stocks on different days. The task is to find the maximum profit possible by buying and selling the stocks on different days when at most one transaction is allowed. Here one transaction means 1 buy + 1 Sell. If it is not possible to make a profit then return 0.\nNote: Stock must be bought before being sold.\nExamples:\nInput: prices[] = [7, 10, 1, 3, 6, 9, 2]\nOutput: 8\nExplanation: You can buy the stock on day 2 at price = 1 and sell it on day 5 at price = 9. Hence, the profit is 8.\nInput: prices[] = [7, 6, 4, 3, 1]\nOutput: 0\nExplanation: Here the prices are in decreasing order, hence if we buy any day then we cannot sell it at a greater price. Hence, the answer is 0.\nInput: prices[] = [1, 3, 6, 9, 11]\nOutput: 10\nExplanation: Since the array is sorted in increasing order, we can make maximum profit by buying at price[0] and selling at price[n-1].\nConstraint:\n1 <= prices.size()<= 105\n0 <= prices[i] <=104"
+    },
+    "complexity": {
+      "time_complexity": "O(n)",
+      "space_complexity": "O(1)"
+    },
+    "tags": {
+      "company_tags": [
+        "Bloomberg",
+        "Facebook",
+        "Intel",
+        "Infosys",
+        "Zoho",
+        "Morgan Stanley",
+        "Amazon",
+        "Microsoft",
+        "Samsung",
+        "Yahoo",
+        "PayPal",
+        "Nvidia",
+        "Oracle",
+        "Visa",
+        "Walmart",
+        "Goldman Sachs",
+        "TCS",
+        "Adobe",
+        "Google",
+        "IBM",
+        "Accenture",
+        "Apple",
+        "Uber"
+      ],
+      "topic_tags": [
+        "Greedy",
+        "Arrays"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/unique-frequencies-of-not/1?page=1&company=Apple&sortBy=latest",
+      "scraped_at": "2025-06-11T12:37:00.178881",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Unique Number of Occurrences",
+      "difficulty": "Easy",
+      "accuracy": "57.68%",
+      "submissions": "50K+",
+      "avg_time": "20m"
+    },
+    "content": {
+      "problem": "Given an array arr of N integers, the task is to check whether the frequency of the elements in the array is unique or not. Or in other words, there are no two distinct numbers in array with equal frequency. If all the frequency is unique then return true, else return false.\nExample 1:\nInput:\nN = 5\narr = [1, 1, 2, 5, 5]\nOutput:\nfalse\nExplanation:\nThe array contains 2 (1’s), 1 (2’s) and 2 (5’s), since the number of frequency of 1 and 5 are the same i.e. 2 times. Therefore, this array does not satisfy the condition.\nExample 2:\nInput:\nN = 10\narr = [2, 2, 5, 10, 1, 2, 10, 5, 10, 2]\nOutput:\ntrue\nExplanation:\nNumber of 1’s -> 1\nNumber of 2’s -> 4\nNumber of 5’s -> 2\nNumber of 10’s -> 3.\nSince, the number of occurrences of elements present in the array is unique. Therefore, this array satisfy the condition.\nYour task:\nYou don't need to read input or print anything. Your task is to complete the function isFrequencyUnique() which take integer N and array arr of size N as arguments, and returns a boolean.\nExpected Time Complexity: O(N)\nExpected Auxiliary Space: O(N)\nConstraints:\n1 <= N <=105\n-109 <= arr[i] <= 109"
+    },
+    "complexity": {
+      "time_complexity": "Not specified",
+      "space_complexity": "Not specified"
+    },
+    "tags": {
+      "company_tags": [
+        "PayPal",
+        "Bloomberg",
+        "Adobe",
+        "Google",
+        "Amazon",
+        "Apple"
+      ],
+      "topic_tags": [
+        "set",
+        "Sorting",
+        "Map"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/largest-divisible-subset--170643/1?page=1&company=Apple&sortBy=latest",
+      "scraped_at": "2025-06-11T12:37:11.528021",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Largest Divisible Subset",
+      "difficulty": "Medium",
+      "accuracy": "44.8%",
+      "submissions": "8K+",
+      "avg_time": "20m"
+    },
+    "content": {
+      "problem": "Given a set of distinct positive integers nums, return the largest subset answer such that every pair (answer[i], answer[j]) of elements in this subset satisfies:\nanswer[i] % answer[j] == 0, or\nanswer[j] % answer[i] == 0\nIf there are multiple subsets of the largest size, return the lexicographically greatest array after sorting it in ascending order.\nExamples:\nInput: arr[] = [1, 2, 3, 6]\nOutput: [1, 3, 6]\nExplanation: The largest divisible subset can be either [1, 2, 6] or [1, 3, 6], both having a length of 3. However, [1, 3, 6] is lexicographically greater than [1, 2, 6], so it is the correct output.\nInput: arr[] = [1, 2, 4, 8]\nOutput: [1, 2, 4, 8]\nExplanation: The largest divisible subset is [1, 2, 4, 8], where each element divides the next one. This subset is already the lexicographically greatest.\nInput: arr[] = [3, 5, 10, 20, 21]\nOutput: [5, 10, 20]\nExplanation: The largest divisible subset is [5, 10, 20], where each element is divisible by the previous one. Other valid subsets like [3] or [21] are smaller in size.\nConstraint:\n1 ≤ arr.size() ≤ 103\n1  ≤ arr[i] ≤ 109"
+    },
+    "complexity": {
+      "time_complexity": "O(n^2)",
+      "space_complexity": "O(n)"
+    },
+    "tags": {
+      "company_tags": [
+        "Bloomberg",
+        "Facebook",
+        "Adobe",
+        "Google",
+        "Amazon",
+        "Apple",
+        "Microsoft",
+        "Yahoo"
+      ],
+      "topic_tags": [
+        "Dynamic Programming",
+        "Sorting",
+        "Arrays"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/prerequisite-tasks/1?page=1&company=Apple&sortBy=latest",
+      "scraped_at": "2025-06-11T12:37:22.747452",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Prerequisite Tasks",
+      "difficulty": "Medium",
+      "accuracy": "37.81%",
+      "submissions": "78K+",
+      "avg_time": "25m"
+    },
+    "content": {
+      "problem": "There are a total of N tasks, labeled from 0 to N-1. Some tasks may have prerequisites, for example to do task 0 you have to first complete task 1, which is expressed as a pair: [0, 1]\nGiven the total number of tasks N and a list of P prerequisite pairs, find if it is possible to finish all tasks.\nExamples:\nInput: N = 4, P = 3, prerequisites = [[1,0],[2,1],[3,2]]\nOutput: Yes\nExplanation: To do task 1 you should have completed task 0, and to do task 2 you should have finished task 1, and to do task 3 you should have finished task 2. So it is possible.\nInput: N = 2, P = 2, prerequisites = [[1,0],[0,1]]\nOutput: No\nExplanation: To do task 1 you should have completed task 0, and to do task 0 you should have finished task 1. So it is impossible.\nConstraints:\n1 ≤ N ≤ 104\n1 ≤ P ≤ 105"
+    },
+    "complexity": {
+      "time_complexity": "O(N + P)",
+      "space_complexity": "O(N + P)"
+    },
+    "tags": {
+      "company_tags": [
+        "Amazon",
+        "Microsoft",
+        "Google",
+        "Facebook",
+        "Twitter",
+        "Apple"
+      ],
+      "topic_tags": [
+        "Graph",
+        "Data Structures"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/word-search/1?page=1&company=Apple&sortBy=latest",
+      "scraped_at": "2025-06-11T12:37:34.260968",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Word Search",
+      "difficulty": "Medium",
+      "accuracy": "32.69%",
+      "submissions": "76K+",
+      "avg_time": "20m"
+    },
+    "content": {
+      "problem": "You are given a two-dimensional mat[][] of size n*m containing English alphabets and a string word. Check if the word exists on the mat. The word can be constructed by using letters from adjacent cells, either horizontally or vertically. The same cell cannot be used more than once.\nExamples :\nInput: mat[][] = [['T', 'E', 'E'], ['S', 'G', 'K'], ['T', 'E', 'L']], word = \"GEEK\"\nOutput: true\nExplanation:\nThe letter cells which are used to construct the \"GEEK\" are colored.\nInput: mat[][] = [['T', 'E', 'U'], ['S', 'G', 'K'], ['T', 'E', 'L']], word = \"GEEK\"\nOutput: false\nExplanation:\nIt is impossible to construct the string word from the mat using each cell only once.\nInput: mat[][] = [['A', 'B', 'A'], ['B', 'A', 'B']], word = \"AB\"\nOutput: true\nExplanation:\nThere are multiple ways to construct the word \"AB\".\nConstraints:\n1 ≤ n, m ≤ 6\n1 ≤ L ≤ 15\nmat and word consists of only lowercase and uppercase English letters."
+    },
+    "complexity": {
+      "time_complexity": "O(n * m * 3^L)",
+      "space_complexity": "O(n * m)"
+    },
+    "tags": {
+      "company_tags": [
+        "Amazon",
+        "Microsoft",
+        "Intuit",
+        "Apple"
+      ],
+      "topic_tags": [
+        "Recursion",
+        "DFS",
+        "Graph",
+        "Backtracking",
+        "Data Structures",
+        "Algorithms"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/three-sum-closest/1?page=1&company=Apple&sortBy=latest",
+      "scraped_at": "2025-06-11T12:37:45.162121",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Closest Three Sum",
+      "difficulty": "Medium",
+      "accuracy": "17.65%",
+      "submissions": "83K+",
+      "avg_time": "30m"
+    },
+    "content": {
+      "problem": "Given an array, arr of integers, and another number target, find three integers in the array such that their sum is closest to the target. Return the sum of the three integers.\nNote: If there are multiple solutions, return the maximum one.\nExamples :\nInput: arr[] = [-7, 9, 8, 3, 1, 1], target = 2\nOutput: 2\nExplanation: There is only one triplet present in the array where elements are -7,8,1 whose sum is 2.\nInput: arr[] = [5, 2, 7, 5], target = 13\nOutput: 14\nExplanation: There is one triplet with sum 12 and other with sum 14 in the array. Triplet elements are 5, 2, 5 and 2, 7, 5 respectively. Since abs(13-12) ==abs(13-14) maximum triplet sum will be preferred i.e 14.\nExpected Time Complexity: O(n2)\nExpected Auxiliary Space: O(1)\nConstraints:\n3 ≤ arr.size() ≤ 103\n-105 ≤ arr[i] ≤ 105\n1 ≤ target ≤ 105"
+    },
+    "complexity": {
+      "time_complexity": "Not specified",
+      "space_complexity": "Not specified"
+    },
+    "tags": {
+      "company_tags": [
+        "Amazon",
+        "Microsoft",
+        "Google",
+        "Apple"
+      ],
+      "topic_tags": [
+        "Arrays",
+        "Hash",
+        "Data Structures",
+        "two-pointer-algorithm"
+      ]
+    },
+    "interview_experiences": []
+  },
+  {
+    "metadata": {
+      "url": "https://www.geeksforgeeks.org/problems/find-median-in-a-stream-1587115620/1?page=1&company=Apple&sortBy=latest",
+      "scraped_at": "2025-06-11T12:37:56.006653",
+      "source": "GeeksforGeeks"
+    },
+    "basic_info": {
+      "title": "Find median in a stream",
+      "difficulty": "Hard",
+      "accuracy": "30.34%",
+      "submissions": "148K+",
+      "avg_time": "45m"
+    },
+    "content": {
+      "problem": "Given a data stream arr[] where integers are read sequentially, the task is to determine the median of the elements encountered so far after each new integer is read.\nThere are two cases for median on the basis of data set size.\n1. If the data set has an odd number then the middle one will be consider as median.\n2. If the data set has an even number then there is no distinct middle value and the median will be the arithmetic mean of the two middle values.\nExamples:\nInput: arr[] = [5, 15, 1, 3, 2, 8]\nOutput: [5.0, 10.0, 5.0, 4.0, 3.0, 4.0]\nExplanation:\nAfter reading 1st element of stream – 5 -> median = 5.0\nAfter reading 2nd element of stream – 5, 15 -> median = (5+15)/2 = 10.0\nAfter reading 3rd element of stream – 5, 15, 1 -> median = 5.0\nAfter reading 4th element of stream – 5, 15, 1, 3 -> median = (3+5)/2 = 4.0\nAfter reading 5th element of stream – 5, 15, 1, 3, 2 -> median = 3.0\nAfter reading 6th element of stream – 5, 15, 1, 3, 2, 8 -> median = (3+5)/2 = 4.0\nInput: arr[] = [2, 2, 2, 2]\nOutput: [2.0, 2.0, 2.0, 2.0]\nExplanation:\nAfter reading 1st element of stream – 2 -> median = 2.0\nAfter reading 2nd element of stream – 2, 2 -> median = (2+2)/2 = 2.0\nAfter reading 3rd element of stream – 2, 2, 2 -> median = 2.0\nAfter reading 4th element of stream – 2, 2, 2, 2 ->  median = (2+2)/2 = 2.0\nConstraints:\n1 <= arr.size() <= 105\n1 <= x <= 106"
+    },
+    "complexity": {
+      "time_complexity": "O(n log n)",
+      "space_complexity": "O(n)"
+    },
+    "tags": {
+      "company_tags": [
+        "Flipkart",
+        "Morgan Stanley",
+        "Amazon",
+        "Microsoft",
+        "Samsung",
+        "D-E-Shaw",
+        "Ola Cabs",
+        "Oracle",
+        "Intuit",
+        "Adobe",
+        "Google",
+        "SAP Labs",
+        "Facebook",
+        "Yahoo",
+        "Belzabar",
+        "Apple"
+      ],
+      "topic_tags": [
+        "Heap",
+        "Design-Pattern",
+        "Data Structures"
+      ]
+    },
+    "interview_experiences": [
+      {
+        "title": "Intuit Interview Experience Set 6",
+        "url": "https://www.geeksforgeeks.org/intuit-interview-experience-set-6/",
+        "content_summary": "Experience - 1.8years Round-1:(Technical-1:10 min) 1. Introduce yourself. 2. Deep discussion on the current project which I'm working on.(project high level architecture, questions on design, frameworks used etc.,) 3. Write a clean code to find the median of incoming stream of integers(I started with brute force approach and with a little help from the interviewer I could come up with the optimized solution,discussion on complexities) 4. Find the top 'k' repeating elements in a given file. 5. Basic questions on java. 6. What do you know about spring frame work? 7. Questions on Hadoop,hive,sqoop etc., Round-2(Technical-2hrs) 1. Introduce yourself. 2. Deep discussion on the projects that I have worked on.(High level design, Technologies used etc.,) 3. What are the object oriented features present in java? 4. What is polymorphism? 5. Difference between run time and compile time polymorphism with example. 6. What are the different types of exceptions that you have faced till now? 7. Difference between array out of bounds and array out of index exception? 8. Exceptions hierarchy. 9. Difference between checked and unchecked exceptions with example? 10. What are the different collection which you have used till date? 11. Collection hierarchy. 12. Difference between arraylist and list? 13. Difference between set and map? Which of them can contain null values? 14. Equals and hashcode with example? 15. Write a clean program which takes input as \"entuet\" and converts it to \"Intuit\". She was basically checking if I know how to code in java. 16. Write a program which takes input as a file containing few sentences and outputs in descending manner the list of repeated keywords. 17. Questions on map-red in Hadoop with an example 18. few SQL queries. 19. MVC design Pattern with example. 20. How to send the username and password of a database securely when you use sqoop? 21. Difference between equals and hash code? When to override etc? 22. What is single ton design pattern? 23. Give me a real life example of where we use Singleton pattern? 24. How hash table works internally? 25. Why do u want to leave your current company? 26. Why do you want to join Intuit? 27. Do you have any questions for me? Though I couldn't make it after this round ..it was super duper exhausting interview experience. It was a back to back interview and I was scribbling on the board these 3hrs. Thank you geeksforgeeks.\nAll Practice Problems for Intuit !\nRelated Practice Problems\nFind median in a stream\n\nComment\nMore info\nCampus Training Program\nNext Article\nIntuit Interview Experience | Set 6"
+      },
+      {
+        "title": "Intuit Interview Experience Set 7 3 5 Years Experienced",
+        "url": "https://www.geeksforgeeks.org/intuit-interview-experience-set-7-3-5-years-experienced/",
+        "content_summary": "1st Round : (2 hrs) 1. Implement LRU Cache, 2. Implement your own Blocking Queue. 3. Questions on Collections , a. How AtomicInteger works b. Hierarchy of Collection c. Internal Functioning of Hashmap. d. Fail fast and Fail Safe Iterator. e. Write different ways in which you can traverse over a map. 4. Print odd and Even Numbers using Threads 5. Questions on Concurrent API, Executor Class, Executor Service, ThreadFactory. 6. Questions on Serialisation/Deserialisation 7. Questions on Design Patters - Composite, Observer, Decorator etc I dont remember other questions, but the interviewer grilled me completely in Java. 2nd Round: (1.5 to 2 hrs) 1. Search in a rotated sorted array. 2. Implement Heap Sort. 3. Given an Alien Language , with all sorted words , find the order of alphabets. 4. Find median in a stream of numbers. 5. Implement Producer Consumer Model with Theadpool, without Executor Framework. 6. Garbage collector design discussion 3rd Round: (1 hr) 1. Find the Median in two sorted arrays. 2. OS questions - questions related to memory management and allocation. - Fragmentation. 3. Design Question - Bus Seat booking System. Later i was informed that i was not selected, but i was really impressed with the nature of the interviewers, they were very friendly and cooperative, I was happy that i realised how hard i need to work. Thanks GeeksforGeeks because of which i could solve few of them.\nAll Practice Problems for Intuit !\nRelated Practice Problems\nHeap Sort\nFind median in a stream\nLRU Cache\nSearch in a Rotated Array\n\nComment\nMore info\nCampus Training Program\nNext Article\nIntuit Interview Experience | Set 7 (For 3.5 Years Experienced)"
+      },
+      {
+        "title": "Google Interview Experience For Sde",
+        "url": "https://www.geeksforgeeks.org/google-interview-experience-for-sde/",
+        "content_summary": "During Covid-19 lockdown, I was contacted by a recruiter from Google for a Software Engineer role based in India. I was given tons of resources by the recruiter to prepare for the interviews. I will try to share all possible resources, questions (hint), most important topics to study, platforms for practicing (daily questions and mock interviews), some tips, good blogs, and of course the mistakes that you should never make while preparing for big techs. Undoubtedly the technical interviews at Google are heavily based on DSA and it has got its own level of difficulty but I gave my best and went up to 3rd round after the written coding round. This drive and experience are really full of learning. \nLet's start the preparation\nStep 1: Bookmark the GFG Google Archives. It helped me a lot during my preparations. Reading other's interview experiences is one of the best ways to get yourselves ready for the next job interview. \n Step 2(Data structures): Most important data structures which you don't want to miss are: Lists, Maps, Stacks, Priority Queues, Binary Trees, Graphs, Bags, Sets \n Step 3(Important topics): Most commonly asked topics in Google Interviews ( as per the mail I received from my recruiter ) :  \nBFS/DFS/Flood fill\nBinary Search\nTree traversals\nHash tables\nLinked list, stacks, queues, two pointers/sliding window\nBinary heaps\nDynamic programming\nUnion find\nAd hoc/string manipulations\nOther topics which you should know: Trie, segment trees/Fenwick trees, bitmasks.\n Step 4(Sites to practice): Highly recommended sites for practicing questions ( usually practice medium and hard level questions) :  \nLeetcode (highly encouraged)\nGeeksforgeeks (highly encouraged)\nTopcoder\nCodeforces\nStep 5(Coding Book): It's really great if you take out some time to practice problems from the famous Book, https://books.google.co.uk/books/about/Cracking_the_Coding_Interview.html?id=anhAXwAACAAJ&hl=en\nStep 6(Mock Interviews): Highly recommended is preamp (https://www.pramp.com/#/).  \n Step 7(BigOCheetsheet) This is a great bigocheatsheet that could be of great help https://www.bigocheatsheet.com/ \n Step 8: Resource by Google's Recruiter-> How to best prepare for a technical interview: \nhttps://www.youtube.com/watch?v=ko-KkSmp-Lk\nStep 9(Don't forget!): Some tips for practicing coding on Google docs \nhttps://www.quora.com/What-are-some-tips-for-practicing-coding-on-Google-docs-for-a-phone-screen\nStep 10(Google Coding Questions): Important list of Google Coding questions.\nhttps://techdevguide.withgoogle.com/resources/?types=coding-interview-question#!\nSharing my interview details (question patterns and difficulty)\nRound 1(Coding): This round had 2 questions of easy/medium difficulty. Both were based on concepts of DP. The first question was quite similar to the classical DP question (minimum steps to reach 1) https://www.spoj.com/problems/MST1/. The second question was quite the same as https://leetcode.com/problems/longest-palindromic-substring/. In this, we are supposed to find the longest palindromic substring in a given string. The first question was fully solved and the second one was partially accepted since I used the brute force approach. \n Round 2(Telephonic Interview): This round went quite well. In this, I was asked 2 questions. The first one was a medium level pattern searching question (strings). GFG link for further details. The second question was based on heaps (priority queues),  GFG link. \n\nRound 3: This round was also virtual. It has some difficult questions when compared to the previous rounds. The first question was similar to https://leetcode.com/problems/text-justification/, the other question was based on a similar concept like https://leetcode.com/problems/the-skyline-problem/, another one was https://leetcode.com/problems/angle-between-hands-of-a-clock/. This round went okayish and I was called for the next round.  \n Round 4: This round was tougher than all previous rounds, 1 DP medium and 1 Graph Hard question was asked. I was able to solve the first one but got stuck in Graphs :(. Graph question was similar to https://leetcode.com/problems/shortest-path-with-alternating-colors/ ( little more tricky) and the DP question was also from leetcode medium. This round did not go too well for me.  \n Tips:\nPrepare a good resume (clean, clear, and precise). Don't put any unnecessary information.\nJust before your next Online Interview:\nKeep a pen and paper ready, you never know when to write\nKeep a water bottle with you\nPut your phone on silent\nLogin 5 minutes before (it's important)\nSpeak up loud and clear\nMake most of the “Tell me about yourself” question\nDon’t give up! Even if you’ve had a bad interview for a job that you truly think would be a great fit for you, don’t give up! \n \nComment\nMore info\nAdvertise with us\nNext Article\nGoogle Interview Experience for SDE"
+      },
+      {
+        "title": "Amazon Interview Experience For 6 Months Internship",
+        "url": "https://www.geeksforgeeks.org/amazon-interview-experience-for-6-months-internship/",
+        "content_summary": "Amazon  visited our campus (MNIT JAIPUR) for 6 months summer internship programs.Eligible branches were CS ,EEand ECE.\nRound 1: Online assessment consisting of 4 sections conducted on the AMCAT platform.\nCode Debugging: 7 questions C/C++/Java (20 minutes)\nCoding: 2 questions (70 minutes)\nMerge two sorted linked lists\nCheck if a binary tree is subtree of another binary tree\nWorkstyle Assessment: (20 minutes)\nReasoning Ability: 24 questions (35 minutes)\nTechnical Round 1(90 minutes): First, the interviewer asked me to introduce myself. Then he directly jumps to coding questions.\n1.) Median of Stream of Running Integers using STL\n Initially, I told him the brute force approach using insertion sort, explained to him its complexity. Then he told me to optimise it, I gave him solution using min_heap and max_heap. He seems to satisfy, and he told me to code it.\n2) He gave me a tree and ask me to print its different views. He said u have a fixed time(30 minutes), have to code this approach.\nLeft -view\nRight-View\nTop-View\nReverse-Top View\n3)   Implementation Details of  \nLRU cache\nLFU cache\nMixture of LRU cache and LFU cache\nThen he jumps to the operating system and asked me about paging, cache, and what's the advantage of caching.\nTechnical Round 2(50 minutes): After a formal introduction, the interviewer directly jump to coding questions.:-\nGive me a situation of a company, where a hierarchy of manager. A manager can have a different number of employees who are working under him. Now, this employee can have a different number of workers who are working under that employee. This can be up to any level.\nHe told me to find the youngest common manager of two workers.\nSolution: Basically it's a problem of finding a common ancestor in the n-array Tree. Firstly I created an n array tree then gave him 2 approaches \nUsing recursion\nFirst, find the path from the root to that worker and then compare the path and check the node just before the first mismatching node.\n2) How to find Lexicographically previous permutation?\n3) Maximum Profit using at-most k-transaction\nhttps://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/\nI gave him 2 solutions first one was using recursion and top-down approach and the 2nd one was using the bottom approach.\n Finally, the result declared after 10 days and two students were selected for the internship. I was one of them.\nThank you Geeksforgeeks for helping me prepare for my interview.\nThis article is contributed by Deepak Kumar.\n\nComment\nMore info\nAdvertise with us\nNext Article\nAmazon Interview Experience for 6-Months Internship"
+      },
+      {
+        "title": "Adobe Interview Experience Mts 2 1 5 Years Experienced",
+        "url": "https://www.geeksforgeeks.org/adobe-interview-experience-mts-2-1-5-years-experienced/",
+        "content_summary": "Round 1: It was an online test time duration for this round was 75min. We were given 22 questions that conations:\n15 aptitude logical reasoning questions.\n5 C++ questions.\n2 coding questions.\nGiven a list of names and votes… output the winner with maximum votes.\nConsider a string, s = “abc”. An alphabetically-ordered sequence of substrings of s would be {“a”, “ab”, “abc”, “b”, “bc”, “c”}. If we reduce this sequence to only those substrings that start with a vowel and end with a consonant, we’re left with {“ab”, “abc”}. The alphabetically first element in this reduced list is “ab”, and the alphabetically last element is “abc”. As a reminder:\nVowels: a, e, i, o, and u.\nConsonants: b, c, d, f, g, h, j, k, l, m, n, p, q, r, s, t, v, w, x, y, and z.\nI was asked to write the code for every question. The interviewers dry ran every code and asked me to optimize the solution. I was asked about the space complexity and time complexity for every solution that I gave.\nRound 2:\nk largest(or smallest) elements in an array\nMedian in a stream of integers (running integers)\nGiven a dictionary of words and two words A and B, find the minimum path required to convert A to B. Only one character can be changed at a time while going from A to B and every word thus formed must be a valid dictionary word.Example:\nIf dictionary = {\n\"cat\", \"rat\", \"hat\", \"sag\", \"bag\", \"bug\", \"dog\", \"hog\", \"hot\", \"dot\",\n\"rot\", \"lot\", \"log\", \"cry\", \"pry\", \"fry\", \"fat\", \"fog\", \"pot\", \"fat\"\n}\nA = \"cat\",\nB = \"dog\",\nthen shortest path from A to B should be printed as:\ncat->hat->hot->dot->dog\nRound 3: This was a Technical round.\nThere are n houses build in a circle, each of which contains some value in it. A thief is going to steal the maximal value of these houses, but he can’t steal in two adjacent houses because the owner of the stolen houses will tell his two neighbors left and right side. What is the maximum stolen value? For houses in a straight line?\nGiven the start and end times of all meetings, the task is to find the minimum number of meeting rooms required for the office so that no meeting waits.\nRound 4: This was a Technical round.\nImplement 1-D array dynamically\nImplement 2-D array dynamically using a single pointer\nImplement 2-D array dynamically using a double pointer\nImplement memcpy\nImplement strcmp\nDiscussion on threads, locks, deadlocks, endianess\nPrint 2-D array in spiral form\nRound 5: This was a Technical round.\nGiven N cubes(6 faces), each face of the cubes has an alphabet written on it. You have to find out whether a given paragraph can be formed with those cubes or not.\nHow will you modify the solution for the above question when W can be considered as M, N can be considered as Z(mirror alphabets)\nGiven a road of width w and length l. There are perfect circular potholes on the road. You are given the radius and center of each pothole. You need to find out whether you can cross the road or not.\nRound 6: This was a Technical round(Managerial)\nDesign an elevator\nWrite an algorithm to assign an elevator to a user.\nImplement a binary search tree in a given 100 bytes of memory.\nHow will you handle the internal fragmentation in the provided memory area for the solution to the above question? Internal fragmentation will occur after the deletion of nodes\nHe gave me a case study of his team-related work and ask me to optimize it.\nRound 7: This was a Technical round(Directors)\nIt contains 2 programs:Program 1:\nint *p;\np = (int *)malloc(sizeof(int));\nprintf(\"%x\\n\", p); // prints 0x12345\n*p = 1;\nwait(x);// Jump to program 2\nprintf(\"%d\\n, *p);\nProgram 2:\nint *p;\np = 0x12345; // assigns the address stored in p of program 1\n*p = 2;\nprintf(\"%d\\n, *p);\nsignal(x);\nWhat is the output of printf() statements of both programs 1 and 2? Why program 2 will fail?\nDiscussion on Paging, Logical Address, Physical address, thrashing, Physical address calculation, etc.\nSearching, Insertion and Deletion in 2-d row-wise and column-wise sorted array\nAfter 10 days, Got the call from HR about Selection.\n\nComment\nMore info\nAdvertise with us\nNext Article\nAdobe Interview Experience | MTS-2 (1.5 years experienced)"
+      },
+      {
+        "title": "Flipkart Interview Experience For Sde2 2 5 Yr Exp",
+        "url": "https://www.geeksforgeeks.org/flipkart-interview-experience-for-sde2-2-5-yr-exp/",
+        "content_summary": "Round 1:Machine Coding \n\nProblem statement was to design an auction system Foobar where there'll be sellers who can create auction for item they want to sell. They'll be specifying lowest and highest bid that can be placed and there will be a participation charge applicable on buyers who'll be bidding for this auction. System should be able to handle multiple auctions at a time. Seller's profit/loss will be calculated as : WinningBid + 20% of totalParticipationCostByBuyers - averageOfLowestAndHighestBid. Remaining 80% of participation cost goes to foobar as commission. Winning bid will be highest unique bid. If for a particular auction these are the bids - buyer1 19, buyer2 19, buyer3 17, buyer4 17, buyer5 10 : then buyer5 will be the winner. Following opertaions were required : \n  Create a seller\ncreate a buyer\nauction creation by a registered seller\nbid on an auction by any registered buyer\nbid amount can be updated by buyer\nWithdraw bid\nclose an auction and return the winning bid\nprofit/loss of any seller till now \nBrownie points for this : If any buyer has placed bid on more than 2 auctions than he is preferred buyer.  So if in an auction there are two bids buyer1 19 and buyer2 19 and buyer2 is preferred buyer then he is the winner. If both buyer1 and buyer2 are preferred buyers then fall back to next highest bid and apply the same logic.\n\nExpectations : \n  Code should be moduler and all responsibilities shouldn't be jammed in 1/2 classes. Basically they wanted this to be layered : dao layer, api layer like that.\nCode must be working and demoable.\nhandle failures gracefully\nCover corner cases\nCode must be extensible with minimal changes. So keep in mind the future requirements and use Interfaces and contracts wherever possible. You should be knowing SOLID principles and design patterns for this.\n\nRound 2:DS ALGO round \n  https://www.careercup.com/question?id=24532662    <-- Good one\nhttps://www.geeksforgeeks.org/problems/rotten-oranges2536/1\nhttps://www.geeksforgeeks.org/problems/find-median-in-a-stream-1587115620/1\n\nFor last 2 questions, interviewer asked to write code on paper. \n\nRound 3:System Design \n\nDesign a system for flipkart for this new idea where flipkart comes up with something like big basket where you cannot purchase things but subscribe to them( For example we subscribe for milk And AppleJuice daily for next 1 month). There will be stores who will be providing these items on flipkart and they'll also be specifying the location where they can deliver. User can subscribe for items - item can come from any store if user is in location range of the store where item is available. Don't worry about the store part and logictics part and focus on subscription model. \nYour job is to come up with requirements, ask clarifying questions. I talked about microservices on the server side, which all things will your client application handle and how, the database side, payments, what can be made to work asynchronously/synchronously, balancing load on servers, how to handle scale, handle spof, caching, API interfaces, notification to users about discounts, multiple subscription models, which one to choose : SQL vs NoSQL & why, design entities in a manner that it optimizes search queries. He had cross question on everything that I included in my design. He made sure he asked all that he wanted to know, if at all I was going into anything he didn't want in deep, he stopped me and told we don't want to dive that deep into this thing and diverted the discussion to what he wanted to drill on. \nIf there is a point where you are using 1 tech between 2, you should be able to justify on WHY and discuss pros and cons of each. \n\nRound 4:Hiring Manager \nSome of the questions that I remember were : \n  Where do you see yourself in 5 years?\nIf 10-12 years down you career, you plan to become a manager - how would you plan about it from now.\nHow do you plan to approach new team members if you get selected. (I was like whatt !! I will just go and talk to them :P)\nWhere do you rate yourself out of 5 in system design knowledge?\nWhat is your weakness?\nIf there is a consumer consuming at at the rate of 10 units per sec. & producer producing at the rate of 100 units per sec, how would you handle this?\nYou cannot use % / *  operator, how will you find the value of x/y upto two decimal places?\nWhat are you expectation from flipkart and new team if you get selected?\nWhy do you want to work on distributed systems, you have enough sources to learn even though you are not working on them?\n\n \nComment\nMore info\nAdvertise with us\nNext Article\nFlipkart Interview Experience for SDE2 (2.5 yr Exp.)"
+      },
+      {
+        "title": "Flipkart Interview Experience For Sde 2",
+        "url": "https://www.geeksforgeeks.org/flipkart-interview-experience-for-sde-2/",
+        "content_summary": "Round 1: Telephonic Round 1 \n\nDiscussion about technologies I have worked on. \nWhat is IoC? How it is related with dependency injection? What are the advantages of dependency injection? \n\nGiven words from Alien dictionary, find sequence of characters. \n\nGFG Link: https://www.geeksforgeeks.org/given-sorted-dictionary-find-precedence-characters/ \n\n  \n\nGiven n stalls with their positions on x axis and given k people, distribute k people on stalls s.t. people are farthest apart from each other. \n\n  \n\nRound 2: Telephonic Round 2 \n\nGiven N houses and amount to colour each house with red, green and blue colors, find minimum amount required to paint all houses such that no 2 houses have same colour. \n\nCreate an Immutable Stack. The solution should be most space optimised. \n\nExample - Push 10 (create a new stack say s1 with element only 10) \n\nPush 20 (Create a new stack s2 with elements 10 and 20) - So now 2 stacks are there s1 and s2. \n\nPush 30 (Create a new stack s3 with elements 10, 20 and 30) - So now 3 stacks are there s1, s2 and s3. \n\nPop 30 (Create a new stack s4 with elements 10 and 20) - So now 4 stacks are there s1, s2, s3 and s4. \n\nGiven a numeric keypad, a value n and a starting digit on keypad, find number of numbers of length n that can be formed if you are allowed to only go to adjacent digits (up, down, left and right) from starting digit. \n\n  \n\nRound 3: Machine Coding Round - On Site \n\nDesign a task planner. Different types of tasks are present - bug, feature and story. And their attributes are given. Also a Sprint which is a collection of tasks. \nA person should be able to create a Sprint, add a task to Sprint, change assignee or status of task, show all tasks of a particular Sprint and show all tasks assigned to a user, etc. \n\n  \n\nRound 4: F2F Interview - On Site \n\nGiven N teams and each team has M members with their heights given. Now N teams have come together for a group photo. Now we have to arrange teams in rows. \nConditions: \n1. One row will have members from one team only. \n2. The height of a person at ith row should be greater than the height of the corresponding person at i-1th row so that all persons are visible in the photo. \n3. Either entire team will get the photo clicked or if any one member of team is not visible then that entire team will forfeit the group photo. \nWe have to find the maximum no. of teams that can be clicked in a single photo. \n\n  \n\nGiven a stream of running integers, we have to find the median at each time. \n\nGFG Link: https://www.geeksforgeeks.org/problems/find-median-in-a-stream-1587115620/1\n\n  \n\nGiven an array of length N of integers 0-9 only, we have to find the largest number divisible by 3 that can be created from elements of that array. \n\n  \n\nI was eliminated after the fourth round. \n\n \n \nComment\nMore info\nAdvertise with us\nNext Article\nFlipkart Interview Experience for SDE 2"
+      }
+    ]
+  }
+]

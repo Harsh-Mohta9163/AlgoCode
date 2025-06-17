@@ -1,0 +1,71 @@
+interview_experiences,metadata.url,metadata.scraped_at,metadata.source,basic_info.title,basic_info.difficulty,basic_info.accuracy,basic_info.submissions,basic_info.avg_time,content.problem,complexity.time_complexity,complexity.space_complexity,tags.company_tags,tags.topic_tags
+"[{'title': 'De Shaw Interview Experience Off Campus 3', 'url': 'https://www.geeksforgeeks.org/de-shaw-interview-experience-off-campus-3/', 'content_summary': 'Round 1: Greeted each other. Asked me to introduce myself (I hadn’t prepared that, I strongly recommend everyone should). Asked me about the data structures I was familiar with. (I said I am comfortable with trees too).\nConvert a BST to Max Heap in O(n) time. I could give a nlogn approach but wasn’t able to optimize it. It was followed by general questions on trees.\nThere’s a trojan virus in a network of computers. You’ve to find the source of the virus. The network is given in the form of a graph. (I explained my approach using topological sort. I was asked to write a running code and give an alternate approach).\nThey increased the complexity of the question(don’t remember) and I was able to give a fair working solution.\nAsked me to explain one of my projects.\nVerdict: Not Selected\n\nComment\nMore info\nAdvertise with us\nNext Article\nDE Shaw Interview Experience (Off-Campus)'}]",https://www.geeksforgeeks.org/problems/bst-to-max-heap/1?page=1&company=DE%20Shaw&sortBy=latest,2025-06-11T12:50:41.602542,GeeksforGeeks,BST to max heap,Medium,67.16%,24K+,Not available,"Given a Binary Search Tree. Convert a given BST into a Special Max Heap with the condition that all the values in the left subtree of a node should be less than all the values in the right subtree of the node. This condition is applied on all the nodes in the so converted Max Heap.
+Example 1:
+Input :
+4
+/ \
+2 6
+/ \ / \
+1 3 5 7
+Output : 1 2 3 4 5 6 7
+Exaplanation :
+7
+/ \
+3 6
+/ \ / \
+1 2 4 5
+The given BST has been transformed into a
+Max Heap and it's postorder traversal is
+1 2 3 4 5 6 7.
+Your task :
+You don't need to read input or print anything. Your task is to complete the function convertToMaxHeapUtil() which takes the root of the tree as input and converts the BST to max heap.
+Note : The driver code prints the postorder traversal of the converted BST.
+Expected Time Complexity : O(n)
+Expected Auxiliary Space : O(n)
+Constraints :
+1 ≤ n ≤ 105",Not specified,Not specified,['DE Shaw'],"['Binary Search Tree', 'Heap', 'Data Structures']"
+"[{'title': 'De Shaw Internship Interview Experience On Campus 2021', 'url': 'https://www.geeksforgeeks.org/de-shaw-internship-interview-experience-on-campus-2021/', 'content_summary': ""DE Shaw visited our campus (MNIT Jaipur) in the first week of August 2020 for a 2-month software development internship.\nTechnical Test (90 minutes) | HackerRank:\nGiven an array of numbers find the number of triplets such that Ai<Aj<Ak or Ai>Aj>Ak for all (i<j<k). | (O(n^2) or O(n log(n)).\nThere are x lions, y tigers, z leopards, and w panthers. Find the number of ways to place them on a line such that no two same animals are adjacent to each other. (0<=x,y,z,w<=51) [DP]\nLCS of three strings\nI was able to solve three questions in 40 mins and because of this, I was given very much preference in the interview.\nOut of 101 students, 12 were shortlisted for the next round.\nTechnical Interview | Codepair (HackerRank) | (60 Minutes):\nThere were two interviewers and both of them were very helpful.\nGiven two sorted array of size n and m+n. with n and m elements respectively merge them without using extra space.\nA brief discussion on the project.\nExplain Virtual function (vptr and vtable).\nMultiple Inheritance and Diamond Problem.\nPage replacement algorithm.\nconcept of virtual memory.\nDining Philosopher problem using Semaphore, mutex lock with pseudo code. \nThrashing\nConvert BST to min-heap.\nPuzzle: Magnets are placed linearly, with each magnet to be considered as of point object. each magnet suffers force from its left-sided magnets such that they repel it to the right and vice versa. All forces are repulsive. The force is inversely proportional to distance (1/d, d being the distance). Make a function as shown below that takes n as the number of magnets, and an array of their distance from the origin, which finds all the points along the linear line where net force is ZERO. Distance has to be calculated with the precision of epsilon.\nMedian of Stream of Running Integers\nScheduling (OS)\nFew more questions on OOPS which I don't remember.\n3 students out of 12 were promoted to the next TI. Your coding round score, attitude, confidence, and communication skills matter most. You must have a deep knowledge of at least one language. Read all the articles related to your primary language on geeks for geeks.\nTechnical Interview 2 (50 Minutes):\nThere were two interviewers in this round also. They were also very helpful and were providing necessary hints at the relevant times\nDesign data structure to implement a text editor. I was made to code following operations ( they often asked to write in the most readable and optimal way )\nInsertion at any location\nDeletion of word from any location\nUndo \nRedo\nCopy/Paste\n(in between they asked me questions related to any STL library which I used and there internal working)\nHow cin and cout work and questions on operator overloading\nQuestion on malloc and free in C.\nDifference between endl and \\n.\nDifference between strongly typed and weakly typed languages, dynamic and static languages, and classify c++ and python based on the same.\nWhat will happen if I do, int arr[2]; while(true)arr++;\nQuestion on Inter Process Communication.\nPage replacement algorithm.\nFile handling in c++ and what happened if we open a 10gb file in a computer with 4gb RAM.\nAfter this round, only 2 students were selected for the summer internship and I was fortunate enough to be one of them.\nIf you want then after each round you may ask some questions to the interviewee.\nExample You can ask about technologies, languages used in their company, or about the environment.\nAll questions were available on GeeksForGeeks and it is the best site I found for interview preparation. A big thanks to the whole geeks for geeks team and contributors.\n\nComment\nMore info\nAdvertise with us\nNext Article\nDE Shaw Internship Interview Experience (On-Campus) 2021""}]",https://www.geeksforgeeks.org/problems/lcs-of-three-strings0028/1?page=1&company=DE%20Shaw&sortBy=latest,2025-06-11T12:50:54.919308,GeeksforGeeks,LCS of three strings,Medium,48.52%,84K+,Not available,"Given three strings s1, s2, and s3 containing uppercase letters, lowercase letters, and digits, find the length of longest common sub-sequence in all three given strings.
+Examples:
+Input: s1 = ""geeks"", s2 = ""geeksfor"", s3 = ""geeksforgeeks""
+Output: 5
+Explanation: ""geeks""is the longest common subsequence with length 5.
+Input: s1 = ""abcd1e2"", s2 = ""bc12ea"", s3 = ""bd1ea""
+Output: 3
+Explanation: Longest common subsequence is ""b1e"" i.e. length = 3.
+Constraints:
+1  ≤  s1.size(), s2.size(), s3.size()  ≤  100",O (n1*n2*n3),O (n2*n3),['DE Shaw'],"['Strings', 'Dynamic Programming', 'Data Structures', 'Algorithms']"
+"[{'title': 'De Shaw Interview Experience Off Campus 3', 'url': 'https://www.geeksforgeeks.org/de-shaw-interview-experience-off-campus-3/', 'content_summary': 'Round 1: Greeted each other. Asked me to introduce myself (I hadn’t prepared that, I strongly recommend everyone should). Asked me about the data structures I was familiar with. (I said I am comfortable with trees too).\nConvert a BST to Max Heap in O(n) time. I could give a nlogn approach but wasn’t able to optimize it. It was followed by general questions on trees.\nThere’s a trojan virus in a network of computers. You’ve to find the source of the virus. The network is given in the form of a graph. (I explained my approach using topological sort. I was asked to write a running code and give an alternate approach).\nThey increased the complexity of the question(don’t remember) and I was able to give a fair working solution.\nAsked me to explain one of my projects.\nVerdict: Not Selected\n\nComment\nMore info\nAdvertise with us\nNext Article\nDE Shaw Interview Experience (Off-Campus)'}]",https://www.geeksforgeeks.org/problems/bst-to-max-heap/1?page=1&company=DE%20Shaw&sortBy=latest,2025-06-11T12:51:07.767632,GeeksforGeeks,BST to max heap,Medium,67.16%,24K+,Not available,"Given a Binary Search Tree. Convert a given BST into a Special Max Heap with the condition that all the values in the left subtree of a node should be less than all the values in the right subtree of the node. This condition is applied on all the nodes in the so converted Max Heap.
+Example 1:
+Input :
+4
+/ \
+2 6
+/ \ / \
+1 3 5 7
+Output : 1 2 3 4 5 6 7
+Exaplanation :
+7
+/ \
+3 6
+/ \ / \
+1 2 4 5
+The given BST has been transformed into a
+Max Heap and it's postorder traversal is
+1 2 3 4 5 6 7.
+Your task :
+You don't need to read input or print anything. Your task is to complete the function convertToMaxHeapUtil() which takes the root of the tree as input and converts the BST to max heap.
+Note : The driver code prints the postorder traversal of the converted BST.
+Expected Time Complexity : O(n)
+Expected Auxiliary Space : O(n)
+Constraints :
+1 ≤ n ≤ 105",Not specified,Not specified,['DE Shaw'],"['Binary Search Tree', 'Heap', 'Data Structures']"
+"[{'title': 'De Shaw Internship Interview Experience On Campus 2021', 'url': 'https://www.geeksforgeeks.org/de-shaw-internship-interview-experience-on-campus-2021/', 'content_summary': ""DE Shaw visited our campus (MNIT Jaipur) in the first week of August 2020 for a 2-month software development internship.\nTechnical Test (90 minutes) | HackerRank:\nGiven an array of numbers find the number of triplets such that Ai<Aj<Ak or Ai>Aj>Ak for all (i<j<k). | (O(n^2) or O(n log(n)).\nThere are x lions, y tigers, z leopards, and w panthers. Find the number of ways to place them on a line such that no two same animals are adjacent to each other. (0<=x,y,z,w<=51) [DP]\nLCS of three strings\nI was able to solve three questions in 40 mins and because of this, I was given very much preference in the interview.\nOut of 101 students, 12 were shortlisted for the next round.\nTechnical Interview | Codepair (HackerRank) | (60 Minutes):\nThere were two interviewers and both of them were very helpful.\nGiven two sorted array of size n and m+n. with n and m elements respectively merge them without using extra space.\nA brief discussion on the project.\nExplain Virtual function (vptr and vtable).\nMultiple Inheritance and Diamond Problem.\nPage replacement algorithm.\nconcept of virtual memory.\nDining Philosopher problem using Semaphore, mutex lock with pseudo code. \nThrashing\nConvert BST to min-heap.\nPuzzle: Magnets are placed linearly, with each magnet to be considered as of point object. each magnet suffers force from its left-sided magnets such that they repel it to the right and vice versa. All forces are repulsive. The force is inversely proportional to distance (1/d, d being the distance). Make a function as shown below that takes n as the number of magnets, and an array of their distance from the origin, which finds all the points along the linear line where net force is ZERO. Distance has to be calculated with the precision of epsilon.\nMedian of Stream of Running Integers\nScheduling (OS)\nFew more questions on OOPS which I don't remember.\n3 students out of 12 were promoted to the next TI. Your coding round score, attitude, confidence, and communication skills matter most. You must have a deep knowledge of at least one language. Read all the articles related to your primary language on geeks for geeks.\nTechnical Interview 2 (50 Minutes):\nThere were two interviewers in this round also. They were also very helpful and were providing necessary hints at the relevant times\nDesign data structure to implement a text editor. I was made to code following operations ( they often asked to write in the most readable and optimal way )\nInsertion at any location\nDeletion of word from any location\nUndo \nRedo\nCopy/Paste\n(in between they asked me questions related to any STL library which I used and there internal working)\nHow cin and cout work and questions on operator overloading\nQuestion on malloc and free in C.\nDifference between endl and \\n.\nDifference between strongly typed and weakly typed languages, dynamic and static languages, and classify c++ and python based on the same.\nWhat will happen if I do, int arr[2]; while(true)arr++;\nQuestion on Inter Process Communication.\nPage replacement algorithm.\nFile handling in c++ and what happened if we open a 10gb file in a computer with 4gb RAM.\nAfter this round, only 2 students were selected for the summer internship and I was fortunate enough to be one of them.\nIf you want then after each round you may ask some questions to the interviewee.\nExample You can ask about technologies, languages used in their company, or about the environment.\nAll questions were available on GeeksForGeeks and it is the best site I found for interview preparation. A big thanks to the whole geeks for geeks team and contributors.\n\nComment\nMore info\nAdvertise with us\nNext Article\nDE Shaw Internship Interview Experience (On-Campus) 2021""}]",https://www.geeksforgeeks.org/problems/lcs-of-three-strings0028/1?page=1&company=DE%20Shaw&sortBy=latest,2025-06-11T12:51:20.050446,GeeksforGeeks,LCS of three strings,Medium,48.52%,84K+,Not available,"Given three strings s1, s2, and s3 containing uppercase letters, lowercase letters, and digits, find the length of longest common sub-sequence in all three given strings.
+Examples:
+Input: s1 = ""geeks"", s2 = ""geeksfor"", s3 = ""geeksforgeeks""
+Output: 5
+Explanation: ""geeks""is the longest common subsequence with length 5.
+Input: s1 = ""abcd1e2"", s2 = ""bc12ea"", s3 = ""bd1ea""
+Output: 3
+Explanation: Longest common subsequence is ""b1e"" i.e. length = 3.
+Constraints:
+1  ≤  s1.size(), s2.size(), s3.size()  ≤  100",O (n1*n2*n3),O (n2*n3),['DE Shaw'],"['Strings', 'Dynamic Programming', 'Data Structures', 'Algorithms']"

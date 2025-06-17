@@ -1,0 +1,747 @@
+interview_experiences,metadata.url,metadata.scraped_at,metadata.source,basic_info.title,basic_info.difficulty,basic_info.accuracy,basic_info.submissions,basic_info.avg_time,content.problem,complexity.time_complexity,complexity.space_complexity,tags.company_tags,tags.topic_tags
+[],https://www.geeksforgeeks.org/problems/remove-the-balls--170647/1,2025-06-11T12:07:22.065517,GeeksforGeeks,Remove the balls,Medium,58.66%,33K+,Not available,"You are given two arrays, color and radius, representing a sequence of balls:
+color[i] is the color of the i-th ball.
+radius[i] is the radius of the i-th ball.
+If two consecutive balls have the same color and radius, remove them both. Repeat this process until no more such pairs exist.
+Return the number of balls remaining after all possible removals.
+Examples:
+Input: color[] = [2, 3, 5], radius[] = [3, 3, 5]
+Output: 3
+Explanation: All the 3 balls have different colors and radius.
+Input: color[] = [2, 2, 5], radius[] = [3, 3, 5]
+Output: 1
+Explanation: First ball and second ball have same color 2 and same radius 3. So, after removing only one ball is left. It cannot be removed from the array. Hence, the final array has length 1.
+Constraints:
+1 ≤ color.size() = radius.size() ≤ 105
+1 ≤ color[i] ≤ 109
+1 ≤ radius[i] ≤ 109",O(n),O(n),[],"['Stack', 'Data Structures']"
+[],https://www.geeksforgeeks.org/problems/earliest-common-slot/1?page=1&company=Google&sortBy=latest,2025-06-11T12:07:33.414740,GeeksforGeeks,Earliest Common Slot,Medium,34.84%,624+,Not available,"You are given two lists of availability time slots, slots1 and slots2, for two people. Each slot is represented as [start, end], and it is gurranted that within each list, no two slots overlap (i.e., for any two intervals, either start1>end2 or start2>end1). Given a metting duration d, return the earliest common time slot of length of least d. If no such slot exits, return an empty array.
+Examples:
+Input: slots1 = [[10,50], [60,120], [140,210]], slots2 = [[0,15], [60,70]], d = 8
+Output: [60,68]
+Explanation: The only overlap is [60,70] (10 minutes), which is enough for an 8-minute meeting, so answer is [60,68]
+Input: slots1 = [[10,50], [60,120], [140,210]], slots2 = [[0,15], [60,70]], d = 12
+Output: []
+Explanation: The only overlap is [60, 70] (10 minutes), but 12 minutes are needed, so no valid slot exists.
+Constraints:
+1 ≤ slots1.size(), slots2.size()  ≤ 105
+-109 ≤ slots1[i], slots2[i] ≤ 109
+1 ≤ d ≤ 106","O(max(n log(n), m log(m)))",O(1),"['Amazon', 'Microsoft', 'PayPal', 'Google', 'Uber']","['Sorting', 'two-pointer-algorithm', 'Arrays', 'Data Structures', 'Algorithms']"
+[],https://www.geeksforgeeks.org/problems/interval-list-intersections/1?page=1&company=Google&sortBy=latest,2025-06-11T12:07:44.758259,GeeksforGeeks,Interval List Intersections,Medium,44.47%,517+,Not available,"Given two 2-D arrays which represent intervals. Each 2-D array represents a list of intervals. Each list of intervals is disjoint and sorted in increasing order. Find the intersection or set of ranges that are common to both the lists.
+Note: Disjoint means no element is common in a list
+Examples:
+Input: a[][] = [[0, 4], [5, 10], [13, 20], [24, 25]], b[][] = [[1, 5], [8, 12], [15, 24], [25, 26]]
+Output: [[1, 4], [5, 5], [8, 10], [15, 20], [24, 24], [25, 25]]
+Explanation: [1, 4] lies completely within the range [0, 4] and [1, 5]. Hence, [1, 4] is the desired intersection. Similarly, [24, 24] lies completely within two intervals [24, 25] and [15, 24]
+Input: a[][] = [[0, 2], [5, 10], [12, 22], [24, 25]], b[][] = [[1, 4], [9, 12], [15, 24], [25, 26]]
+Output: [[1, 2], [9, 10], [12, 12], [15, 22], [24, 24], [25, 25]]
+Explanation: [1, 2] lies completely within the range [0, 2] and [1, 4]. Hence, [1, 2] is the desired intersection. Similarly, [12, 12] lies completely within two intervals [12, 22] and [9, 12]
+Constraints
+1 ≤ a.size(), b.size() ≤ 105
+-109 ≤ a[i], b[i] ≤ 109",O(n + m),O(1),"['Bloomberg', 'Amazon', 'Microsoft', 'Google', 'Uber']","['two-pointer-algorithm', 'Arrays', 'Data Structures', 'Algorithms']"
+[],https://www.geeksforgeeks.org/problems/sum-of-xor-of-all-possible-subsets/1?page=1&company=Google&sortBy=latest,2025-06-11T12:07:56.141508,GeeksforGeeks,Sum of XOR of all possible subsets,Medium,35.4%,1K+,Not available,"Given an array arr[], return the sum of the XOR of all elements for every possible subset of the array. Subsets with the same elements should be counted multiple times.
+An array a is a subset of an array b if a can be obtained from b by deleting some (possibly zero) elements of b.
+Note: The answer is guaranteed to fit within a 32-bit integer.
+Examples:
+Input: arr[] = [7, 2]
+Output: 14
+Explanation: Subsets are: [[], [7], [2], [7, 2]]
+Sum of all XOR's = 7 + 2 + (7 ^ 2) = 14.
+Input: arr[] = [1, 2, 3]
+Output: 12
+Explanation: Subsets are: [[], [1], [2], [3], [1, 2], [1, 3], [2, 3], [1, 2, 3]]
+Sum of all XOR's = 1 + 2 + 3 + (1 ^ 2)  + (1 ^ 3) + (2 ^ 3) + (1 ^ 2 ^ 3) = 12.
+Constraints:
+1 ≤ arr.size() ≤ 30
+1 ≤ arr[i] ≤ 103",O(n),O(1),"['Adobe', 'Amazon', 'Apple', 'Google']","['Bit Magic', 'Data Structures', 'Algorithms']"
+[],https://www.geeksforgeeks.org/problems/median-of-2-sorted-arrays-of-same-size/1?page=1&company=Google&sortBy=latest,2025-06-11T12:08:07.349293,GeeksforGeeks,Median of 2 Sorted Arrays of Same Size,Hard,53.15%,3K+,35m,"Given two sorted arrays a[] and b[] of equal size, find and return the median of the combined array after merging them into a single sorted array.
+Examples:
+Input: a[] = [-5, 3, 6, 12, 15], b[] = [-12, -10, -6, -3, 4]
+Output: 0
+Explanation: The merged array is [-12, -10, -6, -5, -3, 3, 4, 6, 12, 15]. So the median of the merged array is (-3 + 3) / 2 = 0.
+Input: a[] = [2, 3, 5, 7], b[] = [10, 12, 14, 16]
+Output: 8.5
+Explanation: The merged array is [2, 3, 5, 7, 10, 12, 14, 16]. So the median of the merged array is (7 + 10) / 2 = 8.5.
+Input: a[] = [-5], b[] = [-6]
+Output: -5.5
+Explanation: The merged array is [-6, -5]. So the median of the merged array is (-6 + -5) / 2 = -5.5.
+Constraints:
+1 ≤ a.size(), b.size() ≤ 106
+-106 ≤ a[i], b[i] ≤ 106",O(log n),O(1),"['Amazon', 'Microsoft', 'Samsung', 'Google']","['Binary Search', 'Arrays']"
+[],https://www.geeksforgeeks.org/problems/group-shifted-string/1?page=1&company=Google&sortBy=latest,2025-06-11T12:08:17.913098,GeeksforGeeks,Group Shifted String,Medium,66.21%,1K+,Not available,"Given an array of strings (all lowercase letters), the task is to group them in such a way that all strings in a group are shifted versions of each other.
+Two strings s1 and s2 are called shifted if the following conditions are satisfied:
+s1.length = s2.length
+s1[i] = s2[i] + m for 1 <= i <= s1.length  for a constant integer m
+Examples :
+Input: arr = [""acd"", ""dfg"", ""wyz"", ""yab"", ""mop"", ""bdfh"", ""a"", ""x"", ""moqs""]
+Output: [[""acd"", ""dfg"", ""wyz"", ""yab"", ""mop""], [""bdfh"", ""moqs""], [""a"", ""x""]]
+Explanation: All shifted strings are grouped together.
+Input: arr = [""geek"", ""for"", ""geeks""]
+Output: [[""for""], [""geek""], [""geeks""]]
+Input: arr = [""aaa"", ""adb"", ""bbd"", ""dbc"", ""bca""]
+Output: [[""aaa""], [""adb""], [""bbd""], [""bca""], [""dbc""]]
+Constraints:
+1 ≤ arr.size() ≤ 105
+1 ≤ arr[i].size() ≤ 5",O(n * m),O(n),['Google'],"['Strings', 'Hash', 'Algorithms']"
+[],https://www.geeksforgeeks.org/problems/bits-counting/1?page=1&company=Google&sortBy=latest,2025-06-11T12:08:28.823855,GeeksforGeeks,Bits Counting,Medium,77.98%,1K+,Not available,"Given an integer n, return an array ans of size n + 1, where each element i (0 ≤ i ≤ n) represents the count of 1s in the binary form of i.
+Examples :
+Input: n = 2
+Output: [0, 1, 1]
+Explanation:
+0 --> 0
+1 --> 1
+2 --> 10
+Input: n = 5
+Output: [0, 1, 1, 2, 1, 2]
+Explanation:
+0 --> 0
+1 --> 1
+2 --> 10
+3 --> 11
+4 --> 100
+5 --> 101
+Constraints:
+0 ≤ n ≤ 105",O(n),O(n),"['Bloomberg', 'Facebook', 'Adobe', 'Google', 'Amazon', 'Microsoft', 'Apple', 'Yahoo', 'Nvidia', 'Uber']","['Bit Magic', 'Dynamic Programming', 'Arrays']"
+[],https://www.geeksforgeeks.org/problems/root-to-leaf-paths-sum/1?page=1&company=Google&sortBy=latest,2025-06-11T12:08:40.007443,GeeksforGeeks,Root to leaf paths sum,Medium,58.4%,49K+,Not available,"Given a binary tree, where every node value is a number. Find the sum of all the numbers that are formed from root to leaf paths. The formation of the numbers would be like 10*parent + current (see the examples for more clarification).
+Examples:
+Input:
+Output: 13997
+Explanation : There are 4 leaves, resulting in leaf path of 632, 6357, 6354, 654 sums to 13997.
+Input:
+Output: 2630
+Explanation: There are 3 leaves, resulting in leaf path of 1240, 1260, 130 sums to 2630.
+Input:
+1
+/
+2
+Output: 12
+Explanation: There is 1 leaf, resulting in leaf path of 12.
+Constraints:
+1 ≤ number of nodes ≤ 31
+1 ≤ node->data ≤ 100",O(n),O(h),"['Amazon', 'Microsoft', 'OYO Rooms', 'Google']","['Tree', 'Data Structures']"
+[],https://www.geeksforgeeks.org/problems/k-th-missing-element3635/1?page=1&company=Google&sortBy=latest,2025-06-11T12:08:50.867742,GeeksforGeeks,K-th missing element,Easy,31.53%,32K+,Not available,"Given an increasing sequence arr, we need to find the K-th smallest missing element, taking the first element of the array as the starting point in the increasing sequence. If there is no k-th missing element then output -1.
+Example:
+Input: arr[] = [1, 3, 4, 5, 7] and k = 2
+Output: 6
+Explanation: k = 2, Missing numbers are 2 and 6. So 2nd missing number is 6.
+Input: arr[] = [2, 3, 4, 5, 6, 8] and k = 1
+Output: 7
+Explanation: k = 1, the first missing number in the array is 7.
+Expected Time Complexity: O(n).
+Expected Auxiliary Space: O(1).
+Constraints:
+1 ≤  arr.size() ≤ 106
+0 ≤  k, arr[i] ≤ 105",Not specified,Not specified,"['Amazon', 'Facebook', 'Apple', 'Google']","['Arrays', 'Data Structures']"
+[],https://www.geeksforgeeks.org/problems/reverse-an-array/1?page=1&company=Google&sortBy=latest,2025-06-11T12:09:01.877589,GeeksforGeeks,Reverse an Array,Easy,55.32%,189K+,5m,"You are given an array of integers arr[]. Your task is to reverse the given array.
+Note: Modify the array in place.
+Examples:
+Input: arr = [1, 4, 3, 2, 6, 5]
+Output: [5, 6, 2, 3, 4, 1]
+Explanation: The elements of the array are 1 4 3 2 6 5. After reversing the array, the first element goes to the last position, the second element goes to the second last position and so on. Hence, the answer is 5 6 2 3 4 1.
+Input: arr = [4, 5, 2]
+Output: [2, 5, 4]
+Explanation: The elements of the array are 4 5 2. The reversed array will be 2 5 4.
+Input: arr = [1]
+Output: [1]
+Explanation: The array has only single element, hence the reversed array is same as the original.
+Constraints:
+1<=arr.size()<=105
+0<=arr[i]<=105",O(n),O(1),"['Bloomberg', 'Facebook', 'TCS', 'Adobe', 'Google', 'Infosys', 'Capgemini', 'Morgan Stanley', 'Amazon', 'Microsoft', 'Apple', 'Yahoo', 'PayPal', 'Uber']","['Arrays', 'Data Structures']"
+[],https://www.geeksforgeeks.org/problems/buy-stock-2/1?page=1&company=Google&sortBy=latest,2025-06-11T12:09:12.928843,GeeksforGeeks,Stock Buy and Sell – Max one Transaction Allowed,Easy,49.33%,92K+,10m,"Given an array prices[] of length n, representing the prices of the stocks on different days. The task is to find the maximum profit possible by buying and selling the stocks on different days when at most one transaction is allowed. Here one transaction means 1 buy + 1 Sell. If it is not possible to make a profit then return 0.
+Note: Stock must be bought before being sold.
+Examples:
+Input: prices[] = [7, 10, 1, 3, 6, 9, 2]
+Output: 8
+Explanation: You can buy the stock on day 2 at price = 1 and sell it on day 5 at price = 9. Hence, the profit is 8.
+Input: prices[] = [7, 6, 4, 3, 1]
+Output: 0
+Explanation: Here the prices are in decreasing order, hence if we buy any day then we cannot sell it at a greater price. Hence, the answer is 0.
+Input: prices[] = [1, 3, 6, 9, 11]
+Output: 10
+Explanation: Since the array is sorted in increasing order, we can make maximum profit by buying at price[0] and selling at price[n-1].
+Constraint:
+1 <= prices.size()<= 105
+0 <= prices[i] <=104",O(n),O(1),"['Bloomberg', 'Facebook', 'Intel', 'Infosys', 'Zoho', 'Morgan Stanley', 'Amazon', 'Microsoft', 'Samsung', 'Yahoo', 'PayPal', 'Nvidia', 'Oracle', 'Visa', 'Walmart', 'Goldman Sachs', 'TCS', 'Adobe', 'Google', 'IBM', 'Accenture', 'Apple', 'Uber']","['Greedy', 'Arrays']"
+[],https://www.geeksforgeeks.org/problems/missing-intervals3058/1?page=1&company=Google&sortBy=latest,2025-06-11T12:09:24.359709,GeeksforGeeks,Missing Intervals,Medium,37.64%,6K+,Not available,"Given a sorted array arr[] of integers varying from range l to r. Find all the missing intervals range in array arr[] from the given range and return in sorted order.
+Note: If no Integer is missing return {-1,-1}.
+Example 1:
+Input: arr[] = [1, 5, 6, 7, 9], l = 1, r = 9
+Output: [{2, 4}, {8, 8}]
+Explanation: all the missing intervals which are not present in array are returned.
+Example 2:
+Input: arr[] = [3, 4, 5, 5], l = 3, r = 5
+Output: [{-1,-1}]
+Explanation: There are no missing number from the interval.
+Expected Time Complexity: O(n)
+Expected Auxiliary Space: O(1)
+Constraints:
+1 ≤ arr.size() ≤ 106
+0 ≤ arr[i] ≤ 106
+0 ≤ l ≤ r ≤ 106",Not specified,Not specified,['Google'],"['Arrays', 'STL', 'Data Structures']"
+[],https://www.geeksforgeeks.org/problems/surpasser-count0615/1?page=1&company=Google&sortBy=latest,2025-06-11T12:09:35.843467,GeeksforGeeks,Surpasser Count,Medium,39.69%,11K+,20m,"Given an array containing distinct integers, find the number of surpassers for each of its elements.
+An element y is said to be the surpasser of element x if it is a greater element on the right of x. ie if x = arr[i] and y = arr[j], i<j and arr[i] < arr[j].
+Examples:
+Input: arr[] = [4, 5, 1, 2, 3]
+Output: [1, 0, 2, 1, 0]
+Explanation: There are no elements greater than 3 at the right of 3. There is one element at right of 2 and greater than 2. There are 2 elements greater than 1 at the right of 1. And so on.
+Input: arr[] = [2, 7, 5, 3, 8, 1]
+Output: [4, 1, 1, 1, 0, 0]
+Constraints:
+1 ≤ arr.size() ≤ 105
+1 ≤ arr[i] ≤ 106",O(n log n),O(n),"['Google', 'Yahoo']","['Arrays', 'Data Structures']"
+"[{'title': 'Amazon Interview Experience Wow 2020 6 Months Internship', 'url': 'https://www.geeksforgeeks.org/amazon-interview-experience-wow-2020-6-months-internship/', 'content_summary': ""Amazon WoW is an initiative which gives an opportunity to women students in their final or pre-final year to work at Amazon as an intern or full time employee. The process started with filling an application in Amazon WoW website, in the application basic info about college, branch, resume were to be submitted. After a few days based on the resume mail was sent regarding the round 1 test.\nThe test consisted of 28 MCQ's (C++, data structures etc.) and 2 Medium level coding questions.\nI was able to solve both the coding questions so I passed the round 1 test.\nRound 1 Technical interview:\nThe interview was online and took place on Amazon Chime platform. The interview started with my introduction and followed by his. After this he jumped straight into the coding questions.\nI was asked 2 coding questions:\nGiven a graph of n nodes and e edges.\n           Find the minimum number of edges that must be added to the graph to make it strongly connected.\n           Example:\n                  n=4, e=2\n                   [1,2]\n                   [3,4]\n                 Output: 1\n                 Here 1-->2 and 3-->4 are connected to make it strongly connected we need to join either 1-->4 or 2--->4 or 3-->1 or 2-->3\n            Approach: This can be done by finding number of strongly connected components using DFS. If there are N strongly connected components then the                          minimum  number of edges that must be added to the graph to make it strongly connected would be N-1.\n      2.   Minimum path sum    \nI was asked to tell the time complexity before writing the code. ( clean code in my preferred language)\nRound 2 Technical interview:\nThe interview started with my introduction and followed by his. After this he jumped straight into the coding questions.\nI was asked 2 coding questions:\nFlattening a linked list\nMerge k sorted arrays (priority queue approach)\nSome discussion on priority queue insertion time complexity was also done.\nRound 3 Technical interview:\nUsually Amazon internship have only 2 rounds but sometimes if they do not have enough data points on a candidate they conduct an additional round.\nSo I had this round 3.\nIn this round he asked me:\nConvert a sorted linked list into a balanced BST\nAn efficient data structure for searching, inserting and deleting.\nLot of discussion was done on the 2nd question. He was satisfied with Hashing method.\nFew DS, CN, OS questions were asked at the end.\nVerdict: Selected\nKnowing how to calculate time complexity is important. Staying confident, calm and focused throughout increases your chance of clearing the interview.\nThe secret of cracking an interview is Never Giving Up.\nPractice from GeeksForGeeks, LeetCode and any other coding platform with which you are comfortable.\n\nComment\nMore info\nAdvertise with us\nNext Article\nAmazon Interview Experience | WoW 2020 (6 months Internship)""}]",https://www.geeksforgeeks.org/problems/sorted-list-to-bst/1?page=1&company=Google&sortBy=latest,2025-06-11T12:09:46.586561,GeeksforGeeks,Sorted Linked List to BST,Hard,53.24%,27K+,Not available,"Given a Singly Linked List which has data members sorted in ascending order. Construct a Balanced Binary Search Tree which has same data members as the given Linked List.
+Note: There might be nodes with the same value.
+Examples:
+Input: Linked List: 1->2->3->4->5->6->7
+Output: 4 2 1 3 6 5 7
+Explanation : The BST formed using elements of the linked list is -
+4
+/ \
+2 6
+/ \ / \
+1 3 5 7
+Hence, preorder traversal of this tree is 4 2 1 3 6 5 7
+Input: Linked List : 1->2->3->4
+Ouput: 3 2 1 4
+Explanation: The BST formed using elements of the linked list is -
+Hence, the preorder traversal of this tree is 3 2 1 4
+Expected Time Complexity: O(n)
+Expected Auxiliary Space: O(n)
+Constraints:
+1 ≤ Number of Nodes ≤ 106
+1 ≤ Value of each node ≤ 106",Not specified,Not specified,"['Flipkart', 'Amazon', 'Google']","['Linked List', 'Binary Search Tree', 'Tree', 'Data Structures']"
+[],https://www.geeksforgeeks.org/problems/longest-arithmetic-progression1019/1?page=1&company=Google&sortBy=latest,2025-06-11T12:10:01.979510,GeeksforGeeks,Longest Arithmetic Subsequence,Medium,23.82%,41K+,Not available,"Given an array arr[] of sorted and distinct positive integers. The task is to find the length of the longest arithmetic progression in a given array.
+Note: A sequence seq is an arithmetic progression if seq[i + 1] - seq[i] are all the same value (for 0 <= i < seq.length - 1).
+Examples:
+Input:arr[] = [1, 7, 10, 13, 14, 19]
+Output: 4
+Explanation: The longest arithmetic progression is [1, 7, 13, 19].
+Input:arr[] = [2, 4, 6, 8, 10]
+Output: 5
+Explanation: The whole array is in AP.
+Expected Time Complexity: O(n2)
+Expected Auxiliary Space: O(n2)
+Constraints:
+1 ≤ arr.size() ≤ 1000
+1 ≤ arr[i] ≤ 104",Not specified,Not specified,"['Amazon', 'Microsoft', 'Snapdeal', 'Google']","['Arrays', 'Dynamic Programming', 'Data Structures', 'Algorithms']"
+[],https://www.geeksforgeeks.org/problems/remove-duplicate-elements-from-sorted-array/1?page=1&company=Google&sortBy=latest,2025-06-11T12:10:13.128135,GeeksforGeeks,Remove Duplicates Sorted Array,Easy,38.18%,293K+,20m,"Given a sorted array arr. Return the size of the modified array which contains only distinct elements.
+Note:
+1. Don't use set or HashMap to solve the problem.
+2. You must return the modified array size only where distinct elements are present and modify the original array such that all the distinct elements come at the beginning of the original array.
+Examples :
+Input: arr = [2, 2, 2, 2, 2]
+Output: [2]
+Explanation: After removing all the duplicates only one instance of 2 will remain i.e. [2] so modified array will contains 2 at first position and you should return 1 after modifying the array, the driver code will print the modified array elements.
+Input: arr = [1, 2, 4]
+Output: [1, 2, 4]
+Explation: As the array does not contain any duplicates so you should return 3.
+Constraints:
+1 ≤ arr.size() ≤ 105
+1 ≤ ai ≤ 106",O(n),O(1),"['Zoho', 'Morgan Stanley', 'Microsoft', 'Samsung', 'Google', 'Wipro', 'Xome']","['two-pointer-algorithm', 'Arrays', 'Data Structures', 'Algorithms']"
+[],https://www.geeksforgeeks.org/problems/smallest-subarray-with-sum-greater-than-x5651/1?page=1&company=Google&sortBy=latest,2025-06-11T12:10:24.083426,GeeksforGeeks,Smallest subarray with sum greater than x,Easy,37.07%,141K+,20m,"Given a number x and an array of integers arr, find the smallest subarray with sum greater than the given value. If such a subarray do not exist return 0 in that case.
+Examples:
+Input: x = 51, arr[] = [1, 4, 45, 6, 0, 19]
+Output: 3
+Explanation: Minimum length subarray is [4, 45, 6]
+Input: x = 100, arr[] = [1, 10, 5, 2, 7]
+Output: 0
+Explanation: No subarray exist
+Constraints:
+1 ≤ arr.size, x ≤ 105
+0 ≤ arr[] ≤ 104",O(n),O(1),"['Accolite', 'Amazon', 'Goldman Sachs', 'Google', 'Facebook']","['Arrays', 'Data Structures', 'sliding-window']"
+[],https://www.geeksforgeeks.org/problems/clone-graph/1?page=1&company=Google&sortBy=latest,2025-06-11T12:10:34.822422,GeeksforGeeks,Clone an Undirected Graph,Medium,67.49%,39K+,Not available,"Given a connected undirected graph represented by adjacency list, adjList[][] with n nodes, having a distinct label from 0 to n-1, where each adj[i] represents the list of vertices connected to vertex i.
+Create a clone of the graph, where each node in the graph contains an integer val and an array (neighbors) of nodes, containing nodes that are adjacent to the current node.
+class Node {
+val: integer
+neighbors: List[Node]
+}
+Your task is to complete the function cloneGraph( ) which takes a starting node of the graph as input and returns the copy of the given node as a reference to the cloned graph.
+Note: If you return a correct copy of the given graph, then the driver code will print true; and if an incorrect copy is generated or when you return the original node, the driver code will print false.
+Examples :
+Input: n = 4, adjList[][] = [[1, 2], [0, 2], [0, 1, 3], [2]]
+Output: true
+Explanation:
+As the cloned graph is identical to the original one the driver code will print true.
+Input: n = 3, adjList[][] = [[1, 2], [0], [0]]
+Output: true
+Explanation:
+As the cloned graph is identical to the original one the driver code will print true.
+Constraints:
+1 ≤ n ≤ 104
+0 ≤ no. of edges ≤ 105
+0 ≤ adjList[i][j] < n",O(n + m),O(n),['Google'],"['Graph', 'DFS', 'BFS']"
+[],https://www.geeksforgeeks.org/problems/unique-frequencies-of-not/1?page=1&company=Google&sortBy=latest,2025-06-11T12:10:45.970016,GeeksforGeeks,Unique Number of Occurrences,Easy,57.68%,50K+,20m,"Given an array arr of N integers, the task is to check whether the frequency of the elements in the array is unique or not. Or in other words, there are no two distinct numbers in array with equal frequency. If all the frequency is unique then return true, else return false.
+Example 1:
+Input:
+N = 5
+arr = [1, 1, 2, 5, 5]
+Output:
+false
+Explanation:
+The array contains 2 (1’s), 1 (2’s) and 2 (5’s), since the number of frequency of 1 and 5 are the same i.e. 2 times. Therefore, this array does not satisfy the condition.
+Example 2:
+Input:
+N = 10
+arr = [2, 2, 5, 10, 1, 2, 10, 5, 10, 2]
+Output:
+true
+Explanation:
+Number of 1’s -> 1
+Number of 2’s -> 4
+Number of 5’s -> 2
+Number of 10’s -> 3.
+Since, the number of occurrences of elements present in the array is unique. Therefore, this array satisfy the condition.
+Your task:
+You don't need to read input or print anything. Your task is to complete the function isFrequencyUnique() which take integer N and array arr of size N as arguments, and returns a boolean.
+Expected Time Complexity: O(N)
+Expected Auxiliary Space: O(N)
+Constraints:
+1 <= N <=105
+-109 <= arr[i] <= 109",Not specified,Not specified,"['PayPal', 'Bloomberg', 'Adobe', 'Google', 'Amazon', 'Apple']","['set', 'Sorting', 'Map']"
+[],https://www.geeksforgeeks.org/problems/string-rp-or-pr--170647/1?page=1&company=Google&sortBy=latest,2025-06-11T12:10:56.840549,GeeksforGeeks,String rp or pr,Medium,50.08%,33K+,Not available,"Given a string S. In one operation, you can remove the substring ""pr"" from the string S and get amount X or you can remove the substring ""rp"" and get the amount Y.
+Find the maximum amount you can get if you perform zero or more such operations optimally.
+Note :
+Substring of a string S is defined as a continuous sequence of characters in S.
+After removing pr or rp, the order of remaining letters should remain the same.
+Example 1:
+Input:
+X = 5, Y = 4
+S = ""abppprrr""
+Output: 15
+Explanation:
+Here, S = ""abppprrr""
+X= 5, Y=4.
+Remove ""pr"", new string S = ""abpprr"".
+Remove ""pr"", new string S = ""abpr"".
+Remove ""pr"", new string S = ""ab"".
+In total, we removed ""pr"" 3 times,
+so total score is 3*X + 0*Y = 3*5 =15.
+Example 2:
+Input:
+X = 7, Y = 7
+S = ""prpptppr""
+Output: 14
+Explanation:
+Here, S = ""prpptppr""
+X= 7, Y=7.
+As both have the same amount we can first
+remove either pr or rp. Here we start with pr
+Remove ""pr"", new string S = ""pptppr"".
+Remove ""pr"", new string S = ""pptp"".
+In total, we removed ""pr"" 2 times,
+so total score is 2*X + 0*Y = 2*7 =14.
+Your Task:
+You don't need to read input or print anything. Your task is to complete the function solve() which takes the X ,Y and string S as input parameters and returns the maximum amount you can get after performing the above operations.
+Expected Time Complexity: O(|S|)
+Expected Auxiliary Space: O(|S|)
+Constraints:
+1 ≤ |S| ≤ 105
+1 ≤ X,Y ≤ 105
+S contains lowercase English letters only.",Not specified,Not specified,['Google'],"['Strings', 'Greedy', 'Stack', 'Data Structures', 'Algorithms']"
+"[{'title': 'Google Interview Experience For Sde 1', 'url': 'https://www.geeksforgeeks.org/google-interview-experience-for-sde-1/?ref=rp', 'content_summary': '  Round 1: Hangout Video call ( DS & Algo) ( 1 hr )\nTell me something about yourself.\nThere is one marathon is happening. Each runner has unique no which is printed on his t-shirt. Cameraman is trying to capture that number from top so no is visible in 180 degree rotation. X  is a good number if after rotating each digit individually by 180 degrees, we get a valid number that is different from X.  Each digit must be rotated - we cannot choose to leave it alone. 0, 1, and 8 rotate to themselves; 6 and 9 rotate to each other, and the rest of the digits  do not rotate to any other valid digit. Range is given and you need to find out good numbers lie within that range.\nCases:\n10 will be converted into 01 but not valid as our range start with 1. Prefix 0’s are not allowed.\nIf range is 1 to 7 and no 6 become  9 so it won’t allowed.\n11 won’t allow as 11 will become same after change.\nIf no has digits like 2, 3, 4, 5, 7 then that no won’t allow.\nInput: range: 1 to 10 (1 and 10 both are included)\nOutput: list of valid numbers: 6, 9\nYou can consider this  link for reference: https://www.geeksforgeeks.org/check-if-a-given-number-is-fancy/ Round 2: On-site (Behavioural Round) ( 1 hr )\nTell me about yourself\nWhy Google?\nWhich product of Google you like most? Why? Any competing product in the market?\nIf I asked your current organization for feedback then what will they say? Focusing on negative point.\nIf you have to improve one technical and one behavioural point then which one will you improve?\nIn your last organization or before that any leadership work have you done? Mentorship / organizer type.\nWhat will you do when your work’s credit will be given to other person?\nAny situation when your manager didn’t agree with your idea and how did you convince him?\nWhy you are leaving before 1 year?\nWhat is your plan for 2 years in technical and non-technical aspects?\nDo you have any questions for me?\nRound 3: On site ( DS & Algo) ( 1 hr ) She asked for binary search functionality which tells no exists in array or not. Generally we find mid element through (low+high)/ 2 so she asked to change that and use random function to decide mid. Binary search is performed on sorted array but here unsorted array is given. Two modifications are performed on binary search logic. 1) instead of sorted array, unsorted array has been given 2) Mid element is decided based on random function. Now we have to find out numbers from given array for which this function gives true result. Hint: Function will return true for value x, if all numbers on left side of x are small and all number on  the right side of x are greater.  Example: [ 4, 3, 1, 5, 7, 6, 10] Ans: 5, 10 Time Complexity: O(n) Space Complexity: O(n) Round 4: On site ( DS & Algo) ( 1 hr ) One chocolate bar is given. There are n number of pieces in that bar. Each piece has its own sweetness level. You have to divide chocolate bar in k pieces and give those pieces to k-1 persons and you will get remaining last piece. You have to tell how much sweetness you will get. You will get least sweetness piece out of all k pieces. So you have to divide slab in such a way that you will get maximum sweetness. Input: 1, 2, 4, 7, 3, 6, 9  N = 7, K = 4 Output: 7 (Divide it into 4 parts like [1, 2, 4] [7] [3, 6] [9] with sweetness level 7, 7, 9, 9 respectively) Links for reference: https://www.geeksforgeeks.org/painters-partition-problem/ https://www.geeksforgeeks.org/allocate-minimum-number-pages/ Round 5: On site ( DS & Algo) ( 1 hr ) Similar to Round 4. There were n people each having some weight. You have to divide them in k continuous group such that total weight difference between groups will be minimised. You have to return difference between max and min weighted group. Input: 1, 2, 4, 7, 3, 6, 9  N = 7, K = 4 Output: 2 (Divide it into 4 parts like [1, 2, 4] [7] [3, 6] [9] with weight 7, 7, 9, 9 respectively So answer will be 9 - 7) Round 6: On site ( DS & Algo) ( 1 hr ) One grid is given. It contains characters in each cell. You have to find out the smallest hamilton distance between x to y. Hamilton Distance:  | row_index_x - row_index_y | + | column_index_x - column_index_y |  [ x, 0, 0, 0 ] [ 0, y, 0, y ] [ x, x, 0, 0 ] [ 0, y, 0, 0 ]  Ans: 1 Time Complexity: O(n x m) Space Complexity: O(n x m) Google mainly focuses on logic and how you are coming with solution. It notes down each and every small mistake. Interviewers are really very helpful. They expects clear code with optimal approach.\n\nComment\nMore info\nAdvertise with us\nNext Article\nGoogle Interview experience For SDE-1'}]",https://www.geeksforgeeks.org/problems/shortest-xy-distance-in-grid--170647/1?page=1&company=Google&sortBy=latest,2025-06-11T12:11:07.850426,GeeksforGeeks,Shortest XY distance in Grid,Medium,54.35%,24K+,Not available,"Given a N*M grid of characters 'O', 'X', and 'Y'. Find the minimum Manhattan distance between a X and a Y.
+Manhattan Distance :
+| row_index_x - row_index_y | + | column_index_x - column_index_y |
+Example 1:
+Input:
+N = 4, M = 4
+grid = {{X, O, O, O}
+{O, Y, O, Y}
+{X, X, O, O}
+{O, Y, O, O}}
+Output:
+1
+Explanation:
+{{X, O, O, O}
+{O, Y, O, Y}
+{X, X, O, O}
+{O, Y, O, O}}
+The shortest X-Y distance in the grid is 1.
+One possible such X and Y are marked in bold
+in the above grid.
+Example 2:
+Input:
+N = 3, M = 3
+grid = {{X, X, O}
+{O, O, Y}
+{Y, O, O}}
+Output :
+2
+Explanation:
+{{X, X, O}
+{O, O, Y}
+{Y, O, O}}
+The shortest X-Y distance in the grid is 2.
+One possible such X and Y are marked in bold
+in the above grid.
+Your Task:
+You don't need to read input or print anything. Your task is to complete the function shortestXYDist() which takes two integers N, and M and an 2D list of size N*M as input and returns the shortest Manhattan Distance between a X and a Y.
+Expected Time Complexity: O(N*M)
+Expected Auxiliary Space: O(N*M)
+Constraints:
+1 ≤ N*M ≤ 105
+There exists at least one 'X' and at least one 'Y' in the grid.",Not specified,Not specified,['Google'],"['Dynamic Programming', 'BFS', 'Algorithms']"
+[],https://www.geeksforgeeks.org/problems/earliest-common-slot/1?page=1&company=Google&sortBy=latest,2025-06-11T12:11:22.346452,GeeksforGeeks,Earliest Common Slot,Medium,34.84%,624+,Not available,"You are given two lists of availability time slots, slots1 and slots2, for two people. Each slot is represented as [start, end], and it is gurranted that within each list, no two slots overlap (i.e., for any two intervals, either start1>end2 or start2>end1). Given a metting duration d, return the earliest common time slot of length of least d. If no such slot exits, return an empty array.
+Examples:
+Input: slots1 = [[10,50], [60,120], [140,210]], slots2 = [[0,15], [60,70]], d = 8
+Output: [60,68]
+Explanation: The only overlap is [60,70] (10 minutes), which is enough for an 8-minute meeting, so answer is [60,68]
+Input: slots1 = [[10,50], [60,120], [140,210]], slots2 = [[0,15], [60,70]], d = 12
+Output: []
+Explanation: The only overlap is [60, 70] (10 minutes), but 12 minutes are needed, so no valid slot exists.
+Constraints:
+1 ≤ slots1.size(), slots2.size()  ≤ 105
+-109 ≤ slots1[i], slots2[i] ≤ 109
+1 ≤ d ≤ 106","O(max(n log(n), m log(m)))",O(1),"['Amazon', 'Microsoft', 'PayPal', 'Google', 'Uber']","['Sorting', 'two-pointer-algorithm', 'Arrays', 'Data Structures', 'Algorithms']"
+[],https://www.geeksforgeeks.org/problems/interval-list-intersections/1?page=1&company=Google&sortBy=latest,2025-06-11T12:11:33.549949,GeeksforGeeks,Interval List Intersections,Medium,44.47%,517+,Not available,"Given two 2-D arrays which represent intervals. Each 2-D array represents a list of intervals. Each list of intervals is disjoint and sorted in increasing order. Find the intersection or set of ranges that are common to both the lists.
+Note: Disjoint means no element is common in a list
+Examples:
+Input: a[][] = [[0, 4], [5, 10], [13, 20], [24, 25]], b[][] = [[1, 5], [8, 12], [15, 24], [25, 26]]
+Output: [[1, 4], [5, 5], [8, 10], [15, 20], [24, 24], [25, 25]]
+Explanation: [1, 4] lies completely within the range [0, 4] and [1, 5]. Hence, [1, 4] is the desired intersection. Similarly, [24, 24] lies completely within two intervals [24, 25] and [15, 24]
+Input: a[][] = [[0, 2], [5, 10], [12, 22], [24, 25]], b[][] = [[1, 4], [9, 12], [15, 24], [25, 26]]
+Output: [[1, 2], [9, 10], [12, 12], [15, 22], [24, 24], [25, 25]]
+Explanation: [1, 2] lies completely within the range [0, 2] and [1, 4]. Hence, [1, 2] is the desired intersection. Similarly, [12, 12] lies completely within two intervals [12, 22] and [9, 12]
+Constraints
+1 ≤ a.size(), b.size() ≤ 105
+-109 ≤ a[i], b[i] ≤ 109",O(n + m),O(1),"['Bloomberg', 'Amazon', 'Microsoft', 'Google', 'Uber']","['two-pointer-algorithm', 'Arrays', 'Data Structures', 'Algorithms']"
+[],https://www.geeksforgeeks.org/problems/sum-of-xor-of-all-possible-subsets/1?page=1&company=Google&sortBy=latest,2025-06-11T12:11:44.501809,GeeksforGeeks,Sum of XOR of all possible subsets,Medium,35.4%,1K+,Not available,"Given an array arr[], return the sum of the XOR of all elements for every possible subset of the array. Subsets with the same elements should be counted multiple times.
+An array a is a subset of an array b if a can be obtained from b by deleting some (possibly zero) elements of b.
+Note: The answer is guaranteed to fit within a 32-bit integer.
+Examples:
+Input: arr[] = [7, 2]
+Output: 14
+Explanation: Subsets are: [[], [7], [2], [7, 2]]
+Sum of all XOR's = 7 + 2 + (7 ^ 2) = 14.
+Input: arr[] = [1, 2, 3]
+Output: 12
+Explanation: Subsets are: [[], [1], [2], [3], [1, 2], [1, 3], [2, 3], [1, 2, 3]]
+Sum of all XOR's = 1 + 2 + 3 + (1 ^ 2)  + (1 ^ 3) + (2 ^ 3) + (1 ^ 2 ^ 3) = 12.
+Constraints:
+1 ≤ arr.size() ≤ 30
+1 ≤ arr[i] ≤ 103",O(n),O(1),"['Adobe', 'Amazon', 'Apple', 'Google']","['Bit Magic', 'Data Structures', 'Algorithms']"
+[],https://www.geeksforgeeks.org/problems/median-of-2-sorted-arrays-of-same-size/1?page=1&company=Google&sortBy=latest,2025-06-11T12:11:55.640075,GeeksforGeeks,Median of 2 Sorted Arrays of Same Size,Hard,53.15%,3K+,35m,"Given two sorted arrays a[] and b[] of equal size, find and return the median of the combined array after merging them into a single sorted array.
+Examples:
+Input: a[] = [-5, 3, 6, 12, 15], b[] = [-12, -10, -6, -3, 4]
+Output: 0
+Explanation: The merged array is [-12, -10, -6, -5, -3, 3, 4, 6, 12, 15]. So the median of the merged array is (-3 + 3) / 2 = 0.
+Input: a[] = [2, 3, 5, 7], b[] = [10, 12, 14, 16]
+Output: 8.5
+Explanation: The merged array is [2, 3, 5, 7, 10, 12, 14, 16]. So the median of the merged array is (7 + 10) / 2 = 8.5.
+Input: a[] = [-5], b[] = [-6]
+Output: -5.5
+Explanation: The merged array is [-6, -5]. So the median of the merged array is (-6 + -5) / 2 = -5.5.
+Constraints:
+1 ≤ a.size(), b.size() ≤ 106
+-106 ≤ a[i], b[i] ≤ 106",O(log n),O(1),"['Amazon', 'Microsoft', 'Samsung', 'Google']","['Binary Search', 'Arrays']"
+[],https://www.geeksforgeeks.org/problems/group-shifted-string/1?page=1&company=Google&sortBy=latest,2025-06-11T12:12:06.583263,GeeksforGeeks,Group Shifted String,Medium,66.21%,1K+,Not available,"Given an array of strings (all lowercase letters), the task is to group them in such a way that all strings in a group are shifted versions of each other.
+Two strings s1 and s2 are called shifted if the following conditions are satisfied:
+s1.length = s2.length
+s1[i] = s2[i] + m for 1 <= i <= s1.length  for a constant integer m
+Examples :
+Input: arr = [""acd"", ""dfg"", ""wyz"", ""yab"", ""mop"", ""bdfh"", ""a"", ""x"", ""moqs""]
+Output: [[""acd"", ""dfg"", ""wyz"", ""yab"", ""mop""], [""bdfh"", ""moqs""], [""a"", ""x""]]
+Explanation: All shifted strings are grouped together.
+Input: arr = [""geek"", ""for"", ""geeks""]
+Output: [[""for""], [""geek""], [""geeks""]]
+Input: arr = [""aaa"", ""adb"", ""bbd"", ""dbc"", ""bca""]
+Output: [[""aaa""], [""adb""], [""bbd""], [""bca""], [""dbc""]]
+Constraints:
+1 ≤ arr.size() ≤ 105
+1 ≤ arr[i].size() ≤ 5",O(n * m),O(n),['Google'],"['Strings', 'Hash', 'Algorithms']"
+[],https://www.geeksforgeeks.org/problems/bits-counting/1?page=1&company=Google&sortBy=latest,2025-06-11T12:12:17.534159,GeeksforGeeks,Bits Counting,Medium,77.98%,1K+,Not available,"Given an integer n, return an array ans of size n + 1, where each element i (0 ≤ i ≤ n) represents the count of 1s in the binary form of i.
+Examples :
+Input: n = 2
+Output: [0, 1, 1]
+Explanation:
+0 --> 0
+1 --> 1
+2 --> 10
+Input: n = 5
+Output: [0, 1, 1, 2, 1, 2]
+Explanation:
+0 --> 0
+1 --> 1
+2 --> 10
+3 --> 11
+4 --> 100
+5 --> 101
+Constraints:
+0 ≤ n ≤ 105",O(n),O(n),"['Bloomberg', 'Facebook', 'Adobe', 'Google', 'Amazon', 'Microsoft', 'Apple', 'Yahoo', 'Nvidia', 'Uber']","['Bit Magic', 'Dynamic Programming', 'Arrays']"
+[],https://www.geeksforgeeks.org/problems/root-to-leaf-paths-sum/1?page=1&company=Google&sortBy=latest,2025-06-11T12:12:28.671346,GeeksforGeeks,Root to leaf paths sum,Medium,58.4%,49K+,Not available,"Given a binary tree, where every node value is a number. Find the sum of all the numbers that are formed from root to leaf paths. The formation of the numbers would be like 10*parent + current (see the examples for more clarification).
+Examples:
+Input:
+Output: 13997
+Explanation : There are 4 leaves, resulting in leaf path of 632, 6357, 6354, 654 sums to 13997.
+Input:
+Output: 2630
+Explanation: There are 3 leaves, resulting in leaf path of 1240, 1260, 130 sums to 2630.
+Input:
+1
+/
+2
+Output: 12
+Explanation: There is 1 leaf, resulting in leaf path of 12.
+Constraints:
+1 ≤ number of nodes ≤ 31
+1 ≤ node->data ≤ 100",O(n),O(h),"['Amazon', 'Microsoft', 'OYO Rooms', 'Google']","['Tree', 'Data Structures']"
+[],https://www.geeksforgeeks.org/problems/k-th-missing-element3635/1?page=1&company=Google&sortBy=latest,2025-06-11T12:12:39.557850,GeeksforGeeks,K-th missing element,Easy,31.53%,32K+,Not available,"Given an increasing sequence arr, we need to find the K-th smallest missing element, taking the first element of the array as the starting point in the increasing sequence. If there is no k-th missing element then output -1.
+Example:
+Input: arr[] = [1, 3, 4, 5, 7] and k = 2
+Output: 6
+Explanation: k = 2, Missing numbers are 2 and 6. So 2nd missing number is 6.
+Input: arr[] = [2, 3, 4, 5, 6, 8] and k = 1
+Output: 7
+Explanation: k = 1, the first missing number in the array is 7.
+Expected Time Complexity: O(n).
+Expected Auxiliary Space: O(1).
+Constraints:
+1 ≤  arr.size() ≤ 106
+0 ≤  k, arr[i] ≤ 105",Not specified,Not specified,"['Amazon', 'Facebook', 'Apple', 'Google']","['Arrays', 'Data Structures']"
+[],https://www.geeksforgeeks.org/problems/reverse-an-array/1?page=1&company=Google&sortBy=latest,2025-06-11T12:12:50.264568,GeeksforGeeks,Reverse an Array,Easy,55.32%,189K+,5m,"You are given an array of integers arr[]. Your task is to reverse the given array.
+Note: Modify the array in place.
+Examples:
+Input: arr = [1, 4, 3, 2, 6, 5]
+Output: [5, 6, 2, 3, 4, 1]
+Explanation: The elements of the array are 1 4 3 2 6 5. After reversing the array, the first element goes to the last position, the second element goes to the second last position and so on. Hence, the answer is 5 6 2 3 4 1.
+Input: arr = [4, 5, 2]
+Output: [2, 5, 4]
+Explanation: The elements of the array are 4 5 2. The reversed array will be 2 5 4.
+Input: arr = [1]
+Output: [1]
+Explanation: The array has only single element, hence the reversed array is same as the original.
+Constraints:
+1<=arr.size()<=105
+0<=arr[i]<=105",O(n),O(1),"['Bloomberg', 'Facebook', 'TCS', 'Adobe', 'Google', 'Infosys', 'Capgemini', 'Morgan Stanley', 'Amazon', 'Microsoft', 'Apple', 'Yahoo', 'PayPal', 'Uber']","['Arrays', 'Data Structures']"
+[],https://www.geeksforgeeks.org/problems/buy-stock-2/1?page=1&company=Google&sortBy=latest,2025-06-11T12:13:01.767555,GeeksforGeeks,Stock Buy and Sell – Max one Transaction Allowed,Easy,49.33%,92K+,10m,"Given an array prices[] of length n, representing the prices of the stocks on different days. The task is to find the maximum profit possible by buying and selling the stocks on different days when at most one transaction is allowed. Here one transaction means 1 buy + 1 Sell. If it is not possible to make a profit then return 0.
+Note: Stock must be bought before being sold.
+Examples:
+Input: prices[] = [7, 10, 1, 3, 6, 9, 2]
+Output: 8
+Explanation: You can buy the stock on day 2 at price = 1 and sell it on day 5 at price = 9. Hence, the profit is 8.
+Input: prices[] = [7, 6, 4, 3, 1]
+Output: 0
+Explanation: Here the prices are in decreasing order, hence if we buy any day then we cannot sell it at a greater price. Hence, the answer is 0.
+Input: prices[] = [1, 3, 6, 9, 11]
+Output: 10
+Explanation: Since the array is sorted in increasing order, we can make maximum profit by buying at price[0] and selling at price[n-1].
+Constraint:
+1 <= prices.size()<= 105
+0 <= prices[i] <=104",O(n),O(1),"['Bloomberg', 'Facebook', 'Intel', 'Infosys', 'Zoho', 'Morgan Stanley', 'Amazon', 'Microsoft', 'Samsung', 'Yahoo', 'PayPal', 'Nvidia', 'Oracle', 'Visa', 'Walmart', 'Goldman Sachs', 'TCS', 'Adobe', 'Google', 'IBM', 'Accenture', 'Apple', 'Uber']","['Greedy', 'Arrays']"
+[],https://www.geeksforgeeks.org/problems/missing-intervals3058/1?page=1&company=Google&sortBy=latest,2025-06-11T12:13:13.438801,GeeksforGeeks,Missing Intervals,Medium,37.64%,6K+,Not available,"Given a sorted array arr[] of integers varying from range l to r. Find all the missing intervals range in array arr[] from the given range and return in sorted order.
+Note: If no Integer is missing return {-1,-1}.
+Example 1:
+Input: arr[] = [1, 5, 6, 7, 9], l = 1, r = 9
+Output: [{2, 4}, {8, 8}]
+Explanation: all the missing intervals which are not present in array are returned.
+Example 2:
+Input: arr[] = [3, 4, 5, 5], l = 3, r = 5
+Output: [{-1,-1}]
+Explanation: There are no missing number from the interval.
+Expected Time Complexity: O(n)
+Expected Auxiliary Space: O(1)
+Constraints:
+1 ≤ arr.size() ≤ 106
+0 ≤ arr[i] ≤ 106
+0 ≤ l ≤ r ≤ 106",Not specified,Not specified,['Google'],"['Arrays', 'STL', 'Data Structures']"
+[],https://www.geeksforgeeks.org/problems/surpasser-count0615/1?page=1&company=Google&sortBy=latest,2025-06-11T12:13:24.459221,GeeksforGeeks,Surpasser Count,Medium,39.69%,11K+,20m,"Given an array containing distinct integers, find the number of surpassers for each of its elements.
+An element y is said to be the surpasser of element x if it is a greater element on the right of x. ie if x = arr[i] and y = arr[j], i<j and arr[i] < arr[j].
+Examples:
+Input: arr[] = [4, 5, 1, 2, 3]
+Output: [1, 0, 2, 1, 0]
+Explanation: There are no elements greater than 3 at the right of 3. There is one element at right of 2 and greater than 2. There are 2 elements greater than 1 at the right of 1. And so on.
+Input: arr[] = [2, 7, 5, 3, 8, 1]
+Output: [4, 1, 1, 1, 0, 0]
+Constraints:
+1 ≤ arr.size() ≤ 105
+1 ≤ arr[i] ≤ 106",O(n log n),O(n),"['Google', 'Yahoo']","['Arrays', 'Data Structures']"
+"[{'title': 'Amazon Interview Experience Wow 2020 6 Months Internship', 'url': 'https://www.geeksforgeeks.org/amazon-interview-experience-wow-2020-6-months-internship/', 'content_summary': ""Amazon WoW is an initiative which gives an opportunity to women students in their final or pre-final year to work at Amazon as an intern or full time employee. The process started with filling an application in Amazon WoW website, in the application basic info about college, branch, resume were to be submitted. After a few days based on the resume mail was sent regarding the round 1 test.\nThe test consisted of 28 MCQ's (C++, data structures etc.) and 2 Medium level coding questions.\nI was able to solve both the coding questions so I passed the round 1 test.\nRound 1 Technical interview:\nThe interview was online and took place on Amazon Chime platform. The interview started with my introduction and followed by his. After this he jumped straight into the coding questions.\nI was asked 2 coding questions:\nGiven a graph of n nodes and e edges.\n           Find the minimum number of edges that must be added to the graph to make it strongly connected.\n           Example:\n                  n=4, e=2\n                   [1,2]\n                   [3,4]\n                 Output: 1\n                 Here 1-->2 and 3-->4 are connected to make it strongly connected we need to join either 1-->4 or 2--->4 or 3-->1 or 2-->3\n            Approach: This can be done by finding number of strongly connected components using DFS. If there are N strongly connected components then the                          minimum  number of edges that must be added to the graph to make it strongly connected would be N-1.\n      2.   Minimum path sum    \nI was asked to tell the time complexity before writing the code. ( clean code in my preferred language)\nRound 2 Technical interview:\nThe interview started with my introduction and followed by his. After this he jumped straight into the coding questions.\nI was asked 2 coding questions:\nFlattening a linked list\nMerge k sorted arrays (priority queue approach)\nSome discussion on priority queue insertion time complexity was also done.\nRound 3 Technical interview:\nUsually Amazon internship have only 2 rounds but sometimes if they do not have enough data points on a candidate they conduct an additional round.\nSo I had this round 3.\nIn this round he asked me:\nConvert a sorted linked list into a balanced BST\nAn efficient data structure for searching, inserting and deleting.\nLot of discussion was done on the 2nd question. He was satisfied with Hashing method.\nFew DS, CN, OS questions were asked at the end.\nVerdict: Selected\nKnowing how to calculate time complexity is important. Staying confident, calm and focused throughout increases your chance of clearing the interview.\nThe secret of cracking an interview is Never Giving Up.\nPractice from GeeksForGeeks, LeetCode and any other coding platform with which you are comfortable.\n\nComment\nMore info\nAdvertise with us\nNext Article\nAmazon Interview Experience | WoW 2020 (6 months Internship)""}]",https://www.geeksforgeeks.org/problems/sorted-list-to-bst/1?page=1&company=Google&sortBy=latest,2025-06-11T12:13:35.534008,GeeksforGeeks,Sorted Linked List to BST,Hard,53.24%,27K+,Not available,"Given a Singly Linked List which has data members sorted in ascending order. Construct a Balanced Binary Search Tree which has same data members as the given Linked List.
+Note: There might be nodes with the same value.
+Examples:
+Input: Linked List: 1->2->3->4->5->6->7
+Output: 4 2 1 3 6 5 7
+Explanation : The BST formed using elements of the linked list is -
+4
+/ \
+2 6
+/ \ / \
+1 3 5 7
+Hence, preorder traversal of this tree is 4 2 1 3 6 5 7
+Input: Linked List : 1->2->3->4
+Ouput: 3 2 1 4
+Explanation: The BST formed using elements of the linked list is -
+Hence, the preorder traversal of this tree is 3 2 1 4
+Expected Time Complexity: O(n)
+Expected Auxiliary Space: O(n)
+Constraints:
+1 ≤ Number of Nodes ≤ 106
+1 ≤ Value of each node ≤ 106",Not specified,Not specified,"['Flipkart', 'Amazon', 'Google']","['Linked List', 'Binary Search Tree', 'Tree', 'Data Structures']"
+[],https://www.geeksforgeeks.org/problems/longest-arithmetic-progression1019/1?page=1&company=Google&sortBy=latest,2025-06-11T12:13:49.427241,GeeksforGeeks,Longest Arithmetic Subsequence,Medium,23.82%,41K+,Not available,"Given an array arr[] of sorted and distinct positive integers. The task is to find the length of the longest arithmetic progression in a given array.
+Note: A sequence seq is an arithmetic progression if seq[i + 1] - seq[i] are all the same value (for 0 <= i < seq.length - 1).
+Examples:
+Input:arr[] = [1, 7, 10, 13, 14, 19]
+Output: 4
+Explanation: The longest arithmetic progression is [1, 7, 13, 19].
+Input:arr[] = [2, 4, 6, 8, 10]
+Output: 5
+Explanation: The whole array is in AP.
+Expected Time Complexity: O(n2)
+Expected Auxiliary Space: O(n2)
+Constraints:
+1 ≤ arr.size() ≤ 1000
+1 ≤ arr[i] ≤ 104",Not specified,Not specified,"['Amazon', 'Microsoft', 'Snapdeal', 'Google']","['Arrays', 'Dynamic Programming', 'Data Structures', 'Algorithms']"
+[],https://www.geeksforgeeks.org/problems/remove-duplicate-elements-from-sorted-array/1?page=1&company=Google&sortBy=latest,2025-06-11T12:14:00.459270,GeeksforGeeks,Remove Duplicates Sorted Array,Easy,38.18%,293K+,20m,"Given a sorted array arr. Return the size of the modified array which contains only distinct elements.
+Note:
+1. Don't use set or HashMap to solve the problem.
+2. You must return the modified array size only where distinct elements are present and modify the original array such that all the distinct elements come at the beginning of the original array.
+Examples :
+Input: arr = [2, 2, 2, 2, 2]
+Output: [2]
+Explanation: After removing all the duplicates only one instance of 2 will remain i.e. [2] so modified array will contains 2 at first position and you should return 1 after modifying the array, the driver code will print the modified array elements.
+Input: arr = [1, 2, 4]
+Output: [1, 2, 4]
+Explation: As the array does not contain any duplicates so you should return 3.
+Constraints:
+1 ≤ arr.size() ≤ 105
+1 ≤ ai ≤ 106",O(n),O(1),"['Zoho', 'Morgan Stanley', 'Microsoft', 'Samsung', 'Google', 'Wipro', 'Xome']","['two-pointer-algorithm', 'Arrays', 'Data Structures', 'Algorithms']"
+[],https://www.geeksforgeeks.org/problems/smallest-subarray-with-sum-greater-than-x5651/1?page=1&company=Google&sortBy=latest,2025-06-11T12:14:11.592557,GeeksforGeeks,Smallest subarray with sum greater than x,Easy,37.07%,141K+,20m,"Given a number x and an array of integers arr, find the smallest subarray with sum greater than the given value. If such a subarray do not exist return 0 in that case.
+Examples:
+Input: x = 51, arr[] = [1, 4, 45, 6, 0, 19]
+Output: 3
+Explanation: Minimum length subarray is [4, 45, 6]
+Input: x = 100, arr[] = [1, 10, 5, 2, 7]
+Output: 0
+Explanation: No subarray exist
+Constraints:
+1 ≤ arr.size, x ≤ 105
+0 ≤ arr[] ≤ 104",O(n),O(1),"['Accolite', 'Amazon', 'Goldman Sachs', 'Google', 'Facebook']","['Arrays', 'Data Structures', 'sliding-window']"
+[],https://www.geeksforgeeks.org/problems/clone-graph/1?page=1&company=Google&sortBy=latest,2025-06-11T12:14:22.577720,GeeksforGeeks,Clone an Undirected Graph,Medium,67.49%,39K+,Not available,"Given a connected undirected graph represented by adjacency list, adjList[][] with n nodes, having a distinct label from 0 to n-1, where each adj[i] represents the list of vertices connected to vertex i.
+Create a clone of the graph, where each node in the graph contains an integer val and an array (neighbors) of nodes, containing nodes that are adjacent to the current node.
+class Node {
+val: integer
+neighbors: List[Node]
+}
+Your task is to complete the function cloneGraph( ) which takes a starting node of the graph as input and returns the copy of the given node as a reference to the cloned graph.
+Note: If you return a correct copy of the given graph, then the driver code will print true; and if an incorrect copy is generated or when you return the original node, the driver code will print false.
+Examples :
+Input: n = 4, adjList[][] = [[1, 2], [0, 2], [0, 1, 3], [2]]
+Output: true
+Explanation:
+As the cloned graph is identical to the original one the driver code will print true.
+Input: n = 3, adjList[][] = [[1, 2], [0], [0]]
+Output: true
+Explanation:
+As the cloned graph is identical to the original one the driver code will print true.
+Constraints:
+1 ≤ n ≤ 104
+0 ≤ no. of edges ≤ 105
+0 ≤ adjList[i][j] < n",O(n + m),O(n),['Google'],"['Graph', 'DFS', 'BFS']"
+[],https://www.geeksforgeeks.org/problems/unique-frequencies-of-not/1?page=1&company=Google&sortBy=latest,2025-06-11T12:14:34.429116,GeeksforGeeks,Unique Number of Occurrences,Easy,57.68%,50K+,20m,"Given an array arr of N integers, the task is to check whether the frequency of the elements in the array is unique or not. Or in other words, there are no two distinct numbers in array with equal frequency. If all the frequency is unique then return true, else return false.
+Example 1:
+Input:
+N = 5
+arr = [1, 1, 2, 5, 5]
+Output:
+false
+Explanation:
+The array contains 2 (1’s), 1 (2’s) and 2 (5’s), since the number of frequency of 1 and 5 are the same i.e. 2 times. Therefore, this array does not satisfy the condition.
+Example 2:
+Input:
+N = 10
+arr = [2, 2, 5, 10, 1, 2, 10, 5, 10, 2]
+Output:
+true
+Explanation:
+Number of 1’s -> 1
+Number of 2’s -> 4
+Number of 5’s -> 2
+Number of 10’s -> 3.
+Since, the number of occurrences of elements present in the array is unique. Therefore, this array satisfy the condition.
+Your task:
+You don't need to read input or print anything. Your task is to complete the function isFrequencyUnique() which take integer N and array arr of size N as arguments, and returns a boolean.
+Expected Time Complexity: O(N)
+Expected Auxiliary Space: O(N)
+Constraints:
+1 <= N <=105
+-109 <= arr[i] <= 109",Not specified,Not specified,"['PayPal', 'Bloomberg', 'Adobe', 'Google', 'Amazon', 'Apple']","['set', 'Sorting', 'Map']"
+[],https://www.geeksforgeeks.org/problems/string-rp-or-pr--170647/1?page=1&company=Google&sortBy=latest,2025-06-11T12:14:45.135472,GeeksforGeeks,String rp or pr,Medium,50.08%,33K+,Not available,"Given a string S. In one operation, you can remove the substring ""pr"" from the string S and get amount X or you can remove the substring ""rp"" and get the amount Y.
+Find the maximum amount you can get if you perform zero or more such operations optimally.
+Note :
+Substring of a string S is defined as a continuous sequence of characters in S.
+After removing pr or rp, the order of remaining letters should remain the same.
+Example 1:
+Input:
+X = 5, Y = 4
+S = ""abppprrr""
+Output: 15
+Explanation:
+Here, S = ""abppprrr""
+X= 5, Y=4.
+Remove ""pr"", new string S = ""abpprr"".
+Remove ""pr"", new string S = ""abpr"".
+Remove ""pr"", new string S = ""ab"".
+In total, we removed ""pr"" 3 times,
+so total score is 3*X + 0*Y = 3*5 =15.
+Example 2:
+Input:
+X = 7, Y = 7
+S = ""prpptppr""
+Output: 14
+Explanation:
+Here, S = ""prpptppr""
+X= 7, Y=7.
+As both have the same amount we can first
+remove either pr or rp. Here we start with pr
+Remove ""pr"", new string S = ""pptppr"".
+Remove ""pr"", new string S = ""pptp"".
+In total, we removed ""pr"" 2 times,
+so total score is 2*X + 0*Y = 2*7 =14.
+Your Task:
+You don't need to read input or print anything. Your task is to complete the function solve() which takes the X ,Y and string S as input parameters and returns the maximum amount you can get after performing the above operations.
+Expected Time Complexity: O(|S|)
+Expected Auxiliary Space: O(|S|)
+Constraints:
+1 ≤ |S| ≤ 105
+1 ≤ X,Y ≤ 105
+S contains lowercase English letters only.",Not specified,Not specified,['Google'],"['Strings', 'Greedy', 'Stack', 'Data Structures', 'Algorithms']"
+"[{'title': 'Google Interview Experience For Sde 1', 'url': 'https://www.geeksforgeeks.org/google-interview-experience-for-sde-1/?ref=rp', 'content_summary': '  Round 1: Hangout Video call ( DS & Algo) ( 1 hr )\nTell me something about yourself.\nThere is one marathon is happening. Each runner has unique no which is printed on his t-shirt. Cameraman is trying to capture that number from top so no is visible in 180 degree rotation. X  is a good number if after rotating each digit individually by 180 degrees, we get a valid number that is different from X.  Each digit must be rotated - we cannot choose to leave it alone. 0, 1, and 8 rotate to themselves; 6 and 9 rotate to each other, and the rest of the digits  do not rotate to any other valid digit. Range is given and you need to find out good numbers lie within that range.\nCases:\n10 will be converted into 01 but not valid as our range start with 1. Prefix 0’s are not allowed.\nIf range is 1 to 7 and no 6 become  9 so it won’t allowed.\n11 won’t allow as 11 will become same after change.\nIf no has digits like 2, 3, 4, 5, 7 then that no won’t allow.\nInput: range: 1 to 10 (1 and 10 both are included)\nOutput: list of valid numbers: 6, 9\nYou can consider this  link for reference: https://www.geeksforgeeks.org/check-if-a-given-number-is-fancy/ Round 2: On-site (Behavioural Round) ( 1 hr )\nTell me about yourself\nWhy Google?\nWhich product of Google you like most? Why? Any competing product in the market?\nIf I asked your current organization for feedback then what will they say? Focusing on negative point.\nIf you have to improve one technical and one behavioural point then which one will you improve?\nIn your last organization or before that any leadership work have you done? Mentorship / organizer type.\nWhat will you do when your work’s credit will be given to other person?\nAny situation when your manager didn’t agree with your idea and how did you convince him?\nWhy you are leaving before 1 year?\nWhat is your plan for 2 years in technical and non-technical aspects?\nDo you have any questions for me?\nRound 3: On site ( DS & Algo) ( 1 hr ) She asked for binary search functionality which tells no exists in array or not. Generally we find mid element through (low+high)/ 2 so she asked to change that and use random function to decide mid. Binary search is performed on sorted array but here unsorted array is given. Two modifications are performed on binary search logic. 1) instead of sorted array, unsorted array has been given 2) Mid element is decided based on random function. Now we have to find out numbers from given array for which this function gives true result. Hint: Function will return true for value x, if all numbers on left side of x are small and all number on  the right side of x are greater.  Example: [ 4, 3, 1, 5, 7, 6, 10] Ans: 5, 10 Time Complexity: O(n) Space Complexity: O(n) Round 4: On site ( DS & Algo) ( 1 hr ) One chocolate bar is given. There are n number of pieces in that bar. Each piece has its own sweetness level. You have to divide chocolate bar in k pieces and give those pieces to k-1 persons and you will get remaining last piece. You have to tell how much sweetness you will get. You will get least sweetness piece out of all k pieces. So you have to divide slab in such a way that you will get maximum sweetness. Input: 1, 2, 4, 7, 3, 6, 9  N = 7, K = 4 Output: 7 (Divide it into 4 parts like [1, 2, 4] [7] [3, 6] [9] with sweetness level 7, 7, 9, 9 respectively) Links for reference: https://www.geeksforgeeks.org/painters-partition-problem/ https://www.geeksforgeeks.org/allocate-minimum-number-pages/ Round 5: On site ( DS & Algo) ( 1 hr ) Similar to Round 4. There were n people each having some weight. You have to divide them in k continuous group such that total weight difference between groups will be minimised. You have to return difference between max and min weighted group. Input: 1, 2, 4, 7, 3, 6, 9  N = 7, K = 4 Output: 2 (Divide it into 4 parts like [1, 2, 4] [7] [3, 6] [9] with weight 7, 7, 9, 9 respectively So answer will be 9 - 7) Round 6: On site ( DS & Algo) ( 1 hr ) One grid is given. It contains characters in each cell. You have to find out the smallest hamilton distance between x to y. Hamilton Distance:  | row_index_x - row_index_y | + | column_index_x - column_index_y |  [ x, 0, 0, 0 ] [ 0, y, 0, y ] [ x, x, 0, 0 ] [ 0, y, 0, 0 ]  Ans: 1 Time Complexity: O(n x m) Space Complexity: O(n x m) Google mainly focuses on logic and how you are coming with solution. It notes down each and every small mistake. Interviewers are really very helpful. They expects clear code with optimal approach.\n\nComment\nMore info\nAdvertise with us\nNext Article\nGoogle Interview experience For SDE-1'}]",https://www.geeksforgeeks.org/problems/shortest-xy-distance-in-grid--170647/1?page=1&company=Google&sortBy=latest,2025-06-11T12:14:56.039469,GeeksforGeeks,Shortest XY distance in Grid,Medium,54.35%,24K+,Not available,"Given a N*M grid of characters 'O', 'X', and 'Y'. Find the minimum Manhattan distance between a X and a Y.
+Manhattan Distance :
+| row_index_x - row_index_y | + | column_index_x - column_index_y |
+Example 1:
+Input:
+N = 4, M = 4
+grid = {{X, O, O, O}
+{O, Y, O, Y}
+{X, X, O, O}
+{O, Y, O, O}}
+Output:
+1
+Explanation:
+{{X, O, O, O}
+{O, Y, O, Y}
+{X, X, O, O}
+{O, Y, O, O}}
+The shortest X-Y distance in the grid is 1.
+One possible such X and Y are marked in bold
+in the above grid.
+Example 2:
+Input:
+N = 3, M = 3
+grid = {{X, X, O}
+{O, O, Y}
+{Y, O, O}}
+Output :
+2
+Explanation:
+{{X, X, O}
+{O, O, Y}
+{Y, O, O}}
+The shortest X-Y distance in the grid is 2.
+One possible such X and Y are marked in bold
+in the above grid.
+Your Task:
+You don't need to read input or print anything. Your task is to complete the function shortestXYDist() which takes two integers N, and M and an 2D list of size N*M as input and returns the shortest Manhattan Distance between a X and a Y.
+Expected Time Complexity: O(N*M)
+Expected Auxiliary Space: O(N*M)
+Constraints:
+1 ≤ N*M ≤ 105
+There exists at least one 'X' and at least one 'Y' in the grid.",Not specified,Not specified,['Google'],"['Dynamic Programming', 'BFS', 'Algorithms']"
