@@ -1,0 +1,30 @@
+# =============================
+# FRONTEND (React)
+# =============================
+frontend/node_modules/
+frontend/build/
+frontend/.env
+
+# =============================
+# BACKEND (Django)
+# =============================
+backend/__pycache__/
+backend/env/
+backend/.env
+backend/db.sqlite3
+backend/*.pyc
+backend/*.log
+backend/staticfiles/
+backend/media/
+
+# =============================
+# General / Editor
+# =============================
+*.log
+*.sqlite3
+.vscode/
+.idea/
+.DS_Store
+.env
+*.py[cod]
+__pycache__/
