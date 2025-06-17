@@ -1,4 +1,8 @@
 from pathlib import Path
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -128,8 +132,8 @@ AUTHENTICATION_BACKENDS = [
 SOCIALACCOUNT_PROVIDERS = {
     'google': {
         'APP': {
-            'client_id': '109918736840-tpehssiis68u8oqiorcgr2ejj0q4muvc.apps.googleusercontent.com',
-            'secret': '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',
+            'client_id': os.environ.get("GOOGLE_CLIENT_ID"),
+            'secret': os.environ.get("GOOGLE_CLIENT_SECRET"),
             'key': ''
         }
     }
