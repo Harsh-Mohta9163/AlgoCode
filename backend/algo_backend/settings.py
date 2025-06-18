@@ -20,8 +20,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.sites',  # Required for allauth
-    'django.contrib.staticfiles',
-
+    'django.contrib.staticfiles', 
     # REST framework & Token Auth
     'rest_framework',
     'rest_framework.authtoken',
@@ -115,12 +114,26 @@ REST_FRAMEWORK = {
     ],
 }
 
-# dj-rest-auth config
-ACCOUNT_LOGIN_METHODS = {'username'}
-ACCOUNT_SIGNUP_FIELDS = ['email*', 'username*', 'password1*', 'password2*']
+# Update these settings
+ACCOUNT_SIGNUP_FIELDS = ['email', 'username', 'password1', 'password2']
+ACCOUNT_LOGIN_METHODS = ['username']
 
-ACCOUNT_EMAIL_VERIFICATION = 'optional'  # use 'mandatory' in production
-LOGIN_REDIRECT_URL = '/'  # Not used in API setup but required
+# ACCOUNT_EMAIL_VERIFICATION = 'optional'  # use 'mandatory' in production
+# LOGIN_REDIRECT_URL = "http://localhost:3000/"
+# LOGOUT_REDIRECT_URL = "http://localhost:3000/login"
+# SOCIALACCOUNT_LOGIN_REDIRECT_URL = "http://localhost:3000/"
+# Email verification
+ACCOUNT_EMAIL_REQUIRED = True
+ACCOUNT_EMAIL_VERIFICATION = "optional"  # set to 'mandatory' in production
+ACCOUNT_USERNAME_REQUIRED = True
+ACCOUNT_AUTHENTICATION_METHOD = "username"  # or "username_email"
+
+# Redirects
+LOGIN_REDIRECT_URL = "http://localhost:3000/"
+LOGOUT_REDIRECT_URL = "http://localhost:3000/login"
+SOCIALACCOUNT_LOGIN_REDIRECT_URL = "http://localhost:3000/"
+
+
 
 # Authentication backends for allauth
 AUTHENTICATION_BACKENDS = [
@@ -138,3 +151,8 @@ SOCIALACCOUNT_PROVIDERS = {
         }
     }
 }
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+# ACCOUNT_UNIQUE_EMAIL = True
+
+CORS_ALLOW_CREDENTIALS = True 
+REST_USE_JWT = False 
