@@ -106,7 +106,7 @@ const ProblemDetailPage = ({ allProblems }) => {
       const response = await axios.post(
         "http://localhost:8000/api/submissions/",
         {
-          problem_id: problem.id,
+          problem: problem.id, // Changed from problem_id to problem
           code: code,
           language: language,
         },
@@ -120,6 +120,23 @@ const ProblemDetailPage = ({ allProblems }) => {
 
       console.log("Submission response:", response.data);
       setSubmissionStatus(response.data.status);
+
+      // Refresh submissions list
+      if (response.data.status) {
+        setActiveTab("submissions");
+        const submissionsResponse = await axios.get(
+          `http://localhost:8000/api/submissions/`,
+          {
+            headers: {
+              Authorization: `Token ${localStorage.getItem("token")}`,
+            },
+            params: {
+              problem_id: problem.id, // Also update this
+            },
+          }
+        );
+        setSubmissions(submissionsResponse.data);
+      }
     } catch (error) {
       console.error("Submission error:", error);
       setSubmissionStatus("error");
