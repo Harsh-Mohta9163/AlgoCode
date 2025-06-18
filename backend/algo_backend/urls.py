@@ -16,10 +16,17 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from rest_framework.routers import DefaultRouter
+from submissions.views import SubmissionViewSet
+
+# Initialize the router
+router = DefaultRouter()
+router.register(r'submissions', SubmissionViewSet, basename='submission')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('auth/', include('dj_rest_auth.urls')),
     path('auth/registration/', include('dj_rest_auth.registration.urls')),
     path('auth/social/', include('allauth.socialaccount.urls')),  # For Google
+    path('api/', include(router.urls)),  # Add submissions API endpoint
 ]

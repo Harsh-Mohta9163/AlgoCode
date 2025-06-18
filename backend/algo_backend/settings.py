@@ -37,6 +37,7 @@ INSTALLED_APPS = [
 
     # CORS
     'corsheaders',
+    'submissions',
 ]
 
 SITE_ID = 1
