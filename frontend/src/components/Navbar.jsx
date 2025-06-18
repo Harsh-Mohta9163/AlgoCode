@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Code } from 'lucide-react';
+import { AuthContext } from '../context/AuthContext';
 import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
+  const { user, logout } = useContext(AuthContext);
   const navigate = useNavigate();
   return (
     <nav className="bg-white shadow-lg sticky top-0 z-50">
@@ -36,6 +38,17 @@ const Navbar = () => {
               Get Started
             </button>
           </div>
+          {user && (
+            <button
+              onClick={() => {
+                logout();
+                navigate('/login');
+              }}
+              className="ml-4 px-4 py-2 bg-gray-200 text-gray-800 rounded hover:bg-gray-300"
+            >
+              Logout
+            </button>
+          )}
         </div>
       </div>
     </nav>

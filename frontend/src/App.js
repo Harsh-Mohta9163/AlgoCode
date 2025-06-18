@@ -1074,7 +1074,10 @@ import ProblemDetailPage from "./components/ProblemDetailPage";
 import InterviewPrepPage from "./components/InterviewPrepPage";
 import Footer from "./components/Footer";
 import { loadProblemsFromFiles, loadInterviewExperiences } from "./utils/dataLoaders";
+import Login from "./components/Login";
+import Signup from "./components/Signup";
 
+import ProtectedRoute from "./components/ProtectedRoute";
 const companyFiles = [
   "adobe", "apple", "google", "microsoft", "uber", "de%20shaw", "goldman", "morgan%20stanley", "nvidia", "paypal", "qualcomm", "salesforce", "service%20now", "visa"
 ];
@@ -1103,7 +1106,6 @@ const App = () => {
     fetchProblems();
   }, []);
 
-  // Handler to load interview experiences
   const handleLoadInterviewExperiences = async () => {
     setInterviewLoading(true);
     try {
@@ -1120,31 +1122,42 @@ const App = () => {
     <div className="min-h-screen bg-gray-50 font-sans">
       <Navbar />
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
         <Route
-          path="/practice"
+          path="/*"
           element={
-            <PracticePage
-              allProblems={allProblems}
-              loading={loading}
-              error={error}
-            />
-          }
-        />
-        <Route
-          path="/practice/:id"
-          element={
-            <ProblemDetailPage allProblems={allProblems} />
-          }
-        />
-        <Route
-          path="/interview-prep"
-          element={
-            <InterviewPrepPage
-              interviewExperiences={interviewExperiences}
-              loading={interviewLoading}
-              onLoadExperiences={handleLoadInterviewExperiences}
-            />
+            <ProtectedRoute>
+              <Routes>
+                <Route path="/" element={<HomePage />} />
+                <Route
+                  path="/practice"
+                  element={
+                    <PracticePage
+                      allProblems={allProblems}
+                      loading={loading}
+                      error={error}
+                    />
+                  }
+                />
+                <Route
+                  path="/practice/:id"
+                  element={
+                    <ProblemDetailPage allProblems={allProblems} />
+                  }
+                />
+                <Route
+                  path="/interview-prep"
+                  element={
+                    <InterviewPrepPage
+                      interviewExperiences={interviewExperiences}
+                      loading={interviewLoading}
+                      onLoadExperiences={handleLoadInterviewExperiences}
+                    />
+                  }
+                />
+              </Routes>
+            </ProtectedRoute>
           }
         />
       </Routes>
