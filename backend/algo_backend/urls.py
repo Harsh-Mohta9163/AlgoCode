@@ -18,6 +18,14 @@ from django.contrib import admin
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
 from submissions.views import SubmissionViewSet
+from dj_rest_auth.registration.views import SocialLoginView
+from allauth.socialaccount.providers.google.views import GoogleOAuth2Adapter
+from allauth.socialaccount.providers.oauth2.client import OAuth2Client
+
+class GoogleLogin(SocialLoginView):
+    adapter_class = GoogleOAuth2Adapter
+    callback_url = 'http://localhost:3000'  # Your React frontend URL
+    client_class = OAuth2Client
 
 # Initialize the router
 router = DefaultRouter()
@@ -27,6 +35,9 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('auth/', include('dj_rest_auth.urls')),
     path('auth/registration/', include('dj_rest_auth.registration.urls')),
-    path('auth/social/', include('allauth.socialaccount.urls')),  # For Google
+
+    path('auth/google/login', GoogleLogin.as_view(), name='google_login'), # For Google
+
+    path('accounts/', include('allauth.urls')),
     path('api/', include(router.urls)),  # Add submissions API endpoint
 ]

@@ -5,21 +5,35 @@ import { AuthContext } from "../context/AuthContext";
 import axios from "axios";
 import Editor from "@monaco-editor/react";
 
-const ProblemDetailPage = ({ allProblems }) => {
-  const { id } = useParams();
-  const navigate = useNavigate();
-  const problem = allProblems.find((p) => String(p.id) === id);
-  const { user } = useContext(AuthContext);
+// Add this helper function before your components
+const getStatusColor = (status) => {
+  const colors = {
+    accepted: "bg-green-100 text-green-800",
+    wrong_answer: "bg-red-100 text-red-800",
+    runtime_error: "bg-orange-100 text-orange-800",
+    time_limit: "bg-yellow-100 text-yellow-800",
+    pending: "bg-gray-100 text-gray-800",
+    error: "bg-red-100 text-red-800",
+  };
+  return colors[status] || "bg-gray-100 text-gray-800";
+};
 
-  // Move all hooks to the top
+const ProblemDetailPage = ({ allProblems }) => {
   const [submissions, setSubmissions] = useState([]);
   const [activeTab, setActiveTab] = useState("problem");
   const [code, setCode] = useState("");
   const [language, setLanguage] = useState("python");
   const [submissionStatus, setSubmissionStatus] = useState(null);
-  const [theme, setTheme] = useState("vs-dark");
+  const [theme] = useState("vs-dark");
+  const [showCodeModal, setShowCodeModal] = useState(false);
+  const [selectedSubmission, setSelectedSubmission] = useState(null);
 
-  // Place useEffect before any conditional returns
+  // Clean up unused variables and functions
+  const { id } = useParams();
+  const navigate = useNavigate();
+  const problem = allProblems.find((p) => String(p.id) === id);
+
+  // Move all hooks to the top
   useEffect(() => {
     const fetchSubmissions = async () => {
       if (activeTab === "submissions" && problem) {
@@ -48,11 +62,55 @@ const ProblemDetailPage = ({ allProblems }) => {
   if (!problem) return <div>Problem not found.</div>;
 
   // Add the SubmissionsTable component
-  const SubmissionsTable = () => (
-    <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-      {/* ...rest of your SubmissionsTable code... */}
-    </div>
-  );
+  const SubmissionsTable = ({ submissions, onViewCode }) => {
+    return (
+      <table className="w-full">
+        <thead>
+          <tr className="bg-gray-100">
+            <th className="p-2">When</th>
+            <th className="p-2">Status</th>
+            <th className="p-2">Language</th>
+            <th className="p-2">Runtime</th>
+            <th className="p-2">Memory</th>
+            <th className="p-2">View Code</th>
+          </tr>
+        </thead>
+        <tbody>
+          {submissions.map((submission) => (
+            <tr key={submission.id} className="border-b">
+              <td className="p-2">
+                {new Date(submission.created_at).toLocaleString()}
+              </td>
+              <td className="p-2">
+                <span
+                  className={`px-2 py-1 rounded ${getStatusColor(
+                    submission.status
+                  )}`}
+                >
+                  {submission.status}
+                </span>
+              </td>
+              <td className="p-2">{submission.language}</td>
+              <td className="p-2">
+                {submission.execution_time ? `${submission.execution_time} ms` : "-"}
+              </td>
+              <td className="p-2">
+                {submission.memory_used ? `${submission.memory_used} MB` : "-"}
+              </td>
+              <td className="p-2">
+                <button
+                  onClick={() => onViewCode(submission)}
+                  className="text-blue-600 hover:text-blue-800"
+                >
+                  View
+                </button>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    );
+  };
 
   // Add default code templates
   const defaultCode = {
@@ -275,6 +333,12 @@ const ProblemDetailPage = ({ allProblems }) => {
     </button>
   );
 
+  // Add handleViewCode function definition
+  const handleViewCode = (submission) => {
+    setSelectedSubmission(submission);
+    setShowCodeModal(true);
+  };
+
   // Replace your existing return statement with this
   return (
     <div className="bg-white min-h-screen">
@@ -396,65 +460,42 @@ const ProblemDetailPage = ({ allProblems }) => {
           </div>
         ) : (
           // Submissions Table
-          <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-            <div className="p-4 border-b border-gray-200">
-              <h2 className="text-lg font-semibold text-gray-800">My Submissions</h2>
+          activeTab === "submissions" && (
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+              <div className="p-4 border-b border-gray-200">
+                <h2 className="text-lg font-semibold text-gray-800">My Submissions</h2>
+              </div>
+              <div className="overflow-x-auto">
+                <SubmissionsTable
+                  submissions={submissions}
+                  onViewCode={handleViewCode}  // Now handleViewCode is defined
+                />
+              </div>
             </div>
-            <div className="overflow-x-auto">
-              <table className="min-w-full divide-y divide-gray-200">
-                <thead className="bg-gray-50">
-                  <tr>
-                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">When</th>
-                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Status</th>
-                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Language</th>
-                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Runtime</th>
-                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Memory</th>
-                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">View Code</th>
-                  </tr>
-                </thead>
-                <tbody className="bg-white divide-y divide-gray-200">
-                  {submissions.map((submission, idx) => (
-                    <tr key={idx} className="hover:bg-gray-50">
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                        {new Date(submission.created_at).toLocaleString()}
-                      </td>
-                      <td className="px-6 py-4 whitespace-nowrap">
-                        <span className={`px-2 py-1 inline-flex text-xs leading-5 font-semibold rounded-full ${
-                          submission.status === 'accepted' 
-                            ? 'bg-green-100 text-green-800' 
-                            : 'bg-red-100 text-red-800'
-                        }`}>
-                          {submission.status}
-                        </span>
-                      </td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{submission.language}</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                        {submission.execution_time ? `${submission.execution_time} ms` : '-'}
-                      </td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                        {submission.memory_used ? `${submission.memory_used} KB` : '-'}
-                      </td>
-                      <td className="px-6 py-4 whitespace-nowrap">
-                        <button
-                          onClick={() => {
-                            setCode(submission.code);
-                            setLanguage(submission.language);
-                            setActiveTab("problem");
-                          }}
-                          className="text-blue-600 hover:text-blue-900 text-sm font-medium"
-                        >
-                          View
-                        </button>
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </div>
+          )
         )}
       </div>
       {submissionStatusDisplay}
+
+      {/* Add Modal for viewing code */}
+      {showCodeModal && selectedSubmission && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4">
+          <div className="bg-white rounded-lg p-6 w-full max-w-4xl">
+            <div className="flex justify-between items-center mb-4">
+              <h3 className="text-lg font-semibold">Submission Details</h3>
+              <button
+                onClick={() => setShowCodeModal(false)}
+                className="text-gray-500 hover:text-gray-700"
+              >
+                ✕
+              </button>
+            </div>
+            <pre className="bg-gray-100 p-4 rounded overflow-auto max-h-96">
+              <code>{selectedSubmission.code}</code>
+            </pre>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

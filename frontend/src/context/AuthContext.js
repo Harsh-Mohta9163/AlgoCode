@@ -41,7 +41,7 @@ export const AuthProvider = ({ children }) => {
   };
 
   const signup = async (username, email, password1, password2) => {
-    const response = await axios.post("http://localhost:8000/auth/registration/", {
+    const response = await axios.post("http://localhost:8000/auth/google/login/", {
       username,
       email,
       password1,
@@ -52,8 +52,30 @@ export const AuthProvider = ({ children }) => {
     return response.data;
   };
 
+  // Add social login handler
+  const socialLogin = async (provider, accessToken) => {
+    try {
+      const response = await axios.post("http://localhost:8000/auth/social/login/", {
+        provider,
+        access_token: accessToken,
+      });
+      
+      localStorage.setItem("token", response.data.key);
+      
+      // Fetch user info after social login
+      const userRes = await axios.get("http://localhost:8000/auth/user/", {
+        headers: { Authorization: `Token ${response.data.key}` }
+      });
+      setUser(userRes.data);
+      return response.data;
+    } catch (error) {
+      console.error("Social login error:", error.response?.data || error);
+      throw error;
+    }
+  };
+
   return (
-    <AuthContext.Provider value={{ user, login, logout, signup }}>
+    <AuthContext.Provider value={{ user, login, logout, signup, socialLogin }}>
       {children}
     </AuthContext.Provider>
   );

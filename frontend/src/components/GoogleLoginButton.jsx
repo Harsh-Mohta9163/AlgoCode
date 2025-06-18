@@ -1,29 +1,18 @@
-import React from "react";
+import React, { useContext } from "react";
 import { GoogleOAuthProvider, GoogleLogin } from "@react-oauth/google";
-import axios from "axios";
+import { AuthContext } from "../context/AuthContext";
+import { useNavigate } from "react-router-dom";
 
 const GoogleLoginButton = () => {
+  const { socialLogin } = useContext(AuthContext);
+  const navigate = useNavigate();
+
   const handleSuccess = async (credentialResponse) => {
     try {
-      const res = await axios.post("http://localhost:8000/auth/social/login/", {
-        provider: "google",
-        access_token: credentialResponse.credential,
-      });
-
-      const token = res.data.key;
-      localStorage.setItem("token", token);
-
-      // Optional: get user info
-      const userRes = await axios.get("http://localhost:8000/auth/user/", {
-        headers: {
-          Authorization: `Token ${token}`,
-        },
-      });
-
-      console.log("Logged in user:", userRes.data);
-      window.location.href = "/";
+      await socialLogin("google", credentialResponse.credential);
+      navigate("/"); // Use React Router instead of window.location
     } catch (err) {
-      console.error("Login failed", err.response?.data || err);
+      console.error("Google login failed:", err);
     }
   };
 
@@ -31,9 +20,14 @@ const GoogleLoginButton = () => {
     <GoogleOAuthProvider clientId={process.env.REACT_APP_GOOGLE_CLIENT_ID}>
       <GoogleLogin
         onSuccess={handleSuccess}
-        onError={() => {
-          console.log("Google login failed");
+        onError={(error) => {
+          console.error("Google login failed:", error);
         }}
+        useOneTap
+        theme="outline"
+        size="large"
+        text="continue_with"
+        shape="rectangular"
       />
     </GoogleOAuthProvider>
   );
